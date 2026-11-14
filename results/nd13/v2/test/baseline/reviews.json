@@ -1,0 +1,65 @@
+[
+  {
+    "query_id": "nd13-21",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504582+00:00",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Abstained on an answerable case; no gold passage in context."
+  },
+  {
+    "query_id": "nd13-22",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504602+00:00",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Abstained on an answerable case; no gold passage in context."
+  },
+  {
+    "query_id": "nd13-23",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504613+00:00",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Gold was in original top-3 but omitted from final context; abstention is incorrect."
+  },
+  {
+    "query_id": "nd13-24",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504625+00:00",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Correct 72-hour answer; cited passage on page 13 supports it."
+  },
+  {
+    "query_id": "nd13-25",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504628+00:00",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Runtime protocol error; no final evidence context."
+  },
+  {
+    "query_id": "nd13-test-missing-03",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504631+00:00",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng."
+  },
+  {
+    "query_id": "nd13-test-missing-04",
+    "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
+    "reviewed_at": "2026-11-14T09:51:15.504636+00:00",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "query_id": "nd13-dev-missing-01",
+    "question": "Theo Nghị định 13, mức tiền phạt cụ thể bằng đồng cho hành vi xử lý dữ liệu cá nhân trái pháp luật là bao nhiêu?",
+    "audit_terms": {
+      "mức phạt": 0,
+      "phạt tiền": 0,
+      "triệu đồng": 0,
+      "tỷ đồng": 0,
+      "xử phạt vi phạm hành chính": 1
+    },
+    "manual_scope": "Văn bản nêu các hình thức xử lý vi phạm theo pháp luật nhưng không ấn định mức tiền phạt cụ thể bằng đồng.",
+    "reviewed_pages": "All 39 OCR pages, including appendix/forms (not only retrieved context).",
+    "result": "Exact requested numeric/contact fact not present; partial topical mentions recorded in query-level reason."
+  },
+  {
+    "query_id": "nd13-dev-missing-02",
+    "question": "Nghị định quy định tối thiểu chính xác bao nhiêu nhân viên phải được chỉ định trong bộ phận bảo vệ dữ liệu cá nhân?",
+    "audit_terms": {
+      "tối thiểu": 0,
+      "số lượng nhân sự": 0,
+      "nhân viên bảo vệ dữ liệu": 1,
+      "chỉ định bộ phận": 0,
+      "chỉ định nhân sự": 1
+    },
+    "manual_scope": "Văn bản yêu cầu chỉ định bộ phận và nhân sự phụ trách nhưng không nêu số lượng nhân viên tối thiểu.",
+    "reviewed_pages": "All 39 OCR pages, including appendix/forms (not only retrieved context).",
+    "result": "Exact requested numeric/contact fact not present; partial topical mentions recorded in query-level reason."
+  },
+  {
+    "query_id": "nd13-test-missing-03",
+    "question": "Số điện thoại đường dây nóng của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao để tiếp nhận yêu cầu về dữ liệu cá nhân là số nào?",
+    "audit_terms": {
+      "đường dây nóng": 0,
+      "hotline": 0,
+      "số điện thoại Cục": 0,
+      "điện thoại liên hệ Cục": 0
+    },
+    "manual_scope": "Bản Nghị định không nêu số điện thoại đường dây nóng của Cục; việc nêu chi tiết liên lạc trong biểu mẫu không cung cấp số hotline của cơ quan.",
+    "reviewed_pages": "All 39 OCR pages, including appendix/forms (not only retrieved context).",
+    "result": "Exact requested numeric/contact fact not present; partial topical mentions recorded in query-level reason."
+  },
+  {
+    "query_id": "nd13-test-missing-04",
+    "question": "Nghị định 13 ấn định ngân sách hằng năm chính xác bao nhiêu đồng cho hoạt động bảo vệ dữ liệu cá nhân của doanh nghiệp?",
+    "audit_terms": {
+      "kinh phí bảo vệ dữ liệu cá nhân của tổ chức": 0,
+      "ngân sách nhà nước hằng năm": 1,
+      "đồng/năm": 0,
+      "mức kinh phí doanh nghiệp": 0
+    },
+    "manual_scope": "Điều 31 quy định tổ chức, doanh nghiệp tự bố trí kinh phí nhưng không quy định một mức ngân sách hằng năm bằng đồng.",
+    "reviewed_pages": "All 39 OCR pages, including appendix/forms (not only retrieved context).",
+    "result": "Exact requested numeric/contact fact not present; partial topical mentions recorded in query-level reason."
+  }
+]

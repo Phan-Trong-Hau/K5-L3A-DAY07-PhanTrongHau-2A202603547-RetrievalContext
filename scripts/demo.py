@@ -51,16 +51,22 @@ def show(split, config, query_id, version='v1'):
 
 
 def show_nd13(method, query_id):
-    folder = ROOT / 'results/nd13/test' / method
+    folder = ROOT / 'results/nd13/v2/test' / method
     trace = next(t for t in load(folder / 'traces.json') if t['query_id'] == query_id)
     case = next(q for q in load(ROOT / 'benchmark/nd13/test.json') if q['id'] == query_id)
+    review = next(r for r in load(folder / 'reviews.json') if r['query_id'] == query_id)
     print(f'\nNGHỊ ĐỊNH 13 / {method} / {query_id}')
     print('Câu hỏi:', trace['question'])
-    print('Đáp án chuẩn:', case['expected_answer'])
+    print('Đáp án chuẩn:', case.get('expected_answer') or case.get('absence_reason'))
     print('Trạng thái:', trace['status'])
     print('Gold trong top-3:', trace.get('hit3'))
     print('Gold trong context:', trace.get('context_hit'))
     print('Câu trả lời:', trace['answer'] or trace.get('error', ''))
+    if review.get('answer_grade') is not None:
+        print(f"Điểm answer/context: {review['answer_grade']}/2, {review['context_grade']}/2")
+    elif 'abstention_correct' in review:
+        print('Từ chối đúng:', review['abstention_correct'])
+    print('Nhận xét đối chiếu:', review['reason'])
     chunks = {c['id']: c for c in load(ROOT / 'data/nd13/chunks.json')}
     for cid in trace.get('citations', []):
         chunk = chunks.get(cid)
@@ -77,12 +83,12 @@ def main():
     print('PHÁT LẠI TRACE ĐÃ LƯU — không phải suy luận trực tiếp, không tạo số liệu mới.')
     if args.version == 'nd13':
         scenarios = {
-            'all': [('rerank', 'vi01'), ('rerank', 'vi03'), ('lexical', 'vi04')],
-            'new-methods': [('mmr', 'vi05'), ('rerank', 'vi05')],
-            'failure': [('rerank', 'vi03')],
-            'abstention': [('lexical', 'vi04')],
-            'improvement': [('baseline', 'vi02'), ('rerank', 'vi02')],
-            'holdout-error': [('baseline', 'vi18'), ('rerank', 'vi18')],
+            'all': [('baseline', 'nd13-24'), ('lexical', 'nd13-24'), ('lexical', 'nd13-25'), ('lexical', 'nd13-test-missing-04')],
+            'new-methods': [('baseline', 'nd13-23'), ('lexical', 'nd13-23')],
+            'failure': [('lexical', 'nd13-25')],
+            'abstention': [('lexical', 'nd13-test-missing-04')],
+            'improvement': [('baseline', 'nd13-21'), ('lexical', 'nd13-21')],
+            'holdout-error': [('baseline', 'nd13-25'), ('lexical', 'nd13-25')],
         }
         for row in scenarios[args.scenario]:
             show_nd13(*row)

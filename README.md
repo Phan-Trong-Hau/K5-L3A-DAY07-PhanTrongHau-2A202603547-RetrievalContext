@@ -6,14 +6,15 @@
 
 Đã có pipeline local trong `src/`: **dense Qdrant Day 6, BM25, hybrid RRF,
 dense MMR và hybrid cross-encoder rerank**. Bài đánh giá hiện tại dùng tài liệu
-tiếng Việt [Nghị định 13/2023/NĐ-CP](report/NGHI_DINH_13_DEMO.html): 20 câu × 5
-phương pháp. Các kết quả Alice trước đó được giữ riêng làm lịch sử, không dùng
-trong lần đánh giá Nghị định 13. Xem [quy trình benchmark tiếng Việt](docs/ND13.md),
+tiếng Việt [Nghị định 13/2023/NĐ-CP](report/NGHI_DINH_13_DEMO.html): benchmark
+dev 22 câu × 5 phương pháp và test mới 7 câu (baseline + BM25 được chọn từ dev).
+Các kết quả Alice trước đó được giữ riêng làm lịch sử, không dùng trong lần đánh
+giá Nghị định 13. Xem [quy trình benchmark tiếng Việt](docs/ND13.md),
 [thiết kế](docs/IMPLEMENTATION.md) và [hướng dẫn chạy](docs/RUNNING.md).
 
 Để demo kết quả Nghị định 13, mở [báo cáo HTML](report/NGHI_DINH_13_DEMO.html)
 bằng trình duyệt. Nó chạy offline và có thể in/lưu PDF. Trace thật nằm trong
-`results/nd13/test/<method>/traces.json`.
+`results/nd13/v2/test/<method>/traces.json`.
 Để phát lại ví dụ thật đã lưu mà không gọi model mới, chạy
 `python3 scripts/demo.py --scenario all`.
 

@@ -1,42 +1,76 @@
-# Agentic RAG trên Nghị định 13/2023/NĐ-CP
+# Demo: Agentic RAG trên Nghị định 13/2023/NĐ-CP
 
-**Bộ dữ liệu đánh giá hiện tại:** tài liệu tiếng Việt từ Day 06, OCR 39 trang; 88 đoạn, vector BGE-small-en-v1.5 384 chiều; 20 câu hỏi đóng băng trước khi chạy. Nguồn là [bản ký số năm 2023 do Chính phủ công bố](https://chinhphu.vn/default.aspx?docid=207759&pageid=27160). Bài Alice không được dùng cho kết quả trong báo cáo này.
+## Mục tiêu
 
-## Kết quả kiểm tra
+So sánh năm phương pháp retrieval trên tài liệu tiếng Việt của Day 06, chọn cấu hình chỉ bằng dev, rồi đánh giá một lần trên test mới. Bản PDF ký số năm 2023 được giữ nguyên cùng OCR, chunks và vector Day 06. Không dùng bài Alice cho benchmark này.
 
-| Phương pháp | Agent trả lời | Lỗi chạy | Gold trong top-3 truy vấn gốc | Gold trong context cuối | Đã gọi search | Citation nằm trong context |
+## Thiết kế benchmark
+
+- Dev: 22 câu, 20 có đáp án và 2 câu cố ý không có bằng chứng; dùng so sánh 5 phương pháp.
+- Test đóng băng: 7 câu mới, 5 có đáp án và 2 thiếu bằng chứng; chỉ chạy baseline và phương pháp được chọn trên dev.
+- Hai mươi câu đã chạy và xem trước ở phiên trước được lưu dưới `results/nd13/external_v1/` và dùng lại làm dev; chúng không được tính là holdout độc lập.
+- Quy tắc chọn: điểm answer grade trung bình trên dev (0–2; lỗi chạy tính 0), sau đó lần lượt xét abstention đúng, evidence trong context, latency.
+- BM25 tiếng Việt (`lexical`) được chọn trên dev. Model: Qwen 3 4B local; corpus và code được hash/freeze trước test.
+
+## Kết quả test mới
+
+| Cấu hình | Answer grade TB / 2 (lỗi=0) | Đúng hoàn toàn | Gold evidence trong context | Từ chối đúng câu thiếu evidence | Lỗi | Median giây |
 |---|---:|---:|---:|---:|---:|---:|
-| baseline | 6/20 | 0 | 12/20 | 5/20 | 20/20 | 6/20 |
-| lexical | 16/20 | 2 | 19/20 | 20/20 | 20/20 | 16/20 |
-| hybrid | 15/20 | 0 | 15/20 | 15/20 | 20/20 | 15/20 |
-| mmr | 12/20 | 0 | 10/20 | 11/20 | 20/20 | 12/20 |
-| rerank | 17/20 | 0 | 16/20 | 17/20 | 20/20 | 17/20 |
+| baseline | 0.40/2 | 1/5 | 1/5 | 2/2 | 1 | 7.3 |
+| lexical | 1.40/2 | 3/5 | 4/5 | 2/2 | 1 | 18.0 |
 
-**Unit tests: 43/43 pass.** Đây là kiểm tra code với mock/fake provider; không xác nhận chất lượng ngữ nghĩa của model.
+BM25 trả lời đúng về nội dung ở 4/5 câu có đáp án, nhưng chỉ 3/4 citation được hỗ trợ đúng đoạn; ở `nd13-23`, câu trả lời nêu đúng điều kiện nhưng citation trỏ sang trang 15 thay vì đoạn luật ở trang 11, nên được chấm answer 1/2. BM25 từ chối đúng 2/2 câu không có bằng chứng. Câu `nd13-25` là lỗi giao thức: model lấy đúng đoạn trang 21 cho thấy kiểm tra thường niên và ngoại lệ, nhưng lại phát abstain mà không gọi retrieval theo giao thức; lượt sửa cũng bỏ retrieval nên runner ghi `error`. Điểm câu này là 0, không che lỗi bằng hit@3. Baseline trả lời đúng 1/5 câu, từ chối đúng 2/2 câu thiếu evidence, và có một lỗi giao thức.
 
-Không phải mọi case end-to-end đều đạt. Bằng chứng retrieval, trạng thái `answered`, và tính đúng đắn của câu trả lời được đo riêng. Ví dụ reranker trả lời sai câu `vi03` (nhầm “Bên Kiểm soát dữ liệu cá nhân” thành “Bên Kiểm soát và xử lý dữ liệu cá nhân”); BM25 trả lời `ABSTAIN` cho `vi04` dù đoạn luật có trong context; một số câu bị bỏ sót bởi dense/MMR. Không gọi trạng thái answered là pass nếu chưa kiểm tra đáp án và citation về mặt nghĩa.
+### Chấm từng câu
+
+| Case | Method | Trạng thái | Answer / 2 | Context / 2 | Abstention |
+|---|---|---|---:|---:|---|
+| nd13-21 | baseline | abstain | 0 | 0 | — |
+| nd13-22 | baseline | abstain | 0 | 0 | — |
+| nd13-23 | baseline | abstain | 0 | 0 | — |
+| nd13-24 | baseline | answered | 2 | 2 | — |
+| nd13-25 | baseline | error | 0 | 0 | — |
+| nd13-test-missing-03 | baseline | abstain | — | — | đúng |
+| nd13-test-missing-04 | baseline | abstain | — | — | đúng |
+| nd13-21 | lexical | answered | 2 | 2 | — |
+| nd13-22 | lexical | answered | 2 | 2 | — |
+| nd13-23 | lexical | answered | 1 | 2 | — |
+| nd13-24 | lexical | answered | 2 | 2 | — |
+| nd13-25 | lexical | error | 0 | 0 | — |
+| nd13-test-missing-03 | lexical | abstain | — | — | đúng |
+| nd13-test-missing-04 | lexical | abstain | — | — | đúng |
+
+## So sánh dev dùng để chọn
+
+| Method | Answer grade TB / 2 (lỗi=0) | Từ chối nhầm / câu có đáp án | Gold evidence trong context | Từ chối đúng / câu thiếu evidence | Lỗi | Median giây |
+|---|---:|---:|---:|---:|---:|---:|
+| baseline | 0.50/2 | 14/20 | 5/20 | 2/2 | 0 | 7.7 |
+| lexical | 1.30/2 | 2/18 | 20/20 | 2/2 | 2 | 16.6 |
+| hybrid | 1.00/2 | 5/20 | 15/20 | 2/2 | 0 | 20.9 |
+| mmr | 0.95/2 | 8/20 | 11/20 | 2/2 | 0 | 16.3 |
+| rerank | 1.30/2 | 3/20 | 17/20 | 2/2 | 0 | 27.9 |
 
 ## Năm phương pháp
 
-1. **Dense:** cosine trên vector BGE Day 06.
-2. **BM25:** lexical matching trên OCR tiếng Việt.
-3. **Hybrid:** reciprocal-rank fusion của dense và BM25.
-4. **MMR:** chọn đoạn liên quan nhưng giảm trùng lặp trong shortlist dense.
-5. **Rerank:** hybrid shortlist, chấm cặp query–document bằng MiniLM cross-encoder.
+1. Dense cosine trên vector BGE Day 06.
+2. BM25 lexical trên OCR tiếng Việt.
+3. Hybrid dense + BM25 bằng reciprocal-rank fusion.
+4. MMR giảm các đoạn trùng lặp trong shortlist dense.
+5. Rerank shortlist hybrid bằng MiniLM cross-encoder.
 
-Cả 20 câu external test đã được chạy qua cả năm phương pháp (100 lượt). Chúng tôi không chọn winner hoặc chỉnh tham số bằng chính tập test này. Không có ND13 dev set trong lần đánh giá này.
+## Kiểm tra và giới hạn
 
-## Giới hạn
+**Unit tests: 46/46 pass.** Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
 
-Embedding và cross-encoder được giữ nguyên từ pipeline Day 06, cả hai có tên model tiếng Anh và được áp dụng lên tiếng Việt; vì thế kết quả không đại diện cho chất lượng tối đa của mô hình đa ngữ. OCR giữ nguyên các lỗi nhận dạng trong nguồn. Nghị định là bản ký số năm 2023, không phải tư vấn pháp lý hay xác nhận quy định hiện hành.
+Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ trợ AI và cần người học xác nhận. OCR có lỗi nhận dạng. BGE-small-en-v1.5 và MiniLM là model có tên tiếng Anh được giữ từ pipeline Day 06 khi xử lý tiếng Việt. Nguồn là văn bản năm 2023, không xác nhận quy định hiện hành và không phải tư vấn pháp lý.
 
-## Tái lập
+## Artifact để demo
 
-```bash
-.venv/bin/python scripts/prepare_nd13.py
-.venv/bin/python scripts/run_nd13.py
-python3 scripts/check_tests.py
-.venv/bin/python scripts/build_nd13_report.py
-```
+- Protocol: `benchmark/nd13/protocol.json`
+- Câu hỏi: `benchmark/nd13/dev.json`, `benchmark/nd13/test.json`
+- Chọn cấu hình và hash: `results/nd13/v2/selection.json`
+- Trace test: `results/nd13/v2/test/<method>/traces.json`
+- Report dữ liệu: `results/nd13/validation.json`
+- PDF nguồn: `data/nd13/13nd.signed.pdf`
 
-Protocol đóng băng: `benchmark/nd13/protocol.json`. Chi tiết trace từng phương pháp: `results/nd13/test/<method>/traces.json`. PDF và OCR snapshot được giữ tại `data/nd13/`.
+Chạy lại code tests: `python3 scripts/check_tests.py`. Chạy viewer trace: `.venv/bin/python scripts/demo.py --scenario all`.

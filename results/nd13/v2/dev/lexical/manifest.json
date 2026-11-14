@@ -1,0 +1,27 @@
+{
+  "model": "qwen3:4b-instruct",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "config": {
+    "method": "bm25",
+    "top_k": 5,
+    "budget": 4800,
+    "max_searches": 2,
+    "policy_v2": true,
+    "hypothesis": "Exact lexical matching with larger context.",
+    "language": "vi",
+    "document_title": "Nghị định số 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân"
+  },
+  "context_window": 4096,
+  "benchmark_sha256": "62ba5b9548950af38b940bc9cdd548583eb925ccde330a9baf8e55a1c3917aac",
+  "corpus_sha256": "a6a9c742b5f62d871af6b9a49e6f2b6710f3a397a1d163ea051d6f9d18071814",
+  "code_sha256": {
+    "src/agent.py": "c2bfd57360b07165af55e6bd3a04ccebb59533df8521954388dd16fc65539cdb",
+    "src/agent_v2.py": "cedb07b344b4ed860e08181a4d3a623ef1fd9f5b47fadede2ab4846ad6428ee6",
+    "src/common.py": "5ec1ed975feb3517033d44b5b5cab97de3ccc7cbd09582c26d851e42874a7b9f",
+    "src/evaluation.py": "ac47edc5e5c2016002b1fb28d5f9b509d4a0e1b4920539c99915103481f369d8",
+    "src/retrieval.py": "c4a7fe2f23de6f895d677a2271673f6a5f94a99093ec030cd53a26cd6b18aef2"
+  },
+  "runner": "scripts/run_nd13.py",
+  "selection_stage": "dev",
+  "method": "lexical"
+}

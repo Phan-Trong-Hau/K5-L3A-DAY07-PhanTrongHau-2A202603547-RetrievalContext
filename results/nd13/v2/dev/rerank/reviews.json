@@ -1,0 +1,212 @@
+[
+  {
+    "query_id": "vi01",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi02",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 1,
+    "context_grade": 2,
+    "reason": "Trả lời đúng một phần nhưng thiếu điều kiện hoặc citation hỗ trợ chưa đầy đủ; chấm 1. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi03",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 0,
+    "context_grade": 1,
+    "reason": "Câu trả lời sai hoặc citation không hỗ trợ claim theo đoạn được dẫn; chấm 0 sau đối chiếu với đáp án và trang nguồn. Context grade 1/2: một phần liên quan, thiếu evidence đầy đủ; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi04",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 2,
+    "reason": "Câu hỏi có đáp án trong tài liệu nhưng agent từ chối; chấm 0. Đã đối chiếu câu hỏi với evidence gốc. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi05",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi06",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 1,
+    "reason": "Câu hỏi có đáp án trong tài liệu nhưng agent từ chối; chấm 0. Đã đối chiếu câu hỏi với evidence gốc. Context grade 1/2: một phần liên quan, thiếu evidence đầy đủ; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi07",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi08",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi09",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi10",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 0,
+    "context_grade": 2,
+    "reason": "Câu trả lời sai hoặc citation không hỗ trợ claim theo đoạn được dẫn; chấm 0 sau đối chiếu với đáp án và trang nguồn. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi11",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi12",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 0,
+    "context_grade": 2,
+    "reason": "Câu trả lời sai hoặc citation không hỗ trợ claim theo đoạn được dẫn; chấm 0 sau đối chiếu với đáp án và trang nguồn. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi13",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true,
+      false
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi14",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true,
+      false
+    ],
+    "answer_grade": 1,
+    "context_grade": 2,
+    "reason": "Trả lời đúng một phần nhưng thiếu điều kiện hoặc citation hỗ trợ chưa đầy đủ; chấm 1. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi15",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi16",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi17",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi18",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [],
+    "answer_grade": 0,
+    "context_grade": 1,
+    "reason": "Câu hỏi có đáp án trong tài liệu nhưng agent từ chối; chấm 0. Đã đối chiếu câu hỏi với evidence gốc. Context grade 1/2: một phần liên quan, thiếu evidence đầy đủ; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi19",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "vi20",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Câu trả lời đầy đủ, đúng với evidence trên trang nguồn; từng citation được kiểm tra trong context và đối chiếu nội dung. Context grade 2/2: đủ evidence; citations được kiểm tra riêng."
+  },
+  {
+    "query_id": "nd13-dev-missing-01",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Đã rà toàn bộ 39 trang OCR cùng absence audit. Agent gọi search và từ chối đúng; không nêu số tiền hoặc con số không có trong văn bản."
+  },
+  {
+    "query_id": "nd13-dev-missing-02",
+    "reviewer": "Codex — AI-assisted manual review of Day 06 OCR source and trace; student confirmation pending",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Đã rà toàn bộ 39 trang OCR cùng absence audit. Agent gọi search và từ chối đúng; không nêu số tiền hoặc con số không có trong văn bản."
+  }
+]

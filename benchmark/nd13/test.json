@@ -1,370 +1,117 @@
 [
   {
-    "id": "vi01",
+    "id": "nd13-21",
     "split": "test",
-    "question": "Trong Chương I, dữ liệu cá nhân được chia thành hai nhóm nào?",
-    "filter": {
-      "chapter": "I"
-    },
-    "answerable": true,
-    "expected_answer": "Dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 2,
-        "evidence": "Dữ liệu cá nhân bao gôm đữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi02",
-    "split": "test",
-    "question": "Thông tin về nhóm máu có thuộc mục dữ liệu sức khỏe và đời tư trong hồ sơ bệnh án được liệt kê là dữ liệu nhạy cảm không?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Không; mục này loại trừ thông tin về nhóm máu.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 2,
-        "evidence": "b) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao gôm thông tin về nhóm máu;"
-      }
-    ],
-    "absence_reason": null,
-    "kind": "exception",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi03",
-    "split": "test",
-    "question": "Tổ chức quyết định mục đích và phương tiện xử lý dữ liệu cá nhân được gọi là bên nào?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Bên Kiểm soát dữ liệu cá nhân.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 3,
-        "evidence": "9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "paraphrase",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi04",
-    "split": "test",
-    "question": "Có được tự do mua bán dữ liệu cá nhân không, và ngoại lệ được nêu là gì?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Không được mua bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 4,
-        "evidence": "Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "exception",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi05",
-    "split": "test",
-    "question": "Khi chủ thể yêu cầu hạn chế xử lý, thời hạn thực hiện thông thường là bao lâu và có ngoại lệ nào?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Trong 72 giờ sau yêu cầu, trừ trường hợp luật có quy định khác.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 7,
-        "evidence": "b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn chê, trừ trường hợp luật có quy định khác."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "condition",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi06",
-    "split": "test",
-    "question": "Trong Chương II, nếu chủ thể không trả lời yêu cầu thì có thể xem đó là đồng ý xử lý dữ liệu không?",
+    "question": "Trong Chương II, khi chủ thể phản đối xử lý dữ liệu để ngăn tiết lộ hoặc dùng cho quảng cáo, tiếp thị, bên kiểm soát phải thực hiện yêu cầu trong bao lâu?",
     "filter": {
       "chapter": "II"
     },
     "answerable": true,
-    "expected_answer": "Không; im lặng hoặc không phản hồi không được coi là đồng ý.",
+    "expected_answer": "Trong 72 giờ sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác.",
     "gold": [
       {
         "source_id": "nd13",
-        "page": 9,
-        "evidence": "Sự im lặng hoặc không phản hồi của chủ thê dữ liệu không được coi là sự đồng ý."
+        "page": 8,
+        "evidence": "Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thực hiện yêu cầu của chủ thê dữ liệu trong 72 giờ sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác."
       }
     ],
     "absence_reason": null,
-    "kind": "paraphrase",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "kind": "condition"
   },
   {
-    "id": "vi07",
+    "id": "nd13-22",
     "split": "test",
-    "question": "Nếu muốn xử lý dữ liệu cho nhiều mục đích, bên kiểm soát cần làm gì để chủ thể lựa chọn?",
+    "question": "Sau khi đã thông báo hậu quả và nhận yêu cầu rút lại đồng ý, những bên nào phải ngừng xử lý dữ liệu của chủ thể?",
     "filter": {},
     "answerable": true,
-    "expected_answer": "Liệt kê các mục đích để chủ thể đồng ý một hoặc nhiều mục đích.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 9,
-        "evidence": "Khi có nhiều mục đích, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân liệt kê các mục đích để chủ thể dữ liệu đồng ý với một hoặc nhiều mục đích nêu ra."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "condition",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi08",
-    "split": "test",
-    "question": "Rút lại đồng ý có làm mất tính hợp pháp của việc xử lý đã được đồng ý trước đó không?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Không ảnh hưởng đến tính hợp pháp của việc xử lý đã được đồng ý trước khi rút lại.",
+    "expected_answer": "Bên Kiểm soát, Bên Xử lý, Bên Kiểm soát và xử lý, và Bên thứ ba phải ngừng xử lý, đồng thời yêu cầu các tổ chức/cá nhân liên quan ngừng xử lý.",
     "gold": [
       {
         "source_id": "nd13",
         "page": 10,
-        "evidence": "Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đông ý trước khi rút lại sự đông ý."
+        "evidence": "Bên Kiểm soát đữ liệu, Bên Xử lý dữ liệu, Bên Kiêm soát và xử lý dữ liệu, Bên thứ ba phải ngừng và yêu cầu các tô chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thê dữ liệu đã rút lại sự đông ý."
       }
     ],
     "absence_reason": null,
-    "kind": "paraphrase",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "kind": "direct"
   },
   {
-    "id": "vi09",
+    "id": "nd13-23",
     "split": "test",
-    "question": "Phiếu yêu cầu cung cấp dữ liệu cá nhân phải được thể hiện bằng ngôn ngữ nào?",
+    "question": "Trong trường hợp nào bên kiểm soát có thể không cung cấp dữ liệu vì việc cung cấp có thể ảnh hưởng tới người khác?",
     "filter": {},
     "answerable": true,
-    "expected_answer": "Tiếng Việt.",
+    "expected_answer": "Khi việc cung cấp có thể ảnh hưởng tới sự an toàn, sức khỏe thể chất hoặc tinh thần của người khác.",
     "gold": [
       {
         "source_id": "nd13",
-        "page": 12,
-        "evidence": "Phiếu yêu cầu cung cấp dữ liệu cá nhân phải được thể hiện bằng tiếng Việt"
+        "page": 11,
+        "evidence": "Việc cung cấp dữ liệu cá nhân của chủ thể dữ liệu có thể ảnh hưởng tới sự an toàn, sức khỏe thê chật hoặc tinh thân của người khác;"
       }
     ],
     "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "kind": "condition"
   },
   {
-    "id": "vi10",
+    "id": "nd13-24",
     "split": "test",
-    "question": "Yêu cầu xóa toàn bộ dữ liệu đã thu thập thường phải được thực hiện trong thời hạn nào?",
+    "question": "Nếu không thể thực hiện yêu cầu chỉnh sửa dữ liệu cá nhân, sau bao lâu phải thông báo cho chủ thể dữ liệu?",
     "filter": {},
     "answerable": true,
-    "expected_answer": "Trong 72 giờ sau yêu cầu, trừ trường hợp pháp luật có quy định khác.",
+    "expected_answer": "Sau 72 giờ kể từ khi nhận được yêu cầu chỉnh sửa.",
     "gold": [
       {
         "source_id": "nd13",
-        "page": 14,
-        "evidence": "Việc xóa dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể đữ liệu với toàn bộ dữ liệu cá nhân mà Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập được, trừ trường hợp pháp luật có quy định khác."
+        "page": 13,
+        "evidence": "Trường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế khi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu."
       }
     ],
     "absence_reason": null,
-    "kind": "condition",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "kind": "condition"
   },
   {
-    "id": "vi11",
+    "id": "nd13-25",
     "split": "test",
-    "question": "Khi cần xử lý ngay để bảo vệ tính mạng hoặc sức khỏe, ai phải chứng minh trường hợp khẩn cấp?",
+    "question": "Thông thường Bộ Công an kiểm tra việc chuyển dữ liệu cá nhân ra nước ngoài bao lâu một lần, và những ngoại lệ nào được nêu?",
     "filter": {},
     "answerable": true,
-    "expected_answer": "Bên Kiểm soát, Bên Xử lý, Bên Kiểm soát và xử lý, Bên thứ ba phải chứng minh trường hợp này.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 15,
-        "evidence": "Trong trường hợp khân cấp, cần xử lý ngay đữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát đữ liệu cá nhân, Bên Xử lý đữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên thứ ba có trách nhiệm chứng minh trường hợp này."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "condition",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi12",
-    "split": "test",
-    "question": "Với trẻ từ đủ 7 tuổi, thông thường cần sự đồng ý của những ai để xử lý dữ liệu và ngoại lệ được viện dẫn là gì?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Cần đồng ý của trẻ và cha, mẹ hoặc người giám hộ; trừ trường hợp Điều 17.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 16,
-        "evidence": "Việc xử lý dữ liệu cá nhân của trẻ em phải có sự đồng ý của trẻ em trong trường hợp trẻ em từ đủ 7 tuổi trở lên và có sự đồng ý của cha, mẹ hoặc người giám hộ theo quy định, trừ trường hợp quy định tại Điều 17 Nghị định này."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "exception",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi13",
-    "split": "test",
-    "question": "Báo cáo vi phạm bảo vệ dữ liệu phải gửi trong bao lâu, theo mẫu nào và nếu chậm thì cần bổ sung gì?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Chậm nhất 72 giờ sau vi phạm, Mẫu số 03; nếu thông báo sau 72 giờ phải kèm lý do chậm, muộn.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 17,
-        "evidence": "chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "condition",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi14",
-    "split": "test",
-    "question": "Hồ sơ đánh giá tác động xử lý dữ liệu phải gửi bản chính theo mẫu nào và trong bao nhiêu ngày kể từ khi bắt đầu xử lý?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Mẫu số 04, trong 60 ngày kể từ ngày tiến hành xử lý.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 19,
-        "evidence": "01 bản chính theo Mẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến hành xử lý đữ liệu cá nhân."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi15",
-    "split": "test",
-    "question": "Bên chuyển dữ liệu ra nước ngoài có bao nhiêu ngày để hoàn thiện hồ sơ sau ngày yêu cầu?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "10 ngày kể từ ngày yêu cầu.",
+    "expected_answer": "Một lần mỗi năm; có thể kiểm tra khác thường khi phát hiện vi phạm quy định hoặc xảy ra sự cố lộ, mất dữ liệu cá nhân của công dân Việt Nam.",
     "gold": [
       {
         "source_id": "nd13",
         "page": 21,
-        "evidence": "Thời gian hoàn thiện hồ sơ dành cho Bên chuyển dữ liệu ra nước ngoài là 10 ngày kế từ ngày yêu cầu."
+        "evidence": "Căn cứ tình hình cụ thể, Bộ Công an quyết định việc kiểm tra chuyển dữ liệu cá nhân ra nước ngoài 01 lần/năm, trừ trường hợp phát hiện hành vi vi phạm quy định của pháp luật về bảo vệ dữ liệu cá nhân tại Nghị định này hoặc để xảy ra sự cô lộ, mất dữ liệu cá nhân của công dân Việt Nam."
       }
     ],
     "absence_reason": null,
-    "kind": "paraphrase",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "kind": "condition"
   },
   {
-    "id": "vi16",
+    "id": "nd13-test-missing-03",
     "split": "test",
-    "question": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân là đơn vị nào thuộc Bộ Công an?",
+    "question": "Số điện thoại đường dây nóng của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao để tiếp nhận yêu cầu về dữ liệu cá nhân là số nào?",
     "filter": {},
-    "answerable": true,
-    "expected_answer": "Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 23,
-        "evidence": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân là Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao - Bộ Công an"
-      }
-    ],
-    "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "answerable": false,
+    "absence_reason": "Bản Nghị định không nêu số điện thoại đường dây nóng của Cục; việc nêu chi tiết liên lạc trong biểu mẫu không cung cấp số hotline của cơ quan.",
+    "absence_audit_terms": [
+      "đường dây nóng",
+      "hotline",
+      "số điện thoại Cục",
+      "điện thoại liên hệ Cục"
+    ]
   },
   {
-    "id": "vi17",
+    "id": "nd13-test-missing-04",
     "split": "test",
-    "question": "Kinh phí bảo vệ dữ liệu cá nhân của doanh nghiệp do ai bố trí và thực hiện?",
+    "question": "Nghị định 13 ấn định ngân sách hằng năm chính xác bao nhiêu đồng cho hoạt động bảo vệ dữ liệu cá nhân của doanh nghiệp?",
     "filter": {},
-    "answerable": true,
-    "expected_answer": "Do tổ chức, doanh nghiệp tự bố trí và thực hiện.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 24,
-        "evidence": "Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ chức, doanh nghiệp tự bố trí và thực hiện theo quy định."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "paraphrase",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi18",
-    "split": "test",
-    "question": "Trong Chương III, bên kiểm soát có trách nhiệm ghi lại và lưu trữ loại nhật ký nào?",
-    "filter": {
-      "chapter": "III"
-    },
-    "answerable": true,
-    "expected_answer": "Nhật ký hệ thống quá trình xử lý dữ liệu cá nhân.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 26,
-        "evidence": "Ghi lại và lưu trữ nhật ký hệ thống quá trình xử lý dữ liệu cá nhân."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi19",
-    "split": "test",
-    "question": "Trong Chương IV, quy định miễn trừ nhân sự bảo vệ dữ liệu áp dụng bao lâu, và loại doanh nghiệp nào không được áp dụng?",
-    "filter": {
-      "chapter": "IV"
-    },
-    "answerable": true,
-    "expected_answer": "02 năm đầu kể từ thành lập đối với các nhóm được nêu; không áp dụng cho doanh nghiệp trực tiếp kinh doanh hoạt động xử lý dữ liệu cá nhân.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 27,
-        "evidence": "2. Các đoanh nghiệp siêu nhỏ, doanh nghiệp nhỏ, doanh nghiệp vừa, doanh nghiệp khởi nghiệp được quyền lựa chọn miễn trừ quy định về chỉ định cá nhân và bộ phận bảo vệ dữ liệu cá nhân trong thời gian 02 năm đầu kết từ khi thành lập doanh nghiệp.\n\n3. Các doanh nghiệp siêu nhỏ, doanh nghiệp nhỏ, doanh nghiệp vừa, doanh nghiệp khởi nghiệp trực tiệp kinh doanh hoạt động xử lý dữ liệu cá nhân không áp dụng quy định tại khoản 2 Điều này."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "exception",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
-  },
-  {
-    "id": "vi20",
-    "split": "test",
-    "question": "Bộ trưởng nào được giao đôn đốc, kiểm tra và hướng dẫn thực hiện nghị định?",
-    "filter": {},
-    "answerable": true,
-    "expected_answer": "Bộ trưởng Bộ Công an.",
-    "gold": [
-      {
-        "source_id": "nd13",
-        "page": 28,
-        "evidence": "Bộ trưởng Bộ Công an đôn đốc, kiểm tra, hướng dẫn việc thực hiện Nghị định này."
-      }
-    ],
-    "absence_reason": null,
-    "kind": "direct",
-    "note": "Question refers only to provided 2023 source snapshot; evidence retains OCR spelling."
+    "answerable": false,
+    "absence_reason": "Điều 31 quy định tổ chức, doanh nghiệp tự bố trí kinh phí nhưng không quy định một mức ngân sách hằng năm bằng đồng.",
+    "absence_audit_terms": [
+      "kinh phí bảo vệ dữ liệu cá nhân của tổ chức",
+      "ngân sách nhà nước hằng năm",
+      "đồng/năm",
+      "mức kinh phí doanh nghiệp"
+    ]
   }
 ]
