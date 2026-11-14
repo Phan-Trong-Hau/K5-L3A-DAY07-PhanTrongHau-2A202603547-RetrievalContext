@@ -1,0 +1,156 @@
+[
+  {
+    "query_id": "q01",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu p2: nhãn lọ là ORANGE MARMALADE; citation chứa đúng câu mô tả nhãn."
+  },
+  {
+    "query_id": "q02",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu p2: Alice sợ giết ai bên dưới nếu thả lọ; citation hỗ trợ đúng nguyên nhân."
+  },
+  {
+    "query_id": "q03",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu p5: kiểm tra dấu poison trước khi nếm; citation và thời điểm đúng."
+  },
+  {
+    "query_id": "q04",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án. Context cuối chỉ có p46 nói về treacle-well, không có bánh/chữ currants ở p6; không có citation đầu ra được tính."
+  },
+  {
+    "query_id": "q05",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P15 nêu box of comfits, phát prizes và exactly one a-piece; trả lời đủ vật phẩm và số lượng mỗi người."
+  },
+  {
+    "query_id": "q06",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [
+      false
+    ],
+    "reason": "Trả lời sai rằng Dodo không tặng Alice quà. Citation p15 chỉ chứng minh Alice phát comfits, không chứng minh phủ định; thimble xuất hiện ở p16 bị bỏ khỏi context."
+  },
+  {
+    "query_id": "q07",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P21: Alice suy đoán Rabbit rơi vào cucumber-frame or something of the sort; đáp án giữ mức độ suy đoán."
+  },
+  {
+    "query_id": "q08",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối nhầm. Context p35 chỉ có trao đổi Cheshire cats always grinned, thiếu câu Duchess nói It is a Cheshire cat and that is why; câu trả lời không cung cấp lý do được hỏi."
+  },
+  {
+    "query_id": "q09",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [
+      true
+    ],
+    "reason": "Citation p45 hỗ trợ three sisters lived at bottom of a well, nhưng câu hỏi yêu cầu loại giếng; đáp án không nêu treacle-well. Context thiếu đoạn p46 xác định loại giếng."
+  },
+  {
+    "query_id": "q10",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P45 ghi It is always six o’clock now; đáp án đúng và citation hỗ trợ."
+  },
+  {
+    "query_id": "q11",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối nhầm: context p47 về Alice rời bàn trà không chứa nguyên nhân always tea-time ở p45. Không suy rộng việc thiếu top-k thành thiếu toàn bộ tài liệu."
+  },
+  {
+    "query_id": "q12",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P51 ghi balls live hedgehogs và mallets live flamingoes; citation hỗ trợ cả hai vai trò."
+  },
+  {
+    "query_id": "q13",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context p62 có đủ bốn tên Ambition, Distraction, Uglification, Derision. Model từ chối vì coi đây không phải phân loại toán học thật, áp đặt tri thức ngoài truyện; câu hỏi hỏi trong chapter IX nên phải trả lời theo truyện."
+  },
+  {
+    "query_id": "q14",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Context p46 về sisters learning to draw không nói người dạy Drawling; teacher conger-eel once a week ở p62 không được chọn. Từ chối nhầm câu có đáp án."
+  },
+  {
+    "query_id": "q15",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P64 trong bài hát whiting nói porpoise treading on my tail; citation hỗ trợ đúng sinh vật."
+  },
+  {
+    "query_id": "d-missing-1",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Agent có gọi retrieval và từ chối rõ ràng, không đưa số liệu thay thế. Đối chiếu quét toàn bộ corpus và cảnh liên quan: không có ngày sinh chính xác của Alice."
+  },
+  {
+    "query_id": "d-missing-2",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Agent có gọi retrieval và từ chối rõ ràng, không đưa số liệu thay thế. Đối chiếu quét toàn bộ corpus và cảnh liên quan: không có lương hằng năm của White Rabbit."
+  }
+]

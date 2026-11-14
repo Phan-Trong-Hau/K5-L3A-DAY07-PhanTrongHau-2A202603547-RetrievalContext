@@ -1,0 +1,227 @@
+{
+  "selected": "lexical",
+  "frozen_at": "2026-11-14T04:41:40.438775+00:00",
+  "criterion": "Maximize dev grounded-answer mean (errors receive zero for selection), then correct abstention rate, then context evidence rate, then lower median latency, then config name.",
+  "config": {
+    "method": "bm25",
+    "top_k": 5,
+    "budget": 4800,
+    "max_searches": 2,
+    "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+  },
+  "config_file_sha256": "466193cbed7d9b15c6a079a82fa66308cedf66859103a23241ae52a6054adf1e",
+  "dev_sha256": "6a030187a7ac03247a524334300404fa395a5d9d7f57a609a8f243f66e655595",
+  "test_sha256": "3b0ebceda57a4e7f6d32f62020bd46c21501e04c4e669155c499849f13b051be",
+  "corpus_sha256": "3b99c3c77426eca636b3a2eace25461708551c0da025e68878b145dc57a4345b",
+  "code_sha256": {
+    "src/__init__.py": "09c576e8e35b3e837d43f7d6cc0efc1c7d9774889ad5ba789c35f2856cccaed9",
+    "src/agent.py": "28bb4e8825b5f76fa9de4e9cd0fedf254bcecb55fda23e5418279fbcd33dc5ef",
+    "src/common.py": "5ec1ed975feb3517033d44b5b5cab97de3ccc7cbd09582c26d851e42874a7b9f",
+    "src/evaluation.py": "ac47edc5e5c2016002b1fb28d5f9b509d4a0e1b4920539c99915103481f369d8",
+    "src/retrieval.py": "c248d9eb4d4c977b99315fb95fdc9559edbab66cf3baa84ab457b8654d673375",
+    "src/run.py": "e97268674208b181326a24dee01d9130b9982b1abd005a4ce8dd4b95d5b204b8"
+  },
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "review_sha256": {
+    "baseline": "f5b9a4db32b9de292a53074b65f025ea804990a9e7bbe1de7af2dc586fc716d2",
+    "hybrid": "377a939e410156d4b63b4e843759798f6941557f26d8ec14360b1944aad46709",
+    "lexical": "f435d6ef2578e7524dc97b980b0ebf02c908724457193daaa056945bac8a99f3"
+  },
+  "dev_comparison": {
+    "baseline": {
+      "cases": 17,
+      "errors": 0,
+      "hit1": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_evidence": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      },
+      "tool_use": {
+        "n": 17,
+        "N": 17,
+        "rate": 1.0
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "median_seconds": 8.871261391001099,
+      "total_seconds": 159.03675402099725,
+      "prompt_tokens": 23789,
+      "completion_tokens": 2124,
+      "service_cost_usd": 0,
+      "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+      "answer_grades": {
+        "0": 7,
+        "1": 0,
+        "2": 8
+      },
+      "context_grades": {
+        "0": 3,
+        "1": 3,
+        "2": 9
+      },
+      "citation_support": {
+        "n": 9,
+        "N": 10,
+        "rate": 0.9
+      },
+      "citation_coverage": {
+        "n": 10,
+        "N": 10,
+        "rate": 1.0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "false_abstention": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "grounded_mean": 1.0666666666666667,
+      "selection_mean_errors_zero": 1.0666666666666667
+    },
+    "hybrid": {
+      "cases": 17,
+      "errors": 1,
+      "hit1": {
+        "n": 12,
+        "N": 15,
+        "rate": 0.8
+      },
+      "hit3": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "context_evidence": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "tool_use": {
+        "n": 16,
+        "N": 16,
+        "rate": 1.0
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "median_seconds": 17.776121099001102,
+      "total_seconds": 317.7281813169993,
+      "prompt_tokens": 44951,
+      "completion_tokens": 2230,
+      "service_cost_usd": 0,
+      "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+      "answer_grades": {
+        "0": 4,
+        "1": 0,
+        "2": 10
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 0,
+        "2": 14
+      },
+      "citation_support": {
+        "n": 11,
+        "N": 13,
+        "rate": 0.8461538461538461
+      },
+      "citation_coverage": {
+        "n": 12,
+        "N": 12,
+        "rate": 1.0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "false_abstention": {
+        "n": 2,
+        "N": 14,
+        "rate": 0.14285714285714285
+      },
+      "grounded_mean": 1.4285714285714286,
+      "selection_mean_errors_zero": 1.3333333333333333
+    },
+    "lexical": {
+      "cases": 17,
+      "errors": 0,
+      "hit1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_evidence": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "tool_use": {
+        "n": 17,
+        "N": 17,
+        "rate": 1.0
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "median_seconds": 19.98695796500033,
+      "total_seconds": 295.6263470760023,
+      "prompt_tokens": 45233,
+      "completion_tokens": 2024,
+      "service_cost_usd": 0,
+      "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+      "answer_grades": {
+        "0": 4,
+        "1": 1,
+        "2": 10
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 1,
+        "2": 14
+      },
+      "citation_support": {
+        "n": 11,
+        "N": 13,
+        "rate": 0.8461538461538461
+      },
+      "citation_coverage": {
+        "n": 13,
+        "N": 13,
+        "rate": 1.0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "false_abstention": {
+        "n": 2,
+        "N": 15,
+        "rate": 0.13333333333333333
+      },
+      "grounded_mean": 1.4,
+      "selection_mean_errors_zero": 1.4
+    }
+  }
+}

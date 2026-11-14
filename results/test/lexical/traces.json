@@ -1,0 +1,1563 @@
+[
+  {
+    "question": "What did the White Rabbit take out of its waistcoat-pocket?",
+    "filter": {},
+    "status": "answered",
+    "answer": "The White Rabbit took a watch out of its waistcoat-pocket [ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2].",
+    "citations": [
+      "ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2"
+    ],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "kpGjg6Ldz3evvXDvwewuuYCJno65lz4J",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "What did the White Rabbit take out of its waistcoat-pocket in Alice's Adventures in Wonderland?"
+                }
+              }
+            }
+          ]
+        },
+        "prompt_tokens": 484,
+        "completion_tokens": 38,
+        "total_duration_ns": 1632984314
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "What did the White Rabbit take out of its waistcoat-pocket in Alice's Adventures in Wonderland?",
+        "filter": {},
+        "top_k": 5,
+        "method": "bm25",
+        "results": [
+          {
+            "id": "ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 1,
+            "text": "There was nothing so _very_ remarkable in that; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.\n\nIn another moment down went Alice after it, never once considering how in the world she was to get out again.",
+            "metadata": {
+              "chapter": "I",
+              "chapter_title": "Down the Rabbit-Hole",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 595,
+              "end": 1445,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 1
+            },
+            "score": 20.459835750306755,
+            "method": "bm25",
+            "rank": 1
+          },
+          {
+            "id": "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 67,
+            "text": "“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.",
+            "metadata": {
+              "chapter": "X",
+              "chapter_title": "The Lobster Quadrille",
+              "chapter_start": 6430,
+              "language": "en",
+              "start": 0,
+              "end": 977,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 67
+            },
+            "score": 11.986990531951346,
+            "method": "bm25",
+            "rank": 2
+          },
+          {
+            "id": "4a9351118e304f0d979ae1273e00f6e9ed266635759e8d56aeb30f99d097b02d",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 78,
+            "text": "“There’s more evidence to come yet, please your Majesty,” said the White Rabbit, jumping up in a great hurry; “this paper has just been picked up.”\n\n“What’s in it?” said the Queen.\n\n“I haven’t opened it yet,” said the White Rabbit, “but it seems to be a letter, written by the prisoner to—to somebody.”\n\n“It must have been that,” said the King, “unless it was written to nobody, which isn’t usual, you know.”\n\n“Who is it directed to?” said one of the jurymen.\n\n“It isn’t directed at all,” said the White Rabbit; “in fact, there’s nothing written on the _outside_.” He unfolded the paper as he spoke, and added “It isn’t a letter, after all: it’s a set of verses.”\n\n“Are they in the prisoner’s handwriting?” asked another of the jurymen.\n\n“No, they’re not,” said the White Rabbit, “and that’s the queerest thing about it.” (The jury all looked puzzled.)\n\n“He must have imitated somebody else’s hand,” said the King. (The jury all brightened up again.)",
+            "metadata": {
+              "chapter": "XII",
+              "chapter_title": "Alice’s Evidence",
+              "chapter_start": 3173,
+              "language": "en",
+              "start": 0,
+              "end": 950,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 78
+            },
+            "score": 9.426377247929343,
+            "method": "bm25",
+            "rank": 3
+          },
+          {
+            "id": "b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 23,
+            "text": "Last came a little feeble, squeaking voice, (“That’s Bill,” thought Alice,) “Well, I hardly know—No more, thank ye; I’m better now—but I’m a deal too flustered to tell you—all I know is, something comes at me like a Jack-in-the-box, and up I goes like a sky-rocket!”\n\n“So you did, old fellow!” said the others.\n\n“We must burn the house down!” said the Rabbit’s voice; and Alice called out as loud as she could, “If you do, I’ll set Dinah at you!”\n\nThere was a dead silence instantly, and Alice thought to herself, “I wonder what they _will_ do next! If they had any sense, they’d take the roof off.” After a minute or two, they began moving about again, and Alice heard the Rabbit say, “A barrowful will do, to begin with.”",
+            "metadata": {
+              "chapter": "IV",
+              "chapter_title": "The Rabbit Sends in a Little Bill",
+              "chapter_start": 7915,
+              "language": "en",
+              "start": 851,
+              "end": 1574,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 23
+            },
+            "score": 9.39399688644526,
+            "method": "bm25",
+            "rank": 4
+          },
+          {
+            "id": "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 75,
+            "text": "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 7803,
+              "language": "en",
+              "start": 1860,
+              "end": 2540,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 75
+            },
+            "score": 9.030747851616674,
+            "method": "bm25",
+            "rank": 5
+          }
+        ],
+        "context": "[ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2 | https://www.gutenberg.org/ebooks/11 | page 1]\nThere was nothing so _very_ remarkable in that; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.\n\nIn another moment down went Alice after it, never once considering how in the world she was to get out again.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.\n\n[4a9351118e304f0d979ae1273e00f6e9ed266635759e8d56aeb30f99d097b02d | https://www.gutenberg.org/ebooks/11 | page 78]\n“There’s more evidence to come yet, please your Majesty,” said the White Rabbit, jumping up in a great hurry; “this paper has just been picked up.”\n\n“What’s in it?” said the Queen.\n\n“I haven’t opened it yet,” said the White Rabbit, “but it seems to be a letter, written by the prisoner to—to somebody.”\n\n“It must have been that,” said the King, “unless it was written to nobody, which isn’t usual, you know.”\n\n“Who is it directed to?” said one of the jurymen.\n\n“It isn’t directed at all,” said the White Rabbit; “in fact, there’s nothing written on the _outside_.” He unfolded the paper as he spoke, and added “It isn’t a letter, after all: it’s a set of verses.”\n\n“Are they in the prisoner’s handwriting?” asked another of the jurymen.\n\n“No, they’re not,” said the White Rabbit, “and that’s the queerest thing about it.” (The jury all looked puzzled.)\n\n“He must have imitated somebody else’s hand,” said the King. (The jury all brightened up again.)\n\n[b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9 | https://www.gutenberg.org/ebooks/11 | page 23]\nLast came a little feeble, squeaking voice, (“That’s Bill,” thought Alice,) “Well, I hardly know—No more, thank ye; I’m better now—but I’m a deal too flustered to tell you—all I know is, something comes at me like a Jack-in-the-box, and up I goes like a sky-rocket!”\n\n“So you did, old fellow!” said the others.\n\n“We must burn the house down!” said the Rabbit’s voice; and Alice called out as loud as she could, “If you do, I’ll set Dinah at you!”\n\nThere was a dead silence instantly, and Alice thought to herself, “I wonder what they _will_ do next! If they had any sense, they’d take the roof off.” After a minute or two, they began moving about again, and Alice heard the Rabbit say, “A barrowful will do, to begin with.”\n\n[c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1 | https://www.gutenberg.org/ebooks/11 | page 75]\nFor some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+        "context_ids": [
+          "ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2",
+          "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+          "4a9351118e304f0d979ae1273e00f6e9ed266635759e8d56aeb30f99d097b02d",
+          "b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9",
+          "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1"
+        ],
+        "elapsed_ms": 2.142509001714643
+      },
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "The White Rabbit took a watch out of its waistcoat-pocket [ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2]."
+        },
+        "prompt_tokens": 2327,
+        "completion_tokens": 71,
+        "total_duration_ns": 20878186023
+      },
+      {
+        "event": "answer",
+        "format": "text",
+        "status": "answered"
+      }
+    ],
+    "context": "[ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2 | https://www.gutenberg.org/ebooks/11 | page 1]\nThere was nothing so _very_ remarkable in that; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.\n\nIn another moment down went Alice after it, never once considering how in the world she was to get out again.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.\n\n[4a9351118e304f0d979ae1273e00f6e9ed266635759e8d56aeb30f99d097b02d | https://www.gutenberg.org/ebooks/11 | page 78]\n“There’s more evidence to come yet, please your Majesty,” said the White Rabbit, jumping up in a great hurry; “this paper has just been picked up.”\n\n“What’s in it?” said the Queen.\n\n“I haven’t opened it yet,” said the White Rabbit, “but it seems to be a letter, written by the prisoner to—to somebody.”\n\n“It must have been that,” said the King, “unless it was written to nobody, which isn’t usual, you know.”\n\n“Who is it directed to?” said one of the jurymen.\n\n“It isn’t directed at all,” said the White Rabbit; “in fact, there’s nothing written on the _outside_.” He unfolded the paper as he spoke, and added “It isn’t a letter, after all: it’s a set of verses.”\n\n“Are they in the prisoner’s handwriting?” asked another of the jurymen.\n\n“No, they’re not,” said the White Rabbit, “and that’s the queerest thing about it.” (The jury all looked puzzled.)\n\n“He must have imitated somebody else’s hand,” said the King. (The jury all brightened up again.)\n\n[b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9 | https://www.gutenberg.org/ebooks/11 | page 23]\nLast came a little feeble, squeaking voice, (“That’s Bill,” thought Alice,) “Well, I hardly know—No more, thank ye; I’m better now—but I’m a deal too flustered to tell you—all I know is, something comes at me like a Jack-in-the-box, and up I goes like a sky-rocket!”\n\n“So you did, old fellow!” said the others.\n\n“We must burn the house down!” said the Rabbit’s voice; and Alice called out as loud as she could, “If you do, I’ll set Dinah at you!”\n\nThere was a dead silence instantly, and Alice thought to herself, “I wonder what they _will_ do next! If they had any sense, they’d take the roof off.” After a minute or two, they began moving about again, and Alice heard the Rabbit say, “A barrowful will do, to begin with.”\n\n[c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1 | https://www.gutenberg.org/ebooks/11 | page 75]\nFor some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+    "context_ids": [
+      "ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2",
+      "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+      "4a9351118e304f0d979ae1273e00f6e9ed266635759e8d56aeb30f99d097b02d",
+      "b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9",
+      "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1"
+    ],
+    "usage": {
+      "prompt_tokens": 2811,
+      "completion_tokens": 109,
+      "model_calls": 2
+    },
+    "service_cost_usd": 0,
+    "elapsed_seconds": 22.5152429209993,
+    "query_id": "t01",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": true,
+    "original_query_results": [
+      {
+        "id": "ab539a3db10e7f2a7f6d1bf8320a1ed86dbde32609ae9d6e7b1b1488512fd7f2",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 1,
+        "text": "There was nothing so _very_ remarkable in that; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.\n\nIn another moment down went Alice after it, never once considering how in the world she was to get out again.",
+        "metadata": {
+          "chapter": "I",
+          "chapter_title": "Down the Rabbit-Hole",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 595,
+          "end": 1445,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 1
+        },
+        "score": 19.841244111187248,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 75,
+        "text": "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 7803,
+          "language": "en",
+          "start": 1860,
+          "end": 2540,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 75
+        },
+        "score": 8.485746206288242,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "b8732bc24b9d4e24eec3173358c00d32302f08b89716d3454e8cd14ea10b73c9",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 23,
+        "text": "Last came a little feeble, squeaking voice, (“That’s Bill,” thought Alice,) “Well, I hardly know—No more, thank ye; I’m better now—but I’m a deal too flustered to tell you—all I know is, something comes at me like a Jack-in-the-box, and up I goes like a sky-rocket!”\n\n“So you did, old fellow!” said the others.\n\n“We must burn the house down!” said the Rabbit’s voice; and Alice called out as loud as she could, “If you do, I’ll set Dinah at you!”\n\nThere was a dead silence instantly, and Alice thought to herself, “I wonder what they _will_ do next! If they had any sense, they’d take the roof off.” After a minute or two, they began moving about again, and Alice heard the Rabbit say, “A barrowful will do, to begin with.”",
+        "metadata": {
+          "chapter": "IV",
+          "chapter_title": "The Rabbit Sends in a Little Bill",
+          "chapter_start": 7915,
+          "language": "en",
+          "start": 851,
+          "end": 1574,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 23
+        },
+        "score": 8.086586731481797,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "question": "What name did the White Rabbit call Alice when mistaking her for his housemaid?",
+    "filter": {},
+    "status": "answered",
+    "answer": "The White Rabbit called Alice \"Mary Ann\" when mistaking her for his housemaid [39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd].",
+    "citations": [
+      "39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd"
+    ],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "gy4eVJoWA1mxx1MB4HPwWuYUfALB2aau",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "What name did the White Rabbit call Alice when mistaking her for his housemaid in Alice's Adventures in Wonderland?"
+                }
+              }
+            }
+          ]
+        },
+        "prompt_tokens": 488,
+        "completion_tokens": 42,
+        "total_duration_ns": 2073357501
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "What name did the White Rabbit call Alice when mistaking her for his housemaid in Alice's Adventures in Wonderland?",
+        "filter": {},
+        "top_k": 5,
+        "method": "bm25",
+        "results": [
+          {
+            "id": "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 75,
+            "text": "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 7803,
+              "language": "en",
+              "start": 1860,
+              "end": 2540,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 75
+            },
+            "score": 18.345554573596065,
+            "method": "bm25",
+            "rank": 1
+          },
+          {
+            "id": "39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 18,
+            "text": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, “Why, Mary Ann, what _are_ you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!” And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.\n\n“He took me for his housemaid,” she said to herself as she ran. “How surprised he’ll be when he finds out who I am! But I’d better take him his fan and gloves—that is, if I can find them.” As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name “W. RABBIT,” engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.",
+            "metadata": {
+              "chapter": "IV",
+              "chapter_title": "The Rabbit Sends in a Little Bill",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 660,
+              "end": 1538,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 18
+            },
+            "score": 14.827265284764877,
+            "method": "bm25",
+            "rank": 2
+          },
+          {
+            "id": "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 72,
+            "text": "“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 3184,
+              "language": "en",
+              "start": 0,
+              "end": 944,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 72
+            },
+            "score": 12.100103660757991,
+            "method": "bm25",
+            "rank": 3
+          },
+          {
+            "id": "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 67,
+            "text": "“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.",
+            "metadata": {
+              "chapter": "X",
+              "chapter_title": "The Lobster Quadrille",
+              "chapter_start": 6430,
+              "language": "en",
+              "start": 0,
+              "end": 977,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 67
+            },
+            "score": 11.85656854769351,
+            "method": "bm25",
+            "rank": 4
+          },
+          {
+            "id": "10a3e4a5117724d0fe80312b0c4a4e3bdf0a5a0bfdcbaa80a56ea0c832fd045f",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 51,
+            "text": "“Hush! Hush!” said the Rabbit in a low, hurried tone. He looked anxiously over his shoulder as he spoke, and then raised himself upon tiptoe, put his mouth close to her ear, and whispered “She’s under sentence of execution.”\n\n“What for?” said Alice.\n\n“Did you say ‘What a pity!’?” the Rabbit asked.\n\n“No, I didn’t,” said Alice: “I don’t think it’s at all a pity. I said ‘What for?’”\n\n“She boxed the Queen’s ears—” the Rabbit began. Alice gave a little scream of laughter. “Oh, hush!” the Rabbit whispered in a frightened tone. “The Queen will hear you! You see, she came rather late, and the Queen said—”",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 4997,
+              "language": "en",
+              "start": 817,
+              "end": 1421,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 51
+            },
+            "score": 11.629279470381604,
+            "method": "bm25",
+            "rank": 5
+          }
+        ],
+        "context": "[c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1 | https://www.gutenberg.org/ebooks/11 | page 75]\nFor some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”\n\n[39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd | https://www.gutenberg.org/ebooks/11 | page 18]\nVery soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, “Why, Mary Ann, what _are_ you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!” And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.\n\n“He took me for his housemaid,” she said to herself as she ran. “How surprised he’ll be when he finds out who I am! But I’d better take him his fan and gloves—that is, if I can find them.” As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name “W. RABBIT,” engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.\n\n[7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db | https://www.gutenberg.org/ebooks/11 | page 72]\n“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.\n\n[10a3e4a5117724d0fe80312b0c4a4e3bdf0a5a0bfdcbaa80a56ea0c832fd045f | https://www.gutenberg.org/ebooks/11 | page 51]\n“Hush! Hush!” said the Rabbit in a low, hurried tone. He looked anxiously over his shoulder as he spoke, and then raised himself upon tiptoe, put his mouth close to her ear, and whispered “She’s under sentence of execution.”\n\n“What for?” said Alice.\n\n“Did you say ‘What a pity!’?” the Rabbit asked.\n\n“No, I didn’t,” said Alice: “I don’t think it’s at all a pity. I said ‘What for?’”\n\n“She boxed the Queen’s ears—” the Rabbit began. Alice gave a little scream of laughter. “Oh, hush!” the Rabbit whispered in a frightened tone. “The Queen will hear you! You see, she came rather late, and the Queen said—”",
+        "context_ids": [
+          "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+          "39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd",
+          "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db",
+          "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+          "10a3e4a5117724d0fe80312b0c4a4e3bdf0a5a0bfdcbaa80a56ea0c832fd045f"
+        ],
+        "elapsed_ms": 2.16792399987753
+      },
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "The White Rabbit called Alice \"Mary Ann\" when mistaking her for his housemaid [39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd]."
+        },
+        "prompt_tokens": 2311,
+        "completion_tokens": 73,
+        "total_duration_ns": 20884656101
+      },
+      {
+        "event": "answer",
+        "format": "text",
+        "status": "answered"
+      }
+    ],
+    "context": "[c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1 | https://www.gutenberg.org/ebooks/11 | page 75]\nFor some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”\n\n[39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd | https://www.gutenberg.org/ebooks/11 | page 18]\nVery soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, “Why, Mary Ann, what _are_ you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!” And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.\n\n“He took me for his housemaid,” she said to herself as she ran. “How surprised he’ll be when he finds out who I am! But I’d better take him his fan and gloves—that is, if I can find them.” As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name “W. RABBIT,” engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.\n\n[7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db | https://www.gutenberg.org/ebooks/11 | page 72]\n“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.\n\n[10a3e4a5117724d0fe80312b0c4a4e3bdf0a5a0bfdcbaa80a56ea0c832fd045f | https://www.gutenberg.org/ebooks/11 | page 51]\n“Hush! Hush!” said the Rabbit in a low, hurried tone. He looked anxiously over his shoulder as he spoke, and then raised himself upon tiptoe, put his mouth close to her ear, and whispered “She’s under sentence of execution.”\n\n“What for?” said Alice.\n\n“Did you say ‘What a pity!’?” the Rabbit asked.\n\n“No, I didn’t,” said Alice: “I don’t think it’s at all a pity. I said ‘What for?’”\n\n“She boxed the Queen’s ears—” the Rabbit began. Alice gave a little scream of laughter. “Oh, hush!” the Rabbit whispered in a frightened tone. “The Queen will hear you! You see, she came rather late, and the Queen said—”",
+    "context_ids": [
+      "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+      "39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd",
+      "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db",
+      "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+      "10a3e4a5117724d0fe80312b0c4a4e3bdf0a5a0bfdcbaa80a56ea0c832fd045f"
+    ],
+    "usage": {
+      "prompt_tokens": 2799,
+      "completion_tokens": 115,
+      "model_calls": 2
+    },
+    "service_cost_usd": 0,
+    "elapsed_seconds": 22.96211572900029,
+    "query_id": "t02",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": true,
+    "original_query_results": [
+      {
+        "id": "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 75,
+        "text": "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 7803,
+          "language": "en",
+          "start": 1860,
+          "end": 2540,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 75
+        },
+        "score": 18.012606300886294,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "39ac42315a7d9ca0e9cece3c5db6c91498dd54948bf50388cc1bb48e94c0eecd",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 18,
+        "text": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, “Why, Mary Ann, what _are_ you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!” And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.\n\n“He took me for his housemaid,” she said to herself as she ran. “How surprised he’ll be when he finds out who I am! But I’d better take him his fan and gloves—that is, if I can find them.” As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name “W. RABBIT,” engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.",
+        "metadata": {
+          "chapter": "IV",
+          "chapter_title": "The Rabbit Sends in a Little Bill",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 660,
+          "end": 1538,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 18
+        },
+        "score": 14.442119300279916,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 72,
+        "text": "“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 3184,
+          "language": "en",
+          "start": 0,
+          "end": 944,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 72
+        },
+        "score": 11.154862988081502,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "question": "What did the Caterpillar take out of its mouth before addressing Alice?",
+    "filter": {},
+    "status": "answered",
+    "answer": "The Caterpillar took the hookah out of its mouth before addressing Alice. [930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb]",
+    "citations": [
+      "930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb"
+    ],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "JJTIiXyNqA2UGm7LAYnRrBjVZgwRhOaG",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "What did the Caterpillar take out of its mouth before addressing Alice in Alice's Adventures in Wonderland?"
+                }
+              }
+            }
+          ]
+        },
+        "prompt_tokens": 485,
+        "completion_tokens": 39,
+        "total_duration_ns": 1974725040
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "What did the Caterpillar take out of its mouth before addressing Alice in Alice's Adventures in Wonderland?",
+        "filter": {},
+        "top_k": 5,
+        "method": "bm25",
+        "results": [
+          {
+            "id": "50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 29,
+            "text": "“I _don’t_ know,” said the Caterpillar.\n\nAlice said nothing: she had never been so much contradicted in her life before, and she felt that she was losing her temper.\n\n“Are you content now?” said the Caterpillar.\n\n“Well, I should like to be a _little_ larger, sir, if you wouldn’t mind,” said Alice: “three inches is such a wretched height to be.”\n\n“It is a very good height indeed!” said the Caterpillar angrily, rearing itself upright as it spoke (it was exactly three inches high).\n\n“But I’m not used to it!” pleaded poor Alice in a piteous tone. And she thought of herself, “I wish the creatures wouldn’t be so easily offended!”\n\n“You’ll get used to it in time,” said the Caterpillar; and it put the hookah into its mouth and began smoking again.",
+            "metadata": {
+              "chapter": "V",
+              "chapter_title": "Advice from a Caterpillar",
+              "chapter_start": 4679,
+              "language": "en",
+              "start": 0,
+              "end": 749,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 29
+            },
+            "score": 12.635964547944965,
+            "method": "bm25",
+            "rank": 1
+          },
+          {
+            "id": "930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 26,
+            "text": "The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.\n\n“Who are _you?_” said the Caterpillar.\n\nThis was not an encouraging opening for a conversation. Alice replied, rather shyly, “I—I hardly know, sir, just at present—at least I know who I _was_ when I got up this morning, but I think I must have been changed several times since then.”\n\n“What do you mean by that?” said the Caterpillar sternly. “Explain yourself!”\n\n“I can’t explain _myself_, I’m afraid, sir,” said Alice, “because I’m not myself, you see.”\n\n“I don’t see,” said the Caterpillar.\n\n“I’m afraid I can’t put it more clearly,” Alice replied very politely, “for I can’t understand it myself to begin with; and being so many different sizes in a day is very confusing.”\n\n“It isn’t,” said the Caterpillar.",
+            "metadata": {
+              "chapter": "V",
+              "chapter_title": "Advice from a Caterpillar",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 0,
+              "end": 890,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 26
+            },
+            "score": 12.4337527651482,
+            "method": "bm25",
+            "rank": 2
+          },
+          {
+            "id": "e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 27,
+            "text": "“Why?” said the Caterpillar.\n\nHere was another puzzling question; and as Alice could not think of any good reason, and as the Caterpillar seemed to be in a _very_ unpleasant state of mind, she turned away.\n\n“Come back!” the Caterpillar called after her. “I’ve something important to say!”\n\nThis sounded promising, certainly: Alice turned and came back again.\n\n“Keep your temper,” said the Caterpillar.\n\n“Is that all?” said Alice, swallowing down her anger as well as she could.\n\n“No,” said the Caterpillar.\n\nAlice thought she might as well wait, as she had nothing else to do, and perhaps after all it might tell her something worth hearing. For some minutes it puffed away without speaking, but at last it unfolded its arms, took the hookah out of its mouth again, and said, “So you think you’re changed, do you?”\n\n“I’m afraid I am, sir,” said Alice; “I can’t remember things as I used—and I don’t keep the same size for ten minutes together!”\n\n“Can’t remember _what_ things?” said the Caterpillar.",
+            "metadata": {
+              "chapter": "V",
+              "chapter_title": "Advice from a Caterpillar",
+              "chapter_start": 1584,
+              "language": "en",
+              "start": 0,
+              "end": 999,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 27
+            },
+            "score": 12.01671081487028,
+            "method": "bm25",
+            "rank": 3
+          },
+          {
+            "id": "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 67,
+            "text": "“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.",
+            "metadata": {
+              "chapter": "X",
+              "chapter_title": "The Lobster Quadrille",
+              "chapter_start": 6430,
+              "language": "en",
+              "start": 0,
+              "end": 977,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 67
+            },
+            "score": 11.074843850946214,
+            "method": "bm25",
+            "rank": 4
+          },
+          {
+            "id": "3addfe5bbbf7a91b9e9337626364e89e54ef09778811c05dffff012f409d47f1",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 29,
+            "text": "This time Alice waited patiently until it chose to speak again. In a minute or two the Caterpillar took the hookah out of its mouth and yawned once or twice, and shook itself. Then it got down off the mushroom, and crawled away in the grass, merely remarking as it went, “One side will make you grow taller, and the other side will make you grow shorter.”\n\n“One side of _what?_ The other side of _what?_” thought Alice to herself.\n\n“Of the mushroom,” said the Caterpillar, just as if she had asked it aloud; and in another moment it was out of sight.\n\nAlice remained looking thoughtfully at the mushroom for a minute, trying to make out which were the two sides of it; and as it was perfectly round, she found this a very difficult question. However, at last she stretched her arms round it as far as they would go, and broke off a bit of the edge with each hand.",
+            "metadata": {
+              "chapter": "V",
+              "chapter_title": "Advice from a Caterpillar",
+              "chapter_start": 4679,
+              "language": "en",
+              "start": 751,
+              "end": 1614,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 29
+            },
+            "score": 10.611800938778316,
+            "method": "bm25",
+            "rank": 5
+          }
+        ],
+        "context": "[50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5 | https://www.gutenberg.org/ebooks/11 | page 29]\n“I _don’t_ know,” said the Caterpillar.\n\nAlice said nothing: she had never been so much contradicted in her life before, and she felt that she was losing her temper.\n\n“Are you content now?” said the Caterpillar.\n\n“Well, I should like to be a _little_ larger, sir, if you wouldn’t mind,” said Alice: “three inches is such a wretched height to be.”\n\n“It is a very good height indeed!” said the Caterpillar angrily, rearing itself upright as it spoke (it was exactly three inches high).\n\n“But I’m not used to it!” pleaded poor Alice in a piteous tone. And she thought of herself, “I wish the creatures wouldn’t be so easily offended!”\n\n“You’ll get used to it in time,” said the Caterpillar; and it put the hookah into its mouth and began smoking again.\n\n[930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb | https://www.gutenberg.org/ebooks/11 | page 26]\nThe Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.\n\n“Who are _you?_” said the Caterpillar.\n\nThis was not an encouraging opening for a conversation. Alice replied, rather shyly, “I—I hardly know, sir, just at present—at least I know who I _was_ when I got up this morning, but I think I must have been changed several times since then.”\n\n“What do you mean by that?” said the Caterpillar sternly. “Explain yourself!”\n\n“I can’t explain _myself_, I’m afraid, sir,” said Alice, “because I’m not myself, you see.”\n\n“I don’t see,” said the Caterpillar.\n\n“I’m afraid I can’t put it more clearly,” Alice replied very politely, “for I can’t understand it myself to begin with; and being so many different sizes in a day is very confusing.”\n\n“It isn’t,” said the Caterpillar.\n\n[e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0 | https://www.gutenberg.org/ebooks/11 | page 27]\n“Why?” said the Caterpillar.\n\nHere was another puzzling question; and as Alice could not think of any good reason, and as the Caterpillar seemed to be in a _very_ unpleasant state of mind, she turned away.\n\n“Come back!” the Caterpillar called after her. “I’ve something important to say!”\n\nThis sounded promising, certainly: Alice turned and came back again.\n\n“Keep your temper,” said the Caterpillar.\n\n“Is that all?” said Alice, swallowing down her anger as well as she could.\n\n“No,” said the Caterpillar.\n\nAlice thought she might as well wait, as she had nothing else to do, and perhaps after all it might tell her something worth hearing. For some minutes it puffed away without speaking, but at last it unfolded its arms, took the hookah out of its mouth again, and said, “So you think you’re changed, do you?”\n\n“I’m afraid I am, sir,” said Alice; “I can’t remember things as I used—and I don’t keep the same size for ten minutes together!”\n\n“Can’t remember _what_ things?” said the Caterpillar.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.",
+        "context_ids": [
+          "50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5",
+          "930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb",
+          "e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0",
+          "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c"
+        ],
+        "elapsed_ms": 1.461861000279896
+      },
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "The Caterpillar took the hookah out of its mouth before addressing Alice. [930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb]"
+        },
+        "prompt_tokens": 2049,
+        "completion_tokens": 76,
+        "total_duration_ns": 18678997539
+      },
+      {
+        "event": "answer",
+        "format": "text",
+        "status": "answered"
+      }
+    ],
+    "context": "[50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5 | https://www.gutenberg.org/ebooks/11 | page 29]\n“I _don’t_ know,” said the Caterpillar.\n\nAlice said nothing: she had never been so much contradicted in her life before, and she felt that she was losing her temper.\n\n“Are you content now?” said the Caterpillar.\n\n“Well, I should like to be a _little_ larger, sir, if you wouldn’t mind,” said Alice: “three inches is such a wretched height to be.”\n\n“It is a very good height indeed!” said the Caterpillar angrily, rearing itself upright as it spoke (it was exactly three inches high).\n\n“But I’m not used to it!” pleaded poor Alice in a piteous tone. And she thought of herself, “I wish the creatures wouldn’t be so easily offended!”\n\n“You’ll get used to it in time,” said the Caterpillar; and it put the hookah into its mouth and began smoking again.\n\n[930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb | https://www.gutenberg.org/ebooks/11 | page 26]\nThe Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.\n\n“Who are _you?_” said the Caterpillar.\n\nThis was not an encouraging opening for a conversation. Alice replied, rather shyly, “I—I hardly know, sir, just at present—at least I know who I _was_ when I got up this morning, but I think I must have been changed several times since then.”\n\n“What do you mean by that?” said the Caterpillar sternly. “Explain yourself!”\n\n“I can’t explain _myself_, I’m afraid, sir,” said Alice, “because I’m not myself, you see.”\n\n“I don’t see,” said the Caterpillar.\n\n“I’m afraid I can’t put it more clearly,” Alice replied very politely, “for I can’t understand it myself to begin with; and being so many different sizes in a day is very confusing.”\n\n“It isn’t,” said the Caterpillar.\n\n[e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0 | https://www.gutenberg.org/ebooks/11 | page 27]\n“Why?” said the Caterpillar.\n\nHere was another puzzling question; and as Alice could not think of any good reason, and as the Caterpillar seemed to be in a _very_ unpleasant state of mind, she turned away.\n\n“Come back!” the Caterpillar called after her. “I’ve something important to say!”\n\nThis sounded promising, certainly: Alice turned and came back again.\n\n“Keep your temper,” said the Caterpillar.\n\n“Is that all?” said Alice, swallowing down her anger as well as she could.\n\n“No,” said the Caterpillar.\n\nAlice thought she might as well wait, as she had nothing else to do, and perhaps after all it might tell her something worth hearing. For some minutes it puffed away without speaking, but at last it unfolded its arms, took the hookah out of its mouth again, and said, “So you think you’re changed, do you?”\n\n“I’m afraid I am, sir,” said Alice; “I can’t remember things as I used—and I don’t keep the same size for ten minutes together!”\n\n“Can’t remember _what_ things?” said the Caterpillar.\n\n[7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c | https://www.gutenberg.org/ebooks/11 | page 67]\n“Explain all that,” said the Mock Turtle.\n\n“No, no! The adventures first,” said the Gryphon in an impatient tone: “explanations take such a dreadful time.”\n\nSo Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so _very_ wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating “_You are old, Father William_,” to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said “That’s very curious.”\n\n“It’s all about as curious as it can be,” said the Gryphon.\n\n“It all came different!” the Mock Turtle repeated thoughtfully. “I should like to hear her try and repeat something now. Tell her to begin.” He looked at the Gryphon as if he thought it had some kind of authority over Alice.",
+    "context_ids": [
+      "50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5",
+      "930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb",
+      "e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0",
+      "7730caf4ec2bca83d60f2d16c291faf0055f9f44de75c4ab7e68e5fa24a20e8c"
+    ],
+    "usage": {
+      "prompt_tokens": 2534,
+      "completion_tokens": 115,
+      "model_calls": 2
+    },
+    "service_cost_usd": 0,
+    "elapsed_seconds": 20.65740752199963,
+    "query_id": "t03",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": true,
+    "original_query_results": [
+      {
+        "id": "50f67d5ee442f6087e3f88de1e784c62d72ed9b07eeea8e9c66260a1909ef5f5",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 29,
+        "text": "“I _don’t_ know,” said the Caterpillar.\n\nAlice said nothing: she had never been so much contradicted in her life before, and she felt that she was losing her temper.\n\n“Are you content now?” said the Caterpillar.\n\n“Well, I should like to be a _little_ larger, sir, if you wouldn’t mind,” said Alice: “three inches is such a wretched height to be.”\n\n“It is a very good height indeed!” said the Caterpillar angrily, rearing itself upright as it spoke (it was exactly three inches high).\n\n“But I’m not used to it!” pleaded poor Alice in a piteous tone. And she thought of herself, “I wish the creatures wouldn’t be so easily offended!”\n\n“You’ll get used to it in time,” said the Caterpillar; and it put the hookah into its mouth and began smoking again.",
+        "metadata": {
+          "chapter": "V",
+          "chapter_title": "Advice from a Caterpillar",
+          "chapter_start": 4679,
+          "language": "en",
+          "start": 0,
+          "end": 749,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 29
+        },
+        "score": 12.262484292970957,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "930898f8ac401c4481fa748950622bb49da00f133ea062d798693275d215f8fb",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 26,
+        "text": "The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.\n\n“Who are _you?_” said the Caterpillar.\n\nThis was not an encouraging opening for a conversation. Alice replied, rather shyly, “I—I hardly know, sir, just at present—at least I know who I _was_ when I got up this morning, but I think I must have been changed several times since then.”\n\n“What do you mean by that?” said the Caterpillar sternly. “Explain yourself!”\n\n“I can’t explain _myself_, I’m afraid, sir,” said Alice, “because I’m not myself, you see.”\n\n“I don’t see,” said the Caterpillar.\n\n“I’m afraid I can’t put it more clearly,” Alice replied very politely, “for I can’t understand it myself to begin with; and being so many different sizes in a day is very confusing.”\n\n“It isn’t,” said the Caterpillar.",
+        "metadata": {
+          "chapter": "V",
+          "chapter_title": "Advice from a Caterpillar",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 0,
+          "end": 890,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 26
+        },
+        "score": 12.076727911563676,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "e7ab3b976e2c7d52f7fe821376a3b57b06d28a8b637caa654b0a0bb72a7d1db0",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 27,
+        "text": "“Why?” said the Caterpillar.\n\nHere was another puzzling question; and as Alice could not think of any good reason, and as the Caterpillar seemed to be in a _very_ unpleasant state of mind, she turned away.\n\n“Come back!” the Caterpillar called after her. “I’ve something important to say!”\n\nThis sounded promising, certainly: Alice turned and came back again.\n\n“Keep your temper,” said the Caterpillar.\n\n“Is that all?” said Alice, swallowing down her anger as well as she could.\n\n“No,” said the Caterpillar.\n\nAlice thought she might as well wait, as she had nothing else to do, and perhaps after all it might tell her something worth hearing. For some minutes it puffed away without speaking, but at last it unfolded its arms, took the hookah out of its mouth again, and said, “So you think you’re changed, do you?”\n\n“I’m afraid I am, sir,” said Alice; “I can’t remember things as I used—and I don’t keep the same size for ten minutes together!”\n\n“Can’t remember _what_ things?” said the Caterpillar.",
+        "metadata": {
+          "chapter": "V",
+          "chapter_title": "Advice from a Caterpillar",
+          "chapter_start": 1584,
+          "language": "en",
+          "start": 0,
+          "end": 999,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 27
+        },
+        "score": 11.816403110309581,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "question": "In chapter VIII, why were the gardeners painting the white roses red?",
+    "filter": {
+      "chapter": "VIII"
+    },
+    "status": "answered",
+    "answer": "The gardeners were painting the white roses red because the rose-tree was supposed to be red, and they had mistakenly planted a white one. If the Queen discovered the mistake, they would all be beheaded. Therefore, they were painting the roses red to hide the error before the Queen arrived. [b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b][133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7]",
+    "citations": [
+      "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+      "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7"
+    ],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "vYnowNxUINwFZMMH60xpWJLmzCeLuwBN",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "chapter VIII gardeners painting white roses red"
+                }
+              }
+            }
+          ]
+        },
+        "prompt_tokens": 486,
+        "completion_tokens": 27,
+        "total_duration_ns": 1403410119
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "chapter VIII gardeners painting white roses red",
+        "filter": {
+          "chapter": "VIII"
+        },
+        "top_k": 5,
+        "method": "bm25",
+        "results": [
+          {
+            "id": "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 48,
+            "text": "A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”\n\n“I couldn’t help it,” said Five, in a sulky tone; “Seven jogged my elbow.”\n\nOn which Seven looked up and said, “That’s right, Five! Always lay the blame on others!”\n\n“_You’d_ better not talk!” said Five. “I heard the Queen say only yesterday you deserved to be beheaded!”\n\n“What for?” said the one who had spoken first.\n\n“That’s none of _your_ business, Two!” said Seven.\n\n“Yes, it _is_ his business!” said Five, “and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.”",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 0,
+              "end": 851,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 48
+            },
+            "score": 17.157596674443027,
+            "method": "bm25",
+            "rank": 1
+          },
+          {
+            "id": "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 48,
+            "text": "Seven flung down his brush, and had just begun “Well, of all the unjust things—” when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low.\n\n“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”\n\nFive and Seven said nothing, but looked at Two. Two began in a low voice, “Why the fact is, you see, Miss, this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to—” At this moment Five, who had been anxiously looking across the garden, called out “The Queen! The Queen!” and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen.",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 853,
+              "end": 1786,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 48
+            },
+            "score": 12.510574294404728,
+            "method": "bm25",
+            "rank": 2
+          },
+          {
+            "id": "0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 50,
+            "text": "“Get up!” said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else.\n\n“Leave off that!” screamed the Queen. “You make me giddy.” And then, turning to the rose-tree, she went on, “What _have_ you been doing here?”\n\n“May it please your Majesty,” said Two, in a very humble tone, going down on one knee as he spoke, “we were trying—”\n\n“_I_ see!” said the Queen, who had meanwhile been examining the roses. “Off with their heads!” and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection.",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 3459,
+              "language": "en",
+              "start": 863,
+              "end": 1536,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 50
+            },
+            "score": 9.463240299197622,
+            "method": "bm25",
+            "rank": 3
+          },
+          {
+            "id": "0b575d1e5b4dc4f2c73669e37f94a97a685e901033b72b9051d57f93e53d8a95",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 49,
+            "text": "First came ten soldiers carrying clubs; these were all shaped like the three gardeners, oblong and flat, with their hands and feet at the corners: next the ten courtiers; these were ornamented all over with diamonds, and walked two and two, as the soldiers did. After these came the royal children; there were ten of them, and the little dears came jumping merrily along hand in hand, in couples: they were all ornamented with hearts. Next came the guests, mostly Kings and Queens, and among them Alice recognised the White Rabbit: it was talking in a hurried nervous manner, smiling at everything that was said, and went by without noticing her. Then followed the Knave of Hearts, carrying the King’s crown on a crimson velvet cushion; and, last of all this grand procession, came THE KING AND QUEEN OF HEARTS.",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 1788,
+              "language": "en",
+              "start": 0,
+              "end": 811,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 49
+            },
+            "score": 5.558314774211487,
+            "method": "bm25",
+            "rank": 4
+          },
+          {
+            "id": "41eb43a0d36f3b4021849a3f29e289b70b4211bc8d3a2c01765e3d5438b4efc3",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 50,
+            "text": "“And who are _these?_” said the Queen, pointing to the three gardeners who were lying round the rose-tree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children.\n\n“How should _I_ know?” said Alice, surprised at her own courage. “It’s no business of _mine_.”\n\nThe Queen turned crimson with fury, and, after glaring at her for a moment like a wild beast, screamed “Off with her head! Off—”\n\n“Nonsense!” said Alice, very loudly and decidedly, and the Queen was silent.\n\nThe King laid his hand upon her arm, and timidly said “Consider, my dear: she is only a child!”\n\nThe Queen turned angrily away from him, and said to the Knave “Turn them over!”\n\nThe Knave did so, very carefully, with one foot.",
+            "metadata": {
+              "chapter": "VIII",
+              "chapter_title": "The Queen’s Croquet-Ground",
+              "chapter_start": 3459,
+              "language": "en",
+              "start": 0,
+              "end": 861,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 50
+            },
+            "score": 4.665041763112511,
+            "method": "bm25",
+            "rank": 5
+          }
+        ],
+        "context": "[b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b | https://www.gutenberg.org/ebooks/11 | page 48]\nA large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”\n\n“I couldn’t help it,” said Five, in a sulky tone; “Seven jogged my elbow.”\n\nOn which Seven looked up and said, “That’s right, Five! Always lay the blame on others!”\n\n“_You’d_ better not talk!” said Five. “I heard the Queen say only yesterday you deserved to be beheaded!”\n\n“What for?” said the one who had spoken first.\n\n“That’s none of _your_ business, Two!” said Seven.\n\n“Yes, it _is_ his business!” said Five, “and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.”\n\n[133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7 | https://www.gutenberg.org/ebooks/11 | page 48]\nSeven flung down his brush, and had just begun “Well, of all the unjust things—” when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low.\n\n“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”\n\nFive and Seven said nothing, but looked at Two. Two began in a low voice, “Why the fact is, you see, Miss, this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to—” At this moment Five, who had been anxiously looking across the garden, called out “The Queen! The Queen!” and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen.\n\n[0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4 | https://www.gutenberg.org/ebooks/11 | page 50]\n“Get up!” said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else.\n\n“Leave off that!” screamed the Queen. “You make me giddy.” And then, turning to the rose-tree, she went on, “What _have_ you been doing here?”\n\n“May it please your Majesty,” said Two, in a very humble tone, going down on one knee as he spoke, “we were trying—”\n\n“_I_ see!” said the Queen, who had meanwhile been examining the roses. “Off with their heads!” and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection.\n\n[0b575d1e5b4dc4f2c73669e37f94a97a685e901033b72b9051d57f93e53d8a95 | https://www.gutenberg.org/ebooks/11 | page 49]\nFirst came ten soldiers carrying clubs; these were all shaped like the three gardeners, oblong and flat, with their hands and feet at the corners: next the ten courtiers; these were ornamented all over with diamonds, and walked two and two, as the soldiers did. After these came the royal children; there were ten of them, and the little dears came jumping merrily along hand in hand, in couples: they were all ornamented with hearts. Next came the guests, mostly Kings and Queens, and among them Alice recognised the White Rabbit: it was talking in a hurried nervous manner, smiling at everything that was said, and went by without noticing her. Then followed the Knave of Hearts, carrying the King’s crown on a crimson velvet cushion; and, last of all this grand procession, came THE KING AND QUEEN OF HEARTS.\n\n[41eb43a0d36f3b4021849a3f29e289b70b4211bc8d3a2c01765e3d5438b4efc3 | https://www.gutenberg.org/ebooks/11 | page 50]\n“And who are _these?_” said the Queen, pointing to the three gardeners who were lying round the rose-tree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children.\n\n“How should _I_ know?” said Alice, surprised at her own courage. “It’s no business of _mine_.”\n\nThe Queen turned crimson with fury, and, after glaring at her for a moment like a wild beast, screamed “Off with her head! Off—”\n\n“Nonsense!” said Alice, very loudly and decidedly, and the Queen was silent.\n\nThe King laid his hand upon her arm, and timidly said “Consider, my dear: she is only a child!”\n\nThe Queen turned angrily away from him, and said to the Knave “Turn them over!”\n\nThe Knave did so, very carefully, with one foot.",
+        "context_ids": [
+          "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+          "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7",
+          "0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4",
+          "0b575d1e5b4dc4f2c73669e37f94a97a685e901033b72b9051d57f93e53d8a95",
+          "41eb43a0d36f3b4021849a3f29e289b70b4211bc8d3a2c01765e3d5438b4efc3"
+        ],
+        "elapsed_ms": 0.21398300123109948
+      },
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "The gardeners were painting the white roses red because the rose-tree was supposed to be red, and they had mistakenly planted a white one. If the Queen discovered the mistake, they would all be beheaded. Therefore, they were painting the roses red to hide the error before the Queen arrived. [b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b][133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7]"
+        },
+        "prompt_tokens": 2316,
+        "completion_tokens": 183,
+        "total_duration_ns": 27375682920
+      },
+      {
+        "event": "answer",
+        "format": "text",
+        "status": "answered"
+      }
+    ],
+    "context": "[b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b | https://www.gutenberg.org/ebooks/11 | page 48]\nA large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”\n\n“I couldn’t help it,” said Five, in a sulky tone; “Seven jogged my elbow.”\n\nOn which Seven looked up and said, “That’s right, Five! Always lay the blame on others!”\n\n“_You’d_ better not talk!” said Five. “I heard the Queen say only yesterday you deserved to be beheaded!”\n\n“What for?” said the one who had spoken first.\n\n“That’s none of _your_ business, Two!” said Seven.\n\n“Yes, it _is_ his business!” said Five, “and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.”\n\n[133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7 | https://www.gutenberg.org/ebooks/11 | page 48]\nSeven flung down his brush, and had just begun “Well, of all the unjust things—” when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low.\n\n“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”\n\nFive and Seven said nothing, but looked at Two. Two began in a low voice, “Why the fact is, you see, Miss, this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to—” At this moment Five, who had been anxiously looking across the garden, called out “The Queen! The Queen!” and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen.\n\n[0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4 | https://www.gutenberg.org/ebooks/11 | page 50]\n“Get up!” said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else.\n\n“Leave off that!” screamed the Queen. “You make me giddy.” And then, turning to the rose-tree, she went on, “What _have_ you been doing here?”\n\n“May it please your Majesty,” said Two, in a very humble tone, going down on one knee as he spoke, “we were trying—”\n\n“_I_ see!” said the Queen, who had meanwhile been examining the roses. “Off with their heads!” and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection.\n\n[0b575d1e5b4dc4f2c73669e37f94a97a685e901033b72b9051d57f93e53d8a95 | https://www.gutenberg.org/ebooks/11 | page 49]\nFirst came ten soldiers carrying clubs; these were all shaped like the three gardeners, oblong and flat, with their hands and feet at the corners: next the ten courtiers; these were ornamented all over with diamonds, and walked two and two, as the soldiers did. After these came the royal children; there were ten of them, and the little dears came jumping merrily along hand in hand, in couples: they were all ornamented with hearts. Next came the guests, mostly Kings and Queens, and among them Alice recognised the White Rabbit: it was talking in a hurried nervous manner, smiling at everything that was said, and went by without noticing her. Then followed the Knave of Hearts, carrying the King’s crown on a crimson velvet cushion; and, last of all this grand procession, came THE KING AND QUEEN OF HEARTS.\n\n[41eb43a0d36f3b4021849a3f29e289b70b4211bc8d3a2c01765e3d5438b4efc3 | https://www.gutenberg.org/ebooks/11 | page 50]\n“And who are _these?_” said the Queen, pointing to the three gardeners who were lying round the rose-tree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children.\n\n“How should _I_ know?” said Alice, surprised at her own courage. “It’s no business of _mine_.”\n\nThe Queen turned crimson with fury, and, after glaring at her for a moment like a wild beast, screamed “Off with her head! Off—”\n\n“Nonsense!” said Alice, very loudly and decidedly, and the Queen was silent.\n\nThe King laid his hand upon her arm, and timidly said “Consider, my dear: she is only a child!”\n\nThe Queen turned angrily away from him, and said to the Knave “Turn them over!”\n\nThe Knave did so, very carefully, with one foot.",
+    "context_ids": [
+      "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+      "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7",
+      "0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4",
+      "0b575d1e5b4dc4f2c73669e37f94a97a685e901033b72b9051d57f93e53d8a95",
+      "41eb43a0d36f3b4021849a3f29e289b70b4211bc8d3a2c01765e3d5438b4efc3"
+    ],
+    "usage": {
+      "prompt_tokens": 2802,
+      "completion_tokens": 210,
+      "model_calls": 2
+    },
+    "service_cost_usd": 0,
+    "elapsed_seconds": 28.781346706000477,
+    "query_id": "t04",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": true,
+    "original_query_results": [
+      {
+        "id": "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 48,
+        "text": "A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”\n\n“I couldn’t help it,” said Five, in a sulky tone; “Seven jogged my elbow.”\n\nOn which Seven looked up and said, “That’s right, Five! Always lay the blame on others!”\n\n“_You’d_ better not talk!” said Five. “I heard the Queen say only yesterday you deserved to be beheaded!”\n\n“What for?” said the one who had spoken first.\n\n“That’s none of _your_ business, Two!” said Seven.\n\n“Yes, it _is_ his business!” said Five, “and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.”",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 0,
+          "end": 851,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 48
+        },
+        "score": 19.012206303429238,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 48,
+        "text": "Seven flung down his brush, and had just begun “Well, of all the unjust things—” when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low.\n\n“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”\n\nFive and Seven said nothing, but looked at Two. Two began in a low voice, “Why the fact is, you see, Miss, this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to—” At this moment Five, who had been anxiously looking across the garden, called out “The Queen! The Queen!” and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen.",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 853,
+          "end": 1786,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 48
+        },
+        "score": 15.161542218250588,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 50,
+        "text": "“Get up!” said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else.\n\n“Leave off that!” screamed the Queen. “You make me giddy.” And then, turning to the rose-tree, she went on, “What _have_ you been doing here?”\n\n“May it please your Majesty,” said Two, in a very humble tone, going down on one knee as he spoke, “we were trying—”\n\n“_I_ see!” said the Queen, who had meanwhile been examining the roses. “Off with their heads!” and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection.",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 3459,
+          "language": "en",
+          "start": 863,
+          "end": 1536,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 50
+        },
+        "score": 11.114336614002951,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "question": "In chapter XI, what did the White Rabbit hold in each hand near the King at the trial?",
+    "filter": {
+      "chapter": "XI"
+    },
+    "status": "answered",
+    "answer": "The White Rabbit held a trumpet in one hand and a scroll of parchment in the other near the King at the trial [03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9].",
+    "citations": [
+      "03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9"
+    ],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "lz4H5gL3tvHCjxmJTLCIgroq9SkXsnWH",
+              "function": {
+                "index": 0,
+                "name": "search_documents",
+                "arguments": {
+                  "query": "In chapter XI, what did the White Rabbit hold in each hand near the King at the trial?"
+                }
+              }
+            }
+          ]
+        },
+        "prompt_tokens": 491,
+        "completion_tokens": 39,
+        "total_duration_ns": 1892010679
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "In chapter XI, what did the White Rabbit hold in each hand near the King at the trial?",
+        "filter": {
+          "chapter": "XI"
+        },
+        "top_k": 5,
+        "method": "bm25",
+        "results": [
+          {
+            "id": "03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 70,
+            "text": "The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—“I wish they’d get the trial done,” she thought, “and hand round the refreshments!” But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time.\n\nAlice had never been in a court of justice before, but she had read about them in books, and she was quite pleased to find that she knew the name of nearly everything there. “That’s the judge,” she said to herself, “because of his great wig.”",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 0,
+              "language": "en",
+              "start": 0,
+              "end": 975,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 70
+            },
+            "score": 17.740160999671108,
+            "method": "bm25",
+            "rank": 1
+          },
+          {
+            "id": "83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 75,
+            "text": "“Call the next witness!” said the King.\n\nThe next witness was the Duchess’s cook. She carried the pepper-box in her hand, and Alice guessed who it was, even before she got into the court, by the way the people near the door began sneezing all at once.\n\n“Give your evidence,” said the King.\n\n“Shan’t,” said the cook.\n\nThe King looked anxiously at the White Rabbit, who said in a low voice, “Your Majesty must cross-examine _this_ witness.”\n\n“Well, if I must, I must,” the King said, with a melancholy air, and, after folding his arms and frowning at the cook till his eyes were nearly out of sight, he said in a deep voice, “What are tarts made of?”\n\n“Pepper, mostly,” said the cook.\n\n“Treacle,” said a sleepy voice behind her.\n\n“Collar that Dormouse,” the Queen shrieked out. “Behead that Dormouse! Turn that Dormouse out of court! Suppress him! Pinch him! Off with his whiskers!”",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 7803,
+              "language": "en",
+              "start": 978,
+              "end": 1858,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 75
+            },
+            "score": 13.583111393142724,
+            "method": "bm25",
+            "rank": 2
+          },
+          {
+            "id": "f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 71,
+            "text": "The twelve jurors were all writing very busily on slates. “What are they doing?” Alice whispered to the Gryphon. “They can’t have anything to put down yet, before the trial’s begun.”\n\n“They’re putting down their names,” the Gryphon whispered in reply, “for fear they should forget them before the end of the trial.”\n\n“Stupid things!” Alice began in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, “Silence in the court!” and the King put on his spectacles and looked anxiously round, to make out who was talking.\n\nAlice could see, as well as if she were looking over their shoulders, that all the jurors were writing down “stupid things!” on their slates, and she could even make out that one of them didn’t know how to spell “stupid,” and that he had to ask his neighbour to tell him. “A nice muddle their slates’ll be in before the trial’s over!” thought Alice.",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 1634,
+              "language": "en",
+              "start": 0,
+              "end": 897,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 71
+            },
+            "score": 12.072795586063943,
+            "method": "bm25",
+            "rank": 3
+          },
+          {
+            "id": "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 72,
+            "text": "“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 3184,
+              "language": "en",
+              "start": 0,
+              "end": 944,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 72
+            },
+            "score": 11.557824601315446,
+            "method": "bm25",
+            "rank": 4
+          },
+          {
+            "id": "c3c432328fe46999a2831dc384272c8591a27b01b174c7d0787620afb26435b1",
+            "source_id": "alice",
+            "source": "https://www.gutenberg.org/ebooks/11",
+            "page": 75,
+            "text": "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared.\n\n“Never mind!” said the King, with an air of great relief. “Call the next witness.” And he added in an undertone to the Queen, “Really, my dear, _you_ must cross-examine the next witness. It quite makes my forehead ache!”\n\nAlice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for they haven’t got much evidence _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”",
+            "metadata": {
+              "chapter": "XI",
+              "chapter_title": "Who Stole the Tarts?",
+              "chapter_start": 7803,
+              "language": "en",
+              "start": 1860,
+              "end": 2540,
+              "document_id": "alice",
+              "source": "https://www.gutenberg.org/ebooks/11",
+              "page": 75
+            },
+            "score": 9.64984863046987,
+            "method": "bm25",
+            "rank": 5
+          }
+        ],
+        "context": "[03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9 | https://www.gutenberg.org/ebooks/11 | page 70]\nThe King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—“I wish they’d get the trial done,” she thought, “and hand round the refreshments!” But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time.\n\nAlice had never been in a court of justice before, but she had read about them in books, and she was quite pleased to find that she knew the name of nearly everything there. “That’s the judge,” she said to herself, “because of his great wig.”\n\n[83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce | https://www.gutenberg.org/ebooks/11 | page 75]\n“Call the next witness!” said the King.\n\nThe next witness was the Duchess’s cook. She carried the pepper-box in her hand, and Alice guessed who it was, even before she got into the court, by the way the people near the door began sneezing all at once.\n\n“Give your evidence,” said the King.\n\n“Shan’t,” said the cook.\n\nThe King looked anxiously at the White Rabbit, who said in a low voice, “Your Majesty must cross-examine _this_ witness.”\n\n“Well, if I must, I must,” the King said, with a melancholy air, and, after folding his arms and frowning at the cook till his eyes were nearly out of sight, he said in a deep voice, “What are tarts made of?”\n\n“Pepper, mostly,” said the cook.\n\n“Treacle,” said a sleepy voice behind her.\n\n“Collar that Dormouse,” the Queen shrieked out. “Behead that Dormouse! Turn that Dormouse out of court! Suppress him! Pinch him! Off with his whiskers!”\n\n[f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d | https://www.gutenberg.org/ebooks/11 | page 71]\nThe twelve jurors were all writing very busily on slates. “What are they doing?” Alice whispered to the Gryphon. “They can’t have anything to put down yet, before the trial’s begun.”\n\n“They’re putting down their names,” the Gryphon whispered in reply, “for fear they should forget them before the end of the trial.”\n\n“Stupid things!” Alice began in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, “Silence in the court!” and the King put on his spectacles and looked anxiously round, to make out who was talking.\n\nAlice could see, as well as if she were looking over their shoulders, that all the jurors were writing down “stupid things!” on their slates, and she could even make out that one of them didn’t know how to spell “stupid,” and that he had to ask his neighbour to tell him. “A nice muddle their slates’ll be in before the trial’s over!” thought Alice.\n\n[7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db | https://www.gutenberg.org/ebooks/11 | page 72]\n“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.",
+        "context_ids": [
+          "03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9",
+          "83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce",
+          "f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d",
+          "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db"
+        ],
+        "elapsed_ms": 0.25135000032605603
+      },
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "The White Rabbit held a trumpet in one hand and a scroll of parchment in the other near the King at the trial [03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9]."
+        },
+        "prompt_tokens": 2080,
+        "completion_tokens": 85,
+        "total_duration_ns": 19221116111
+      },
+      {
+        "event": "answer",
+        "format": "text",
+        "status": "answered"
+      }
+    ],
+    "context": "[03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9 | https://www.gutenberg.org/ebooks/11 | page 70]\nThe King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—“I wish they’d get the trial done,” she thought, “and hand round the refreshments!” But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time.\n\nAlice had never been in a court of justice before, but she had read about them in books, and she was quite pleased to find that she knew the name of nearly everything there. “That’s the judge,” she said to herself, “because of his great wig.”\n\n[83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce | https://www.gutenberg.org/ebooks/11 | page 75]\n“Call the next witness!” said the King.\n\nThe next witness was the Duchess’s cook. She carried the pepper-box in her hand, and Alice guessed who it was, even before she got into the court, by the way the people near the door began sneezing all at once.\n\n“Give your evidence,” said the King.\n\n“Shan’t,” said the cook.\n\nThe King looked anxiously at the White Rabbit, who said in a low voice, “Your Majesty must cross-examine _this_ witness.”\n\n“Well, if I must, I must,” the King said, with a melancholy air, and, after folding his arms and frowning at the cook till his eyes were nearly out of sight, he said in a deep voice, “What are tarts made of?”\n\n“Pepper, mostly,” said the cook.\n\n“Treacle,” said a sleepy voice behind her.\n\n“Collar that Dormouse,” the Queen shrieked out. “Behead that Dormouse! Turn that Dormouse out of court! Suppress him! Pinch him! Off with his whiskers!”\n\n[f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d | https://www.gutenberg.org/ebooks/11 | page 71]\nThe twelve jurors were all writing very busily on slates. “What are they doing?” Alice whispered to the Gryphon. “They can’t have anything to put down yet, before the trial’s begun.”\n\n“They’re putting down their names,” the Gryphon whispered in reply, “for fear they should forget them before the end of the trial.”\n\n“Stupid things!” Alice began in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, “Silence in the court!” and the King put on his spectacles and looked anxiously round, to make out who was talking.\n\nAlice could see, as well as if she were looking over their shoulders, that all the jurors were writing down “stupid things!” on their slates, and she could even make out that one of them didn’t know how to spell “stupid,” and that he had to ask his neighbour to tell him. “A nice muddle their slates’ll be in before the trial’s over!” thought Alice.\n\n[7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db | https://www.gutenberg.org/ebooks/11 | page 72]\n“The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!”\n\n“Consider your verdict,” the King said to the jury.\n\n“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”\n\n“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”\n\nThe first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, your Majesty,” he began, “for bringing these in: but I hadn’t quite finished my tea when I was sent for.”\n\n“You ought to have finished,” said the King. “When did you begin?”\n\nThe Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourteenth of March, I _think_ it was,” he said.\n\n“Fifteenth,” said the March Hare.\n\n“Sixteenth,” added the Dormouse.",
+    "context_ids": [
+      "03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9",
+      "83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce",
+      "f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d",
+      "7f5e4e724199d8094a356dbe64ec3d20f8017cd295aa6bd7780a94baf67ff8db"
+    ],
+    "usage": {
+      "prompt_tokens": 2571,
+      "completion_tokens": 124,
+      "model_calls": 2
+    },
+    "service_cost_usd": 0,
+    "elapsed_seconds": 21.115189443999043,
+    "query_id": "t05",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": true,
+    "original_query_results": [
+      {
+        "id": "03205044b1eab511c8fecb30bdaa7ccf0c75396176b2399a462f39437f9e13e9",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 70,
+        "text": "The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—“I wish they’d get the trial done,” she thought, “and hand round the refreshments!” But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time.\n\nAlice had never been in a court of justice before, but she had read about them in books, and she was quite pleased to find that she knew the name of nearly everything there. “That’s the judge,” she said to herself, “because of his great wig.”",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 0,
+          "end": 975,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 70
+        },
+        "score": 17.740160999671108,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "83c8f86ce471cc382eabb19b8bd30e4fb1f3df1970a054e84c7e673f342521ce",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 75,
+        "text": "“Call the next witness!” said the King.\n\nThe next witness was the Duchess’s cook. She carried the pepper-box in her hand, and Alice guessed who it was, even before she got into the court, by the way the people near the door began sneezing all at once.\n\n“Give your evidence,” said the King.\n\n“Shan’t,” said the cook.\n\nThe King looked anxiously at the White Rabbit, who said in a low voice, “Your Majesty must cross-examine _this_ witness.”\n\n“Well, if I must, I must,” the King said, with a melancholy air, and, after folding his arms and frowning at the cook till his eyes were nearly out of sight, he said in a deep voice, “What are tarts made of?”\n\n“Pepper, mostly,” said the cook.\n\n“Treacle,” said a sleepy voice behind her.\n\n“Collar that Dormouse,” the Queen shrieked out. “Behead that Dormouse! Turn that Dormouse out of court! Suppress him! Pinch him! Off with his whiskers!”",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 7803,
+          "language": "en",
+          "start": 978,
+          "end": 1858,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 75
+        },
+        "score": 13.583111393142724,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "f9a9db005004f5c55cb64c9f8cff5128467be164b075fef86bd7fe2aa3a3b24d",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 71,
+        "text": "The twelve jurors were all writing very busily on slates. “What are they doing?” Alice whispered to the Gryphon. “They can’t have anything to put down yet, before the trial’s begun.”\n\n“They’re putting down their names,” the Gryphon whispered in reply, “for fear they should forget them before the end of the trial.”\n\n“Stupid things!” Alice began in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, “Silence in the court!” and the King put on his spectacles and looked anxiously round, to make out who was talking.\n\nAlice could see, as well as if she were looking over their shoulders, that all the jurors were writing down “stupid things!” on their slates, and she could even make out that one of them didn’t know how to spell “stupid,” and that he had to ask his neighbour to tell him. “A nice muddle their slates’ll be in before the trial’s over!” thought Alice.",
+        "metadata": {
+          "chapter": "XI",
+          "chapter_title": "Who Stole the Tarts?",
+          "chapter_start": 1634,
+          "language": "en",
+          "start": 0,
+          "end": 897,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 71
+        },
+        "score": 12.072795586063943,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "question": "How many pounds did the gardeners pay for the red paint used on the roses?",
+    "filter": {},
+    "status": "error",
+    "answer": "",
+    "citations": [],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "ABSTAIN: The text does not mention anything about gardeners paying for red paint used on roses or any associated cost in pounds. [chunk-id] is missing or not applicable."
+        },
+        "prompt_tokens": 488,
+        "completion_tokens": 38,
+        "total_duration_ns": 1845599051
+      },
+      {
+        "event": "error",
+        "type": "ValueError",
+        "message": "Expected exactly one native tool call per turn"
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 38,
+      "model_calls": 1
+    },
+    "service_cost_usd": 0,
+    "error": "ValueError: Expected exactly one native tool call per turn",
+    "elapsed_seconds": 1.8464054900014162,
+    "query_id": "t-missing-1",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": false,
+    "original_query_results": [
+      {
+        "id": "b070f72b180bc51eb82e36e9fed040da62cf14181405113e47b82431b833603b",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 48,
+        "text": "A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”\n\n“I couldn’t help it,” said Five, in a sulky tone; “Seven jogged my elbow.”\n\nOn which Seven looked up and said, “That’s right, Five! Always lay the blame on others!”\n\n“_You’d_ better not talk!” said Five. “I heard the Queen say only yesterday you deserved to be beheaded!”\n\n“What for?” said the one who had spoken first.\n\n“That’s none of _your_ business, Two!” said Seven.\n\n“Yes, it _is_ his business!” said Five, “and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.”",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 0,
+          "end": 851,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 48
+        },
+        "score": 17.455882916576464,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "0faf3969650979e462b2bc84a4ab3ea74462080b5f9ffa7f48ab9fcfd00787d4",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 50,
+        "text": "“Get up!” said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else.\n\n“Leave off that!” screamed the Queen. “You make me giddy.” And then, turning to the rose-tree, she went on, “What _have_ you been doing here?”\n\n“May it please your Majesty,” said Two, in a very humble tone, going down on one knee as he spoke, “we were trying—”\n\n“_I_ see!” said the Queen, who had meanwhile been examining the roses. “Off with their heads!” and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection.",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 3459,
+          "language": "en",
+          "start": 863,
+          "end": 1536,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 50
+        },
+        "score": 11.178673786657185,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "133a7dd5f74e03b8c99d45b900734f6e6236a13c9c800162e8810043438ec8b7",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 48,
+        "text": "Seven flung down his brush, and had just begun “Well, of all the unjust things—” when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low.\n\n“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”\n\nFive and Seven said nothing, but looked at Two. Two began in a low voice, “Why the fact is, you see, Miss, this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to—” At this moment Five, who had been anxiously looking across the garden, called out “The Queen! The Queen!” and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen.",
+        "metadata": {
+          "chapter": "VIII",
+          "chapter_title": "The Queen’s Croquet-Ground",
+          "chapter_start": 0,
+          "language": "en",
+          "start": 853,
+          "end": 1786,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 48
+        },
+        "score": 9.164997623532308,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null
+  },
+  {
+    "question": "What is the Hatter’s street number and postal code?",
+    "filter": {},
+    "status": "error",
+    "answer": "",
+    "citations": [],
+    "events": [
+      {
+        "event": "model",
+        "message": {
+          "role": "assistant",
+          "content": "ABSTAIN: The text does not mention the Hatter’s street number or postal code. [citations []]"
+        },
+        "prompt_tokens": 483,
+        "completion_tokens": 25,
+        "total_duration_ns": 1144249751
+      },
+      {
+        "event": "error",
+        "type": "ValueError",
+        "message": "Expected exactly one native tool call per turn"
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "usage": {
+      "prompt_tokens": 483,
+      "completion_tokens": 25,
+      "model_calls": 1
+    },
+    "service_cost_usd": 0,
+    "error": "ValueError: Expected exactly one native tool call per turn",
+    "elapsed_seconds": 1.1450808879999386,
+    "query_id": "t-missing-2",
+    "split": "test",
+    "configuration": "lexical",
+    "config": {
+      "method": "bm25",
+      "top_k": 5,
+      "budget": 4800,
+      "max_searches": 2,
+      "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+    },
+    "answerable": false,
+    "original_query_results": [
+      {
+        "id": "3a38aa2f3343290fbc985a71f18ecfdb306a71e6d6b3f5d07b88a93cd8dbcc7c",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 43,
+        "text": "The March Hare took the watch and looked at it gloomily: then he dipped it into his cup of tea, and looked at it again: but he could think of nothing better to say than his first remark, “It was the _best_ butter, you know.”\n\nAlice had been looking over his shoulder with some curiosity. “What a funny watch!” she remarked. “It tells the day of the month, and doesn’t tell what o’clock it is!”\n\n“Why should it?” muttered the Hatter. “Does _your_ watch tell you what year it is?”\n\n“Of course not,” Alice replied very readily: “but that’s because it stays the same year for such a long time together.”\n\n“Which is just the case with _mine_,” said the Hatter.\n\nAlice felt dreadfully puzzled, The Hatter’s remark seemed to have no sort of meaning in it, and yet it was certainly English. “I don’t quite understand you,” she said, as politely as she could.\n\n“The Dormouse is asleep again,” said the Hatter, and he poured a little hot tea upon its nose.",
+        "metadata": {
+          "chapter": "VII",
+          "chapter_title": "A Mad Tea-Party",
+          "chapter_start": 3143,
+          "language": "en",
+          "start": 0,
+          "end": 946,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 43
+        },
+        "score": 7.7061327295158435,
+        "method": "bm25",
+        "rank": 1
+      },
+      {
+        "id": "62fffe0fe9a8f00e92dce657708f9546b537ac6c5f92478ed00551991f803e07",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 42,
+        "text": "“Do you mean that you think you can find out the answer to it?” said the March Hare.\n\n“Exactly so,” said Alice.\n\n“Then you should say what you mean,” the March Hare went on.\n\n“I do,” Alice hastily replied; “at least—at least I mean what I say—that’s the same thing, you know.”\n\n“Not the same thing a bit!” said the Hatter. “You might just as well say that ‘I see what I eat’ is the same thing as ‘I eat what I see’!”\n\n“You might just as well say,” added the March Hare, “that ‘I like what I get’ is the same thing as ‘I get what I like’!”\n\n“You might just as well say,” added the Dormouse, who seemed to be talking in his sleep, “that ‘I breathe when I sleep’ is the same thing as ‘I sleep when I breathe’!”\n\n“It _is_ the same thing with you,” said the Hatter, and here the conversation dropped, and the party sat silent for a minute, while Alice thought over all she could remember about ravens and writing-desks, which wasn’t much.",
+        "metadata": {
+          "chapter": "VII",
+          "chapter_title": "A Mad Tea-Party",
+          "chapter_start": 1603,
+          "language": "en",
+          "start": 0,
+          "end": 933,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 42
+        },
+        "score": 6.6023053029170065,
+        "method": "bm25",
+        "rank": 2
+      },
+      {
+        "id": "c55a5050efee3aaefda7f3ba2c2cc62e723e4b9250a18c07dfaf30ee4c212a92",
+        "source_id": "alice",
+        "source": "https://www.gutenberg.org/ebooks/11",
+        "page": 45,
+        "text": "“Well, I’d hardly finished the first verse,” said the Hatter, “when the Queen jumped up and bawled out, ‘He’s murdering the time! Off with his head!’”\n\n“How dreadfully savage!” exclaimed Alice.\n\n“And ever since that,” the Hatter went on in a mournful tone, “he won’t do a thing I ask! It’s always six o’clock now.”\n\nA bright idea came into Alice’s head. “Is that the reason so many tea-things are put out here?” she asked.\n\n“Yes, that’s it,” said the Hatter with a sigh: “it’s always tea-time, and we’ve no time to wash the things between whiles.”\n\n“Then you keep moving round, I suppose?” said Alice.\n\n“Exactly so,” said the Hatter: “as the things get used up.”\n\n“But what happens when you come to the beginning again?” Alice ventured to ask.\n\n“Suppose we change the subject,” the March Hare interrupted, yawning. “I’m getting tired of this. I vote the young lady tells us a story.”\n\n“I’m afraid I don’t know one,” said Alice, rather alarmed at the proposal.",
+        "metadata": {
+          "chapter": "VII",
+          "chapter_title": "A Mad Tea-Party",
+          "chapter_start": 6351,
+          "language": "en",
+          "start": 0,
+          "end": 959,
+          "document_id": "alice",
+          "source": "https://www.gutenberg.org/ebooks/11",
+          "page": 45
+        },
+        "score": 6.52061502258378,
+        "method": "bm25",
+        "rank": 3
+      }
+    ],
+    "hit1": null,
+    "hit3": null,
+    "context_hit": null
+  }
+]

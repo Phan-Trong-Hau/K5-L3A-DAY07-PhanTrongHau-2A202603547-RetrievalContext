@@ -1,0 +1,134 @@
+{
+  "baseline": {
+    "cases": 7,
+    "errors": 2,
+    "hit1": {
+      "n": 4,
+      "N": 5,
+      "rate": 0.8
+    },
+    "hit3": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "context_evidence": {
+      "n": 3,
+      "N": 5,
+      "rate": 0.6
+    },
+    "tool_use": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "search_count_distribution": {
+      "0": 2,
+      "1": 5
+    },
+    "median_seconds": 8.519499382000504,
+    "total_seconds": 47.01804957099739,
+    "prompt_tokens": 8089,
+    "completion_tokens": 667,
+    "service_cost_usd": 0,
+    "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+    "answer_grades": {
+      "0": 2,
+      "1": 0,
+      "2": 3
+    },
+    "context_grades": {
+      "0": 1,
+      "1": 1,
+      "2": 3
+    },
+    "citation_support": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "citation_coverage": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "abstention": {
+      "n": 0,
+      "N": 0,
+      "rate": null
+    },
+    "false_abstention": {
+      "n": 1,
+      "N": 5,
+      "rate": 0.2
+    },
+    "grounded_mean": 1.2,
+    "selection_mean_errors_zero": 1.2
+  },
+  "lexical": {
+    "cases": 7,
+    "errors": 2,
+    "hit1": {
+      "n": 2,
+      "N": 5,
+      "rate": 0.4
+    },
+    "hit3": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "context_evidence": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "tool_use": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "search_count_distribution": {
+      "0": 2,
+      "1": 5
+    },
+    "median_seconds": 21.115189443999043,
+    "total_seconds": 119.02278870000009,
+    "prompt_tokens": 14488,
+    "completion_tokens": 736,
+    "service_cost_usd": 0,
+    "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+    "answer_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "citation_support": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    },
+    "citation_coverage": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "abstention": {
+      "n": 0,
+      "N": 0,
+      "rate": null
+    },
+    "false_abstention": {
+      "n": 0,
+      "N": 5,
+      "rate": 0.0
+    },
+    "grounded_mean": 2.0,
+    "selection_mean_errors_zero": 2.0
+  }
+}

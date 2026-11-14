@@ -5,6 +5,11 @@ __pycache__/
 .env.*
 !.env.example
 .codex-log/
+.qdrant/
+.pytest_cache/
+runs/
+results/integration_attempt/
+results/demo/
 
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/

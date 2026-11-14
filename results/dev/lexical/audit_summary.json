@@ -1,0 +1,35 @@
+{
+  "answer_grades": {
+    "0": 4,
+    "1": 1,
+    "2": 10
+  },
+  "context_grades": {
+    "0": 0,
+    "1": 1,
+    "2": 14
+  },
+  "errors": 0,
+  "citation_support": {
+    "n": 11,
+    "N": 13,
+    "rate": 0.8461538461538461
+  },
+  "citation_coverage": {
+    "n": 13,
+    "N": 13,
+    "rate": 1.0
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 2,
+    "N": 15,
+    "rate": 0.13333333333333333
+  },
+  "grounded_mean": 1.4,
+  "selection_mean_errors_zero": 1.4
+}

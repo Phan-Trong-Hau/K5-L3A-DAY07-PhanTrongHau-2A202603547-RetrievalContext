@@ -1,0 +1,249 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What label was on the empty jar Alice found while falling?",
+    "answerable": true,
+    "expected_answer": "ORANGE MARMALADE",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 2,
+        "evidence": "it was labelled “ORANGE MARMALADE”, but to her great disappointment it was empty"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Why did Alice avoid dropping the jar?",
+    "answerable": true,
+    "expected_answer": "She feared killing somebody below.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 2,
+        "evidence": "she did not like to drop the jar for fear of killing somebody underneath"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "What did Alice check before tasting the bottle?",
+    "answerable": true,
+    "expected_answer": "Whether it was marked poison.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 5,
+        "evidence": "“and see whether it’s marked ‘_poison_’ or not”"
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "How were the words on the small cake written?",
+    "answerable": true,
+    "expected_answer": "EAT ME was marked in currants.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 6,
+        "evidence": "the words “EAT ME” were beautifully marked in currants."
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "In chapter III, what did Alice distribute as race prizes?",
+    "answerable": true,
+    "expected_answer": "Comfits, one per participant.",
+    "filter": {
+      "chapter": "III"
+    },
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 15,
+        "evidence": "pulled out a box of comfits, (luckily the salt water had not got into it), and handed them round as prizes. There was exactly one a-piece, all round."
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "What prize did the Dodo present to Alice?",
+    "answerable": true,
+    "expected_answer": "A thimble.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 16,
+        "evidence": "the Dodo solemnly presented the thimble"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Where did Alice think the falling Rabbit might have landed?",
+    "answerable": true,
+    "expected_answer": "A cucumber-frame or something similar.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 21,
+        "evidence": "it had fallen into a cucumber-frame, or something of the sort."
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In chapter VI, what explanation did the Duchess give for her cat grinning?",
+    "answerable": true,
+    "expected_answer": "It was a Cheshire cat.",
+    "filter": {
+      "chapter": "VI"
+    },
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 35,
+        "evidence": "“It’s a Cheshire cat,” said the Duchess, “and that’s why."
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What kind of well appears in the Dormouse story?",
+    "answerable": true,
+    "expected_answer": "A treacle-well.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 46,
+        "evidence": "The Dormouse again took a minute or two to think about it, and then said, “It was a treacle-well.”"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "What time was it always, according to the Hatter?",
+    "answerable": true,
+    "expected_answer": "Six o’clock.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 45,
+        "evidence": "It’s always six o’clock now."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Why could the tea party never wash the dishes between rounds?",
+    "answerable": true,
+    "expected_answer": "It was always tea-time.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 45,
+        "evidence": "“it’s always tea-time, and we’ve no time to wash the things between whiles.”"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Which living creatures served as balls and mallets in croquet?",
+    "answerable": true,
+    "expected_answer": "Hedgehogs and flamingoes.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 51,
+        "evidence": "the balls were live hedgehogs, the mallets live flamingoes"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "In chapter IX, what were the four branches of Arithmetic?",
+    "answerable": true,
+    "expected_answer": "Ambition, Distraction, Uglification, Derision.",
+    "filter": {
+      "chapter": "IX"
+    },
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 62,
+        "evidence": "the different branches of Arithmetic—Ambition, Distraction, Uglification, and Derision."
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Who taught Drawling and how often did the teacher visit?",
+    "answerable": true,
+    "expected_answer": "An old conger-eel, once a week.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 62,
+        "evidence": "the Drawling-master was an old conger-eel, that used to come once a week"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "In the dance song, what creature was treading on the whiting’s tail?",
+    "answerable": true,
+    "expected_answer": "A porpoise.",
+    "filter": {},
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 64,
+        "evidence": "“There’s a porpoise close behind us, and he’s treading on my tail."
+      }
+    ]
+  },
+  {
+    "id": "d-missing-1",
+    "split": "dev",
+    "question": "On what exact date was Alice born?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The complete 82-unit story contains no birth date for Alice. Age-related dialogue is not a date of birth."
+  },
+  {
+    "id": "d-missing-2",
+    "split": "dev",
+    "question": "What is the White Rabbit’s annual salary in pounds?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Rabbit scenes mention errands and a court role, but the full story specifies no annual salary or salary amount."
+  }
+]

@@ -1,0 +1,197 @@
+{
+  "baseline": {
+    "cases": 17,
+    "errors": 0,
+    "hit1": {
+      "n": 9,
+      "N": 15,
+      "rate": 0.6
+    },
+    "hit3": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "context_evidence": {
+      "n": 9,
+      "N": 15,
+      "rate": 0.6
+    },
+    "tool_use": {
+      "n": 17,
+      "N": 17,
+      "rate": 1.0
+    },
+    "search_count_distribution": {
+      "1": 17
+    },
+    "median_seconds": 8.871261391001099,
+    "total_seconds": 159.03675402099725,
+    "prompt_tokens": 23789,
+    "completion_tokens": 2124,
+    "service_cost_usd": 0,
+    "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+    "answer_grades": {
+      "0": 7,
+      "1": 0,
+      "2": 8
+    },
+    "context_grades": {
+      "0": 3,
+      "1": 3,
+      "2": 9
+    },
+    "citation_support": {
+      "n": 9,
+      "N": 10,
+      "rate": 0.9
+    },
+    "citation_coverage": {
+      "n": 10,
+      "N": 10,
+      "rate": 1.0
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2,
+      "rate": 1.0
+    },
+    "false_abstention": {
+      "n": 5,
+      "N": 15,
+      "rate": 0.3333333333333333
+    },
+    "grounded_mean": 1.0666666666666667,
+    "selection_mean_errors_zero": 1.0666666666666667
+  },
+  "hybrid": {
+    "cases": 17,
+    "errors": 1,
+    "hit1": {
+      "n": 12,
+      "N": 15,
+      "rate": 0.8
+    },
+    "hit3": {
+      "n": 15,
+      "N": 15,
+      "rate": 1.0
+    },
+    "context_evidence": {
+      "n": 15,
+      "N": 15,
+      "rate": 1.0
+    },
+    "tool_use": {
+      "n": 16,
+      "N": 16,
+      "rate": 1.0
+    },
+    "search_count_distribution": {
+      "1": 17
+    },
+    "median_seconds": 17.776121099001102,
+    "total_seconds": 317.7281813169993,
+    "prompt_tokens": 44951,
+    "completion_tokens": 2230,
+    "service_cost_usd": 0,
+    "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+    "answer_grades": {
+      "0": 4,
+      "1": 0,
+      "2": 10
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 14
+    },
+    "citation_support": {
+      "n": 11,
+      "N": 13,
+      "rate": 0.8461538461538461
+    },
+    "citation_coverage": {
+      "n": 12,
+      "N": 12,
+      "rate": 1.0
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2,
+      "rate": 1.0
+    },
+    "false_abstention": {
+      "n": 2,
+      "N": 14,
+      "rate": 0.14285714285714285
+    },
+    "grounded_mean": 1.4285714285714286,
+    "selection_mean_errors_zero": 1.3333333333333333
+  },
+  "lexical": {
+    "cases": 17,
+    "errors": 0,
+    "hit1": {
+      "n": 13,
+      "N": 15,
+      "rate": 0.8666666666666667
+    },
+    "hit3": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "context_evidence": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "tool_use": {
+      "n": 17,
+      "N": 17,
+      "rate": 1.0
+    },
+    "search_count_distribution": {
+      "1": 17
+    },
+    "median_seconds": 19.98695796500033,
+    "total_seconds": 295.6263470760023,
+    "prompt_tokens": 45233,
+    "completion_tokens": 2024,
+    "service_cost_usd": 0,
+    "note": "Hit@1/3 use ORIGINAL query ranking; context evidence uses final model context. Error quality excluded from manual metrics but counted separately.",
+    "answer_grades": {
+      "0": 4,
+      "1": 1,
+      "2": 10
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 1,
+      "2": 14
+    },
+    "citation_support": {
+      "n": 11,
+      "N": 13,
+      "rate": 0.8461538461538461
+    },
+    "citation_coverage": {
+      "n": 13,
+      "N": 13,
+      "rate": 1.0
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2,
+      "rate": 1.0
+    },
+    "false_abstention": {
+      "n": 2,
+      "N": 15,
+      "rate": 0.13333333333333333
+    },
+    "grounded_mean": 1.4,
+    "selection_mean_errors_zero": 1.4
+  }
+}

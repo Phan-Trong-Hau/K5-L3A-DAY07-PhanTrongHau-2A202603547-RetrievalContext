@@ -1,0 +1,39 @@
+{
+  "exported_at": "2026-11-14T04:18:13.595762+00:00",
+  "day6_collection": "C",
+  "chunk_count": 192,
+  "source_repository": "https://github.com/Phan-Trong-Hau/K5-L3A-DAY06-PhanTrongHau-2A202603547-DataIngestion",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "dimensions": 384,
+  "query_embedding": "FastEmbed TextEmbedding.query_embed; same Day 6 model snapshot",
+  "distance": "Cosine",
+  "day6_run": {
+    "started_model": "BAAI/bge-small-en-v1.5",
+    "dimensions": 384,
+    "utc": "2026-11-13T06:36:17.612523+00:00",
+    "python": "3.14.9",
+    "versions": {
+      "fastembed": "0.9.1",
+      "qdrant-client": "1.20.0",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4"
+    },
+    "benchmark_sha256": "9a170ccd91bc49f61acef08dbf7a4d43c12f321bcdb03520e6d533fb293d3fd2",
+    "corpus_sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+    "total_seconds": 33.944662170999436,
+    "search": "exact cosine",
+    "provider": "FastEmbed ONNX CPU",
+    "api_cost_usd": 0,
+    "note": "Costs exclude CPU/electricity; ingest times include two snapshot writes; C reuses B embedding cache."
+  },
+  "sha256": {
+    "chunks.json": "3b99c3c77426eca636b3a2eace25461708551c0da025e68878b145dc57a4345b",
+    "vectors.json": "e39bd6303cd7369622497f8665728255f93d2047a07ced5ed5e6264b6a0f586b",
+    "alice.txt": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+    "pages.json": "f103fe99f794617431bc13153fe8a8821f45018aab83213793ed17f4638f18dd",
+    "manifest.json": "0b3fbe14b997dab63c687c79ab497b709bba4432b886c7c0cfdd30b93b6d1a0e",
+    "embedding.json": "df5b5832fb3f219e19f0696750f02129e45abf0fee801644a7f8ce34170d46c7"
+  },
+  "page_convention": "82 logical paragraph-group units from Day 6, not physical PDF pages",
+  "permission": "Public-domain Lewis Carroll text; original Gutenberg license retained in alice.txt"
+}

@@ -1,3 +1,5 @@
-# Báo cáo cá nhân
+# Bài nộp cá nhân
 
-Sao chép [MSSV_HoTen.md](MSSV_HoTen.md), đổi tên theo MSSV và họ tên, ví dụ `20241234_NguyenVanAn.md`. Ghi đường dẫn kết quả và lệnh chạy; không nộp dữ liệu mật.
+Xem [2A202603547 — Phan Trọng Hậu](2A202603547_PhanTrongHau.md).
+
+File `MSSV_HoTen.md` giữ lại làm mẫu đề bài gốc.

@@ -1,0 +1,520 @@
+[
+  {
+    "query_id": "d-missing-1",
+    "scope": "All 82 logical units, plus source-scene reading",
+    "pages_sha256": "f103fe99f794617431bc13153fe8a8821f45018aab83213793ed17f4638f18dd",
+    "topic_scan": {
+      "born": [],
+      "birth": [
+        {
+          "page": 58,
+          "excerpt": "“A cheap sort of present!” thought Alice. “I’m glad they don’t give birthday presents like that!” But she did not venture to say it out loud."
+        }
+      ],
+      "birthday": [
+        {
+          "page": 58,
+          "excerpt": "“A cheap sort of present!” thought Alice. “I’m glad they don’t give birthday presents like that!” But she did not venture to say it out loud."
+        }
+      ]
+    },
+    "decision": "Only birthday occurrence is a general thought about birthday presents on p58; it specifies no date of birth for Alice.",
+    "reviewer": "Codex — AI-assisted source review; student confirmation pending"
+  },
+  {
+    "query_id": "d-missing-2",
+    "scope": "All 82 logical units, plus source-scene reading",
+    "pages_sha256": "f103fe99f794617431bc13153fe8a8821f45018aab83213793ed17f4638f18dd",
+    "topic_scan": {
+      "salary": [],
+      "wages": [],
+      "pounds": [
+        {
+          "page": 12,
+          "excerpt": " a farmer, you know, and he says it’s so useful, it’s worth a hundred pounds! He says it kills all the rats and—oh dear!” cried Alice in a sorrowful tone, “I’m afraid I’ve offe"
+        }
+      ],
+      "paid": [],
+      "Rabbit": [
+        {
+          "page": 1,
+          "excerpt": " trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her."
+        },
+        {
+          "page": 1,
+          "excerpt": "hat; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurr"
+        },
+        {
+          "page": 1,
+          "excerpt": "d at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice s"
+        },
+        {
+          "page": 1,
+          "excerpt": "feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran a"
+        },
+        {
+          "page": 1,
+          "excerpt": "after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge."
+        },
+        {
+          "page": 1,
+          "excerpt": "The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that A"
+        },
+        {
+          "page": 4,
+          "excerpt": "all dark overhead; before her was another long passage, and the White Rabbit was still in sight, hurrying down it. There was not a moment to be lost: away went Alice like the w"
+        },
+        {
+          "page": 4,
+          "excerpt": "getting!” She was close behind it when she turned the corner, but the Rabbit was no longer to be seen: she found herself in a long, low hall, which was lit up by a row of lamps"
+        },
+        {
+          "page": 8,
+          "excerpt": "d she hastily dried her eyes to see what was coming. It was the White Rabbit returning, splendidly dressed, with a pair of white kid gloves in one hand and a large fan in the o"
+        },
+        {
+          "page": 8,
+          "excerpt": " so desperate that she was ready to ask help of any one; so, when the Rabbit came near her, she began, in a low, timid voice, “If you please, sir—” The Rabbit started violently"
+        },
+        {
+          "page": 9,
+          "excerpt": "at her hands, and was surprised to see that she had put on one of the Rabbit’s little white kid gloves while she was talking. “How _can_ I have done that?” she thought. “I must"
+        },
+        {
+          "page": 18,
+          "excerpt": "It was the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something; a"
+        },
+        {
+          "page": 18,
+          "excerpt": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, “Why, Mary Ann, w"
+        },
+        {
+          "page": 18,
+          "excerpt": "ouse, on the door of which was a bright brass plate with the name “W. RABBIT,” engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she shou"
+        },
+        {
+          "page": 19,
+          "excerpt": "w queer it seems,” Alice said to herself, “to be going messages for a rabbit! I suppose Dinah’ll be sending me on messages next!” And she began fancying the sort of thing that "
+        },
+        {
+          "page": 20,
+          "excerpt": "lways growing larger and smaller, and being ordered about by mice and rabbits. I almost wish I hadn’t gone down that rabbit-hole—and yet—and yet—it’s rather curious, you know, "
+        },
+        {
+          "page": 21,
+          "excerpt": " came a little pattering of feet on the stairs. Alice knew it was the Rabbit coming to look for her, and she trembled till she shook the house, quite forgetting that she was no"
+        },
+        {
+          "page": 21,
+          "excerpt": "w about a thousand times as large as the Rabbit, and had no reason to be afraid of it."
+        },
+        {
+          "page": 21,
+          "excerpt": "Presently the Rabbit came up to the door, and tried to open it; but, as the door opened inwards, and Alice’s elbow was p"
+        },
+        {
+          "page": 21,
+          "excerpt": "’t!” thought Alice, and, after waiting till she fancied she heard the Rabbit just under the window, she suddenly spread out her hand, and made a snatch in the air. She did not "
+        },
+        {
+          "page": 21,
+          "excerpt": "Next came an angry voice—the Rabbit’s—“Pat! Pat! Where are you?” And then a voice she had never heard before, “Sure then I’m here! Digg"
+        },
+        {
+          "page": 22,
+          "excerpt": "“Digging for apples, indeed!” said the Rabbit angrily. “Here! Come and help me out of _this!_” (Sounds of more broken glass.)"
+        },
+        {
+          "page": 23,
+          "excerpt": "t thing she heard was a general chorus of “There goes Bill!” then the Rabbit’s voice along—“Catch him, you by the hedge!” then silence, and then another confusion of voices—“Ho"
+        },
+        {
+          "page": 23,
+          "excerpt": "“We must burn the house down!” said the Rabbit’s voice; and Alice called out as loud as she could, “If you do, I’ll set Dinah at you!”"
+        },
+        {
+          "page": 23,
+          "excerpt": "r a minute or two, they began moving about again, and Alice heard the Rabbit say, “A barrowful will do, to begin with.”"
+        },
+        {
+          "page": 49,
+          "excerpt": "s, mostly Kings and Queens, and among them Alice recognised the White Rabbit: it was talking in a hurried nervous manner, smiling at everything that was said, and went by witho"
+        },
+        {
+          "page": 51,
+          "excerpt": "ne day!” said a timid voice at her side. She was walking by the White Rabbit, who was peeping anxiously into her face."
+        },
+        {
+          "page": 51,
+          "excerpt": "“Hush! Hush!” said the Rabbit in a low, hurried tone. He looked anxiously over his shoulder as he spoke, and then raised himself "
+        },
+        {
+          "page": 51,
+          "excerpt": "“Did you say ‘What a pity!’?” the Rabbit asked."
+        },
+        {
+          "page": 51,
+          "excerpt": "“She boxed the Queen’s ears—” the Rabbit began. Alice gave a little scream of laughter. “Oh, hush!” the Rabbit whispered in a frightened ton"
+        },
+        {
+          "page": 67,
+          "excerpt": "elling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on eac"
+        },
+        {
+          "page": 70,
+          "excerpt": " a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the cour"
+        },
+        {
+          "page": 71,
+          "excerpt": "an in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, “Silence in the court!” and the King put on his spectacles and looked anxiously round, t"
+        },
+        {
+          "page": 71,
+          "excerpt": "On this the White Rabbit blew three blasts on the trumpet, and then unrolled the parchment scroll, and read as follows:—"
+        },
+        {
+          "page": 72,
+          "excerpt": "“Not yet, not yet!” the Rabbit hastily interrupted. “There’s a great deal to come before that!”"
+        },
+        {
+          "page": 72,
+          "excerpt": "“Call the first witness,” said the King; and the White Rabbit blew three blasts on the trumpet, and called out, “First witness!”"
+        },
+        {
+          "page": 75,
+          "excerpt": "The King looked anxiously at the White Rabbit, who said in a low voice, “Your Majesty must cross-examine _this_ witness.”"
+        },
+        {
+          "page": 75,
+          "excerpt": "Alice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, “—for"
+        },
+        {
+          "page": 75,
+          "excerpt": "nce _yet_,” she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name “Alice!”"
+        },
+        {
+          "page": 77,
+          "excerpt": "ere just beginning to write this down on their slates, when the White Rabbit interrupted: “_Un_important, your Majesty means, of course,” he said in a very respectful tone, but"
+        },
+        {
+          "page": 78,
+          "excerpt": "ere’s more evidence to come yet, please your Majesty,” said the White Rabbit, jumping up in a great hurry; “this paper has just been picked up.”"
+        },
+        {
+          "page": 78,
+          "excerpt": "“I haven’t opened it yet,” said the White Rabbit, “but it seems to be a letter, written by the prisoner to—to somebody.”"
+        },
+        {
+          "page": 78,
+          "excerpt": "“It isn’t directed at all,” said the White Rabbit; “in fact, there’s nothing written on the _outside_.” He unfolded the paper as he spoke, and added "
+        },
+        {
+          "page": 78,
+          "excerpt": "“No, they’re not,” said the White Rabbit, “and that’s the queerest thing about it.” (The jury all looked puzzled.)"
+        },
+        {
+          "page": 79,
+          "excerpt": "The White Rabbit put on his spectacles. “Where shall I begin, please your Majesty?” he asked."
+        },
+        {
+          "page": 79,
+          "excerpt": "These were the verses the White Rabbit read:—"
+        },
+        {
+          "page": 82,
+          "excerpt": "The long grass rustled at her feet as the White Rabbit hurried by—the frightened Mouse splashed his way through the neighbouring pool—she could hear the r"
+        }
+      ]
+    },
+    "decision": "No salary/wages/paid; the hundred pounds at p12 is an estimate of the value of a farmer’s dog, unrelated to the Rabbit’s salary.",
+    "reviewer": "Codex — AI-assisted source review; student confirmation pending"
+  },
+  {
+    "query_id": "t-missing-1",
+    "scope": "All 82 logical units, plus source-scene reading",
+    "pages_sha256": "f103fe99f794617431bc13153fe8a8821f45018aab83213793ed17f4638f18dd",
+    "topic_scan": {
+      "paint": [
+        {
+          "page": 48,
+          "excerpt": "rowing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just a"
+        },
+        {
+          "page": 48,
+          "excerpt": "em she heard one of them say, “Look out now, Five! Don’t go splashing paint over me like that!”"
+        },
+        {
+          "page": 48,
+          "excerpt": "“Would you tell me,” said Alice, a little timidly, “why you are painting those roses?”"
+        }
+      ],
+      "price": [],
+      "cost": [
+        {
+          "page": 59,
+          "excerpt": "k to the game, the Queen merely remarking that a moment’s delay would cost them their lives."
+        }
+      ],
+      "pounds": [
+        {
+          "page": 12,
+          "excerpt": " a farmer, you know, and he says it’s so useful, it’s worth a hundred pounds! He says it kills all the rats and—oh dear!” cried Alice in a sorrowful tone, “I’m afraid I’ve offe"
+        }
+      ]
+    },
+    "decision": "All paint occurrences are on p48 describing painting roses, not purchase or price. The pounds occurrence is about a dog at p12; cost at p59 refers to lives.",
+    "reviewer": "Codex — AI-assisted source review; student confirmation pending"
+  },
+  {
+    "query_id": "t-missing-2",
+    "scope": "All 82 logical units, plus source-scene reading",
+    "pages_sha256": "f103fe99f794617431bc13153fe8a8821f45018aab83213793ed17f4638f18dd",
+    "topic_scan": {
+      "Hatter": [
+        {
+          "page": 39,
+          "excerpt": "_that_ direction,” the Cat said, waving its right paw round, “lives a Hatter: and in _that_ direction,” waving the other paw, “lives a March Hare. Visit either you like: they’r"
+        },
+        {
+          "page": 40,
+          "excerpt": "in the direction in which the March Hare was said to live. “I’ve seen hatters before,” she said to herself; “the March Hare will be much the most interesting, and perhaps as th"
+        },
+        {
+          "page": 40,
+          "excerpt": " it should be raving mad after all! I almost wish I’d gone to see the Hatter instead!”"
+        },
+        {
+          "page": 41,
+          "excerpt": "et out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were usi"
+        },
+        {
+          "page": 41,
+          "excerpt": "“Your hair wants cutting,” said the Hatter. He had been looking at Alice for some time with great curiosity, and this was his first speech."
+        },
+        {
+          "page": 41,
+          "excerpt": "The Hatter opened his eyes very wide on hearing this; but all he _said_ was, “Why is a raven like a writing-de"
+        },
+        {
+          "page": 42,
+          "excerpt": "“Not the same thing a bit!” said the Hatter. “You might just as well say that ‘I see what I eat’ is the same thing as ‘I eat what I see’!”"
+        },
+        {
+          "page": 42,
+          "excerpt": "“It _is_ the same thing with you,” said the Hatter, and here the conversation dropped, and the party sat silent for a minute, while Alice thought over"
+        },
+        {
+          "page": 42,
+          "excerpt": "The Hatter was the first to break the silence. “What day of the month is it?” he said, turning to Alice: he ha"
+        },
+        {
+          "page": 42,
+          "excerpt": "“Two days wrong!” sighed the Hatter. “I told you butter wouldn’t suit the works!” he added looking angrily at the March Hare."
+        },
+        {
+          "page": 42,
+          "excerpt": "“Yes, but some crumbs must have got in as well,” the Hatter grumbled: “you shouldn’t have put it in with the bread-knife.”"
+        },
+        {
+          "page": 43,
+          "excerpt": "“Why should it?” muttered the Hatter. “Does _your_ watch tell you what year it is?”"
+        },
+        {
+          "page": 43,
+          "excerpt": "“Which is just the case with _mine_,” said the Hatter."
+        },
+        {
+          "page": 43,
+          "excerpt": "Alice felt dreadfully puzzled, The Hatter’s remark seemed to have no sort of meaning in it, and yet it was certainly English. “I don’t quite "
+        },
+        {
+          "page": 43,
+          "excerpt": "“The Dormouse is asleep again,” said the Hatter, and he poured a little hot tea upon its nose."
+        },
+        {
+          "page": 43,
+          "excerpt": "“Have you guessed the riddle yet?” the Hatter said, turning to Alice again."
+        },
+        {
+          "page": 43,
+          "excerpt": "“I haven’t the slightest idea,” said the Hatter."
+        },
+        {
+          "page": 43,
+          "excerpt": "“If you knew Time as well as I do,” said the Hatter, “you wouldn’t talk about wasting _it_. It’s _him_.”"
+        },
+        {
+          "page": 44,
+          "excerpt": "“Of course you don’t!” the Hatter said, tossing his head contemptuously. “I dare say you never even spoke to Time!”"
+        },
+        {
+          "page": 44,
+          "excerpt": "“Ah! that accounts for it,” said the Hatter. “He won’t stand beating. Now, if you only kept on good terms with him, he’d do almost anything you"
+        },
+        {
+          "page": 44,
+          "excerpt": "“Not at first, perhaps,” said the Hatter: “but you could keep it to half-past one as long as you liked.”"
+        },
+        {
+          "page": 44,
+          "excerpt": "The Hatter shook his head mournfully. “Not I!” he replied. “We quarrelled last March—just before _he_ went mad"
+        },
+        {
+          "page": 44,
+          "excerpt": "“It goes on, you know,” the Hatter continued, “in this way:—"
+        },
+        {
+          "page": 45,
+          "excerpt": "“Well, I’d hardly finished the first verse,” said the Hatter, “when the Queen jumped up and bawled out, ‘He’s murdering the time! Off with his head!’”"
+        },
+        {
+          "page": 45,
+          "excerpt": "“And ever since that,” the Hatter went on in a mournful tone, “he won’t do a thing I ask! It’s always six o’clock now.”"
+        },
+        {
+          "page": 45,
+          "excerpt": "“Yes, that’s it,” said the Hatter with a sigh: “it’s always tea-time, and we’ve no time to wash the things between whiles.”"
+        },
+        {
+          "page": 45,
+          "excerpt": "“Exactly so,” said the Hatter: “as the things get used up.”"
+        },
+        {
+          "page": 45,
+          "excerpt": "“And be quick about it,” added the Hatter, “or you’ll be asleep again before it’s done.”"
+        },
+        {
+          "page": 46,
+          "excerpt": "“You mean you can’t take _less_,” said the Hatter: “it’s very easy to take _more_ than nothing.”"
+        },
+        {
+          "page": 46,
+          "excerpt": "“Who’s making personal remarks now?” the Hatter asked triumphantly."
+        },
+        {
+          "page": 46,
+          "excerpt": "“There’s no such thing!” Alice was beginning very angrily, but the Hatter and the March Hare went “Sh! sh!” and the Dormouse sulkily remarked, “If you can’t be civil, you’d "
+        },
+        {
+          "page": 47,
+          "excerpt": "“I want a clean cup,” interrupted the Hatter: “let’s all move one place on.”"
+        },
+        {
+          "page": 47,
+          "excerpt": "e, and Alice rather unwillingly took the place of the March Hare. The Hatter was the only one who got any advantage from the change: and Alice was a good deal worse off than be"
+        },
+        {
+          "page": 47,
+          "excerpt": "“You can draw water out of a water-well,” said the Hatter; “so I should think you could draw treacle out of a treacle-well—eh, stupid?”"
+        },
+        {
+          "page": 47,
+          "excerpt": "his time, and was going off into a doze; but, on being pinched by the Hatter, it woke up again with a little shriek, and went on: “—that begins with an M, such as mouse-traps, "
+        },
+        {
+          "page": 47,
+          "excerpt": "“Then you shouldn’t talk,” said the Hatter."
+        },
+        {
+          "page": 72,
+          "excerpt": "The first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. “I beg pardon, "
+        },
+        {
+          "page": 72,
+          "excerpt": "The Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. “Fourt"
+        },
+        {
+          "page": 72,
+          "excerpt": "“Take off your hat,” the King said to the Hatter."
+        },
+        {
+          "page": 72,
+          "excerpt": "“It isn’t mine,” said the Hatter."
+        },
+        {
+          "page": 72,
+          "excerpt": "“I keep them to sell,” the Hatter added as an explanation; “I’ve none of my own. I’m a hatter.”"
+        },
+        {
+          "page": 72,
+          "excerpt": "Here the Queen put on her spectacles, and began staring at the Hatter, who turned pale and fidgeted."
+        },
+        {
+          "page": 73,
+          "excerpt": "All this time the Queen had never left off staring at the Hatter, and, just as the Dormouse crossed the court, she said to one of the officers of the court, “Bring "
+        },
+        {
+          "page": 73,
+          "excerpt": "e the list of the singers in the last concert!” on which the wretched Hatter trembled so, that he shook both his shoes off."
+        },
+        {
+          "page": 74,
+          "excerpt": "“I’m a poor man, your Majesty,” the Hatter began, in a trembling voice, “—and I hadn’t begun my tea—not above a week or so—and what with the b"
+        },
+        {
+          "page": 74,
+          "excerpt": "“It _began_ with the tea,” the Hatter replied."
+        },
+        {
+          "page": 74,
+          "excerpt": "“I’m a poor man,” the Hatter went on, “and most things twinkled after that—only the March Hare said—”"
+        },
+        {
+          "page": 74,
+          "excerpt": "“You did!” said the Hatter."
+        },
+        {
+          "page": 74,
+          "excerpt": "“Well, at any rate, the Dormouse said—” the Hatter went on, looking anxiously round to see if he would deny it too: but the Dormouse denied nothing, b"
+        },
+        {
+          "page": 74,
+          "excerpt": "“After that,” continued the Hatter, “I cut some more bread-and-butter—”"
+        },
+        {
+          "page": 74,
+          "excerpt": "“That I can’t remember,” said the Hatter."
+        },
+        {
+          "page": 74,
+          "excerpt": "The miserable Hatter dropped his teacup and bread-and-butter, and went down on one knee. “I’m a poor man, your Majesty,”"
+        },
+        {
+          "page": 75,
+          "excerpt": "“I can’t go no lower,” said the Hatter: “I’m on the floor, as it is.”"
+        },
+        {
+          "page": 75,
+          "excerpt": "“I’d rather finish my tea,” said the Hatter, with an anxious look at the Queen, who was reading the list of singers."
+        },
+        {
+          "page": 75,
+          "excerpt": "“You may go,” said the King, and the Hatter hurriedly left the court, without even waiting to put his shoes on."
+        },
+        {
+          "page": 75,
+          "excerpt": "is head off outside,” the Queen added to one of the officers: but the Hatter was out of sight before the officer could get to the door."
+        }
+      ],
+      "street": [],
+      "postal": [],
+      "postcode": [],
+      "address": [
+        {
+          "page": 17,
+          "excerpt": "“I wish I had our Dinah here, I know I do!” said Alice aloud, addressing nobody in particular. “She’d soon fetch it back!”"
+        },
+        {
+          "page": 26,
+          "excerpt": "ilence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice."
+        },
+        {
+          "page": 35,
+          "excerpt": "ce that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—"
+        }
+      ]
+    },
+    "decision": "The Cat points toward a Hatter’s home on p39. Tea-party/court passages give no street number or postal code; address matches are verbs addressed/addressing.",
+    "reviewer": "Codex — AI-assisted source review; student confirmation pending"
+  }
+]

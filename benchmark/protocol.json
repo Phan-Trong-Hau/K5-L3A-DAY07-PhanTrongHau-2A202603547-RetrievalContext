@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T04:21:05.644673+00:00",
+  "dev": {
+    "answerable": 15,
+    "unanswerable": 2
+  },
+  "test": {
+    "answerable": 5,
+    "unanswerable": 2
+  },
+  "origin": "Reuse Day 6 dev only. Five new answerable test questions and four new absence questions authored before Day 7 tuning.",
+  "absence_audit": "Author checked full corpus topic occurrences and all relevant scenes, not merely top-k output. AI-authored labels; student should audit.",
+  "selection": "Maximize dev grounded-answer mean (errors receive zero for selection), then correct abstention rate, then context evidence rate, then lower median latency, then config name.",
+  "retrieval_hit": "Exact gold evidence in a single chunk at the gold source and logical page. Gold items are alternatives. No multi-hop cases.",
+  "context_grade": "0: missing evidence; 1: partial evidence/conditions/source; 2: complete evidence and source. AI-assisted manual reading with reasons, not a semantic verifier score.",
+  "answer_grade": "0: incorrect, unsupported, abstained, or error; 1: partially correct and supported; 2: complete, correct, supported by citations.",
+  "gold_isolation": "Only question, explicit filter, configuration enter agent/retriever. Metrics are computed after generation.",
+  "filter_policy": "Only chapter explicitly named in the user question; no gold-derived filters. Same filters for every method.",
+  "cost": "Ollama and FastEmbed local: service cost USD 0; GPU/CPU/electricity not priced. Token and wall-time totals retained."
+}

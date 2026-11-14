@@ -1,0 +1,97 @@
+[
+  {
+    "id": "t01",
+    "split": "test",
+    "question": "What did the White Rabbit take out of its waistcoat-pocket?",
+    "answerable": true,
+    "expected_answer": "A watch.",
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 1,
+        "evidence": "took a watch out of its waistcoat-pocket"
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "question": "What name did the White Rabbit call Alice when mistaking her for his housemaid?",
+    "answerable": true,
+    "expected_answer": "Mary Ann.",
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 18,
+        "evidence": "Why, Mary Ann, what _are_ you doing out here?"
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "question": "What did the Caterpillar take out of its mouth before addressing Alice?",
+    "answerable": true,
+    "expected_answer": "A hookah.",
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 26,
+        "evidence": "the Caterpillar took the hookah out of its mouth"
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "question": "In chapter VIII, why were the gardeners painting the white roses red?",
+    "answerable": true,
+    "expected_answer": "They had planted a white rose-tree instead of a red one and feared beheading if the Queen found out.",
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 48,
+        "evidence": "this here ought to have been a _red_ rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off"
+      }
+    ],
+    "filter": {
+      "chapter": "VIII"
+    }
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "question": "In chapter XI, what did the White Rabbit hold in each hand near the King at the trial?",
+    "answerable": true,
+    "expected_answer": "A trumpet in one hand and a scroll of parchment in the other.",
+    "gold": [
+      {
+        "source_id": "alice",
+        "page": 70,
+        "evidence": "the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other"
+      }
+    ],
+    "filter": {
+      "chapter": "XI"
+    }
+  },
+  {
+    "id": "t-missing-1",
+    "split": "test",
+    "question": "How many pounds did the gardeners pay for the red paint used on the roses?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Read the full rose-tree and gardener scenes and searched all 82 units: no purchase price for paint is specified."
+  },
+  {
+    "id": "t-missing-2",
+    "split": "test",
+    "question": "What is the Hatter’s street number and postal code?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Read the full tea-party and Hatter scenes and searched all 82 units: no street number or postal code is specified."
+  }
+]

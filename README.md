@@ -2,6 +2,35 @@
 
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
+## Bản triển khai của Phan Trọng Hậu — 2A202603547
+
+Đã có pipeline local trong `src/`: **dense Qdrant Day 6, BM25 và hybrid RRF**,
+agent Qwen gọi tool qua Ollama, benchmark 17 dev / 7 test và kiểm tra checksum khi
+chốt cấu hình. Xem [thiết kế](docs/IMPLEMENTATION.md), [hướng dẫn chạy](docs/RUNNING.md)
+và [báo cáo cá nhân](report/individual/2A202603547_PhanTrongHau.md).
+
+Để demo và thuyết trình, mở [báo cáo HTML](report/BAO_CAO_DEMO.html) cùng
+[kịch bản nói 8–10 phút và hỏi đáp](report/KICH_BAN_THUYET_TRINH.html) bằng trình duyệt.
+HTML chạy offline, có mục lục, chế độ tập trung và nút in/lưu PDF.
+Sửa bản Markdown rồi chạy `python3 scripts/build_html_reports.py` để cập nhật HTML.
+Chạy `python3 scripts/demo.py --scenario all` để xem lại trace thật đã lưu;
+đây là phát lại kết quả, không phải một lượt chạy model mới.
+
+Chạy kiểm tra offline bằng `python3 -m unittest discover -s tests -v`.
+Chạy agent thật sau khi cài dependency và bật Ollama:
+
+```bash
+uv venv --python 3.14
+uv pip sync --python .venv/bin/python requirements.lock.txt
+ollama pull qwen3:4b-instruct
+.venv/bin/python scripts/ask.py "What prize did the Dodo present to Alice?"
+```
+
+Snapshot dữ liệu/vector Day 6 đã kèm trong `data/day6/`; không cần chạy lại Day 6
+hoặc cung cấp API key. Kết quả thực nghiệm và nhãn nằm trong `results/`.
+
+## Đề bài gốc
+
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.
 
 > **Tùy chọn:** [Gợi ý dùng AI để lập trình](AGENT_SETUP.md) giúp bạn làm lab; phần này không bắt buộc và không tính điểm.

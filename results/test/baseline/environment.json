@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-11-14T04:42:28.912439+00:00",
+  "python": "3.14.9",
+  "versions": {
+    "fastembed": "0.9.1",
+    "qdrant-client": "1.20.0",
+    "onnxruntime": "1.32.0",
+    "numpy": "2.5.4"
+  },
+  "ollama_tag": {
+    "name": "qwen3:4b-instruct",
+    "model": "qwen3:4b-instruct",
+    "modified_at": "2026-10-28T00:08:04.051716471+07:00",
+    "size": 2497293803,
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "4.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "cost_note": "Local inference; USD 0 service fees, excluding electricity/hardware."
+}

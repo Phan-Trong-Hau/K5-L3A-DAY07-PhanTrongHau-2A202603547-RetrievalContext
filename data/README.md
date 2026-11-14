@@ -1,5 +1,18 @@
 # Định dạng dữ liệu
 
+## Snapshot bài nộp
+
+`day6/` chứa 192 chunk và vector thật từ collection C Day 6 của Phan Trọng Hậu.
+Corpus Alice có 82 trang logic theo quy ước Day 6. ID, URL, page và metadata giữ nguyên.
+`provenance.json` ghi nguồn, quyền sử dụng, model/dimension và checksum;
+`embedding.json` ghi revision/hash tokenizer và ONNX. Giấy phép Gutenberg giữ trong
+`alice.txt`. Toàn bộ dữ liệu này công khai, không chứa secret/API key.
+
+Benchmark thật nằm trong `benchmark/dev.json` và `benchmark/test.json`; các file
+`example_*.json` bên dưới chỉ dành cho starter/test, không dùng tính kết quả bài nộp.
+
+## Schema gốc
+
 Các file `example_*.json` chỉ minh họa định dạng, không đủ để nộp bài. Dữ liệu thật là JSON array UTF-8; nếu dùng định dạng khác, ghi cách chuyển trong README.
 
 - **Chunk:** `id`, `text`, `source_id`, `source`, `page`, `metadata`. ID phải duy nhất; giữ phiên bản hoặc ngày nếu có.

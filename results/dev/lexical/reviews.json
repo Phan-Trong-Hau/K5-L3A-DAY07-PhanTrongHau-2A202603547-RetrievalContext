@@ -1,0 +1,162 @@
+[
+  {
+    "query_id": "q01",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu p2: nhãn lọ là ORANGE MARMALADE; citation chứa đúng câu mô tả nhãn."
+  },
+  {
+    "query_id": "q02",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu p2: Alice sợ giết ai bên dưới nếu thả lọ; citation hỗ trợ đúng nguyên nhân."
+  },
+  {
+    "query_id": "q03",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 1,
+    "context_grade": 1,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng một phần: p5 có nhãn DRINK ME được trích đúng, nhưng câu hỏi đòi việc kiểm tra poison trước nếm. Context cuối thiếu đoạn kiểm tra độc; không được chấm đủ chỉ vì cùng chai."
+  },
+  {
+    "query_id": "q04",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P6 ghi words EAT ME beautifully marked in currants; đáp án trả lời đúng cách viết bằng currants, citation hỗ trợ."
+  },
+  {
+    "query_id": "q05",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P15 nêu box of comfits, phát prizes và exactly one a-piece; trả lời đủ vật phẩm và số lượng mỗi người."
+  },
+  {
+    "query_id": "q06",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [
+      false
+    ],
+    "reason": "Context đã có p16 Dodo solemnly presented the thimble nhưng model vẫn phủ định Dodo tặng quà và chỉ cite p15 Alice phát comfits. Citation không hỗ trợ phủ định; lỗi đọc/suy luận dù context đủ."
+  },
+  {
+    "query_id": "q07",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context có p21 Alice giơ tay bắt Rabbit, tiếng rơi/crash và suy đoán cucumber-frame. Model vẫn từ chối vì không nối được đại từ it với Rabbit; false abstention, không phải thiếu evidence."
+  },
+  {
+    "query_id": "q08",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P35 ghi It is a Cheshire cat, said the Duchess, and that is why. Đáp án và citation hỗ trợ đúng lý do grinning."
+  },
+  {
+    "query_id": "q09",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P46 ghi It was a treacle-well; model trả lời đúng loại giếng, citation chứa nguyên văn."
+  },
+  {
+    "query_id": "q10",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P45 ghi It is always six o’clock now; trả lời đúng thời gian theo Hatter."
+  },
+  {
+    "query_id": "q11",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P45 có always tea-time và no time to wash the things between whiles. Câu trả lời đủ nguyên nhân; citation lặp cùng ID được tính một nguồn duy nhất."
+  },
+  {
+    "query_id": "q12",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P51 có cả live hedgehogs là balls và live flamingoes là mallets; respectively bảo toàn đúng vai trò."
+  },
+  {
+    "query_id": "q13",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context p62 có đủ danh sách bốn nhánh hư cấu, nhưng model áp kiến thức toán học đời thực rồi từ chối. False abstention dù context đủ."
+  },
+  {
+    "query_id": "q14",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [
+      false
+    ],
+    "reason": "Nội dung old conger-eel once a week đúng và context có p62, nhưng citation aa49e3… trỏ p82 đoạn chị Alice tưởng tượng em lớn lên, hoàn toàn không hỗ trợ teacher/frequency. Theo protocol đòi supported by citations, đây là đáp án thiếu grounded evidence, chấm 0; citation membership hợp lệ chưa đủ."
+  },
+  {
+    "query_id": "q15",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P64 có porpoise close behind us and treading on my tail; đáp án và citation đúng."
+  },
+  {
+    "query_id": "d-missing-1",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Có search thật rồi từ chối rõ, không bịa ngày sinh Alice. Đã đối chiếu quét corpus trong benchmark/absence_audit.json."
+  },
+  {
+    "query_id": "d-missing-2",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Có search thật rồi từ chối rõ, không bịa mức lương Rabbit. Đã đối chiếu quét corpus trong benchmark/absence_audit.json."
+  }
+]

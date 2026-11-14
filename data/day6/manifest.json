@@ -1,0 +1,672 @@
+{
+  "source_id": "alice",
+  "title": "Alice’s Adventures in Wonderland",
+  "author": "Lewis Carroll (1832–1898)",
+  "source_path_or_url": "https://www.gutenberg.org/ebooks/11.txt.utf-8",
+  "local_path": "data/alice.txt",
+  "license_or_permission": "Public domain literary text; full Project Gutenberg license retained in original download. Author died 1898; source declares public domain in USA.",
+  "accessed_at": "2026-11-13T06:34:55.829753+00:00",
+  "source_version": "Gutenberg last updated June 26, 2025; Millennium Fulcrum Edition 3.0",
+  "sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+  "physical_pages": null,
+  "unit_rule": "Sequential normalized paragraph groups >=1500 characters within each chapter; final short remainder merged backwards. Exclude cover, contents, illustrations and license.",
+  "content_units": 82,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 1666,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 2,
+      "characters": 1684,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 1668,
+      "language": "en"
+    },
+    {
+      "page": 3,
+      "characters": 1666,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 3354,
+      "language": "en"
+    },
+    {
+      "page": 4,
+      "characters": 2089,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 5022,
+      "language": "en"
+    },
+    {
+      "page": 5,
+      "characters": 1513,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 7113,
+      "language": "en"
+    },
+    {
+      "page": 6,
+      "characters": 2710,
+      "chapter": "I",
+      "chapter_title": "Down the Rabbit-Hole",
+      "chapter_start": 8628,
+      "language": "en"
+    },
+    {
+      "page": 7,
+      "characters": 1739,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 8,
+      "characters": 2263,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 1741,
+      "language": "en"
+    },
+    {
+      "page": 9,
+      "characters": 1539,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 4006,
+      "language": "en"
+    },
+    {
+      "page": 10,
+      "characters": 1682,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 5547,
+      "language": "en"
+    },
+    {
+      "page": 11,
+      "characters": 1979,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 7231,
+      "language": "en"
+    },
+    {
+      "page": 12,
+      "characters": 1682,
+      "chapter": "II",
+      "chapter_title": "The Pool of Tears",
+      "chapter_start": 9212,
+      "language": "en"
+    },
+    {
+      "page": 13,
+      "characters": 1575,
+      "chapter": "III",
+      "chapter_title": "A Caucus-Race and a Long Tale",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 14,
+      "characters": 1618,
+      "chapter": "III",
+      "chapter_title": "A Caucus-Race and a Long Tale",
+      "chapter_start": 1577,
+      "language": "en"
+    },
+    {
+      "page": 15,
+      "characters": 1510,
+      "chapter": "III",
+      "chapter_title": "A Caucus-Race and a Long Tale",
+      "chapter_start": 3197,
+      "language": "en"
+    },
+    {
+      "page": 16,
+      "characters": 1902,
+      "chapter": "III",
+      "chapter_title": "A Caucus-Race and a Long Tale",
+      "chapter_start": 4709,
+      "language": "en"
+    },
+    {
+      "page": 17,
+      "characters": 2540,
+      "chapter": "III",
+      "chapter_title": "A Caucus-Race and a Long Tale",
+      "chapter_start": 6613,
+      "language": "en"
+    },
+    {
+      "page": 18,
+      "characters": 1538,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 19,
+      "characters": 1535,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 1540,
+      "language": "en"
+    },
+    {
+      "page": 20,
+      "characters": 1566,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 3077,
+      "language": "en"
+    },
+    {
+      "page": 21,
+      "characters": 1503,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 4645,
+      "language": "en"
+    },
+    {
+      "page": 22,
+      "characters": 1763,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 6150,
+      "language": "en"
+    },
+    {
+      "page": 23,
+      "characters": 1574,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 7915,
+      "language": "en"
+    },
+    {
+      "page": 24,
+      "characters": 1678,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 9491,
+      "language": "en"
+    },
+    {
+      "page": 25,
+      "characters": 2665,
+      "chapter": "IV",
+      "chapter_title": "The Rabbit Sends in a Little Bill",
+      "chapter_start": 11171,
+      "language": "en"
+    },
+    {
+      "page": 26,
+      "characters": 1582,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 27,
+      "characters": 1570,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 1584,
+      "language": "en"
+    },
+    {
+      "page": 28,
+      "characters": 1521,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 3156,
+      "language": "en"
+    },
+    {
+      "page": 29,
+      "characters": 1614,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 4679,
+      "language": "en"
+    },
+    {
+      "page": 30,
+      "characters": 1746,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 6295,
+      "language": "en"
+    },
+    {
+      "page": 31,
+      "characters": 1697,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 8043,
+      "language": "en"
+    },
+    {
+      "page": 32,
+      "characters": 2075,
+      "chapter": "V",
+      "chapter_title": "Advice from a Caterpillar",
+      "chapter_start": 9742,
+      "language": "en"
+    },
+    {
+      "page": 33,
+      "characters": 1783,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 34,
+      "characters": 1623,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 1785,
+      "language": "en"
+    },
+    {
+      "page": 35,
+      "characters": 2019,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 3410,
+      "language": "en"
+    },
+    {
+      "page": 36,
+      "characters": 1501,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 5431,
+      "language": "en"
+    },
+    {
+      "page": 37,
+      "characters": 1843,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 6934,
+      "language": "en"
+    },
+    {
+      "page": 38,
+      "characters": 1593,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 8779,
+      "language": "en"
+    },
+    {
+      "page": 39,
+      "characters": 1521,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 10374,
+      "language": "en"
+    },
+    {
+      "page": 40,
+      "characters": 1896,
+      "chapter": "VI",
+      "chapter_title": "Pig and Pepper",
+      "chapter_start": 11897,
+      "language": "en"
+    },
+    {
+      "page": 41,
+      "characters": 1601,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 42,
+      "characters": 1538,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 1603,
+      "language": "en"
+    },
+    {
+      "page": 43,
+      "characters": 1553,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 3143,
+      "language": "en"
+    },
+    {
+      "page": 44,
+      "characters": 1651,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 4698,
+      "language": "en"
+    },
+    {
+      "page": 45,
+      "characters": 1550,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 6351,
+      "language": "en"
+    },
+    {
+      "page": 46,
+      "characters": 1647,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 7903,
+      "language": "en"
+    },
+    {
+      "page": 47,
+      "characters": 3098,
+      "chapter": "VII",
+      "chapter_title": "A Mad Tea-Party",
+      "chapter_start": 9552,
+      "language": "en"
+    },
+    {
+      "page": 48,
+      "characters": 1786,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 49,
+      "characters": 1669,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 1788,
+      "language": "en"
+    },
+    {
+      "page": 50,
+      "characters": 1536,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 3459,
+      "language": "en"
+    },
+    {
+      "page": 51,
+      "characters": 1908,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 4997,
+      "language": "en"
+    },
+    {
+      "page": 52,
+      "characters": 1836,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 6907,
+      "language": "en"
+    },
+    {
+      "page": 53,
+      "characters": 1519,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 8745,
+      "language": "en"
+    },
+    {
+      "page": 54,
+      "characters": 1826,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 10266,
+      "language": "en"
+    },
+    {
+      "page": 55,
+      "characters": 1533,
+      "chapter": "VIII",
+      "chapter_title": "The Queen’s Croquet-Ground",
+      "chapter_start": 12094,
+      "language": "en"
+    },
+    {
+      "page": 56,
+      "characters": 1659,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 57,
+      "characters": 1564,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 1661,
+      "language": "en"
+    },
+    {
+      "page": 58,
+      "characters": 1510,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 3227,
+      "language": "en"
+    },
+    {
+      "page": 59,
+      "characters": 1679,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 4739,
+      "language": "en"
+    },
+    {
+      "page": 60,
+      "characters": 1580,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 6420,
+      "language": "en"
+    },
+    {
+      "page": 61,
+      "characters": 1501,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 8002,
+      "language": "en"
+    },
+    {
+      "page": 62,
+      "characters": 3088,
+      "chapter": "IX",
+      "chapter_title": "The Mock Turtle’s Story",
+      "chapter_start": 9505,
+      "language": "en"
+    },
+    {
+      "page": 63,
+      "characters": 1517,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 64,
+      "characters": 1676,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 1519,
+      "language": "en"
+    },
+    {
+      "page": 65,
+      "characters": 1562,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 3197,
+      "language": "en"
+    },
+    {
+      "page": 66,
+      "characters": 1667,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 4761,
+      "language": "en"
+    },
+    {
+      "page": 67,
+      "characters": 1565,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 6430,
+      "language": "en"
+    },
+    {
+      "page": 68,
+      "characters": 1553,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 7997,
+      "language": "en"
+    },
+    {
+      "page": 69,
+      "characters": 1792,
+      "chapter": "X",
+      "chapter_title": "The Lobster Quadrille",
+      "chapter_start": 9552,
+      "language": "en"
+    },
+    {
+      "page": 70,
+      "characters": 1632,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 71,
+      "characters": 1548,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 1634,
+      "language": "en"
+    },
+    {
+      "page": 72,
+      "characters": 1511,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 3184,
+      "language": "en"
+    },
+    {
+      "page": 73,
+      "characters": 1508,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 4697,
+      "language": "en"
+    },
+    {
+      "page": 74,
+      "characters": 1594,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 6207,
+      "language": "en"
+    },
+    {
+      "page": 75,
+      "characters": 2540,
+      "chapter": "XI",
+      "chapter_title": "Who Stole the Tarts?",
+      "chapter_start": 7803,
+      "language": "en"
+    },
+    {
+      "page": 76,
+      "characters": 1639,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 0,
+      "language": "en"
+    },
+    {
+      "page": 77,
+      "characters": 1530,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 1641,
+      "language": "en"
+    },
+    {
+      "page": 78,
+      "characters": 1523,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 3173,
+      "language": "en"
+    },
+    {
+      "page": 79,
+      "characters": 1815,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 4698,
+      "language": "en"
+    },
+    {
+      "page": 80,
+      "characters": 1546,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 6515,
+      "language": "en"
+    },
+    {
+      "page": 81,
+      "characters": 1678,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 8063,
+      "language": "en"
+    },
+    {
+      "page": 82,
+      "characters": 1829,
+      "chapter": "XII",
+      "chapter_title": "Alice’s Evidence",
+      "chapter_start": 9743,
+      "language": "en"
+    }
+  ]
+}

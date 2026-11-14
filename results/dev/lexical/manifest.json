@@ -1,0 +1,21 @@
+{
+  "model": "qwen3:4b-instruct",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "config": {
+    "method": "bm25",
+    "top_k": 5,
+    "budget": 4800,
+    "max_searches": 2,
+    "hypothesis": "BM25 helps exact entities; larger context and a second search recover missing evidence."
+  },
+  "benchmark_sha256": "6a030187a7ac03247a524334300404fa395a5d9d7f57a609a8f243f66e655595",
+  "corpus_sha256": "3b99c3c77426eca636b3a2eace25461708551c0da025e68878b145dc57a4345b",
+  "code_sha256": {
+    "src/__init__.py": "09c576e8e35b3e837d43f7d6cc0efc1c7d9774889ad5ba789c35f2856cccaed9",
+    "src/agent.py": "28bb4e8825b5f76fa9de4e9cd0fedf254bcecb55fda23e5418279fbcd33dc5ef",
+    "src/common.py": "5ec1ed975feb3517033d44b5b5cab97de3ccc7cbd09582c26d851e42874a7b9f",
+    "src/evaluation.py": "ac47edc5e5c2016002b1fb28d5f9b509d4a0e1b4920539c99915103481f369d8",
+    "src/retrieval.py": "c248d9eb4d4c977b99315fb95fdc9559edbab66cf3baa84ab457b8654d673375",
+    "src/run.py": "e97268674208b181326a24dee01d9130b9982b1abd005a4ce8dd4b95d5b204b8"
+  }
+}

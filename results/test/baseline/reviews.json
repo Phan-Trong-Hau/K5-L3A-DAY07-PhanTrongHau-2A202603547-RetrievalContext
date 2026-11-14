@@ -1,0 +1,62 @@
+[
+  {
+    "query_id": "t01",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [
+      false
+    ],
+    "reason": "Sai vật thể và tình huống: evidence p1 là watch lấy từ waistcoat-pocket; context/citation p8 chỉ nói Rabbit cầm gloves và fan, không nói lấy chúng từ túi áo. Citation không hỗ trợ mệnh đề của câu trả lời."
+  },
+  {
+    "query_id": "t02",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P18 Rabbit gọi Why, Mary Ann và nhầm Alice là housemaid; citation chứa cả tên và tình huống hỏi."
+  },
+  {
+    "query_id": "t03",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P26 mở đầu ghi Caterpillar took the hookah out of its mouth trước addressed her; citation đúng vật và thứ tự."
+  },
+  {
+    "query_id": "t04",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "False abstention. Context p48 mới có cảnh sơn hoa trắng thành đỏ và chuyện tulip-roots/onions, chưa có đoạn Two giải thích trồng nhầm cây trắng và sợ bị chém đầu. Source đúng nhưng điều kiện/nguyên nhân thiếu."
+  },
+  {
+    "query_id": "t05",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "P70 ghi Rabbit near King with trumpet in one hand and scroll of parchment in the other. Citation hỗ trợ đủ hai đồ vật và mỗi tay."
+  },
+  {
+    "query_id": "t-missing-1",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "reason": "Lỗi giao thức: model phát ABSTAIN ngay lượt đầu mà không gọi retrieval; validator giữ status error. Không tính thành từ chối đúng dù biết câu thiếu evidence. Raw output và lỗi lưu trong events; không sửa code theo test."
+  },
+  {
+    "query_id": "t-missing-2",
+    "reviewer": "Codex — AI-assisted source/trace review, chưa phải xác nhận của học viên",
+    "citation_support": [],
+    "reason": "Lỗi giao thức: model phát ABSTAIN ngay lượt đầu mà không gọi retrieval; validator giữ status error. Không tính thành từ chối đúng dù biết câu thiếu evidence. Raw output và lỗi lưu trong events; không sửa code theo test."
+  }
+]
