@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "dataset": "Nghị định 13/2023/NĐ-CP, Vietnamese OCR snapshot from Day 06",
+  "inherited_test_protocol": {
+    "status": "new document external source test; frozen before first retrieval; no tuning or selection on this dataset",
+    "corpus": "data/vietnamese/pages.json",
+    "questions": "benchmark/vietnamese_questions.json",
+    "language": "vi",
+    "embedding": "BAAI/bge-small-en-v1.5 unchanged from English baseline",
+    "reranker": "Xenova/ms-marco-MiniLM-L-6-v2 unchanged",
+    "strategies": {
+      "A": "fixed 500 overlap50",
+      "B": "paragraph max1000",
+      "C": "B plus input chapter filter",
+      "D": "B plus dense20 BM25_20 RRF60 rerank20 top3 and input chapter filter"
+    },
+    "segmentation": "physical pages, additionally split chapter transitions for trustworthy filters; chunk offsets remain relative to original normalized OCR page",
+    "collection_path": ".qdrant_vi",
+    "top_k": 3,
+    "metric": "exact cosine for dense; unchanged strict single-chunk source/page/full-quote Hit metrics",
+    "test_count": 20,
+    "dev_count": 0,
+    "filter_questions": [
+      "vi01",
+      "vi06",
+      "vi18",
+      "vi19"
+    ],
+    "caveats": [
+      "New document and language; one scanned source only, authored content labels pending student review.",
+      "English embedding/reranker, unchanged English lexical stopwords; intentional out-of-domain test, not optimized Vietnamese retrieval.",
+      "OCR errors can affect ranking; benchmark is evaluated against frozen OCR text, not a perfect human transcription.",
+      "All 20 external-test queries are frozen; no parameter search after results."
+    ]
+  },
+  "dev_count": 0,
+  "external_test_count": 20,
+  "question_sha256": "a7b4fd12d6bfa03e0e8bbf0d40c49142cf6b9b8a9c20d9820d52bb6254814515",
+  "converted_test_sha256": "4f6b04c4f09fb0330791e8cb4dbad7599586cfd746b24c7a39a4a16d52e85b16",
+  "corpus_provenance_sha256": "a6a9c742b5f62d871af6b9a49e6f2b6710f3a397a1d163ea051d6f9d18071814",
+  "configs_sha256": "531484a0d94409ee81b6d05b16302bdb3f28093741a2fdf03c485f4ca9347783",
+  "methods": [
+    "baseline",
+    "lexical",
+    "hybrid",
+    "mmr",
+    "rerank"
+  ],
+  "controller": "same Qwen 3 4B native-tool agent across methods; Vietnamese prompt; mandatory search; 4096 context window",
+  "selection": "No method selection or tuning on this external test; results are descriptive only.",
+  "answer_quality": "Status, retrieval hits, context hit and citations are separate; no automatic semantic pass score.",
+  "test_run_utc": "2026-11-14",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0"
+}

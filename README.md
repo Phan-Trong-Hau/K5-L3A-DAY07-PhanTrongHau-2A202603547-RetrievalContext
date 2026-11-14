@@ -4,17 +4,18 @@
 
 ## Bản triển khai của Phan Trọng Hậu — 2A202603547
 
-Đã có pipeline local trong `src/`: **dense Qdrant Day 6, BM25 và hybrid RRF**,
-agent Qwen gọi tool qua Ollama, benchmark 17 dev / 7 test và kiểm tra checksum khi
-chốt cấu hình. Xem [thiết kế](docs/IMPLEMENTATION.md), [hướng dẫn chạy](docs/RUNNING.md)
-và [báo cáo cá nhân](report/individual/2A202603547_PhanTrongHau.md).
+Đã có pipeline local trong `src/`: **dense Qdrant Day 6, BM25, hybrid RRF,
+dense MMR và hybrid cross-encoder rerank**. Bài đánh giá hiện tại dùng tài liệu
+tiếng Việt [Nghị định 13/2023/NĐ-CP](report/NGHI_DINH_13_DEMO.html): 20 câu × 5
+phương pháp. Các kết quả Alice trước đó được giữ riêng làm lịch sử, không dùng
+trong lần đánh giá Nghị định 13. Xem [quy trình benchmark tiếng Việt](docs/ND13.md),
+[thiết kế](docs/IMPLEMENTATION.md) và [hướng dẫn chạy](docs/RUNNING.md).
 
-Để demo và thuyết trình, mở [báo cáo HTML](report/BAO_CAO_DEMO.html) cùng
-[kịch bản nói 8–10 phút và hỏi đáp](report/KICH_BAN_THUYET_TRINH.html) bằng trình duyệt.
-HTML chạy offline, có mục lục, chế độ tập trung và nút in/lưu PDF.
-Sửa bản Markdown rồi chạy `python3 scripts/build_html_reports.py` để cập nhật HTML.
-Chạy `python3 scripts/demo.py --scenario all` để xem lại trace thật đã lưu;
-đây là phát lại kết quả, không phải một lượt chạy model mới.
+Để demo kết quả Nghị định 13, mở [báo cáo HTML](report/NGHI_DINH_13_DEMO.html)
+bằng trình duyệt. Nó chạy offline và có thể in/lưu PDF. Trace thật nằm trong
+`results/nd13/test/<method>/traces.json`.
+Để phát lại ví dụ thật đã lưu mà không gọi model mới, chạy
+`python3 scripts/demo.py --scenario all`.
 
 Chạy kiểm tra offline bằng `python3 -m unittest discover -s tests -v`.
 Chạy agent thật sau khi cài dependency và bật Ollama:
@@ -23,11 +24,12 @@ Chạy agent thật sau khi cài dependency và bật Ollama:
 uv venv --python 3.14
 uv pip sync --python .venv/bin/python requirements.lock.txt
 ollama pull qwen3:4b-instruct
-.venv/bin/python scripts/ask.py "What prize did the Dodo present to Alice?"
+.venv/bin/python scripts/ask.py "Trong Chương I, dữ liệu cá nhân được chia thành hai nhóm nào?"
 ```
 
-Snapshot dữ liệu/vector Day 6 đã kèm trong `data/day6/`; không cần chạy lại Day 6
-hoặc cung cấp API key. Kết quả thực nghiệm và nhãn nằm trong `results/`.
+Snapshot OCR/vector Nghị định 13 từ Day 6 nằm trong `data/nd13/`; Alice vẫn ở
+`data/day6/` để tái lập benchmark cũ. Kết quả Nghị định 13 nằm ở `results/nd13/`.
+Chạy lại bằng [hướng dẫn Nghị định 13](docs/ND13.md).
 
 ## Đề bài gốc
 

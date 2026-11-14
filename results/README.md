@@ -1,5 +1,14 @@
 # Kết quả thực nghiệm thật
 
+**Bộ đánh giá hiện tại:** `nd13/` có 20 câu tiếng Việt về Nghị định 13, chạy qua
+năm phương pháp. `nd13/validation.json` tách lượt agent, hit@3, evidence context,
+lỗi và unit tests; xem [báo cáo HTML](../report/NGHI_DINH_13_DEMO.html). Các câu
+trong bộ này là external test cố định; không chọn winner theo chúng.
+
+**V2:** `v2/` chứa năm phương pháp, freeze mới, holdout mới và hồi quy các case v1.
+`v2/validation.json` tách rõ pass code, pass regression và pass holdout.
+Các đường dẫn dưới đây là lịch sử v1, không bị ghi đè khi sửa controller v2.
+
 - `dev/`: cùng 17 câu, ba cấu hình baseline/dense, lexical/BM25, hybrid/RRF.
 - `selection.json`: cấu hình được chọn trên dev, thời điểm freeze và checksum.
 - `test/`: cùng 7 câu mới, baseline và cấu hình đã chọn, chạy sau freeze.

@@ -1,5 +1,7 @@
 # Cách chạy và tái lập
 
+**Bộ đánh giá hiện tại:** [Nghị định 13 tiếng Việt](ND13.md), 20 câu qua năm phương pháp; trace tại `results/nd13/`. Hướng dẫn v2/Alice dưới đây là benchmark lịch sử. Lệnh live `scripts/ask.py` mặc định dùng Nghị định 13.
+
 Chạy mọi lệnh từ thư mục gốc repo. Python >=3.11; bản lock được chạy với CPython
 3.14.9 trên Linux. Cần Ollama cài sẵn; nếu server chưa chạy, mở terminal khác với
 `ollama serve`. Không cần `.env` hoặc API key.
@@ -22,13 +24,13 @@ CPU của Ollama nhưng chậm hơn. Không tự tải model 7B hoặc gọi API
 ## Hỏi agent
 
 ```bash
-.venv/bin/python scripts/ask.py "What prize did the Dodo present to Alice?" --config hybrid
-.venv/bin/python scripts/ask.py "On what exact date was Alice born?" --config hybrid
+.venv/bin/python scripts/ask.py "Trong Chương I, dữ liệu cá nhân được chia thành hai nhóm nào?" --config rerank
+.venv/bin/python scripts/ask.py "Kinh phí bảo vệ dữ liệu cá nhân của doanh nghiệp do ai bố trí?" --config lexical
 ```
 
 Mỗi lần lưu trace tại `results/demo/trace.json`; dùng `--output` để giữ nhiều ví dụ.
 Không truyền `--config` thì dùng cấu hình đã chốt trên dev; có thể chọn một trong
-`baseline`, `lexical`, `hybrid` để xem riêng từng phương pháp.
+`baseline`, `lexical`, `hybrid`, `mmr`, `rerank` để xem riêng từng phương pháp.
 `--chapter IX` chỉ khi người dùng yêu cầu chương đó; không lấy chương từ gold.
 Không chạy đồng thời hai tiến trình dùng cùng Qdrant local path vì store có khóa.
 

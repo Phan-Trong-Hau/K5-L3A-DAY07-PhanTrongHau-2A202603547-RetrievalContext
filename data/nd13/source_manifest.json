@@ -1,0 +1,195 @@
+{
+  "source_id": "nd13",
+  "title": "Nghị định 13/2023/NĐ-CP — Bảo vệ dữ liệu cá nhân (bản ký 2023)",
+  "source_path_or_url": "https://chinhphu.vn/default.aspx?docid=207759&pageid=27160",
+  "accessed_at": "2026-11-13T09:55:01.425062+00:00",
+  "sha256": "d5d2e1648e5f8a9840e654c29b23f7654db3dac5c2b7efc75d924d2f870b2f01",
+  "physical_pages": 39,
+  "ocr_engine": "tesseract 5.3.4",
+  "ocr_language": "vie",
+  "render_dpi": 200,
+  "psm": 3,
+  "extracted_text_pages": 0,
+  "note": "39 scanned physical pages OCR-processed; count regulation text separately from appendix listing/forms. Evidence pages and chapter transitions reviewed by source review; source comparison recorded. 2023 source snapshot, not current legal advice.",
+  "pages": [
+    {
+      "page": 1,
+      "characters": 1370
+    },
+    {
+      "page": 2,
+      "characters": 1728
+    },
+    {
+      "page": 3,
+      "characters": 2127
+    },
+    {
+      "page": 4,
+      "characters": 2063
+    },
+    {
+      "page": 5,
+      "characters": 1930
+    },
+    {
+      "page": 6,
+      "characters": 1787
+    },
+    {
+      "page": 7,
+      "characters": 1369
+    },
+    {
+      "page": 8,
+      "characters": 1656
+    },
+    {
+      "page": 9,
+      "characters": 1800
+    },
+    {
+      "page": 10,
+      "characters": 1947
+    },
+    {
+      "page": 11,
+      "characters": 2091
+    },
+    {
+      "page": 12,
+      "characters": 2099
+    },
+    {
+      "page": 13,
+      "characters": 2030
+    },
+    {
+      "page": 14,
+      "characters": 2095
+    },
+    {
+      "page": 15,
+      "characters": 2151
+    },
+    {
+      "page": 16,
+      "characters": 2097
+    },
+    {
+      "page": 17,
+      "characters": 2105
+    },
+    {
+      "page": 18,
+      "characters": 1806
+    },
+    {
+      "page": 19,
+      "characters": 1992
+    },
+    {
+      "page": 20,
+      "characters": 2143
+    },
+    {
+      "page": 21,
+      "characters": 2238
+    },
+    {
+      "page": 22,
+      "characters": 1800
+    },
+    {
+      "page": 23,
+      "characters": 1890
+    },
+    {
+      "page": 24,
+      "characters": 1658
+    },
+    {
+      "page": 25,
+      "characters": 1877
+    },
+    {
+      "page": 26,
+      "characters": 1953
+    },
+    {
+      "page": 27,
+      "characters": 1769
+    },
+    {
+      "page": 28,
+      "characters": 1094
+    },
+    {
+      "page": 29,
+      "characters": 471
+    },
+    {
+      "page": 30,
+      "characters": 1564
+    },
+    {
+      "page": 31,
+      "characters": 1507
+    },
+    {
+      "page": 32,
+      "characters": 1335
+    },
+    {
+      "page": 33,
+      "characters": 453
+    },
+    {
+      "page": 34,
+      "characters": 1234
+    },
+    {
+      "page": 35,
+      "characters": 282
+    },
+    {
+      "page": 36,
+      "characters": 1428
+    },
+    {
+      "page": 37,
+      "characters": 276
+    },
+    {
+      "page": 38,
+      "characters": 1099
+    },
+    {
+      "page": 39,
+      "characters": 295
+    }
+  ],
+  "official_source": "https://chinhphu.vn/default.aspx?docid=207759&pageid=27160",
+  "source_version": "Signed source 2023; user file SHA-256 recorded; no claim about current legal validity",
+  "page_groups": {
+    "regulation_text": [
+      1,
+      28
+    ],
+    "appendix_listing": [
+      29,
+      29
+    ],
+    "blank_form_templates": [
+      30,
+      39
+    ]
+  },
+  "count_rule": "39 physical scanned pages indexed as provided; only 28 pages carry regulation text. Appendix listing/templates are not claimed as 11 extra full content pages for the lab minimum.",
+  "chapter_boundaries": "AI visual review: I on p1, II p7, III within p24, IV within p27, appendix p29; segment chunks at chapter boundaries and preserve physical-page offsets.",
+  "ocr_quality": "No global spelling correction. Gold passages visually reviewed; OCR variants such as đữ/thê/đông/ kế retained and disclosed.",
+  "ocr_text_sha256": "706170a1d56f0f17e407a4c44027fe7341d8ca6a7ca2f8e1233b310ca3509093",
+  "local_path": "data/vietnamese/13nd.signed.pdf",
+  "license_or_permission": "Official regulation supplied by the user for this lab; user explicitly authorized including the unchanged PDF in this repository. Official source is recorded; no claim of a separate Creative Commons license.",
+  "original_path_at_ingestion": "/home/ryanphan/Downloads/13nd.signed.pdf"
+}

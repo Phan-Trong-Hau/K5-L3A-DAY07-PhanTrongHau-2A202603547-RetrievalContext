@@ -1,0 +1,85 @@
+{
+  "source": "Nghị định 13/2023/NĐ-CP (Day 06 Vietnamese OCR snapshot)",
+  "source_sha256": "d5d2e1648e5f8a9840e654c29b23f7654db3dac5c2b7efc75d924d2f870b2f01",
+  "ocr_sha256": "706170a1d56f0f17e407a4c44027fe7341d8ca6a7ca2f8e1233b310ca3509093",
+  "test_cases": 20,
+  "methods": {
+    "baseline": {
+      "label": "Dense cosine (Day 6 BGE vectors, top-3)",
+      "N": 20,
+      "answered": 6,
+      "errors": 0,
+      "abstained": 14,
+      "hit3": 12,
+      "context_evidence": 5,
+      "searched": 20,
+      "citations_in_context": 6,
+      "median_seconds": 8.005801999999676
+    },
+    "lexical": {
+      "label": "BM25 tiếng Việt (token từ OCR)",
+      "N": 20,
+      "answered": 16,
+      "errors": 2,
+      "abstained": 2,
+      "hit3": 19,
+      "context_evidence": 20,
+      "searched": 20,
+      "citations_in_context": 16,
+      "median_seconds": 16.655018066001503
+    },
+    "hybrid": {
+      "label": "Hybrid dense + BM25, reciprocal-rank fusion",
+      "N": 20,
+      "answered": 15,
+      "errors": 0,
+      "abstained": 5,
+      "hit3": 15,
+      "context_evidence": 15,
+      "searched": 20,
+      "citations_in_context": 15,
+      "median_seconds": 22.476266928999394
+    },
+    "mmr": {
+      "label": "MMR trên dense top-20, λ = 0,75",
+      "N": 20,
+      "answered": 12,
+      "errors": 0,
+      "abstained": 8,
+      "hit3": 10,
+      "context_evidence": 11,
+      "searched": 20,
+      "citations_in_context": 12,
+      "median_seconds": 16.282957612002065
+    },
+    "rerank": {
+      "label": "Hybrid top-20, MiniLM cross-encoder rerank",
+      "N": 20,
+      "answered": 17,
+      "errors": 0,
+      "abstained": 3,
+      "hit3": 16,
+      "context_evidence": 17,
+      "searched": 20,
+      "citations_in_context": 17,
+      "median_seconds": 40.012379587002215
+    }
+  },
+  "unit_tests": {
+    "recorded_at": "2026-11-14T09:17:19.799009+00:00",
+    "tests_run": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "command": "python3 scripts/check_tests.py",
+    "note": "Offline behavior tests include mocks; not model-quality benchmark."
+  },
+  "all_end_to_end_cases_passed": false,
+  "grading_note": "No automatic semantic grade is assigned. A correct endpoint answer needs semantic correctness, support from cited passage, and citation membership in the final context. Answered status and retrieval hits are reported separately.",
+  "limitations": [
+    "All 20 cases are the frozen Day 06 external test; there is no ND13 dev set and no winner is selected from these test results.",
+    "BGE-small-en-v1.5 and the MiniLM cross-encoder are English-labelled models applied to Vietnamese OCR; BM25 tokenization does not normalize OCR spelling.",
+    "The document is the signed 2023 snapshot; this benchmark is not legal advice and makes no claim about current law."
+  ]
+}

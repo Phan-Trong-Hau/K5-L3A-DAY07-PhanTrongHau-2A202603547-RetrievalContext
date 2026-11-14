@@ -15,11 +15,12 @@ SCENARIOS = {
 }
 
 
-def show(split, config, query_id):
-    folder = ROOT / 'results' / split / config
+def show(split, config, query_id, version='v1'):
+    result_root = ROOT / 'results'
+    folder = result_root / split / config if split != 'regression' else result_root / 'regression'
     trace = next(t for t in load(folder / 'traces.json') if t['query_id'] == query_id)
     review = next(r for r in load(folder / 'reviews.json') if r['query_id'] == query_id)
-    print(f'\n{split.upper()} / {config} / {query_id}')
+    print(f'\n{version.upper()} / {split.upper()} / {config} / {query_id}')
     print('Câu hỏi:', trace['question'])
     searches = [e for e in trace['events'] if e['event'] == 'search']
     print('Số lượt retrieval:', len(searches))
@@ -49,14 +50,48 @@ def show(split, config, query_id):
     print('Trace:', folder.relative_to(ROOT) / 'traces.json')
 
 
+def show_nd13(method, query_id):
+    folder = ROOT / 'results/nd13/test' / method
+    trace = next(t for t in load(folder / 'traces.json') if t['query_id'] == query_id)
+    case = next(q for q in load(ROOT / 'benchmark/nd13/test.json') if q['id'] == query_id)
+    print(f'\nNGHỊ ĐỊNH 13 / {method} / {query_id}')
+    print('Câu hỏi:', trace['question'])
+    print('Đáp án chuẩn:', case['expected_answer'])
+    print('Trạng thái:', trace['status'])
+    print('Gold trong top-3:', trace.get('hit3'))
+    print('Gold trong context:', trace.get('context_hit'))
+    print('Câu trả lời:', trace['answer'] or trace.get('error', ''))
+    chunks = {c['id']: c for c in load(ROOT / 'data/nd13/chunks.json')}
+    for cid in trace.get('citations', []):
+        chunk = chunks.get(cid)
+        if chunk:
+            print(f"Citation {cid[:12]}…: trang {chunk['page']}, chương {chunk['metadata'].get('chapter')}")
+    print('Trace:', (folder / 'traces.json').relative_to(ROOT))
+
+
 def main():
     parser = argparse.ArgumentParser(description='Demo bằng trace benchmark thật đã lưu, không gọi model mới')
-    parser.add_argument('--scenario', choices=['all', *SCENARIOS], default='all')
+    parser.add_argument('--scenario', choices=['all', 'new-methods', *SCENARIOS], default='all')
+    parser.add_argument('--version', choices=['nd13', 'v1'], default='nd13')
     args = parser.parse_args()
     print('PHÁT LẠI TRACE ĐÃ LƯU — không phải suy luận trực tiếp, không tạo số liệu mới.')
-    for scenario in SCENARIOS if args.scenario == 'all' else [args.scenario]:
-        for row in SCENARIOS[scenario]:
-            show(*row)
+    if args.version == 'nd13':
+        scenarios = {
+            'all': [('rerank', 'vi01'), ('rerank', 'vi03'), ('lexical', 'vi04')],
+            'new-methods': [('mmr', 'vi05'), ('rerank', 'vi05')],
+            'failure': [('rerank', 'vi03')],
+            'abstention': [('lexical', 'vi04')],
+            'improvement': [('baseline', 'vi02'), ('rerank', 'vi02')],
+            'holdout-error': [('baseline', 'vi18'), ('rerank', 'vi18')],
+        }
+        for row in scenarios[args.scenario]:
+            show_nd13(*row)
+    elif args.version == 'v1':
+        if args.scenario == 'new-methods':
+            parser.error('new-methods is available for --version nd13')
+        for scenario in SCENARIOS if args.scenario == 'all' else [args.scenario]:
+            for row in SCENARIOS[scenario]:
+                show(*row)
 
 
 if __name__ == '__main__':

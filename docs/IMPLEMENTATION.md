@@ -1,5 +1,9 @@
 # Thiết kế Agentic RAG
 
+Tài liệu dưới đây mô tả phiên bản v1 đã chốt tại commit `ad887b0`.
+Code hiện có năm phương pháp và controller v2. Benchmark Alice ở phần dưới là lịch
+sử; đánh giá hiện tại bằng tiếng Việt được ghi tại [ND13.md](ND13.md).
+
 Code thực thi nằm trong `src/`, không dùng adapter mock của `starter/` để benchmark.
 
 ```mermaid
@@ -31,7 +35,7 @@ Corpus là *Alice’s Adventures in Wonderland*, Lewis Carroll, nguồn Project 
 Day 6 chia theo nhóm đoạn văn; không phải 82 trang PDF. Không tính đây là bài bonus
 tài liệu từ 100 trang có bảng/ảnh/biểu đồ. Corpus công khai chạy toàn bộ trên máy.
 
-## Ba phương pháp
+## Ba phương pháp ban đầu (v1)
 
 1. **Dense**: embedding query → Qdrant local exact cosine. Giữ cùng mô hình/index Day 6.
 2. **BM25**: token Unicode NFC/casefold, `k1=1.5`, `b=0.75`, IDF có smoothing.

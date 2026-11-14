@@ -1,4 +1,4 @@
-"""BM25, Day 6 dense cosine, and reciprocal-rank fusion. No gold input."""
+"""Five retrieval methods over the same Day 6 corpus; no gold input."""
 import math
 import re
 import unicodedata
@@ -50,6 +50,29 @@ def rrf(rankings, top_k, constant=60):
             for cid in sorted(scores, key=lambda cid: (-scores[cid], cid))[:top_k]]
 
 
+def mmr(ranking, vectors, top_k, weight=.75):
+    """Maximize query relevance minus similarity to already selected documents."""
+    if not 0 < weight <= 1:
+        raise ValueError('MMR weight must be in (0, 1]')
+    normalized = {}
+    for row in ranking:
+        vector = vectors[row['id']]
+        norm = math.sqrt(sum(x*x for x in vector))
+        if not norm:
+            raise ValueError('Zero document vector')
+        normalized[row['id']] = [x/norm for x in vector]
+    selected, remaining = [], list(ranking)
+    while remaining and len(selected) < top_k:
+        def score(row):
+            redundancy = max((sum(x*y for x, y in zip(normalized[row['id']], normalized[s['id']]))
+                              for s in selected), default=0)
+            return weight * row['score'] - (1-weight) * redundancy
+        best = min(remaining, key=lambda row: (-score(row), row['id']))
+        selected.append({**best, 'dense_score': best['score'], 'score': score(best), 'method': 'mmr'})
+        remaining.remove(best)
+    return selected
+
+
 class Retriever:
     def __init__(self, data='data/day6', store='.qdrant', collection='day7'):
         from fastembed import TextEmbedding
@@ -62,6 +85,9 @@ class Retriever:
                 raise ValueError(f'Day 6 snapshot checksum mismatch: {name}')
         self.chunks = load(data / 'chunks.json')
         vectors = load(data / 'vectors.json')
+        self.vector_by_id = {v['id']: v['vector'] for v in vectors}
+        self.reranker = None
+        self.rerank_cache = {}
         if len(vectors) != len(self.chunks) or [v['id'] for v in vectors] != [c['id'] for c in self.chunks]:
             raise ValueError('Day 6 vector/chunk ID mismatch')
         self.dimensions = provenance['dimensions']
@@ -111,6 +137,25 @@ class Retriever:
         elif method == 'hybrid':
             rows = rrf({name: self.search(query, filters=filters, top_k=candidates, method=name)
                         for name in ('dense', 'bm25')}, top_k)
+        elif method == 'mmr':
+            rows = mmr(self.search(query, filters=filters, top_k=candidates, method='dense'),
+                       self.vector_by_id, top_k)
+        elif method == 'rerank':
+            candidates_rows = self.search(query, filters=filters, top_k=candidates,
+                                          method='hybrid', candidates=candidates)
+            key = (query, tuple(r['id'] for r in candidates_rows))
+            if key not in self.rerank_cache:
+                if self.reranker is None:
+                    from fastembed.rerank.cross_encoder import TextCrossEncoder
+                    self.reranker = TextCrossEncoder('Xenova/ms-marco-MiniLM-L-6-v2', threads=4)
+                scores = list(self.reranker.rerank(query, [r['text'] for r in candidates_rows], batch_size=16))
+                if len(scores) != len(candidates_rows) or any(not math.isfinite(float(s)) for s in scores):
+                    raise ValueError('Invalid cross-encoder scores')
+                self.rerank_cache[key] = scores
+            rows = sorted([{**r, 'fusion_score': r['score'], 'score': float(s), 'method': 'rerank',
+                            'reranker': 'Xenova/ms-marco-MiniLM-L-6-v2'}
+                           for r, s in zip(candidates_rows, self.rerank_cache[key])],
+                          key=lambda r: (-r['score'], r['id']))[:top_k]
         else:
             raise ValueError(f'Unknown retrieval method: {method}')
         return [{**r, 'rank': i} for i, r in enumerate(rows, 1)]

@@ -5,7 +5,7 @@ import time
 import urllib.request
 
 SEARCH = {'type': 'function', 'function': {
-    'name': 'search_documents', 'description': 'Search the local Alice book for evidence. Search before answering. Rewrite the query if evidence is insufficient.',
+    'name': 'search_documents', 'description': 'Search the local document collection for evidence. Search before answering. Rewrite the query if evidence is insufficient.',
     'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}
 FINISH = {'type': 'function', 'function': {
     'name': 'submit_answer', 'description': 'Submit an evidence-grounded answer, or abstain when context does not establish the requested fact.',
@@ -28,13 +28,14 @@ Keep the answer short and use the language of the question.'''
 
 
 class Ollama:
-    def __init__(self, model='qwen3:4b-instruct', url='http://localhost:11434', timeout=180):
+    def __init__(self, model='qwen3:4b-instruct', url='http://localhost:11434', timeout=180, context_size=8192):
         self.model, self.url, self.timeout = model, url.rstrip('/'), timeout
+        self.context_size = context_size
 
     def chat(self, messages, tools):
         body = {'model': self.model, 'messages': messages, 'tools': tools,
                 'stream': False, 'think': False, 'keep_alive': '30m',
-                'options': {'temperature': 0, 'seed': 7, 'num_ctx': 8192, 'num_predict': 384}}
+                'options': {'temperature': 0, 'seed': 7, 'num_ctx': self.context_size, 'num_predict': 384}}
         req = urllib.request.Request(self.url + '/api/chat', data=json.dumps(body).encode(),
                                      headers={'Content-Type': 'application/json'})
         with urllib.request.urlopen(req, timeout=self.timeout) as response:
@@ -97,6 +98,9 @@ def final_action(message):
 
 def run_agent(question, provider, retriever, config, filters=None):
     """Only question and explicit filters enter the agent; no benchmark labels."""
+    if config.get('policy_v2'):
+        from .agent_v2 import run_agent as improved_agent
+        return improved_agent(question, provider, retriever, config, filters)
     started = time.perf_counter()
     trace = {'question': question, 'filter': filters or {}, 'status': 'error', 'answer': '',
              'citations': [], 'events': [], 'context': '', 'context_ids': [], 'usage': {

@@ -1,0 +1,19 @@
+{
+  "source_repository": "https://github.com/Phan-Trong-Hau/K5-L3A-DAY06-PhanTrongHau-2A202603547-DataIngestion",
+  "day6_collection": "Vietnamese ND 13 pages, paragraph chunks (max 1000) and BGE-small-en-v1.5 vectors",
+  "source_id": "nd13",
+  "language": "vi",
+  "page_count": 39,
+  "chunk_count": 88,
+  "dimensions": 384,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "source_pdf_sha256": "d5d2e1648e5f8a9840e654c29b23f7654db3dac5c2b7efc75d924d2f870b2f01",
+  "sha256": {
+    "chunks.json": "efe67dbf53f0e9091ba21973fe9ccb07761fc5cef1953dba761aeb61cd54597d",
+    "vectors.json": "41d352cce60bcffd7034a0dd610c15f46370477fe7a077b9f6d4c7eeb0064943",
+    "pages.json": "706170a1d56f0f17e407a4c44027fe7341d8ca6a7ca2f8e1233b310ca3509093",
+    "source_manifest.json": "ea359b3853e95ca25e6c38150b776591830cdd61758d86aa40ce9d96a1da7ec6",
+    "embedding.json": "df5b5832fb3f219e19f0696750f02129e45abf0fee801644a7f8ce34170d46c7",
+    "13nd.signed.pdf": "d5d2e1648e5f8a9840e654c29b23f7654db3dac5c2b7efc75d924d2f870b2f01"
+  }
+}

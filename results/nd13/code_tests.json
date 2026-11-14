@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-14T09:17:19.799009+00:00",
+  "tests_run": 43,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "command": "python3 scripts/check_tests.py",
+  "note": "Offline behavior tests include mocks; not model-quality benchmark."
+}
