@@ -23,7 +23,6 @@ def audit(cases, traces, reviews):
             selection_n += 1
         if t['status'] == 'error':
             stats['errors'] += 1
-            continue
         r = by_id.get(q['id'])
         if r is None or not r.get('reason') or not r.get('reviewer'):
             raise ValueError(f"Missing audit/reason/reviewer: {q['id']}")
@@ -39,7 +38,7 @@ def audit(cases, traces, reviews):
             grade, context = r.get('answer_grade'), r.get('context_grade')
             if type(grade) is not int or grade not in (0, 1, 2) or type(context) is not int or context not in (0, 1, 2):
                 raise ValueError('Answer and context grades must be 0/1/2')
-            if t['status'] == 'abstain' and grade != 0:
+            if t['status'] in ('abstain', 'error') and grade != 0:
                 raise ValueError('Abstained answerable case must be graded zero')
             stats['answer_grades'][str(grade)] += 1
             stats['context_grades'][str(context)] += 1
@@ -52,7 +51,7 @@ def audit(cases, traces, reviews):
             if r['abstention_correct'] and t['status'] != 'abstain':
                 raise ValueError('Correct abstention requires abstain status')
             abstain_N += 1
-            abstain_n += r['abstention_correct']
+            abstain_n += r['abstention_correct'] and t['status'] == 'abstain'
     n = sum(stats['answer_grades'].values())
     stats.update(grounded_mean=(stats['answer_grades']['1'] + 2 * stats['answer_grades']['2']) / n if n else None,
                  selection_mean_errors_zero=selection_total / selection_n if selection_n else 0,

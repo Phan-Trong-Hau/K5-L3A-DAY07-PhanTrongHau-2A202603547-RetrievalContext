@@ -1,22 +1,17 @@
-# Định dạng dữ liệu
+# Định dạng và nguồn dữ liệu
 
-## Snapshot bài nộp
+## Dataset dùng cho bài nộp
 
-`day6/` chứa 192 chunk và vector thật từ collection C Day 6 của Phan Trọng Hậu.
-Corpus Alice có 82 trang logic theo quy ước Day 6. ID, URL, page và metadata giữ nguyên.
-`provenance.json` ghi nguồn, quyền sử dụng, model/dimension và checksum;
-`embedding.json` ghi revision/hash tokenizer và ONNX. Giấy phép Gutenberg giữ trong
-`alice.txt`. Toàn bộ dữ liệu này công khai, không chứa secret/API key.
+Benchmark hiện tại dùng `nd13/`: PDF ký số Nghị định 13/2023/NĐ-CP, OCR 39 trang, 88 chunks và vectors 384 chiều được chuẩn bị từ Day 06. `source_manifest.json` và `provenance.json` ghi nguồn, quyền, model, dimension và checksum. Đây là snapshot năm 2023; không dùng làm xác nhận pháp lý hiện hành.
 
-Benchmark thật nằm trong `benchmark/dev.json` và `benchmark/test.json`; các file
-`example_*.json` bên dưới chỉ dành cho starter/test, không dùng tính kết quả bài nộp.
+Các câu hỏi đang chấm ở `../benchmark/nd13/dev.json` và `../benchmark/nd13/test.json`. Gold gồm nguồn, số trang PDF và evidence quote; câu thiếu evidence có `absence_reason` cùng audit terms. Gold chỉ dùng trong evaluation, không đưa vào prompt hoặc retrieval.
 
-## Schema gốc
+`day6/` giữ lại artifact Alice của benchmark lịch sử và các file ví dụ cho starter; chúng không tạo số liệu cho báo cáo Nghị định 13 hiện tại.
 
-Các file `example_*.json` chỉ minh họa định dạng, không đủ để nộp bài. Dữ liệu thật là JSON array UTF-8; nếu dùng định dạng khác, ghi cách chuyển trong README.
+## Schema
 
-- **Chunk:** `id`, `text`, `source_id`, `source`, `page`, `metadata`. ID phải duy nhất; giữ phiên bản hoặc ngày nếu có.
-- **Câu có đáp án:** `id`, `split` (`dev` hoặc `test`), `question`, `expected_answer`, `gold`: danh sách `{source_id, page, evidence}`. Với schema mẫu, mỗi evidence phải nằm trọn trong một chunk đúng nguồn và trang; các phần tử `gold` là evidence thay thế. Với câu multi-hop cần nhiều đoạn, bạn có thể mở rộng schema, ghi rõ nhóm evidence bắt buộc và cách chấm. Có thể thêm `filter` do người dùng cung cấp trước.
-- **Câu thiếu evidence:** `id`, `split`, `question`, `answerable: false`, `expected_behavior: "search_and_abstain"`, `absence_reason`. Xem `agent_cases_example.json`.
+Các artifact là JSON UTF-8. Mỗi chunk có `id`, `text`, `source_id`, `source`, `page`, `metadata`; ID phải duy nhất. Mỗi câu có `id`, `split`, `question`, `answerable`; câu trả lời được có `expected_answer` và `gold` gồm `{source_id, page, evidence}`. Câu không trả lời được cần `absence_reason` và cách kiểm tra nguồn. Có thể thêm `filter` chỉ khi suy ra được từ câu hỏi/yêu cầu, không lấy từ gold.
 
-Không đưa `gold` hoặc nhãn đáp án vào model và retrieval tool. Ghi nguồn dữ liệu và quyền sử dụng. Cách chuyển một số định dạng Day 6: [starter/README.md](../starter/README.md).
+Giữ liên kết đến tài liệu gốc, trang và metadata. Đối chiếu trang/evidence với nguồn; trích nguyên văn OCR không tự đảm bảo đáp án đúng.
+
+Xem thêm [benchmark protocol](../benchmark/nd13/protocol.json), [hướng dẫn chạy](../docs/ND13.md) và [data schema mẫu](../starter/README.md).

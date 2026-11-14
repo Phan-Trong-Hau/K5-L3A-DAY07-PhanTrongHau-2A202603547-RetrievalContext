@@ -10,13 +10,26 @@ class AuditTests(unittest.TestCase):
         self.review = {'query_id': 'q', 'reviewer': 'unit test', 'reason': 'test fixture',
                        'answer_grade': 2, 'context_grade': 2, 'citation_support': [True]}
 
-    def test_error_penalized_for_selection_and_not_hidden_in_quality(self):
+    def test_error_is_zero_and_remains_in_all_answerable_denominators(self):
         cases = self.cases + [{'id': 'broken', 'answerable': True}]
-        traces = [self.trace, {'query_id': 'broken', 'status': 'error'}]
-        stats = audit(cases, traces, [self.review])
+        traces = [self.trace, {'query_id': 'broken', 'status': 'error', 'citations': [], 'context_ids': []}]
+        error_review = {'query_id': 'broken', 'reviewer': 'unit test', 'reason': 'runtime error',
+                        'answer_grade': 0, 'context_grade': 2, 'citation_support': []}
+        stats = audit(cases, traces, [self.review, error_review])
         self.assertEqual(stats['errors'], 1)
-        self.assertEqual(stats['grounded_mean'], 2)
+        self.assertEqual(stats['grounded_mean'], 1)
         self.assertEqual(stats['selection_mean_errors_zero'], 1)
+        self.assertEqual(stats['answer_grades']['0'], 1)
+        self.assertEqual(stats['context_grades']['2'], 2)
+        self.assertEqual(stats['false_abstention'], {'n': 0, 'N': 2, 'rate': 0})
+
+    def test_error_on_missing_evidence_is_not_a_correct_abstention(self):
+        case = {'id': 'missing', 'answerable': False}
+        trace = {'query_id': 'missing', 'status': 'error', 'citations': [], 'context_ids': []}
+        review = {'query_id': 'missing', 'reviewer': 'unit test', 'reason': 'runtime error',
+                  'abstention_correct': False, 'citation_support': []}
+        stats = audit([case], [trace], [review])
+        self.assertEqual(stats['abstention'], {'n': 0, 'N': 1, 'rate': 0})
 
     def test_missing_review_rejected(self):
         with self.assertRaises(ValueError):

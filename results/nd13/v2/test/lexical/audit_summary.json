@@ -1,11 +1,11 @@
 {
   "answer_grades": {
-    "0": 0,
+    "0": 1,
     "1": 1,
     "2": 3
   },
   "context_grades": {
-    "0": 0,
+    "0": 1,
     "1": 0,
     "2": 4
   },
@@ -27,9 +27,9 @@
   },
   "false_abstention": {
     "n": 0,
-    "N": 4,
+    "N": 5,
     "rate": 0.0
   },
-  "grounded_mean": 1.75,
+  "grounded_mean": 1.4,
   "selection_mean_errors_zero": 1.4
 }

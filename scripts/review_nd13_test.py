@@ -19,7 +19,7 @@ LABELS={
   'nd13-22':(2,2,'Names all four parties and the requirement to request related parties stop; cited passage supports answer.'),
   'nd13-23':(1,2,'Answer states the right condition and gold is present in context, but its citation resolves to page 15 and does not support the claim on page 11.'),
   'nd13-24':(2,2,'Correct 72-hour deadline and triggering request; cited page 13 passage supports answer.'),
-  'nd13-25':(0,0,'The exact page 21 evidence was retrieved, but model skipped required retrieval and ended in protocol error.'),
+  'nd13-25':(0,0,'Independent evaluation of the original query ranking found the page 21 evidence, but the agent tool loop skipped mandatory retrieval and ended in protocol error; final context is empty.'),
  }
 }
 

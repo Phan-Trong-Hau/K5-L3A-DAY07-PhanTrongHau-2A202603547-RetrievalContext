@@ -13,7 +13,7 @@
     "unanswerable": 2
   },
   "test_freeze": "The seven new test questions and absence scans were written before any new test inference. Do not tune on them.",
-  "dev_reuse": "The previous 20-question, five-method traces are preserved unchanged under results/nd13/external_v1 and imported as dev with trace_origin. Four additional dev missing-evidence cases are newly run.",
+  "dev_reuse": "The previous 20 answerable-question, five-method traces are preserved unchanged under results/nd13/external_v1 and imported as dev with trace_origin. Two new dev missing-evidence questions were run with all five methods.",
   "methods": [
     "baseline",
     "lexical",

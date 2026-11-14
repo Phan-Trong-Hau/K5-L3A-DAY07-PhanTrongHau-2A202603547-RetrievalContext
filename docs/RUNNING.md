@@ -1,96 +1,46 @@
-# Cách chạy và tái lập
+# Cách chạy và xem kết quả
 
-**Bộ đánh giá hiện tại:** [Nghị định 13 tiếng Việt](ND13.md), 20 câu qua năm phương pháp; trace tại `results/nd13/`. Hướng dẫn v2/Alice dưới đây là benchmark lịch sử. Lệnh live `scripts/ask.py` mặc định dùng Nghị định 13.
+## Bộ bài nộp hiện tại
 
-Chạy mọi lệnh từ thư mục gốc repo. Python >=3.11; bản lock được chạy với CPython
-3.14.9 trên Linux. Cần Ollama cài sẵn; nếu server chưa chạy, mở terminal khác với
-`ollama serve`. Không cần `.env` hoặc API key.
+Bài dùng Nghị định 13 tiếng Việt và snapshot Day 06. Benchmark v2 có dev 22 câu trên năm phương pháp, test mới 7 câu (5 có đáp án, 2 thiếu evidence), chạy baseline và phương pháp lexical đã chọn từ dev. Xem [protocol](../benchmark/nd13/protocol.json), [report HTML](../report/NGHI_DINH_13_DEMO.html), [báo cáo cá nhân](../report/individual/2A202603547_PhanTrongHau.md) và [danh mục kết quả](../results/README.md). Hai mươi câu cũ đã được xem trước nên được phân loại lại làm dev; không tính là holdout độc lập.
 
-## Cài môi trường
+## Kiểm tra code và phát lại demo
+
+```bash
+python3 scripts/check_tests.py
+.venv/bin/python scripts/build_nd13_report.py
+.venv/bin/python scripts/demo.py --scenario all
+```
+
+Demo phát lại trace đã lưu, không gọi model. Test mới có một lỗi protocol trên `nd13-25` và citation sai trang trên `nd13-23`; report giữ nguyên các lỗi này. Unit tests kiểm tra code/mock, không thay thế đánh giá agent thật.
+
+## Cài môi trường và hỏi agent
+
+Chạy lệnh từ thư mục gốc repo. Python >=3.11; lockfile được kiểm tra với CPython 3.14.9 trên Linux. Cần Ollama; khởi động `ollama serve` nếu server chưa chạy. Không cần `.env` hay API key.
 
 ```bash
 uv venv --python 3.14
 uv pip sync --python .venv/bin/python requirements.lock.txt
 ollama pull qwen3:4b-instruct
-python3 -m unittest discover -s tests -v
+.venv/bin/python scripts/prepare_nd13.py
+.venv/bin/python scripts/ask.py "Trong Chương I, dữ liệu cá nhân được chia thành hai nhóm nào?" --config lexical
 ```
 
-Không có `uv`: tạo virtualenv Python >=3.11 rồi `pip install -r requirements.txt`.
-Lần đầu FastEmbed tải model ONNX công khai; cần mạng để tải. Model tải về được kiểm
-tra hash tokenizer/ONNX trùng Day 6; không khớp thì dừng, không chuyển sang model giả.
-Model sinh khoảng 2.5 GB; GPU 4 GB chạy được với cấu hình hiện tại, có thể fallback
-CPU của Ollama nhưng chậm hơn. Không tự tải model 7B hoặc gọi API tính phí.
+Trace câu hỏi trực tiếp mặc định lưu tại `results/demo/trace.json`; dùng `--output` để lưu tên khác. Có thể chọn `baseline`, `lexical`, `hybrid`, `mmr`, `rerank`. Chỉ dùng `--chapter` khi người dùng nói rõ chương. Không chạy đồng thời hai tiến trình dùng chung Qdrant local path.
 
-## Hỏi agent
+## Artifact benchmark
 
-```bash
-.venv/bin/python scripts/ask.py "Trong Chương I, dữ liệu cá nhân được chia thành hai nhóm nào?" --config rerank
-.venv/bin/python scripts/ask.py "Kinh phí bảo vệ dữ liệu cá nhân của doanh nghiệp do ai bố trí?" --config lexical
-```
+- `benchmark/nd13/dev.json`, `benchmark/nd13/test.json`: cases, gold và absence checks.
+- `configs/experiments.json`: cấu hình, retrieval và giả thuyết.
+- `results/nd13/v2/dev/<method>/`: trace/review của năm phương pháp.
+- `results/nd13/v2/selection.json`: winner và checksum đóng băng.
+- `results/nd13/v2/test/{baseline,lexical}/`: test trace/review/metrics sau freeze.
+- `results/nd13/validation.json`: metrics được report dùng.
 
-Mỗi lần lưu trace tại `results/demo/trace.json`; dùng `--output` để giữ nhiều ví dụ.
-Không truyền `--config` thì dùng cấu hình đã chốt trên dev; có thể chọn một trong
-`baseline`, `lexical`, `hybrid`, `mmr`, `rerank` để xem riêng từng phương pháp.
-`--chapter IX` chỉ khi người dùng yêu cầu chương đó; không lấy chương từ gold.
-Không chạy đồng thời hai tiến trình dùng cùng Qdrant local path vì store có khóa.
+`results/nd13/v2/test` đã chứa trace cuối; không cần chạy lại test để xem report. Re-running `scripts/run_nd13.py --split test` cần model/Ollama và index đã chuẩn bị; runner tiếp tục trace còn thiếu với benchmark/config/code/model hash đã đóng băng. Không thay đổi cấu hình dựa trên test đã xem; đánh giá thay đổi cần test mới.
 
-## Xem bài nộp
+Mỗi trace ghi model, tool calls, query/filter, ranking/context, citations, token, thời gian, phí dịch vụ và lỗi. Nhãn review có AI hỗ trợ, kèm lý do đối chiếu; học viên cần rà nguồn và xác nhận trước khi nộp.
 
-- `benchmark/dev.json`, `benchmark/test.json`: câu hỏi, đáp án, evidence/absence audit.
-- `configs/experiments.json`: baseline và hai cấu hình thử cải thiện.
-- `results/dev/*/traces.json`, `results/test/*/traces.json`: trace thật từng câu.
-- `reviews.json`: nhãn đối chiếu câu trả lời, context, citation và lý do.
-- `summary.json`, `audit_summary.json`, `comparison.json`: số liệu tổng hợp.
-- `results/selection.json`: winner chốt trên dev trước test; hash model/config/code/data.
-- Các lần chạy thử tích hợp chỉ lưu cục bộ, không nộp; tóm tắt ở `results/README.md`.
+## Giới hạn nguồn
 
-## Tái lập trong thư mục mới
-
-```bash
-.venv/bin/python scripts/reproduce.py --output runs/reproduction-01
-```
-
-Lệnh tạo bản sao code/config/benchmark/snapshot trong thư mục mới rồi chạy **dev**,
-giữ nguyên kết quả đã nộp. Sau khi đọc trace và viết nhãn `reviews.json` cho mỗi
-cấu hình, dùng Python của môi trường gốc để chạy các lệnh sau từ thư mục mới:
-
-```bash
-python scripts/freeze.py --split dev
-python -m src.run --split test
-# Đọc toàn bộ baseline + winner test, ghi reviews.json ở mỗi thư mục kết quả.
-python scripts/freeze.py --split test
-```
-
-`python` ở đoạn này là executable của virtualenv đã kích hoạt bằng `source
-<repo-gốc>/.venv/bin/activate`. Không copy nhãn cũ vào kết quả mới một cách máy móc.
-Runner lưu sau từng câu và có thể tiếp tục lượt dở bằng lệnh cũ nếu hash không đổi.
-Chạy dev trong bản nộp đã freeze sẽ bị từ chối để tránh chỉnh theo test.
-
-Schema nhãn mỗi câu thành công:
-
-```json
-{
-  "query_id": "q01",
-  "reviewer": "Tên người/AI đọc đối chiếu",
-  "answer_grade": 2,
-  "context_grade": 2,
-  "citation_support": [true],
-  "reason": "Giải thích đối chiếu nguồn, điều kiện, câu trả lời và từng citation."
-}
-```
-
-Với câu thiếu evidence, bỏ hai trường grade, thêm `abstention_correct: true/false`.
-Lượt lỗi giữ nguyên trace lỗi, không thêm nhãn thành công. Script không tự chấm
-ngữ nghĩa; người chấm phải đọc nguồn. Bài nộp có nhãn AI hỗ trợ, cần người học rà lại.
-
-## Tái xuất từ Day 6 (không cần khi chỉ chấm bài)
-
-Trong một bản sao repo chưa freeze, có thể dùng:
-
-```bash
-.venv/bin/python scripts/import_day6.py --day6 ../K5-L3A-DAY06-PhanTrongHau-2A202603547-DataIngestion
-.venv/bin/python scripts/prepare_benchmark.py
-```
-
-Script chỉ mở bản sao tạm của `.qdrant` Day 6, xuất collection C và copy văn bản
-công khai; không sửa repo Day 6. Không chạy sau khi đã freeze vì thay snapshot/nhãn.
+PDF là bản ký số năm 2023; OCR còn lỗi. BGE-small-en-v1.5 và MiniLM được giữ từ pipeline Day 06 và dùng với tiếng Việt. Không dùng kết quả này để khẳng định quy định hiện hành hoặc tư vấn pháp lý. Alice chỉ còn là artifact benchmark lịch sử.

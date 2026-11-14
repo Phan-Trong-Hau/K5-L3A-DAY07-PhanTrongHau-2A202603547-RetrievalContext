@@ -2,7 +2,7 @@
   {
     "query_id": "nd13-21",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.506259+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636207+00:00",
     "citation_support": [
       true
     ],
@@ -13,7 +13,7 @@
   {
     "query_id": "nd13-22",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.506270+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636217+00:00",
     "citation_support": [
       true
     ],
@@ -24,7 +24,7 @@
   {
     "query_id": "nd13-23",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.507350+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636934+00:00",
     "citation_support": [
       false
     ],
@@ -35,7 +35,7 @@
   {
     "query_id": "nd13-24",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.507363+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636941+00:00",
     "citation_support": [
       true
     ],
@@ -46,16 +46,16 @@
   {
     "query_id": "nd13-25",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.507368+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636944+00:00",
     "citation_support": [],
     "answer_grade": 0,
     "context_grade": 0,
-    "reason": "The exact page 21 evidence was retrieved, but model skipped required retrieval and ended in protocol error."
+    "reason": "Independent evaluation of the original query ranking found the page 21 evidence, but the agent tool loop skipped mandatory retrieval and ended in protocol error; final context is empty."
   },
   {
     "query_id": "nd13-test-missing-03",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.507371+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636947+00:00",
     "citation_support": [],
     "abstention_correct": true,
     "reason": "Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng."
@@ -63,7 +63,7 @@
   {
     "query_id": "nd13-test-missing-04",
     "reviewer": "Codex — AI-assisted manual review against frozen gold and cited OCR passages; student confirmation pending.",
-    "reviewed_at": "2026-11-14T09:51:15.507374+00:00",
+    "reviewed_at": "2026-11-14T14:02:38.636949+00:00",
     "citation_support": [],
     "abstention_correct": true,
     "reason": "Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng."

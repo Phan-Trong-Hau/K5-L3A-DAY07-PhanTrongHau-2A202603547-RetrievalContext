@@ -1,162 +1,97 @@
-# Báo cáo demo Agentic RAG Day 7
+# Demo: Agentic RAG trên Nghị định 13/2023/NĐ-CP
 
-**Phan Trọng Hậu · MSSV 2A202603547 · Lớp L3A**
+## Mục tiêu
 
-## 1. Kết quả chính
+So sánh năm phương pháp retrieval trên tài liệu tiếng Việt của Day 06, chọn cấu hình chỉ bằng dev, rồi đánh giá một lần trên test mới. Bản PDF ký số năm 2023 được giữ nguyên cùng OCR, chunks và vector Day 06. Không dùng bài Alice cho benchmark này.
 
-Bài làm xây agent hỏi đáp trên tài liệu, dùng lại dữ liệu và vector store Day 6. Tôi so sánh dense retrieval, BM25 và hybrid RRF trên dev, rồi chọn **BM25 kết hợp context 4.800 ký tự** theo tiêu chí công bố trước khi đánh giá test.
+## Thiết kế benchmark
 
-Theo nhãn đối chiếu có AI hỗ trợ, cấu hình chọn trả lời đầy đủ, có citation hỗ trợ cho **5/5 câu test có đáp án**. Hai câu test thiếu bằng chứng gặp lỗi điều phối: model từ chối trước khi gọi retrieval. Vì vậy, kết quả này **không có nghĩa toàn bộ 7 câu test đều đạt**, và chưa chứng minh hệ thống từ chối đúng trên holdout. Báo cáo giữ nguyên các lỗi thay vì tính chúng thành thành công.
+- Dev: 22 câu, 20 có đáp án và 2 câu cố ý không có bằng chứng; dùng so sánh 5 phương pháp.
+- Test đóng băng: 7 câu mới, 5 có đáp án và 2 thiếu bằng chứng; chỉ chạy baseline và phương pháp được chọn trên dev.
+- Hai mươi câu đã chạy và xem trước ở phiên trước được lưu dưới `results/nd13/external_v1/` và dùng lại làm dev; chúng không được tính là holdout độc lập.
+- Quy tắc chọn: điểm answer grade trung bình trên dev (0–2; lỗi chạy tính 0), sau đó lần lượt xét abstention đúng, evidence trong context, latency.
+- BM25 tiếng Việt (`lexical`) được chọn trên dev. Model: Qwen 3 4B local; corpus và code được hash/freeze trước test.
 
-Thông điệp của phần demo là cần đo riêng việc tìm tài liệu, chọn context, trả lời và dẫn nguồn. Một tầng tốt không bảo đảm các tầng sau đều đúng.
+## Cấu hình và giả thuyết đã đo
 
-## 2. Mục tiêu và dữ liệu
+| Cấu hình | Retrieval | top-k | candidates | Context budget | Tìm tối đa | Giả thuyết |
+|---|---|---:|---:|---:|---:|---|
+| baseline | dense | 3 | — | 1200 ký tự | 1 | Day 6 dense with small context; same v2 controller as all other configurations. |
+| lexical | bm25 | 5 | — | 4800 ký tự | 2 | Exact lexical matching with larger context. |
+| hybrid | hybrid | 5 | 20 | 4800 ký tự | 2 | Fuse dense and BM25 ranks with RRF. |
+| mmr | mmr | 5 | 20 | 4800 ký tự | 2 | Dense candidates selected by 0.75 relevance minus 0.25 redundancy to improve context diversity. |
+| rerank | rerank | 5 | 20 | 4800 ký tự | 2 | Hybrid shortlist re-scored by a real MiniLM cross-encoder query-document model. |
 
-Agent cần tìm bằng chứng trong corpus, trả lời kèm nguồn và nhận biết khi không có đủ thông tin. Đầu vào là câu hỏi và filter người dùng nêu rõ; đầu ra gồm câu trả lời hoặc trạng thái từ chối, citation và trace để kiểm tra.
+BM25 thử khớp từ vựng chính xác với context lớn hơn, kỳ vọng giữ tên/điều kiện OCR bị dense bỏ sót. Hybrid thử hợp nhất thứ hạng dense và BM25 bằng RRF, kỳ vọng lấy được evidence bị một nhánh bỏ qua. Đây là so sánh giữa các cấu hình gói, chưa tách ablation tác động riêng của context budget.
 
-| Thành phần | Thiết lập thực tế |
-|---|---|
-| Corpus | Alice’s Adventures in Wonderland, Lewis Carroll, Project Gutenberg #11 |
-| Dữ liệu tiếp nối | Collection C của Day 6, giữ nguyên chunk ID, text, source, page và metadata |
-| Quy mô | 192 chunk, 82 đơn vị trang logic; không phải 82 trang PDF |
-| Embedding | BAAI/bge-small-en-v1.5, 384 chiều, FastEmbed 0.9.1 |
-| Vector store | Qdrant local, cosine; tái tạo từ vector thật đã xuất ở Day 6 |
-| Model điều phối | qwen3:4b-instruct, Q4_K_M, Ollama local |
-| Thiết lập model | Temperature 0, seed 7, context window 8.192 token |
-| Thiết bị đo | NVIDIA GTX 1650 4 GB, CPython 3.14.9 |
+## Kết quả test mới
 
-Văn bản gốc và giấy phép Gutenberg được giữ trong `data/day6/alice.txt`. Model và dữ liệu có checksum để phát hiện thay đổi. Query embedding dùng cùng model và cách gọi với Day 6; không dùng vector ngẫu nhiên để đánh giá.
+| Cấu hình | Hit@1 | Evidence Hit@3 | Context evidence | Answer 0/1/2, TB /2 | Context 0/1/2 | Citation hỗ trợ | Trả lời có citation | Tool use* | Phân bố lượt search | Abstain đúng | Từ chối nhầm | Lỗi | Median s | Tổng s | Token tổng | Phí dịch vụ |
+|---|---:|---:|---:|---|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| baseline | 1/5 (20%) | 2/5 (40%) | 1/5 (20%) | 4/0/1 (0.40/2) | 4/0/1 | 1/1 (100%) | 1/1 (100%) | 6/6 (100%) | 1 câu: 0 lượt, 6 câu: 1 lượt | 2/2 (100%) | 3/5 (60%) | 1 | 7.3 | 51.4 | 8828 | $0.00 |
+| lexical | 4/5 (80%) | 5/5 (100%) | 4/5 (80%) | 1/1/3 (1.40/2) | 1/0/4 | 3/4 (75%) | 4/4 (100%) | 6/6 (100%) | 1 câu: 0 lượt, 6 câu: 1 lượt | 2/2 (100%) | 0/5 (0%) | 1 | 18.0 | 169.7 | 15170 | $0.00 |
 
-Benchmark có **24 câu**: dev gồm 15 câu có đáp án và 2 câu thiếu bằng chứng; test gồm 5 câu có đáp án mới và 2 câu thiếu bằng chứng mới. Không dùng lại test Day 6 đã từng được đánh giá. Câu hỏi dùng tiếng Anh phù hợp với corpus và embedding.
+BM25 trả lời đúng về nội dung ở 4/5 câu có đáp án, nhưng chỉ 3/4 citation được hỗ trợ đúng đoạn; ở `nd13-23`, câu trả lời nêu đúng điều kiện nhưng citation trỏ sang trang 15 thay vì đoạn luật ở trang 11, nên được chấm answer 1/2. BM25 từ chối đúng 2/2 câu không có bằng chứng. Câu `nd13-25` là lỗi giao thức: model bỏ qua retrieval bắt buộc và kết thúc bằng lỗi. Ranking truy vấn gốc được tính độc lập sau lượt chạy có đoạn bằng chứng trang 21, nhưng đoạn đó không nằm trong context cuối gửi model; không tính ranking offline thành retrieval thành công của agent. Điểm câu này là 0. Baseline trả lời đúng 1/5 câu, từ chối đúng 2/2 câu thiếu evidence, và có một lỗi giao thức.
 
-## 3. Hệ thống hoạt động như thế nào
+### Chấm từng câu
 
-```mermaid
-flowchart TD
-    Q[Câu hỏi và filter rõ ràng] --> A[Qwen quyết định gọi tool tìm kiếm]
-    A --> R{Phương pháp retrieval theo cấu hình}
-    R --> D[Dense qua Qdrant Day 6]
-    R --> B[BM25 theo từ khóa]
-    R --> H[Hybrid kết hợp rank bằng RRF]
-    D --> C[Chọn context có ID nguồn và trang]
-    B --> C
-    H --> C
-    C --> M[Model đọc bằng chứng]
-    M --> F[Trả lời có citation hoặc từ chối]
-    F --> V[Kiểm tra giao thức và citation ID]
-    V --> T[Lưu trace và đối chiếu nguồn]
-```
+| Case | Method | Trạng thái | Answer / 2 | Context / 2 | Abstention | Câu trả lời / lỗi | Nhận xét đối chiếu |
+|---|---|---|---:|---:|---|---|---|
+| nd13-21 | baseline | abstain | 0 | 0 | — | ABSTAIN: Không tìm thấy thông tin về thời gian bên kiểm soát phải thực hiện yêu cầu khi chủ thể phản đối xử lý dữ liệu để ngăn tiết lộ hoặc dùng cho quảng cáo, tiếp thị trong Chương II của Nghị định số 13/2023/NĐ-CP. Dữ liệu hiện có không cung cấp thời gian cụ | Abstained on an answerable case; no gold passage in context. |
+| nd13-22 | baseline | abstain | 0 | 0 | — | ABSTAIN: Không có thông tin trong văn bản về những bên nào phải ngừng xử lý dữ liệu của chủ thể sau khi đã thông báo hậu quả và nhận yêu cầu rút lại đồng ý. Các đoạn trích chỉ nêu rõ việc thông báo hậu quả khi nhận yêu cầu rút lại đồng ý, nhưng không đề cập đế | Abstained on an answerable case; no gold passage in context. |
+| nd13-23 | baseline | abstain | 0 | 0 | — | ABSTAIN: Không tìm thấy thông tin trong văn bản về trường hợp bên kiểm soát có thể không cung cấp dữ liệu vì việc cung cấp có thể ảnh hưởng đến người khác. Các đoạn trích hiện có không đề cập đến điều kiện này. | Gold was in original top-3 but omitted from final context; abstention is incorrect. |
+| nd13-24 | baseline | answered | 2 | 2 | — | [1d0358ad25ac5f8a0c558624a7d5e37d8044ee809f2ffe51c2afc3f8ea19e13b] Trong trường hợp không thể thực hiện yêu cầu chỉnh sửa dữ liệu cá nhân, phải thông báo cho chủ thể dữ liệu sau 72 giờ kể từ khi nhận được yêu cầu chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu. | Correct 72-hour answer; cited passage on page 13 supports it. |
+| nd13-25 | baseline | error | 0 | 0 | — | ValueError: Model skipped mandatory retrieval after protocol repair | Runtime protocol error; no final evidence context. |
+| nd13-test-missing-03 | baseline | abstain | — | — | đúng | ABSTAIN: Không tìm thấy thông tin về số điện thoại đường dây nóng của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao trong văn bản. | Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng. |
+| nd13-test-missing-04 | baseline | abstain | — | — | đúng | ABSTAIN: Không có thông tin trong Nghị định số 13/2023/NĐ-CP về mức ngân sách hằng năm được ấn định chính xác cho hoạt động bảo vệ dữ liệu cá nhân của doanh từng doanh nghiệp. Các đoạn trích không cung cấp số tiền cụ thể nào liên quan đến ngân sách này. | Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng. |
+| nd13-21 | lexical | answered | 2 | 2 | — | Bên kiểm soát phải thực hiện yêu cầu của chủ thể dữ liệu trong 72 giờ sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác [51d959173d4170c537b6084a90aed280f9f23686012e7fb35df30bdd427ff480]. | Correct 72-hour limit and legal exception; cited page 8 passage supports answer. |
+| nd13-22 | lexical | answered | 2 | 2 | — | Sau khi đã thông báo hậu quả và nhận yêu cầu rút lại sự đồng ý, Bên Kiểm soát dữ liệu cá nhân, Bên Xử lý dữ liệu, Bên Kiểm soát và xử lý dữ liệu, Bên thứ ba phải ngừng và yêu cầu các tổ chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thể dữ liệu đã rút  | Names all four parties and the requirement to request related parties stop; cited passage supports answer. |
+| nd13-23 | lexical | answered | 1 | 2 | — | Bên kiểm soát có thể không cung cấp dữ liệu cá nhân trong trường hợp việc cung cấp có thể ảnh hưởng tới sự an toàn, sức khỏe thể chất hoặc tinh thần của người khác [fbda52817cf9dc390fcfacee45492fa572d492b51579d556749c614201aac65b]. | Answer states the right condition and gold is present in context, but its citation resolves to page 15 and does not support the claim on page 11. |
+| nd13-24 | lexical | answered | 2 | 2 | — | Theo Điều 15, khoản 2, điểm b của Nghị định số 13/2023/NĐ-CP, nếu không thể thực hiện yêu cầu chỉnh sửa dữ liệu cá nhân thì Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo tới chủ thể dữ liệu sau 72 giờ kể từ khi nhận được  | Correct 72-hour deadline and triggering request; cited page 13 passage supports answer. |
+| nd13-25 | lexical | error | 0 | 0 | — | ValueError: Model skipped mandatory retrieval after protocol repair | Independent evaluation of the original query ranking found the page 21 evidence, but the agent tool loop skipped mandatory retrieval and ended in protocol error; final context is empty. |
+| nd13-test-missing-03 | lexical | abstain | — | — | đúng | ABSTAIN: Không có thông tin về số điện thoại đường dây nóng của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao trong các đoạn trích đã cung cấp. | Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng. |
+| nd13-test-missing-04 | lexical | abstain | — | — | đúng | ABSTAIN: Nghị định 13/2023/NĐ-CP không quy định rõ ràng về mức ngân sách hằng năm cụ thể (đồng) mà doanh nghiệp phải chi cho hoạt động bảo vệ dữ liệu cá nhân. Chỉ nêu rằng kinh phí bảo vệ dữ liệu cá nhân của tổ chức, doanh nghiệp do các tổ chức, doanh nghiệp t | Không có yêu cầu trong tài liệu; câu trả lời đúng là từ chối kèm diễn giải thiếu bằng chứng. |
 
-Model gọi tool `search_documents` với query do nó tạo. Tool dùng phương pháp đã cấu hình, không cho model tiếp cận đáp án chuẩn. Hệ thống giữ chunk nguyên vẹn, loại trùng và chọn context trong giới hạn ký tự, bao gồm cả header nguồn. Mỗi lần tìm, model chỉ nhận context tích lũy mới nhất để tránh nhân budget theo số lượt.
+## So sánh dev dùng để chọn
 
-Model có thể kết thúc bằng `submit_answer` hoặc final text có citation dạng `[chunk-id]`. Khi thiếu bằng chứng, model cần từ chối rõ bằng `ABSTAIN:`. Lỗi kết nối, định dạng hay citation không hợp lệ được giữ là `error`. Việc từ chối trước khi tìm kiếm cũng không được công nhận là hoàn thành yêu cầu search-and-abstain.
+| Method | Hit@1 | Evidence Hit@3 | Context evidence | Answer 0/1/2, TB /2 | Context 0/1/2 | Citation hỗ trợ | Trả lời có citation | Tool use* | Phân bố lượt search | Abstain đúng | Từ chối nhầm | Lỗi | Median s | Tổng s | Token tổng | Phí dịch vụ |
+|---|---:|---:|---:|---|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| baseline | 5/20 (25%) | 12/20 (60%) | 5/20 (25%) | 15/0/5 (0.50/2) | 7/8/5 | 5/6 (83%) | 6/6 (100%) | 22/22 (100%) | 22 câu: 1 lượt | 2/2 (100%) | 14/20 (70%) | 0 | 7.7 | 177.2 | 28134 | $0.00 |
+| lexical | 12/20 (60%) | 19/20 (95%) | 20/20 (100%) | 6/2/12 (1.30/2) | 0/0/20 | 14/18 (78%) | 16/16 (100%) | 20/20 (100%) | 22 câu: 1 lượt | 2/2 (100%) | 2/20 (10%) | 2 | 16.6 | 394.2 | 58437 | $0.00 |
+| hybrid | 13/20 (65%) | 15/20 (75%) | 15/20 (75%) | 10/0/10 (1.00/2) | 0/5/15 | 10/15 (67%) | 15/15 (100%) | 22/22 (100%) | 22 câu: 1 lượt | 2/2 (100%) | 5/20 (25%) | 0 | 20.9 | 827.7 | 56580 | $0.00 |
+| mmr | 5/20 (25%) | 10/20 (50%) | 11/20 (55%) | 10/1/9 (0.95/2) | 0/9/11 | 11/14 (79%) | 12/12 (100%) | 22/22 (100%) | 22 câu: 1 lượt | 2/2 (100%) | 8/20 (40%) | 0 | 16.3 | 453.2 | 52275 | $0.00 |
+| rerank | 13/20 (65%) | 16/20 (80%) | 17/20 (85%) | 6/2/12 (1.30/2) | 0/3/17 | 13/19 (68%) | 17/17 (100%) | 22/22 (100%) | 22 câu: 1 lượt | 2/2 (100%) | 3/20 (15%) | 0 | 27.9 | 815.8 | 52498 | $0.00 |
 
-Citation được kiểm tra theo hai bước: ID có nằm trong context hay không, và nội dung nguồn có thật sự hỗ trợ câu trả lời hay không. Bước thứ hai cần đọc đối chiếu; kiểm tra ID bằng code chưa đủ.
+## Hai lỗi dev đã đối chiếu
 
-## 4. Ba phương pháp và hai cấu hình cải thiện
+- `vi03` (định nghĩa Bên Kiểm soát): dense, hybrid, MMR và rerank đều trả lời nhầm vai trò “Bên Kiểm soát và xử lý dữ liệu cá nhân”; BM25 tìm thấy gold trong top-3/context nhưng lỗi citation-format repair. Đoạn luật ở trang 3 phân biệt hai thuật ngữ sát nhau. Đây là lỗi hiểu/giữ tên pháp lý và format citation; thêm retriever không tự giải quyết, cần output validation và đọc sát định nghĩa.
+- `vi08` (rút lại đồng ý): BM25 tìm đủ evidence nhưng lỗi `Invalid citations after format repair`; hybrid và rerank trên cùng dev trả lời grade 2 với citation được hỗ trợ, còn baseline từ chối do không đưa evidence vào context. So sánh trace cho thấy retrieval đủ không bảo đảm agent kết thúc hợp lệ; lựa chọn BM25 vẫn dựa trên điểm trung bình toàn dev, không sửa theo test.
 
-| Cấu hình | Cách tìm | Top-k | Context ký tự | Search tối đa |
-|---|---|---:|---:|---:|
-| Baseline | Dense cosine qua Qdrant Day 6 | 3 | 1.200 | 1 |
-| Lexical | BM25, k1 = 1,5 và b = 0,75 | 5 | 4.800 | 2 |
-| Hybrid | RRF, hằng số 60, lấy 20 ứng viên mỗi nhánh | 5 | 4.800 | 2 |
+Đây là phân tích chéo các phương pháp trên cùng dev, không phải ablation sau khi sửa lỗi. Không dùng test để điều chỉnh.
 
-**Giả thuyết cải thiện 1:** BM25 có thể giữ tốt các từ khóa cụ thể như cake, currants, tên nhân vật; context lớn hơn có thể chứa thêm điều kiện cần cho đáp án.
+* Tool use dùng mẫu số các case hoàn thành; lỗi được báo riêng. False abstention và answer grade tính trên toàn bộ câu có đáp án; runtime error được chấm 0. Citation support yêu cầu ID nằm trong context và nội dung citation hỗ trợ claim. Latency gồm toàn bộ agent run, token là tổng prompt + completion, phí dịch vụ local bằng 0 USD (điện/phần cứng chưa tính).
 
-**Giả thuyết cải thiện 2:** hybrid kết hợp ranking ngữ nghĩa và từ khóa có thể khôi phục evidence bị một nhánh bỏ sót. RRF hợp nhất theo thứ hạng, không cộng trực tiếp điểm cosine với điểm BM25 khác thang đo.
+## Năm phương pháp
 
-Đây là so sánh theo gói cấu hình, có thay cả retriever và context budget. Chưa thể tách riêng đóng góp của từng thay đổi. Trong các trace thực tế, mọi câu đã gọi tool đều chỉ tìm **một lần**, nên chưa có bằng chứng về lợi ích của multi-round dù cấu hình cho phép hai lần.
+1. Dense cosine trên vector BGE Day 06.
+2. BM25 lexical trên OCR tiếng Việt.
+3. Hybrid dense + BM25 bằng reciprocal-rank fusion.
+4. MMR giảm các đoạn trùng lặp trong shortlist dense.
+5. Rerank shortlist hybrid bằng MiniLM cross-encoder.
 
-## 5. Đánh giá trên dev và quyết định chọn
+## Kiểm tra và giới hạn
 
-Hit@1 và Evidence Hit@3 đo ranking của **query gốc**. Context Evidence Rate đo đủ evidence trong context cuối thật sự gửi model. Grounded answer được chấm 0–2: sai hoặc thiếu hỗ trợ, đúng một phần, đúng đầy đủ và được citation hỗ trợ.
+**Unit tests: 47/47 pass.** Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
 
-| Cấu hình dev | Hit@1 | Evidence Hit@3 | Context đủ evidence | Điểm chọn /2 | Median giây/câu | Lỗi |
-|---|---:|---:|---:|---:|---:|---:|
-| Baseline | 9/15 | 14/15 | 9/15 | 1,067 | 8,87 | 0 |
-| Lexical | 13/15 | 14/15 | 14/15 | **1,400** | 19,99 | 0 |
-| Hybrid | 12/15 | 15/15 | 15/15 | 1,333 | 17,78 | 1 |
+Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ trợ AI và cần người học xác nhận. OCR có lỗi nhận dạng. BGE-small-en-v1.5 và MiniLM là model có tên tiếng Anh được giữ từ pipeline Day 06 khi xử lý tiếng Việt. Nguồn là văn bản năm 2023, không xác nhận quy định hiện hành và không phải tư vấn pháp lý.
 
-Điểm dùng để chọn tính lỗi trên câu có đáp án bằng 0. Nếu hòa, lần lượt xét abstention đúng, context evidence, median thời gian và tên cấu hình. Tiêu chí nằm trong `benchmark/protocol.json`; quyết định và checksum được lưu ở `results/selection.json` trước khi chạy test.
+## Artifact để demo
 
-**Chọn lexical** vì có điểm dev cao nhất theo tiêu chí này. Hybrid tìm đủ evidence cho 15/15 câu nhưng chưa chuyển được lợi thế retrieval thành chất lượng trả lời cao nhất: vẫn có lỗi hiểu nội dung, citation sai nguồn và một lỗi định dạng citation.
+- Protocol: `benchmark/nd13/protocol.json`
+- Câu hỏi: `benchmark/nd13/dev.json`, `benchmark/nd13/test.json`
+- Chọn cấu hình và hash: `results/nd13/v2/selection.json`
+- Trace test: `results/nd13/v2/test/<method>/traces.json`
+- Report dữ liệu: `results/nd13/validation.json`
+- PDF nguồn: `data/nd13/13nd.signed.pdf`
 
-Đánh đổi là thời gian: median lexical khoảng 20 giây/câu, so với 8,87 giây của baseline. Chi phí dịch vụ là 0 USD vì chạy local; chưa tính điện và phần cứng. Thứ tự chạy và cache dùng chung ảnh hưởng latency, nên đây không phải phép so sánh cold-start cô lập.
-
-## 6. Kết quả test sau khi chốt cấu hình
-
-| Chỉ số test | Baseline | Lexical được chọn |
-|---|---:|---:|
-| Hit@1 trên câu có đáp án | 4/5 | 2/5 |
-| Evidence Hit@3 | 5/5 | 5/5 |
-| Context đủ evidence | 3/5 | 5/5 |
-| Grounded grade 2 | 3/5 | **5/5** |
-| Grounded mean trên câu có đáp án | 1,20/2 | 2,00/2 |
-| Citation hỗ trợ | 3/4 | 6/6 |
-| Median giây/câu | 8,52 | 21,12 |
-| Lỗi ở câu thiếu bằng chứng | 2/2 | 2/2 |
-
-Lexical có Hit@1 thấp hơn baseline trên bộ test nhỏ, nhưng top-3 và context vẫn đủ evidence cho cả 5 câu. Điều này cho thấy không nên chọn cấu hình chỉ từ top-1 khi hệ thống thực sự dùng nhiều đoạn context.
-
-Ở hai câu thiếu evidence, model phát `ABSTAIN` ngay lượt đầu và không gọi retrieval. Runner đánh dấu lỗi giao thức. Abstention quality trên lượt thành công vì thế là **0/0, không áp dụng**, không phải 100%. Nếu xét toàn bộ quy trình test, lexical có 5 câu đạt đầy đủ và 2 câu lỗi; không được giới thiệu là đạt 7/7.
-
-## 7. Các tình huống trình diễn
-
-### Tình huống 1 cải thiện ở câu hỏi về chiếc bánh
-
-**Câu hỏi dev q04:** “How were the words on the small cake written?”
-
-Baseline từ chối vì query do model viết lại làm dense retrieval chuyển sang đoạn khác. Lexical trả lời chữ được đánh dấu bằng **currants**, có citation ở trang logic 6. Đây là ví dụ cải thiện đo được; phải phân biệt ranking query gốc với query thật của tool.
-
-### Tình huống 2 từ chối có tìm kiếm
-
-**Câu hỏi dev d-missing-1:** “On what exact date was Alice born?”
-
-Trace lexical có retrieval rồi từ chối vì không có ngày sinh chính xác. Corpus đã được rà bằng tìm kiếm chủ đề trên toàn bộ 82 đơn vị, kèm đọc cảnh liên quan; không kết luận thiếu thông tin chỉ từ top-k. Ví dụ này thuộc **dev**, không dùng thay kết quả test.
-
-### Tình huống 3 context đủ nhưng model vẫn sai
-
-**Câu hỏi dev q06:** “What prize did the Dodo present to Alice?”
-
-Đáp án trong nguồn là **a thimble** ở trang logic 16. Context lexical đã có đoạn này, nhưng model vẫn phủ định Dodo tặng quà và cite đoạn Alice phát comfits ở trang 15. Answer grade là 0. Ví dụ giúp giải thích vì sao context đủ và citation ID hợp lệ chưa chứng minh đáp án đúng.
-
-### Tình huống 4 giới hạn trên holdout
-
-**Câu hỏi test t-missing-1:** “How many pounds did the gardeners pay for the red paint used on the roses?”
-
-Raw model output từ chối nhưng chưa tìm kiếm. Không tính đây là abstention đúng. Code/config được giữ nguyên sau freeze; cải thiện tiếp theo cần một vòng dev và bộ test mới nếu đã dùng lỗi holdout để điều chỉnh.
-
-## 8. Lệnh demo và tài liệu đối chiếu
-
-Chạy từ thư mục gốc repo. Phương án ổn định khi trình bày là phát lại trace thật đã lưu; lệnh này không cần Ollama hoặc thư viện ngoài và không tạo benchmark mới:
-
-```bash
-python3 scripts/demo.py --scenario improvement
-python3 scripts/demo.py --scenario abstention
-python3 scripts/demo.py --scenario failure
-python3 scripts/demo.py --scenario holdout-error
-```
-
-Muốn hỏi trực tiếp model, dùng môi trường và Ollama đã chuẩn bị. Kết quả mới có thể khác lần đã ghi, nên lưu riêng và không cộng vào bảng benchmark đã chốt:
-
-```bash
-.venv/bin/python scripts/ask.py "What did the White Rabbit take out of its waistcoat-pocket?" --config lexical --output results/demo/live-watch.json
-.venv/bin/python scripts/ask.py "On what exact date was Alice born?" --config lexical --output results/demo/live-abstention.json
-```
-
-Lệnh thứ hai có thể phát sinh lỗi giao thức; khi đó trình bày đúng lỗi rồi mở trace đã lưu, không thay bằng một câu trả lời dựng sẵn. Không chạy hai tiến trình hỏi agent đồng thời vì Qdrant local có khóa.
-
-Các điểm cần mở khi được hỏi sâu:
-
-- [Báo cáo kỹ thuật đầy đủ](individual/2A202603547_PhanTrongHau.md).
-- [Kịch bản thuyết trình và câu hỏi phản biện](KICH_BAN_THUYET_TRINH.md).
-- [Cấu hình thử nghiệm](../configs/experiments.json) và [freeze trên dev](../results/selection.json).
-- [So sánh dev](../results/dev/comparison.json), [so sánh test](../results/test/comparison.json).
-- [Kiểm tra thiếu evidence trên corpus](../benchmark/absence_audit.json).
-- [Trace test lexical](../results/test/lexical/traces.json) và [nhãn đối chiếu](../results/test/lexical/reviews.json).
-
-## 9. Kết luận và phạm vi kết quả
-
-BM25 với context lớn hơn là cấu hình được chọn trên dev và trả lời có căn cứ cho 5 câu test có đáp án. Các lỗi còn lại tập trung ở việc model hiểu evidence, chọn citation và tuân thủ yêu cầu tìm trước khi từ chối. Hệ thống đã có trace để chỉ ra lỗi ở tầng nào.
-
-Benchmark nhỏ, nhãn có AI hỗ trợ và cần người học xác nhận; chưa thể suy rộng độ chính xác cho mọi tài liệu. Bài này chưa làm bonus tài liệu từ 100 trang có bảng, ảnh và biểu đồ. Hướng tiếp theo là kiểm soát giao thức gọi tool chắc hơn, đo riêng các thay đổi context/retriever và đánh giá lại trên holdout mới.
+Chạy lại code tests: `python3 scripts/check_tests.py`. Chạy viewer trace: `.venv/bin/python scripts/demo.py --scenario all`.

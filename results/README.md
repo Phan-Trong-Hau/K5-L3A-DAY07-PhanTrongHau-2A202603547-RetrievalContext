@@ -10,4 +10,4 @@ Benchmark hiện tại ở `nd13/v2/`: dev 22 câu × năm phương pháp; test 
 
 Trace lưu output Qwen local, tool calls, ranking/context, usage, thời gian và lỗi. Nhãn đánh giá thủ công có hỗ trợ AI và kèm lý do; người học cần xác nhận. `hit@3`, evidence context, đáp án và citation support là các chỉ số khác nhau.
 
-Test mới có một lỗi protocol của BM25 ở câu `nd13-25`: đoạn luật được tìm thấy, nhưng model bỏ qua retrieval rồi kết thúc bằng lỗi. Lỗi được tính điểm 0; các trace không bị sửa sau đánh giá.
+Test mới có một lỗi protocol của BM25 ở câu `nd13-25`: agent bỏ qua retrieval và kết thúc bằng lỗi. Chỉ ranking query gốc chạy độc lập sau inference mới có hit đoạn luật; đoạn đó không nằm trong context agent. Lỗi được tính điểm 0; trace inference không bị sửa sau đánh giá.
