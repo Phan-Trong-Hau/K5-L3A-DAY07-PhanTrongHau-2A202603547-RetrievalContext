@@ -81,7 +81,7 @@ BM25 trả lời đúng về nội dung ở 4/5 câu có đáp án, nhưng chỉ
 
 ## Kiểm tra và giới hạn
 
-**Unit tests: 47/47 pass.** Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
+**Unit tests: 52/52 pass.** Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
 
 Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ trợ AI và cần người học xác nhận. OCR có lỗi nhận dạng. BGE-small-en-v1.5 và MiniLM là model có tên tiếng Anh được giữ từ pipeline Day 06 khi xử lý tiếng Việt. Nguồn là văn bản năm 2023, không xác nhận quy định hiện hành và không phải tư vấn pháp lý.
 
@@ -95,3 +95,9 @@ Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ tr�
 - PDF nguồn: `data/nd13/13nd.signed.pdf`
 
 Chạy lại code tests: `python3 scripts/check_tests.py`. Chạy viewer trace: `.venv/bin/python scripts/demo.py --scenario all`.
+
+## Trạng thái thử thách bonus
+
+Đã lập corpus và thử nghiệm riêng trên báo cáo tiếng Việt *Việt Nam 2035*. Bộ test độc lập V3 đạt **25/30 (83,3%)**, thấp hơn ngưỡng 27/30 theo `ADVANCED.md`; do đó chưa đạt bonus. Dev V4 đạt 16/18, thấp hơn V3 (17/18), nên V4 không được chọn và không chạy trên test. Việc kiểm chứng hình ảnh mới bao phủ tám hình, chưa bao phủ toàn bộ hình có ích của tài liệu.
+
+Xem [report bonus HTML](BONUS_TRIAL.html), [corpus và giới hạn xử lý hình](../data/bonus/vietnam2035/README.md), [benchmark/test review](../results/bonus/test_v3_fresh/reviews.json), và [metrics](../results/bonus/test_v3_fresh/metrics.json). Kết quả chi tiết và lỗi theo từng câu được giữ nguyên; không tính bonus là hoàn thành.

@@ -1,6 +1,6 @@
 # Báo cáo cá nhân Day 7 — Phan Trọng Hậu · 2A202603547 · L3A
 
-Bài đánh giá tiếng Việt trên Nghị định 13/2023/NĐ-CP từ dữ liệu Day 06. Bản xem trực quan: [báo cáo HTML](../NGHI_DINH_13_DEMO.html).
+Bài đánh giá tiếng Việt trên Nghị định 13/2023/NĐ-CP từ dữ liệu Day 06, kèm thử thách nâng cao trên *Việt Nam 2035*. Bản xem trực quan: [báo cáo HTML](../NGHI_DINH_13_DEMO.html). Report bonus: [HTML](../BONUS_TRIAL.html).
 
 # Demo: Agentic RAG trên Nghị định 13/2023/NĐ-CP
 
@@ -85,7 +85,7 @@ BM25 trả lời đúng về nội dung ở 4/5 câu có đáp án, nhưng chỉ
 
 ## Kiểm tra và giới hạn
 
-**Unit tests: 47/47 pass.** Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
+**Unit tests: 52/52 pass** tại lần chạy ngày 15/11/2026. Đây là kiểm tra code bằng mock/fake provider, không đại diện chất lượng trả lời thực tế. Test end-to-end Nghị định 13 không pass hết: BM25 có một lỗi protocol trên `nd13-25`; kết quả được giữ nguyên trong report.
 
 Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ trợ AI và cần người học xác nhận. OCR có lỗi nhận dạng. BGE-small-en-v1.5 và MiniLM là model có tên tiếng Anh được giữ từ pipeline Day 06 khi xử lý tiếng Việt. Nguồn là văn bản năm 2023, không xác nhận quy định hiện hành và không phải tư vấn pháp lý.
 
@@ -99,3 +99,11 @@ Dev/test là benchmark nội bộ nhỏ, phần review ngữ nghĩa có hỗ tr�
 - PDF nguồn: `data/nd13/13nd.signed.pdf`
 
 Chạy lại code tests: `python3 scripts/check_tests.py`. Chạy viewer trace: `.venv/bin/python scripts/demo.py --scenario all`.
+
+## Thử thách nâng cao: Việt Nam 2035
+
+Nguồn là báo cáo tiếng Việt 584 trang của World Bank và Bộ Kế hoạch và Đầu tư (2016). Text được trích xuất trên 573/584 trang; 11 trang còn lại đã được kiểm tra thủ công và ghi audit. Đã lập chỉ mục CLIP 584 trang/2.920 vùng, nhưng kiểm thử thăm dò cho thấy truy vấn hình ảnh còn hạn chế; nội dung hình ảnh mới được kiểm tra thủ công ở tám hình, chưa đủ bao phủ toàn bộ nội dung trực quan hữu ích.
+
+Benchmark test độc lập V3 có 30 câu theo các nhóm bắt buộc; kết quả là **25/30 (83,3%)**, thấp hơn ngưỡng 27/30 cần để nhận bonus. Theo nhóm: bảng 6/6, ảnh/sơ đồ 4/5, biểu đồ 4/5, multi-hop 2/4, văn bản 4/4, thiếu bằng chứng 5/6; một lỗi hệ thống. V4 đạt 16/18 trên dev, thấp hơn V3 nên không được chọn hoặc chạy trên test. Vì vậy bonus chưa hoàn thành.
+
+Xem [report bonus](../BONUS_TRIAL.html), [nguồn và giới hạn index](../../data/bonus/vietnam2035/README.md), [metrics test](../../results/bonus/test_v3_fresh/metrics.json), [review từng câu](../../results/bonus/test_v3_fresh/reviews.json), [manifest](../../results/bonus/test_v3_fresh/manifest.json), và [trace lỗi biểu đồ](../../results/bonus/test_v3_fresh/fresh-07.json).

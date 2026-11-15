@@ -55,7 +55,7 @@ Chạy:
 
 > BM25 đạt answer grade mean 1.40/2 trên toàn bộ 5 câu test có đáp án khi lỗi tính 0; có 3 câu đạt grade 2, một câu grade 1 vì citation sai trang, một lỗi runtime. Context có evidence ở 4/5, Evidence Hit@3 là 5/5, và abstention đúng 2/2 câu thiếu bằng chứng. Vì vậy không thể gọi toàn bộ test là pass.
 >
-> Có 47/47 unit tests pass. Chúng kiểm tra code/mock, không chứng minh chất lượng câu trả lời thật. Nhãn ngữ nghĩa có AI hỗ trợ và học viên cần rà lại trước khi nộp.
+> Có 52/52 unit tests pass trong lần chạy 15/11/2026. Chúng kiểm tra code/mock, không chứng minh chất lượng câu trả lời thật. Nhãn ngữ nghĩa có AI hỗ trợ và học viên cần rà lại trước khi nộp.
 
 ## Câu hỏi thường gặp
 
@@ -67,7 +67,7 @@ Chạy:
 
 **Tại sao giữ lỗi thay vì sửa rồi báo lại?** Sau khi xem lỗi test, chỉnh hệ thống rồi chạy lại cùng câu hỏi sẽ làm test bị dùng để phát triển. Cần tạo test mới nếu muốn xác nhận một thay đổi.
 
-**Đã làm bonus 100 trang chưa?** Chưa. Bài này hoàn thành phần cơ bản trên Nghị định 13; không tuyên bố đạt bonus đa phương thức.
+**Đã làm bonus 100 trang chưa?** Đã thử với báo cáo tiếng Việt *Việt Nam 2035* (584 trang), nhưng chưa hoàn thành rubric bonus. Test độc lập đạt 25/30 (83,3%), dưới ngưỡng 27/30; V4 không được chọn vì dev thấp hơn V3. Tám hình được kiểm tra thủ công, chưa đủ bao phủ hình ảnh của cả tài liệu. Xem [report bonus HTML](BONUS_TRIAL.html) để biết từng lỗi và giới hạn.
 
 ## Các file nên mở khi trả lời sâu
 
