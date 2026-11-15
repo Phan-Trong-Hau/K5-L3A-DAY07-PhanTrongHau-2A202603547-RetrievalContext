@@ -1,0 +1,128 @@
+[
+  {
+    "id": "dev-01",
+    "pass": true,
+    "reason": "Đúng 2,7%, có trích đúng trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, Bảng 1.1, Hoa Kỳ, 2016–2035: 2,7%."
+  },
+  {
+    "id": "dev-02",
+    "pass": true,
+    "reason": "Đúng 25%, có trích đúng trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128, Bảng 2.1, hàng 2035, việc làm nông nghiệp: 25%."
+  },
+  {
+    "id": "dev-03",
+    "pass": false,
+    "reason": "Trả lời 27% và trích trang 128, thay vì số chính xác 27,1% trong Bảng 2.2.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129, Bảng 2.2, hàng 2035, cột đầu tư: 27,1%."
+  },
+  {
+    "id": "dev-04",
+    "pass": true,
+    "reason": "Đúng thứ hạng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188, Bảng 2.6, Việt Nam 2014, LPI tổng thể: 48."
+  },
+  {
+    "id": "dev-05",
+    "pass": true,
+    "reason": "Đúng ý nghĩa màu đỏ, thời kỳ và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 281, Hình 4.6, chú giải và ghi chú dưới ảnh."
+  },
+  {
+    "id": "dev-06",
+    "pass": true,
+    "reason": "Đúng ảnh bên phải và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285, Hình 4.9, ảnh b bên phải ghi khu công nghiệp Dầu Giây."
+  },
+  {
+    "id": "dev-07",
+    "pass": true,
+    "reason": "Đúng ngành thấp nhất và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, Hình 2.11, nhóm thanh đỏ: viễn thông có thanh ngắn nhất."
+  },
+  {
+    "id": "dev-08",
+    "pass": true,
+    "reason": "Đúng tỷ trọng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287, Hình 4.10, biểu đồ A, phần nông thôn 4,0%."
+  },
+  {
+    "id": "dev-09",
+    "pass": true,
+    "reason": "Đúng tỷ trọng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287, Hình 4.10 biểu đồ B: lõi đô thị 3,4%."
+  },
+  {
+    "id": "dev-10",
+    "pass": false,
+    "reason": "Đúng 38%, nhưng 75% là giá trị làm tròn và citation trang 437 không chứng minh 74,6%.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128 Bảng 2.1: 38% việc làm dịch vụ năm 2035; PDF 129 Bảng 2.2: 74,6% tiêu dùng."
+  },
+  {
+    "id": "dev-11",
+    "pass": false,
+    "reason": "Từ chối dù hai bảng có đủ đáp án.",
+    "original_checked": true,
+    "evidence_checked": "PDF 279 Bảng 4.1: 775 đô thị năm 2015; PDF 298 Bảng 4.3 dòng 5, hộ đô thị dùng điện: 99,8% năm 2012."
+  },
+  {
+    "id": "dev-12",
+    "pass": false,
+    "reason": "Trả lời thiếu số đô thị và tuyên bố sai là tài liệu không có, trích sai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6: thứ hạng 53; PDF 279 Bảng 4.1: 675 đô thị năm 2005."
+  },
+  {
+    "id": "dev-13",
+    "pass": true,
+    "reason": "Đúng trị số, giai đoạn và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, cột phải, đoạn Xu thế kinh tế toàn cầu: 3,2%/năm từ 2015 đến 2035."
+  },
+  {
+    "id": "dev-14",
+    "pass": true,
+    "reason": "Đúng tỷ lệ, điều kiện và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 đoạn sau Bảng 2.2, 2013–2035: 92%."
+  },
+  {
+    "id": "dev-15",
+    "pass": true,
+    "reason": "Đúng số lượng, thời điểm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, cột trái đoạn ngay dưới Hình 2.11: cuối 2014 hơn 650.000."
+  },
+  {
+    "id": "dev-16",
+    "pass": true,
+    "reason": "Từ chối rõ số liệu thực tế năm 2044; ví dụ tăng trưởng 5%/6% và mức 18.000 USD xuất hiện trong ngữ cảnh, không bịa giá trị 2044.",
+    "original_checked": true,
+    "evidence_checked": "PDF xuất bản năm 2016; tra toàn văn pdftotext không có 2044; kiểm tra phần ngữ cảnh nêu kịch bản 2035."
+  },
+  {
+    "id": "dev-17",
+    "pass": true,
+    "reason": "Từ chối, không đưa địa chỉ hoặc danh tính suy đoán.",
+    "original_checked": true,
+    "evidence_checked": "Tìm 2039 trong toàn bộ văn bản trích xuất không có; các đoạn truy xuất không xác định người vận hành hay địa chỉ cá nhân."
+  },
+  {
+    "id": "dev-18",
+    "pass": false,
+    "reason": "Từ chối đúng nhưng bổ sung sai rằng tỷ lệ lấp đầy 2,5% là vào năm 2008; hình ghi khu công nghiệp thành lập năm 2008, tỷ lệ lấp đầy là năm 2014.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9b: Dầu Giây thành lập 2008, tỷ lệ lấp đầy năm 2014 2,5%, cách trung tâm 50 km. Toàn văn trích xuất không có 2042."
+  }
+]

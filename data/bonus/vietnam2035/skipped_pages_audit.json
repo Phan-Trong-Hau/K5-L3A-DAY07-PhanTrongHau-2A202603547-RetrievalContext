@@ -1,0 +1,18 @@
+{
+  "source_sha256": "c7836f055a523fd0f50ea33f300aa71c31bf9b61443d9f44fdcecbaad1f23d3b",
+  "method": "Manually inspected all 11 pages rendered with pdftoppm -scale-to 700; page numbers are 1-based physical PDF pages.",
+  "pages": [
+    {"pdf_page": 2, "finding": "blank"},
+    {"pdf_page": 3, "finding": "title page: Việt Nam 2035"},
+    {"pdf_page": 4, "finding": "blank"},
+    {"pdf_page": 8, "finding": "blank"},
+    {"pdf_page": 24, "finding": "blank"},
+    {"pdf_page": 28, "finding": "blank"},
+    {"pdf_page": 335, "finding": "blank"},
+    {"pdf_page": 401, "finding": "blank"},
+    {"pdf_page": 493, "finding": "blank"},
+    {"pdf_page": 548, "finding": "blank"},
+    {"pdf_page": 583, "finding": "blank"}
+  ],
+  "impact": "The extractor discards the short title on page 3; it remains available on other pages. The other ten inspected pages are blank. This audit does not verify visuals on the 573 pages with extractable text."
+}

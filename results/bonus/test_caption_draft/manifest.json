@@ -1,0 +1,24 @@
+{
+  "config": {
+    "language": "vi",
+    "document_title": "Việt Nam 2035, bản PDF tiếng Việt",
+    "method": "bm25_caption",
+    "top_k": 3,
+    "budget": 18000,
+    "max_searches": 1
+  },
+  "model": "qwen3:4b-instruct",
+  "question_file": "benchmarks/bonus/test_draft.json",
+  "question_file_sha256": "9af5fb4abdf1e1398000fed48bc699ed708f8156659c08c2e960c3c657b70212",
+  "visual_index": "data/bonus/vietnam2035/visual_verified.jsonl",
+  "visual_index_sha256": "33a154058eebb4743ca41c5eebff511dc0920cd2d86e89e6f355cf4863a42052",
+  "corpus_sha256": "9ed2780697f45fd1af77487e5b072b8399dd20938133f24bfbf3c00144b03400",
+  "code_sha256": {
+    "scripts/run_bonus.py": "6385dbd613d37dab13ce8ca0e51e73aa81fef018e292450125bb0ccb0aaa824e",
+    "scripts/bonus_pilot.py": "da295b214d7e84bf08dabe47b3fb0c9d398cf600f944d168410f9ae77de10546",
+    "src/agent.py": "16fd589ace776ff7e6e36b136c5d0329d559f6909df724595eb9c1ba72786f71",
+    "src/agent_v2.py": "2afe7cb226f00f2c46cee58725b7a8bbcd702859b973ed2df2faabbacf68154d",
+    "src/retrieval.py": "c4a7fe2f23de6f895d677a2271673f6a5f94a99093ec030cd53a26cd6b18aef2"
+  },
+  "note": "Exploratory run: no answer keys or gold page locations enter run_agent."
+}

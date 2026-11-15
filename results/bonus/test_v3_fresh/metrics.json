@@ -1,0 +1,37 @@
+{
+  "all": {
+    "pass": 25,
+    "total": 30,
+    "errors": 1
+  },
+  "table": {
+    "pass": 6,
+    "total": 6,
+    "errors": 0
+  },
+  "image": {
+    "pass": 4,
+    "total": 5,
+    "errors": 0
+  },
+  "chart": {
+    "pass": 4,
+    "total": 5,
+    "errors": 0
+  },
+  "multi_hop": {
+    "pass": 2,
+    "total": 4,
+    "errors": 0
+  },
+  "text": {
+    "pass": 4,
+    "total": 4,
+    "errors": 0
+  },
+  "unanswerable": {
+    "pass": 5,
+    "total": 6,
+    "errors": 1
+  }
+}

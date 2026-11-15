@@ -1,0 +1,11 @@
+{
+  "python": "3.14.9 (.venv)",
+  "ollama": "0.40.16",
+  "poppler_pdftotext": "24.02.0",
+  "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB",
+  "answer_model": "qwen3:4b-instruct",
+  "answer_model_ollama_id_prefix": "0edcdef34593",
+  "experimental_vision_model": "qwen2.5vl:3b",
+  "experimental_vision_model_ollama_id_prefix": "fb90415cde1e",
+  "note": "Ollama IDs are prefixes shown by ollama list; exact model availability may change. Service cost excludes local power and hardware."
+}

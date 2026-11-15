@@ -1,0 +1,12 @@
+{
+  "total_questions": 30,
+  "completed": 30,
+  "missing_ids": [],
+  "errors": 0,
+  "elapsed_seconds_sum": 1206.8926873679984,
+  "prompt_tokens": 122022,
+  "completion_tokens": 5050,
+  "model_calls": 68,
+  "service_cost_usd": 0.0,
+  "cost_note": "Ollama local: no service charge; excludes electricity and hardware."
+}

@@ -1,0 +1,175 @@
+{
+  "question": "Theo đoạn bên dưới Hình 4.9, tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là bao nhiêu?",
+  "filter": {},
+  "status": "answered",
+  "answer": "Tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là 70.810 ha [v2035-p0285].",
+  "citations": [
+    "v2035-p0285"
+  ],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "ABSTAIN: Không có đoạn trích nào được cung cấp để tham chiếu đến Hình 4.9 hoặc thông tin về tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh. Cần truy xuất tài liệu cụ thể chứa hình 4.9 và dữ liệu liên quan để trả lời câu hỏi này."
+      },
+      "prompt_tokens": 381,
+      "completion_tokens": 82,
+      "total_duration_ns": 4614479902
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "retrieval_required"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "oLNQs65qC2DxI9IV4R7kM5KKzZtA2Efx",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Theo đoạn bên dưới Hình 4.9, tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là bao nhiêu?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 380,
+      "completion_tokens": 60,
+      "total_duration_ns": 4525789169
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Theo đoạn bên dưới Hình 4.9, tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là bao nhiêu?",
+      "model_query": "Theo đoạn bên dưới Hình 4.9, tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là bao nhiêu?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0285",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.",
+          "metadata": {
+            "pdf_page": 285,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 285,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 55.301549856135175,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0291",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                         247\n\n\nsố vốn FDI đăng ký trong ba thập kỷ qua.                                  thị, dẫn đến mức tiền lương cao hơn. Mức\nCác địa phương ở hai vùng thủ đô Hà Nội                                   tiền lương chung ở khu vực đô thị cao hơn\nvà thành phố Hồ Chí Minh chiếm khoảng                                     8% so với khu vực nông thôn. Sau khi loại\n75% số vốn FDI đăng ký. Khoảng 25%                                        bỏ khác biệt do loại hình công việc, ngành\ncòn lại tập trung ở một vài địa phương có                                 nghề, giới tính và tuổi, mức lương ở thủ\ncác dự án lớn như Hà Tĩnh, Thanh Hóa,                                     đô Hà Nội cao hơn 9% và ở thành phố\nQuảng Nam, Phú Yên, Đà Nẵng. Còn rất                                      Hồ Chí Minh cao hơn 16% so với các địa\nnhiều địa phương gần như không thu hút                                    phương khác221. Điều này đồng nghĩa mức\nđược đầu tư từ bên ngoài cho dù họ có                                     lương ở thủ đô Hà Nội cao hơn 17%, và\ndiện tích đất quy hoạch cho các khu công                                  ở thành phố Hồ Chí Minh cao hơn 24%\nnghiệp và khu đô thị rất lớn.                                             so với khu vực nông thôn nói chung, sau\n    Giống như việc tập trung các hoạt động                                khi loại bỏ các yếu tố khác. Mức lương cao\nkinh tế, năng suất cao hơn ở hai vùng đô                                  hơn phản ánh năng suất lao động cao hơn\n\n\n\n    HỘP 4.3. Một số trung tâm đô thị gần hai thành phố lớn rất thành công\n    trong thu hút đầu tư\n\n\n         Ở miền Bắc, tỉnh Bắc Ninh đã thu hút một nhà máy lắp ráp điện thoại vệ tinh,\n    router và modem của Foxconn và một nhà máy lắp ráp điện thoại di động lớn của\n    Samsung. Ngoài ra, gần 100 nhà cung cấp từ Hàn Quốc đã đầu tư vào khu liên hiệp\n    chế tạo của Samsung tại các tỉnh Bắc Ninh (phía Đông Bắc thủ đô Hà Nội) và Thái\n    Nguyên (phía Bắc thủ đô Hà Nội)222. Ở miền Nam, chính quyền tỉnh Đồng Nai (phía\n    Bắc/Đông Bắc thành phố Hồ Chí Minh) đã cấp 1.479 giấy chứng nhận đầu tư với tổng\n    giá trị 27,03 tỷ đô la Mỹ223. Tại Bình Dương, phía Đông Bắc thành phố Hồ Chí Minh,\n    các công ty trong nước đầu tư 550 triệu đô la Mỹ, trong khi các công ty nước ngoài\n    đã đầu tư trên 20 tỷ đô la Mỹ224.\n\n\n\n\n221 Báo cáo nền cho Báo cáo Việt Nam 2035.\n222 http://www.saigon-gpdaily.com.vn/Business/2015/5/113693/.\n223 http://en.baomoi.com/Info/Dong-Nai-ranks-first-in-FDI-attraction/3/544581.epi.\n224 http://www.sggpnews.org.vn/Business/2014/12/111928/.",
+          "metadata": {
+            "pdf_page": 291,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 291,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 51.31619617235866,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0309",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                    265\n\n\nthời gian trước đây247. Điều này giúp cho                                         Diện tích dành cho đường phố trong\nthời gian đi lại trung bình ở các đô thị Việt                                khu trung tâm của thủ đô Hà Nội chỉ có\nNam rất ngắn như: 18 phút tại thủ đô Hà                                      chưa đến 9% và thành phố Hồ Chí Minh\nNội, 15 phút tại Đà Nẵng, và 20 phút tại                                     cũng chưa đến 8%, tương tự như ở Băng-\nthành phố Hồ Chí Minh248. Tuy nhiên, cấu                                     cốc, nơi nổi tiếng với tình trạng tắc nghẽn\ntrúc đô thị và kết cấu hạ tầng ở những đô                                    giao thông. Tỷ lệ này thấp hơn nhiều so\nthị lớn nhất như thủ đô Hà Nội và thành                                      với ở trung tâm Man-hat-tan của Niu-dóc\nphố Hồ Chí Minh không thích hợp khi                                          (32%) hoặc ở khu vực trung tâm của Xê-\nxe ô tô đóng vai trò là phương tiện giao                                     un (14%) (Hình 4.18). Ngoài ra, cả Xê-un\nthông chính.                                                                 và Niu-dóc có mạng lưới giao thông ngầm\n\n\n\n     HÌNH 4.18. Không gian đường xá tại thủ đô Hà Nội vẫn chưa phù hợp\n     cho giao thông đô thị\n\n\n\n\nNguồn: Ngân hàng Thế giới (2011).\n\n\n\n247 Ngân hàng Thế giới 2011.\n248 Dữ liệu được lấy từ các cuộc điều tra hộ gia đình do ALMEC thực hiện năm 2008 tại Đà Nẵng, 2004 tại Hà Nội và 2002 tại thành phố Hồ Chí Minh.",
+          "metadata": {
+            "pdf_page": 309,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 309,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 50.019535232944634,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 291]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                         247\n\n\nsố vốn FDI đăng ký trong ba thập kỷ qua.                                  thị, dẫn đến mức tiền lương cao hơn. Mức\nCác địa phương ở hai vùng thủ đô Hà Nội                                   tiền lương chung ở khu vực đô thị cao hơn\nvà thành phố Hồ Chí Minh chiếm khoảng                                     8% so với khu vực nông thôn. Sau khi loại\n75% số vốn FDI đăng ký. Khoảng 25%                                        bỏ khác biệt do loại hình công việc, ngành\ncòn lại tập trung ở một vài địa phương có                                 nghề, giới tính và tuổi, mức lương ở thủ\ncác dự án lớn như Hà Tĩnh, Thanh Hóa,                                     đô Hà Nội cao hơn 9% và ở thành phố\nQuảng Nam, Phú Yên, Đà Nẵng. Còn rất                                      Hồ Chí Minh cao hơn 16% so với các địa\nnhiều địa phương gần như không thu hút                                    phương khác221. Điều này đồng nghĩa mức\nđược đầu tư từ bên ngoài cho dù họ có                                     lương ở thủ đô Hà Nội cao hơn 17%, và\ndiện tích đất quy hoạch cho các khu công                                  ở thành phố Hồ Chí Minh cao hơn 24%\nnghiệp và khu đô thị rất lớn.                                             so với khu vực nông thôn nói chung, sau\n    Giống như việc tập trung các hoạt động                                khi loại bỏ các yếu tố khác. Mức lương cao\nkinh tế, năng suất cao hơn ở hai vùng đô                                  hơn phản ánh năng suất lao động cao hơn\n\n\n\n    HỘP 4.3. Một số trung tâm đô thị gần hai thành phố lớn rất thành công\n    trong thu hút đầu tư\n\n\n         Ở miền Bắc, tỉnh Bắc Ninh đã thu hút một nhà máy lắp ráp điện thoại vệ tinh,\n    router và modem của Foxconn và một nhà máy lắp ráp điện thoại di động lớn của\n    Samsung. Ngoài ra, gần 100 nhà cung cấp từ Hàn Quốc đã đầu tư vào khu liên hiệp\n    chế tạo của Samsung tại các tỉnh Bắc Ninh (phía Đông Bắc thủ đô Hà Nội) và Thái\n    Nguyên (phía Bắc thủ đô Hà Nội)222. Ở miền Nam, chính quyền tỉnh Đồng Nai (phía\n    Bắc/Đông Bắc thành phố Hồ Chí Minh) đã cấp 1.479 giấy chứng nhận đầu tư với tổng\n    giá trị 27,03 tỷ đô la Mỹ223. Tại Bình Dương, phía Đông Bắc thành phố Hồ Chí Minh,\n    các công ty trong nước đầu tư 550 triệu đô la Mỹ, trong khi các công ty nước ngoài\n    đã đầu tư trên 20 tỷ đô la Mỹ224.\n\n\n\n\n221 Báo cáo nền cho Báo cáo Việt Nam 2035.\n222 http://www.saigon-gpdaily.com.vn/Business/2015/5/113693/.\n223 http://en.baomoi.com/Info/Dong-Nai-ranks-first-in-FDI-attraction/3/544581.epi.\n224 http://www.sggpnews.org.vn/Business/2014/12/111928/.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 309]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                    265\n\n\nthời gian trước đây247. Điều này giúp cho                                         Diện tích dành cho đường phố trong\nthời gian đi lại trung bình ở các đô thị Việt                                khu trung tâm của thủ đô Hà Nội chỉ có\nNam rất ngắn như: 18 phút tại thủ đô Hà                                      chưa đến 9% và thành phố Hồ Chí Minh\nNội, 15 phút tại Đà Nẵng, và 20 phút tại                                     cũng chưa đến 8%, tương tự như ở Băng-\nthành phố Hồ Chí Minh248. Tuy nhiên, cấu                                     cốc, nơi nổi tiếng với tình trạng tắc nghẽn\ntrúc đô thị và kết cấu hạ tầng ở những đô                                    giao thông. Tỷ lệ này thấp hơn nhiều so\nthị lớn nhất như thủ đô Hà Nội và thành                                      với ở trung tâm Man-hat-tan của Niu-dóc\nphố Hồ Chí Minh không thích hợp khi                                          (32%) hoặc ở khu vực trung tâm của Xê-\nxe ô tô đóng vai trò là phương tiện giao                                     un (14%) (Hình 4.18). Ngoài ra, cả Xê-un\nthông chính.                                                                 và Niu-dóc có mạng lưới giao thông ngầm\n\n\n\n     HÌNH 4.18. Không gian đường xá tại thủ đô Hà Nội vẫn chưa phù hợp\n     cho giao thông đô thị\n\n\n\n\nNguồn: Ngân hàng Thế giới (2011).\n\n\n\n247 Ngân hàng Thế giới 2011.\n248 Dữ liệu được lấy từ các cuộc điều tra hộ gia đình do ALMEC thực hiện năm 2008 tại Đà Nẵng, 2004 tại Hà Nội và 2002 tại thành phố Hồ Chí Minh.",
+      "context_ids": [
+        "v2035-p0285",
+        "v2035-p0291",
+        "v2035-p0309"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0285",
+        "C2": "v2035-p0291",
+        "C3": "v2035-p0309"
+      },
+      "elapsed_ms": 24.005055999623437
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "[status: answered, answer: Tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là 70.810 ha, theo thông tin trong đoạn trích [C1].\", \"citations\": [\"C1\"]}"
+      },
+      "prompt_tokens": 2644,
+      "completion_tokens": 64,
+      "total_duration_ns": 27143624823
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "citation_format"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "JdIKMEftyNXOPwHcbfPTsSiY3p2tVIHo",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là 70.810 ha [C1].",
+                "citations": [
+                  "C1"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 2684,
+      "completion_tokens": 74,
+      "total_duration_ns": 6822612748
+    },
+    {
+      "event": "answer",
+      "status": "answered",
+      "model_answer": "Tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là 70.810 ha [C1]."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 291]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                         247\n\n\nsố vốn FDI đăng ký trong ba thập kỷ qua.                                  thị, dẫn đến mức tiền lương cao hơn. Mức\nCác địa phương ở hai vùng thủ đô Hà Nội                                   tiền lương chung ở khu vực đô thị cao hơn\nvà thành phố Hồ Chí Minh chiếm khoảng                                     8% so với khu vực nông thôn. Sau khi loại\n75% số vốn FDI đăng ký. Khoảng 25%                                        bỏ khác biệt do loại hình công việc, ngành\ncòn lại tập trung ở một vài địa phương có                                 nghề, giới tính và tuổi, mức lương ở thủ\ncác dự án lớn như Hà Tĩnh, Thanh Hóa,                                     đô Hà Nội cao hơn 9% và ở thành phố\nQuảng Nam, Phú Yên, Đà Nẵng. Còn rất                                      Hồ Chí Minh cao hơn 16% so với các địa\nnhiều địa phương gần như không thu hút                                    phương khác221. Điều này đồng nghĩa mức\nđược đầu tư từ bên ngoài cho dù họ có                                     lương ở thủ đô Hà Nội cao hơn 17%, và\ndiện tích đất quy hoạch cho các khu công                                  ở thành phố Hồ Chí Minh cao hơn 24%\nnghiệp và khu đô thị rất lớn.                                             so với khu vực nông thôn nói chung, sau\n    Giống như việc tập trung các hoạt động                                khi loại bỏ các yếu tố khác. Mức lương cao\nkinh tế, năng suất cao hơn ở hai vùng đô                                  hơn phản ánh năng suất lao động cao hơn\n\n\n\n    HỘP 4.3. Một số trung tâm đô thị gần hai thành phố lớn rất thành công\n    trong thu hút đầu tư\n\n\n         Ở miền Bắc, tỉnh Bắc Ninh đã thu hút một nhà máy lắp ráp điện thoại vệ tinh,\n    router và modem của Foxconn và một nhà máy lắp ráp điện thoại di động lớn của\n    Samsung. Ngoài ra, gần 100 nhà cung cấp từ Hàn Quốc đã đầu tư vào khu liên hiệp\n    chế tạo của Samsung tại các tỉnh Bắc Ninh (phía Đông Bắc thủ đô Hà Nội) và Thái\n    Nguyên (phía Bắc thủ đô Hà Nội)222. Ở miền Nam, chính quyền tỉnh Đồng Nai (phía\n    Bắc/Đông Bắc thành phố Hồ Chí Minh) đã cấp 1.479 giấy chứng nhận đầu tư với tổng\n    giá trị 27,03 tỷ đô la Mỹ223. Tại Bình Dương, phía Đông Bắc thành phố Hồ Chí Minh,\n    các công ty trong nước đầu tư 550 triệu đô la Mỹ, trong khi các công ty nước ngoài\n    đã đầu tư trên 20 tỷ đô la Mỹ224.\n\n\n\n\n221 Báo cáo nền cho Báo cáo Việt Nam 2035.\n222 http://www.saigon-gpdaily.com.vn/Business/2015/5/113693/.\n223 http://en.baomoi.com/Info/Dong-Nai-ranks-first-in-FDI-attraction/3/544581.epi.\n224 http://www.sggpnews.org.vn/Business/2014/12/111928/.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 309]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                    265\n\n\nthời gian trước đây247. Điều này giúp cho                                         Diện tích dành cho đường phố trong\nthời gian đi lại trung bình ở các đô thị Việt                                khu trung tâm của thủ đô Hà Nội chỉ có\nNam rất ngắn như: 18 phút tại thủ đô Hà                                      chưa đến 9% và thành phố Hồ Chí Minh\nNội, 15 phút tại Đà Nẵng, và 20 phút tại                                     cũng chưa đến 8%, tương tự như ở Băng-\nthành phố Hồ Chí Minh248. Tuy nhiên, cấu                                     cốc, nơi nổi tiếng với tình trạng tắc nghẽn\ntrúc đô thị và kết cấu hạ tầng ở những đô                                    giao thông. Tỷ lệ này thấp hơn nhiều so\nthị lớn nhất như thủ đô Hà Nội và thành                                      với ở trung tâm Man-hat-tan của Niu-dóc\nphố Hồ Chí Minh không thích hợp khi                                          (32%) hoặc ở khu vực trung tâm của Xê-\nxe ô tô đóng vai trò là phương tiện giao                                     un (14%) (Hình 4.18). Ngoài ra, cả Xê-un\nthông chính.                                                                 và Niu-dóc có mạng lưới giao thông ngầm\n\n\n\n     HÌNH 4.18. Không gian đường xá tại thủ đô Hà Nội vẫn chưa phù hợp\n     cho giao thông đô thị\n\n\n\n\nNguồn: Ngân hàng Thế giới (2011).\n\n\n\n247 Ngân hàng Thế giới 2011.\n248 Dữ liệu được lấy từ các cuộc điều tra hộ gia đình do ALMEC thực hiện năm 2008 tại Đà Nẵng, 2004 tại Hà Nội và 2002 tại thành phố Hồ Chí Minh.",
+  "context_ids": [
+    "v2035-p0285",
+    "v2035-p0291",
+    "v2035-p0309"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0285",
+    "C2": "v2035-p0291",
+    "C3": "v2035-p0309"
+  },
+  "usage": {
+    "prompt_tokens": 6089,
+    "completion_tokens": 280,
+    "model_calls": 4
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 43.13490281800023,
+  "id": "test-24"
+}

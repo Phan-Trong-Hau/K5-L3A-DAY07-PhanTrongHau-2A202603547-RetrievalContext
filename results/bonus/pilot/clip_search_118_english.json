@@ -1,0 +1,122 @@
+[
+  {
+    "pdf_page": 217,
+    "region": "bottom_right",
+    "box_pixels": [
+      464,
+      600,
+      929,
+      1200
+    ],
+    "score": 0.28998619318008423,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 350,
+    "region": "bottom_right",
+    "box_pixels": [
+      464,
+      600,
+      929,
+      1200
+    ],
+    "score": 0.28465571999549866,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 287,
+    "region": "bottom_right",
+    "box_pixels": [
+      464,
+      600,
+      929,
+      1200
+    ],
+    "score": 0.2833181619644165,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 74,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.28282663226127625,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 438,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.282407283782959,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 420,
+    "region": "bottom_left",
+    "box_pixels": [
+      0,
+      600,
+      464,
+      1200
+    ],
+    "score": 0.2816719114780426,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 290,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.28144192695617676,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 369,
+    "region": "bottom_left",
+    "box_pixels": [
+      0,
+      600,
+      464,
+      1200
+    ],
+    "score": 0.27800944447517395,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 54,
+    "region": "bottom_right",
+    "box_pixels": [
+      464,
+      600,
+      929,
+      1200
+    ],
+    "score": 0.27758270502090454,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 118,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.2769147455692291,
+    "status": "unverified_visual_similarity"
+  }
+]

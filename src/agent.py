@@ -73,7 +73,9 @@ def validate_answer(action, context_ids):
             raise ValueError('Abstention must have empty citations')
         return True
     inline = re.findall(r'\[([^\[\]]+)\]', answer)
-    return (bool(citations) and len(set(citations)) == len(citations)
+    # A bare citation is not an answer, even if its ID is valid.
+    substantive = re.sub(r'\[[^\[\]]+\]', '', answer).strip()
+    return (bool(re.search(r'\w', substantive)) and bool(citations) and len(set(citations)) == len(citations)
             and set(citations) == set(inline) and set(citations) <= set(context_ids))
 
 

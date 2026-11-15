@@ -1,0 +1,300 @@
+{
+  "question": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước có ngành nào cao nhất?",
+  "filter": {},
+  "status": "answered",
+  "answer": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước cao nhất ở ngành than với tỷ trọng 90% [v2035-p0117].",
+  "citations": [
+    "v2035-p0117"
+  ],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "aBnj7IhyI3bMaYvDpbn9UqX30Buy6x4g",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước có ngành nào cao nhất?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 365,
+      "completion_tokens": 44,
+      "total_duration_ns": 6175121530
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước có ngành nào cao nhất?",
+      "model_query": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước có ngành nào cao nhất?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0118",
+          "text": "74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả ảnh do model tạo, chưa kiểm chứng]\nHình 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n- Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013\n\n  - Than\n  - Điện và khí\n  - Phân bón\n  - Cấp nước\n  - Khai thác đá, Nguồn tân\n  - Chế biến\n  - Bia\n  - Thép\n  - Đường tinh luyện\n  - Hóa chất\n  - Cao su và đá\n  - Hàng dệt\n\n  - Cao su và đá\n  - Hóa chất\n  - Xây dựng\n  - Bảo hiểm\n  - Văn thư\n  - Viễn thông\n\n- Tỷ trọng trong tổng sản lượng một số ngành\n- Tỷ trọng trong tổng doanh thu một số ngành\n\nBảng 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n  - Than: 90%\n  - Điện và khí: 85%\n  - Phân bón: 80%\n  - Cấp nước",
+          "metadata": {
+            "pdf_page": 118,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text",
+            "vision": {
+              "id": "v2035-visual-p0118",
+              "pdf_page": 118,
+              "verification": "unverified_model_output",
+              "model": "qwen2.5vl:3b",
+              "render": "pdftoppm -scale-to 960 -png",
+              "done_reason": "length",
+              "max_tokens": 256,
+              "input_image_sha256": "695eaf5602cb5283a7f64ac5ee8a08e50e4cafb92c186d6d06732c6eca68f82b",
+              "elapsed_seconds": 42.39104183899963,
+              "prompt_tokens": 1191,
+              "completion_tokens": 256
+            },
+            "clip_candidates": [
+              {
+                "page": 72,
+                "region": "top_right",
+                "box_pixels": [
+                  464,
+                  0,
+                  929,
+                  600
+                ],
+                "score": 0.34792906045913696
+              },
+              {
+                "page": 346,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33675435185432434
+              },
+              {
+                "page": 284,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33153608441352844
+              }
+            ]
+          },
+          "page": 118,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 17.759562899926923,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0117",
+          "text": "CHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.",
+          "metadata": {
+            "pdf_page": 117,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text",
+            "clip_candidates": [
+              {
+                "page": 72,
+                "region": "top_right",
+                "box_pixels": [
+                  464,
+                  0,
+                  929,
+                  600
+                ],
+                "score": 0.34792906045913696
+              },
+              {
+                "page": 346,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33675435185432434
+              },
+              {
+                "page": 284,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33153608441352844
+              }
+            ]
+          },
+          "page": 117,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 16.57794704477203,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0072",
+          "text": "28   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n       Thứ năm, khi khó có sự đồng thuận                2. CƠ HỘI VÀ THÁCH THỨC\n     trong nước, Việt Nam đã sử dụng các\n     cam kết theo hiệp định thương mại                  2.1. Nhân tố trong nước\n     quốc tế để có được hiệu quả chiến lược             Những thành tựu của Việt Nam trong\n     tích cực, đặc biệt là để mở ra một số cải       công cuộc Đổi Mới là minh chứng cho\n     cách doanh nghiệp và các tổ chức thị            thấy, nếu được thực hiện một cách chính\n     trường phức tạp hơn. Bắt đầu từ Luật            xác, lợi ích của cải cách đối với xã hội xứng\n     Đầu tư nước ngoài năm 1987, Việt Nam            đáng với nỗ lực phải bỏ ra. Cách tiếp cận\n     đã điều chỉnh khung pháp lý của mình            cải cách từng bước và thực tế, tập trung\n     không chỉ để đáp ứng các yêu cầu pháp           vào kết quả được phân phối công bằng, đã\n     lý cơ bản của các điều ước quốc tế mà           giúp giảm thiểu sự bất ổn kinh tế-xã hội\n     còn để nâng cao lợi ích của hội nhập.           và đảm bảo cải cách là vì lợi ích quốc gia,\n     Kế hoạch thúc đẩy hơn nữa hội nhập              và đó cũng là vì lợi ích của đa số người\n     toàn cầu sẽ đòi hỏi phải thay đổi liên          dân. Điều này giúp duy trì nhu cầu cải\n     tục về nhận thức, tư duy, và môi trường         cách trong công chúng, gắn nâng cao an\n     pháp lý. Việc tham gia vào TPP, EU-             sinh xã hội với đổi mới kinh tế. Sự đồng\n     FTA, và điều ước quốc tế khác tạo cơ            thuận trong xã hội về cải cách theo định\n     hội cho Việt Nam thực hiện cải cách             hướng thị trường rất cao, nhưng có dấu\n     trong những lĩnh vực nhạy cảm như               hiệu rõ ràng là những kỳ vọng của người\n     môi trường, quan hệ lao động, quyền sở          dân đang bắt đầu lớn hơn tiến độ cải cách\n     hữu trí tuệ, và mua sắm công.                   mà họ thấy (Hộp 1.4).\n\n\n\n       HỘP 1.4. Quan điểm đang thay đổi của xã hội Việt Nam về thị trường\n       và nhà nước\n\n\n          Xã hội Việt Nam muốn thấy sự chuyển đổi nhanh chóng hướng tới một nền kinh tế\n       thị trường với sở hữu tư nhân, và ngày càng không hài lòng với tốc độ thay đổi. Đây là\n       kết quả cho thấy trong các cuộc khảo sát gần đây (vào năm 2011 và 2014) về Quan điểm\n       đang thay đổi của người dân về thị trường và nhà nước do Phòng Thương mại và Công\n       nghiệp (VCCI) Việt Nam, với sự hỗ trợ của Ngân hàng Thế giới, thực hiện. Đại đa số (89%)\n       số người được hỏi trong cuộc khảo sát năm 2014 ủng hộ một nền kinh tế thị trường hơn",
+          "metadata": {
+            "pdf_page": 72,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text",
+            "visual_match": {
+              "page": 72,
+              "region": "top_right",
+              "box_pixels": [
+                464,
+                0,
+                929,
+                600
+              ],
+              "score": 0.34792906045913696
+            },
+            "clip_candidates": [
+              {
+                "page": 72,
+                "region": "top_right",
+                "box_pixels": [
+                  464,
+                  0,
+                  929,
+                  600
+                ],
+                "score": 0.34792906045913696
+              },
+              {
+                "page": 346,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33675435185432434
+              },
+              {
+                "page": 284,
+                "region": "top_left",
+                "box_pixels": [
+                  0,
+                  0,
+                  464,
+                  600
+                ],
+                "score": 0.33153608441352844
+              }
+            ]
+          },
+          "page": 72,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 0.34792906045913696,
+          "method": "clip"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 118]\n74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả ảnh do model tạo, chưa kiểm chứng]\nHình 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n- Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013\n\n  - Than\n  - Điện và khí\n  - Phân bón\n  - Cấp nước\n  - Khai thác đá, Nguồn tân\n  - Chế biến\n  - Bia\n  - Thép\n  - Đường tinh luyện\n  - Hóa chất\n  - Cao su và đá\n  - Hàng dệt\n\n  - Cao su và đá\n  - Hóa chất\n  - Xây dựng\n  - Bảo hiểm\n  - Văn thư\n  - Viễn thông\n\n- Tỷ trọng trong tổng sản lượng một số ngành\n- Tỷ trọng trong tổng doanh thu một số ngành\n\nBảng 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n  - Than: 90%\n  - Điện và khí: 85%\n  - Phân bón: 80%\n  - Cấp nước\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 117]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 72]\n28   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n       Thứ năm, khi khó có sự đồng thuận                2. CƠ HỘI VÀ THÁCH THỨC\n     trong nước, Việt Nam đã sử dụng các\n     cam kết theo hiệp định thương mại                  2.1. Nhân tố trong nước\n     quốc tế để có được hiệu quả chiến lược             Những thành tựu của Việt Nam trong\n     tích cực, đặc biệt là để mở ra một số cải       công cuộc Đổi Mới là minh chứng cho\n     cách doanh nghiệp và các tổ chức thị            thấy, nếu được thực hiện một cách chính\n     trường phức tạp hơn. Bắt đầu từ Luật            xác, lợi ích của cải cách đối với xã hội xứng\n     Đầu tư nước ngoài năm 1987, Việt Nam            đáng với nỗ lực phải bỏ ra. Cách tiếp cận\n     đã điều chỉnh khung pháp lý của mình            cải cách từng bước và thực tế, tập trung\n     không chỉ để đáp ứng các yêu cầu pháp           vào kết quả được phân phối công bằng, đã\n     lý cơ bản của các điều ước quốc tế mà           giúp giảm thiểu sự bất ổn kinh tế-xã hội\n     còn để nâng cao lợi ích của hội nhập.           và đảm bảo cải cách là vì lợi ích quốc gia,\n     Kế hoạch thúc đẩy hơn nữa hội nhập              và đó cũng là vì lợi ích của đa số người\n     toàn cầu sẽ đòi hỏi phải thay đổi liên          dân. Điều này giúp duy trì nhu cầu cải\n     tục về nhận thức, tư duy, và môi trường         cách trong công chúng, gắn nâng cao an\n     pháp lý. Việc tham gia vào TPP, EU-             sinh xã hội với đổi mới kinh tế. Sự đồng\n     FTA, và điều ước quốc tế khác tạo cơ            thuận trong xã hội về cải cách theo định\n     hội cho Việt Nam thực hiện cải cách             hướng thị trường rất cao, nhưng có dấu\n     trong những lĩnh vực nhạy cảm như               hiệu rõ ràng là những kỳ vọng của người\n     môi trường, quan hệ lao động, quyền sở          dân đang bắt đầu lớn hơn tiến độ cải cách\n     hữu trí tuệ, và mua sắm công.                   mà họ thấy (Hộp 1.4).\n\n\n\n       HỘP 1.4. Quan điểm đang thay đổi của xã hội Việt Nam về thị trường\n       và nhà nước\n\n\n          Xã hội Việt Nam muốn thấy sự chuyển đổi nhanh chóng hướng tới một nền kinh tế\n       thị trường với sở hữu tư nhân, và ngày càng không hài lòng với tốc độ thay đổi. Đây là\n       kết quả cho thấy trong các cuộc khảo sát gần đây (vào năm 2011 và 2014) về Quan điểm\n       đang thay đổi của người dân về thị trường và nhà nước do Phòng Thương mại và Công\n       nghiệp (VCCI) Việt Nam, với sự hỗ trợ của Ngân hàng Thế giới, thực hiện. Đại đa số (89%)\n       số người được hỏi trong cuộc khảo sát năm 2014 ủng hộ một nền kinh tế thị trường hơn",
+      "context_ids": [
+        "v2035-p0118",
+        "v2035-p0117",
+        "v2035-p0072"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0118",
+        "C2": "v2035-p0117",
+        "C3": "v2035-p0072"
+      },
+      "elapsed_ms": 42782.22938300041
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "[Chỉ trích từ tài liệu liên quan đến Hình 2.11 và tỷ trọng sản lượng của doanh nghiệp nhà nước]\n\nTheo Hình 2.11, các ngành có tỷ trọng sản lượng của doanh nghiệp nhà nước cao nhất được nêu cụ thể như sau:\n\n- Than: 90%  \n- Điện và khí: 85%  \n- Phân bón: 80%  \n\nDo đó, nhóm sản lượng của doanh nghiệp nhà nước cao nhất là **ngành than** với tỷ trọng 90% [C2].\n\nCâu trả lời: **Ngành than** [C2]."
+      },
+      "prompt_tokens": 2992,
+      "completion_tokens": 139,
+      "total_duration_ns": 51344960420
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "citation_format"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "f8qrxxZS3pZpI8MgqIGRVwsbcM9vzmix",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước cao nhất ở ngành than với tỷ trọng 90% [C2].",
+                "citations": [
+                  "C2"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 3032,
+      "completion_tokens": 69,
+      "total_duration_ns": 7667927520
+    },
+    {
+      "event": "answer",
+      "status": "answered",
+      "model_answer": "Theo Hình 2.11, nhóm sản lượng của doanh nghiệp nhà nước cao nhất ở ngành than với tỷ trọng 90% [C2]."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 118]\n74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả ảnh do model tạo, chưa kiểm chứng]\nHình 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n- Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013\n\n  - Than\n  - Điện và khí\n  - Phân bón\n  - Cấp nước\n  - Khai thác đá, Nguồn tân\n  - Chế biến\n  - Bia\n  - Thép\n  - Đường tinh luyện\n  - Hóa chất\n  - Cao su và đá\n  - Hàng dệt\n\n  - Cao su và đá\n  - Hóa chất\n  - Xây dựng\n  - Bảo hiểm\n  - Văn thư\n  - Viễn thông\n\n- Tỷ trọng trong tổng sản lượng một số ngành\n- Tỷ trọng trong tổng doanh thu một số ngành\n\nBảng 2.11: Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm trong một số lĩnh vực\n\n  - Than: 90%\n  - Điện và khí: 85%\n  - Phân bón: 80%\n  - Cấp nước\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 117]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 72]\n28   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n       Thứ năm, khi khó có sự đồng thuận                2. CƠ HỘI VÀ THÁCH THỨC\n     trong nước, Việt Nam đã sử dụng các\n     cam kết theo hiệp định thương mại                  2.1. Nhân tố trong nước\n     quốc tế để có được hiệu quả chiến lược             Những thành tựu của Việt Nam trong\n     tích cực, đặc biệt là để mở ra một số cải       công cuộc Đổi Mới là minh chứng cho\n     cách doanh nghiệp và các tổ chức thị            thấy, nếu được thực hiện một cách chính\n     trường phức tạp hơn. Bắt đầu từ Luật            xác, lợi ích của cải cách đối với xã hội xứng\n     Đầu tư nước ngoài năm 1987, Việt Nam            đáng với nỗ lực phải bỏ ra. Cách tiếp cận\n     đã điều chỉnh khung pháp lý của mình            cải cách từng bước và thực tế, tập trung\n     không chỉ để đáp ứng các yêu cầu pháp           vào kết quả được phân phối công bằng, đã\n     lý cơ bản của các điều ước quốc tế mà           giúp giảm thiểu sự bất ổn kinh tế-xã hội\n     còn để nâng cao lợi ích của hội nhập.           và đảm bảo cải cách là vì lợi ích quốc gia,\n     Kế hoạch thúc đẩy hơn nữa hội nhập              và đó cũng là vì lợi ích của đa số người\n     toàn cầu sẽ đòi hỏi phải thay đổi liên          dân. Điều này giúp duy trì nhu cầu cải\n     tục về nhận thức, tư duy, và môi trường         cách trong công chúng, gắn nâng cao an\n     pháp lý. Việc tham gia vào TPP, EU-             sinh xã hội với đổi mới kinh tế. Sự đồng\n     FTA, và điều ước quốc tế khác tạo cơ            thuận trong xã hội về cải cách theo định\n     hội cho Việt Nam thực hiện cải cách             hướng thị trường rất cao, nhưng có dấu\n     trong những lĩnh vực nhạy cảm như               hiệu rõ ràng là những kỳ vọng của người\n     môi trường, quan hệ lao động, quyền sở          dân đang bắt đầu lớn hơn tiến độ cải cách\n     hữu trí tuệ, và mua sắm công.                   mà họ thấy (Hộp 1.4).\n\n\n\n       HỘP 1.4. Quan điểm đang thay đổi của xã hội Việt Nam về thị trường\n       và nhà nước\n\n\n          Xã hội Việt Nam muốn thấy sự chuyển đổi nhanh chóng hướng tới một nền kinh tế\n       thị trường với sở hữu tư nhân, và ngày càng không hài lòng với tốc độ thay đổi. Đây là\n       kết quả cho thấy trong các cuộc khảo sát gần đây (vào năm 2011 và 2014) về Quan điểm\n       đang thay đổi của người dân về thị trường và nhà nước do Phòng Thương mại và Công\n       nghiệp (VCCI) Việt Nam, với sự hỗ trợ của Ngân hàng Thế giới, thực hiện. Đại đa số (89%)\n       số người được hỏi trong cuộc khảo sát năm 2014 ủng hộ một nền kinh tế thị trường hơn",
+  "context_ids": [
+    "v2035-p0118",
+    "v2035-p0117",
+    "v2035-p0072"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0118",
+    "C2": "v2035-p0117",
+    "C3": "v2035-p0072"
+  },
+  "usage": {
+    "prompt_tokens": 6389,
+    "completion_tokens": 252,
+    "model_calls": 3
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 108.02114724800049,
+  "config": {
+    "language": "vi",
+    "document_title": "Việt Nam 2035, bản PDF tiếng Việt",
+    "method": "bm25_caption",
+    "top_k": 3,
+    "budget": 18000,
+    "max_searches": 1,
+    "vision_model": "qwen2.5vl:3b",
+    "vision_limit": 1,
+    "image_index": "/tmp/vietnam2035-clip-index"
+  }
+}

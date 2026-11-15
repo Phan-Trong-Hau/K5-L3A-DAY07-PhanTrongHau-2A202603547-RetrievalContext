@@ -1,0 +1,324 @@
+[
+  {
+    "id": "test-01",
+    "category": "table",
+    "question": "Theo Bảng 1.1, GDP thực của Ấn Độ dự kiến tăng trưởng trung bình hàng năm bao nhiêu trong giai đoạn 2016–2035?",
+    "expected": "6,0%",
+    "pdf_pages": [
+      77
+    ],
+    "evidence": "Bảng 1.1 hàng Ấn Độ cột 2016–2035",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-02",
+    "category": "table",
+    "question": "Theo Bảng 2.1, tỷ trọng GDP dịch vụ năm 2035 dự báo là bao nhiêu?",
+    "expected": "50,0%",
+    "pdf_pages": [
+      128
+    ],
+    "evidence": "Bảng 2.1 hàng 2035 cột GDP dịch vụ",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-03",
+    "category": "table",
+    "question": "Theo Bảng 2.2, năm 2025 xuất khẩu chiếm tỷ trọng bao nhiêu?",
+    "expected": "82,7%",
+    "pdf_pages": [
+      129
+    ],
+    "evidence": "Bảng 2.2 hàng 2025 cột xuất khẩu",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-04",
+    "category": "table",
+    "question": "Bảng 2.6 cho biết xếp hạng hải quan của Việt Nam năm 2014 là bao nhiêu?",
+    "expected": "61",
+    "pdf_pages": [
+      188
+    ],
+    "evidence": "Bảng 2.6 hàng Việt Nam 2014 cột hải quan",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-05",
+    "category": "table",
+    "question": "Theo Bảng 4.1, dân số đô thị Việt Nam năm 2015 là bao nhiêu triệu người?",
+    "expected": "31,0 triệu người",
+    "pdf_pages": [
+      279
+    ],
+    "evidence": "Bảng 4.1 hàng 2015 cột tổng dân số đô thị",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-06",
+    "category": "table",
+    "question": "Theo Bảng 4.3, tỷ lệ hộ nông thôn sử dụng nước hợp vệ sinh năm 2012 là bao nhiêu?",
+    "expected": "87,9%",
+    "pdf_pages": [
+      298
+    ],
+    "evidence": "Bảng 4.3 dòng 3 cột nông thôn và chú thích năm",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-07",
+    "category": "image",
+    "question": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành một mảng liền hay thành nhiều mảng rời?",
+    "expected": "Nhiều mảng rời rạc, phân tán và manh mún",
+    "pdf_pages": [
+      281
+    ],
+    "evidence": "Hình 4.6, các mảng mở rộng màu đỏ trên ảnh vệ tinh",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-08",
+    "category": "image",
+    "question": "Trong Hình 4.9, ảnh vệ tinh bên trái mô tả khu công nghiệp nào và đường màu vàng bao quanh điều gì?",
+    "expected": "Khu công nghiệp Tân Phú Trung; đường vàng đánh dấu ranh giới khu công nghiệp",
+    "pdf_pages": [
+      285
+    ],
+    "evidence": "Hình 4.9 ảnh a bên trái, đường viền vàng",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-09",
+    "category": "image",
+    "question": "Trong Hình 4.9, khu công nghiệp nào trong hai ảnh xa trung tâm thành phố hơn và cách bao nhiêu km?",
+    "expected": "Dầu Giây, 50 km",
+    "pdf_pages": [
+      285
+    ],
+    "evidence": "Hình 4.9 ảnh b so với ảnh a: 50 km so với 24 km",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-10",
+    "category": "image",
+    "question": "Trong Hình 4.9, đường viền đánh dấu ranh giới trong hai ảnh vệ tinh có màu gì?",
+    "expected": "Màu vàng",
+    "pdf_pages": [
+      285
+    ],
+    "evidence": "Hình 4.9, đường bao hai khu công nghiệp trong hai ảnh vệ tinh",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-11",
+    "category": "image",
+    "question": "Theo chú giải bản đồ trong Hình 4.10, màu xanh lá nhạt biểu thị loại xã nào?",
+    "expected": "Các xã nông thôn",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10, chú giải bản đồ bên trái: ô xanh lá nhạt và nhãn các xã nông thôn",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-12",
+    "category": "chart",
+    "question": "Theo các thanh màu xanh Hình 2.11, ngành nào có tỷ trọng sản lượng nhà nước lớn nhất?",
+    "expected": "Than",
+    "pdf_pages": [
+      118
+    ],
+    "evidence": "Hình 2.11, thanh xanh dài nhất",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-13",
+    "category": "chart",
+    "question": "Theo các thanh màu đỏ Hình 2.11, ngành nào có tỷ trọng doanh thu nhà nước lớn nhất?",
+    "expected": "Cao su và chất dẻo",
+    "pdf_pages": [
+      118
+    ],
+    "evidence": "Hình 2.11, thanh đỏ dài nhất",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-14",
+    "category": "chart",
+    "question": "Theo Hình 4.10, vùng ven đô chiếm bao nhiêu phần trăm quy mô mở rộng đô thị?",
+    "expected": "62,3%",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10 biểu đồ A phần ven đô",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-15",
+    "category": "chart",
+    "question": "Theo Hình 4.10, tỷ trọng đô thị trong quy mô tăng dân số là bao nhiêu?",
+    "expected": "46,5%",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10 biểu đồ B phần đô thị",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-16",
+    "category": "chart",
+    "question": "Theo Hình 4.10, trong quy mô tăng dân số nhóm ven đô hay đô thị lớn hơn, và lớn hơn bao nhiêu điểm phần trăm?",
+    "expected": "Ven đô; lớn hơn 2,0 điểm phần trăm (48,5% trừ 46,5%)",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10 biểu đồ B, 48,5% và 46,5%",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-17",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.1 và 4.1, tỷ trọng việc làm nông nghiệp năm 2013 và số đô thị năm 2015 lần lượt là bao nhiêu?",
+    "expected": "49% và 775 đô thị",
+    "pdf_pages": [
+      128,
+      279
+    ],
+    "evidence": "Bảng 2.1 hàng 2013 việc làm nông nghiệp; Bảng 4.1 hàng 2015 số đô thị",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-18",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.2 và 4.3, tỷ trọng đầu tư năm 2025 và tỷ lệ hộ đô thị sử dụng nước hợp vệ sinh năm 2012 lần lượt là bao nhiêu?",
+    "expected": "30,1% và 98,1%",
+    "pdf_pages": [
+      129,
+      298
+    ],
+    "evidence": "Bảng 2.2 hàng 2025 đầu tư; Bảng 4.3 dòng 3 đô thị, chú thích năm",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-19",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.6 và 4.1, thứ hạng LPI tổng thể Trung Quốc năm 2014 và số dân đô thị năm 2010 lần lượt là bao nhiêu?",
+    "expected": "25 và 25,5 triệu người",
+    "pdf_pages": [
+      188,
+      279
+    ],
+    "evidence": "Bảng 2.6 Trung Quốc 2014 LPI; Bảng 4.1 hàng 2010 dân số đô thị",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-20",
+    "category": "multi_hop",
+    "question": "Theo Bảng 1.1 và 2.2, tăng trưởng GDP thực trung bình ASEAN 2021–2025 và tỷ trọng tiêu dùng năm 2025 lần lượt là bao nhiêu?",
+    "expected": "5,0% và 72,3%",
+    "pdf_pages": [
+      77,
+      129
+    ],
+    "evidence": "Bảng 1.1 ASEAN cột 2021–2025; Bảng 2.2 tiêu dùng hàng 2025",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-21",
+    "category": "text",
+    "question": "Theo đoạn Xu thế kinh tế toàn cầu, tổng tỷ trọng GDP toàn cầu của ba nền kinh tế châu Á dự kiến thay đổi từ mức nào năm 2014 đến mức nào năm 2035?",
+    "expected": "Từ 22% năm 2014 lên 29% năm 2035",
+    "pdf_pages": [
+      77
+    ],
+    "evidence": "Trang 77 cột phải, cuối đoạn Xu thế kinh tế toàn cầu",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-22",
+    "category": "text",
+    "question": "Theo đoạn sau Bảng 2.2, kịch bản cơ sở đòi hỏi tăng năng suất lao động trung bình hàng năm bao nhiêu?",
+    "expected": "5,6%",
+    "pdf_pages": [
+      129
+    ],
+    "evidence": "Trang 129, đoạn đầu ngay sau Bảng 2.2",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-23",
+    "category": "text",
+    "question": "Theo đoạn sau Hình 2.11, vào năm 1999 có khoảng bao nhiêu doanh nghiệp tư nhân trong nước đăng ký kinh doanh chính thức?",
+    "expected": "Khoảng 40.000 doanh nghiệp",
+    "pdf_pages": [
+      118
+    ],
+    "evidence": "Trang 118, cột phải phía dưới Hình 2.11",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-24",
+    "category": "text",
+    "question": "Theo đoạn bên dưới Hình 4.9, tổng diện tích đất công nghiệp còn trống tại ba vùng thủ đô Hà Nội, Đà Nẵng và thành phố Hồ Chí Minh là bao nhiêu?",
+    "expected": "70.810 ha",
+    "pdf_pages": [
+      285
+    ],
+    "evidence": "Trang 285 cột phải dưới Hình 4.9",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-25",
+    "category": "unanswerable",
+    "question": "Báo cáo cho biết GDP thực tế của Việt Nam năm 2048 chính xác là bao nhiêu tỷ USD?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Số liệu thực tế sau năm xuất bản; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-26",
+    "category": "unanswerable",
+    "question": "Theo báo cáo, khu công nghiệp Tân Phú Trung có chính xác bao nhiêu robot hoạt động ngày 1/1/2040?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 4.9 không có số robot; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-27",
+    "category": "unanswerable",
+    "question": "Báo cáo ghi địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039 là gì?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 4.9 không nêu người hay email; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-28",
+    "category": "unanswerable",
+    "question": "Báo cáo ghi giá điện thực tế tại Hà Nội ngày 1/1/2050 chính xác bao nhiêu đồng/kWh?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Thời điểm sau ấn bản; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-29",
+    "category": "unanswerable",
+    "question": "Báo cáo cho biết mã số hộ chiếu của tác giả bản đồ Hình 4.6 là gì?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 4.6 không có mã hộ chiếu; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "test-30",
+    "category": "unanswerable",
+    "question": "Theo báo cáo, năm 2045 khu công nghiệp Dầu Giây có bao nhiêu trạm sạc xe điện đang hoạt động?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 4.9 chỉ mô tả năm 2014; cần rà soát toàn văn.",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  }
+]

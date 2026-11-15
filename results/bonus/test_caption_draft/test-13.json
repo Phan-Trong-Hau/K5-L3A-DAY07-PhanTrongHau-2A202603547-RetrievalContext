@@ -1,0 +1,161 @@
+{
+  "question": "Theo các thanh màu đỏ Hình 2.11, ngành nào có tỷ trọng doanh thu nhà nước lớn nhất?",
+  "filter": {},
+  "status": "answered",
+  "answer": "Ngành cao su và chất dẻo có tỷ trọng doanh thu nhà nước lớn nhất, như thể hiện trong nhóm thanh đỏ của Hình 2.11 [v2035-p0118].",
+  "citations": [
+    "v2035-p0118"
+  ],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "uCTq682d6c4BTz3A1kAuMwT6eZWA0atx",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Theo các thanh màu đỏ Hình 2.11, ngành nào có tỷ trọng doanh thu nhà nước lớn nhất?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 367,
+      "completion_tokens": 46,
+      "total_duration_ns": 2965288665
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Theo các thanh màu đỏ Hình 2.11, ngành nào có tỷ trọng doanh thu nhà nước lớn nhất?",
+      "model_query": "Theo các thanh màu đỏ Hình 2.11, ngành nào có tỷ trọng doanh thu nhà nước lớn nhất?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0118",
+          "text": "74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 2.11: Tỷ trọng sản lượng và doanh thu của doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013. Biểu đồ thanh ngang, trục ngang phần trăm từ 0% đến 120%. Nhóm thanh xanh là tỷ trọng trong tổng sản lượng một số ngành: than lớn nhất, tiếp đến điện và khí, phân bón và cấp nước; hàng dệt thấp nhất. Nhóm thanh đỏ là tỷ trọng trong tổng doanh thu một số ngành: cao su và chất dẻo lớn nhất, tiếp đến hóa chất và xây dựng; viễn thông thấp nhất. Nguồn dưới hình: tính toán dựa trên số liệu của Tổng cục Thống kê năm 2013. Chiều dài thanh cho phép so sánh tương đối, không có nhãn số cụ thể trên từng thanh.",
+          "metadata": {
+            "pdf_page": 118,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 118,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 29.325984039629642,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0281",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.",
+          "metadata": {
+            "pdf_page": 281,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 281,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 20.820017512565364,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0117",
+          "text": "CHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.",
+          "metadata": {
+            "pdf_page": 117,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 117,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 15.427470092055803,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 118]\n74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 2.11: Tỷ trọng sản lượng và doanh thu của doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013. Biểu đồ thanh ngang, trục ngang phần trăm từ 0% đến 120%. Nhóm thanh xanh là tỷ trọng trong tổng sản lượng một số ngành: than lớn nhất, tiếp đến điện và khí, phân bón và cấp nước; hàng dệt thấp nhất. Nhóm thanh đỏ là tỷ trọng trong tổng doanh thu một số ngành: cao su và chất dẻo lớn nhất, tiếp đến hóa chất và xây dựng; viễn thông thấp nhất. Nguồn dưới hình: tính toán dựa trên số liệu của Tổng cục Thống kê năm 2013. Chiều dài thanh cho phép so sánh tương đối, không có nhãn số cụ thể trên từng thanh.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 281]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 117]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.",
+      "context_ids": [
+        "v2035-p0118",
+        "v2035-p0281",
+        "v2035-p0117"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0118",
+        "C2": "v2035-p0281",
+        "C3": "v2035-p0117"
+      },
+      "elapsed_ms": 25.679493000097864
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "[Chỉ dẫn từ C1] Theo mô tả hình 2.11, nhóm thanh đỏ thể hiện tỷ trọng doanh thu của doanh nghiệp nhà nước trong tổng doanh thu một số ngành. Trong nhóm này, \"cao su và chất dẻo\" có tỷ trọng lớn nhất, tiếp đến là \"hóa chất\" và \"xây dựng\", trong khi \"viễn thông\" là thấp nhất.\n\nDo đó, ngành có tỷ trọng doanh thu nhà nước lớn nhất theo các thanh màu đỏ trong Hình 2.11 là **cao su và chất dẻo**.\n\n[C1]"
+      },
+      "prompt_tokens": 2745,
+      "completion_tokens": 132,
+      "total_duration_ns": 37900468651
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "citation_format"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "4D5HaAB2amP3A6mVr7Netdm4tvsh9AM2",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Ngành cao su và chất dẻo có tỷ trọng doanh thu nhà nước lớn nhất, như thể hiện trong nhóm thanh đỏ của Hình 2.11 [C1].",
+                "citations": [
+                  "C1"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 2785,
+      "completion_tokens": 74,
+      "total_duration_ns": 10877006636
+    },
+    {
+      "event": "answer",
+      "status": "answered",
+      "model_answer": "Ngành cao su và chất dẻo có tỷ trọng doanh thu nhà nước lớn nhất, như thể hiện trong nhóm thanh đỏ của Hình 2.11 [C1]."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 118]\n74   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n         HÌNH 2.11. Khu vực Nhà nước giữ thế độc quyền hay độc quyền nhóm\n         trong một số lĩnh vực\n\n\n                                               Tỷ trọng sản lượng và doanh thu của Doanh nghiệp nhà nước\n                                                             trong khu vực doanh nghiệp, 2013\n\n                                       Than\n                                 Điện và khí\n                                   Phân bón\n                                   Cấp nước                                                                             Tỷ trọng\n                   Khai thác đá, khoáng sản                                                                             trong tổng\n                                    Xi măng                                                                             sản lượng\n                                         Bia                                                                            một số ngành\n                                       Thép\n                           Đường tinh luyện\n                                    Hoá chất\n                          Cao su và chất dẻo\n                                   Hàng dệt\n\n                         Cao su và chất dẻo\n                                   Hoá chất                                                                             Tỷ trọng\n                                  Xây dựng                                                                              trong tổng\n                                  Bảo hiểm                                                                              doanh thu\n                               Vận tải thuỷ                                                                             một số ngành\n                                Viễn thông\n                                               0%           20%             40%             60%            80%   100%           120%\n\n\n\n\n     Nguồn: Tính toán được dựa trên số liệu của Tổng cục Thống kê năm 2013\n\n\n\n         Sự suy giảm về tầm quan trọng tương                                          nghiệp tư nhân trong nước đăng ký kinh\n     đối của các DNNN phản ánh sự phát                                                doanh chính thức, so với chỉ 40.000 vào\n     triển của khu vực tư nhân trong nước và                                          năm 1999 và hầu như không có doanh\n     nước ngoài. Được thúc đẩy bởi một chuỗi                                          nghiệp nào trong năm 1990. Ngoài ra còn\n     những cải cách, trước hết để hợp pháp                                            có hàng triệu hộ kinh doanh không đăng\n     hóa doanh nghiệp hộ gia đình và sau đó                                           ký83. Luật Doanh nghiệp năm 1999 là một\n     là các doanh nghiệp tư nhân khác (Hộp                                            bước ngoặt lớn, là chất xúc tác làm cho số\n     2.1), khu vực tư nhân đã phát triển với tốc                                      lượng doanh nghiệp tư nhân đăng ký tăng\n     độ nhanh chóng từ đầu những năm 1990.                                            hơn 15 lần kể từ đó đến nay (Hình 2.12).\n     Cuối năm 2014 đã có hơn 650.000 doanh                                            Năm 2001 khu vực tư nhân trong nước\n\n\n\n     83 Số lượng các doanh nghiệp hộ gia đình – cả có đăng ký và chưa đăng ký - tăng nhanh; từ 1 triệu trong năm 1992 lên gần 4 triệu vào năm 2010\n        (Malesky và Taussig, 2009).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 2.11: Tỷ trọng sản lượng và doanh thu của doanh nghiệp nhà nước trong khu vực doanh nghiệp, 2013. Biểu đồ thanh ngang, trục ngang phần trăm từ 0% đến 120%. Nhóm thanh xanh là tỷ trọng trong tổng sản lượng một số ngành: than lớn nhất, tiếp đến điện và khí, phân bón và cấp nước; hàng dệt thấp nhất. Nhóm thanh đỏ là tỷ trọng trong tổng doanh thu một số ngành: cao su và chất dẻo lớn nhất, tiếp đến hóa chất và xây dựng; viễn thông thấp nhất. Nguồn dưới hình: tính toán dựa trên số liệu của Tổng cục Thống kê năm 2013. Chiều dài thanh cho phép so sánh tương đối, không có nhãn số cụ thể trên từng thanh.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 281]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 117]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN       73\n\n\n    Quá trình chuyển đổi sang nền kinh tế    phần lớn cổ phần tại hơn 3.000 DNNN,\nthị trường chưa đồng bộ thể hiện rõ nhất     trong đó hơn 2.000 đã được cổ phần hóa.\ntrong lĩnh vực cải cách doanh nghiệp nhà     Mặc dù vậy, tỷ trọng của DNNN về sản\nnước và phát triển khu vực tư nhân. Việc     lượng và các yếu tố đầu vào khác đã giảm\nNhà nước rút khỏi sản xuất trực tiếp đã      đáng kể từ đầu những năm 2000 (Hình\ndiễn ra khá nhanh theo từng đợt. Số lượng    2.10 ở trên).\ndoanh nghiệp thuộc sở hữu 100% vốn của          Tuy nhiên, sự tham gia của Nhà nước\nnhà nước đã giảm từ hơn 12.000 năm 1989      với tư cách chủ sở hữu tài sản sản xuất\nxuống còn dưới 750 vào năm 2014. Tuy         không chỉ thể hiện qua các DNNN. Nhà\nnhiên, quy mô và phạm vi cổ phần hóa         nước hiện diện lớn (và ngày càng tăng)\nDNNN đã trải qua nhiều giai đoạn không       trong các hoạt động như dịch vụ công,\nphải lúc nào cũng thống nhất; từ đóng cửa    hành chính công và an ninh, quốc phòng.\nvà sáp nhập (thường kèm theo sa thải lao     Do đó, tỷ trọng của khu vực nhà nước\nđộng quy mô lớn) hàng ngàn DNNN quy          hiện nay vẫn còn khá cao, khoảng một\nmô nhỏ làm ăn thua lỗ trong đầu những        phần ba trong GDP, tuy đã ít hơn nhiều\nnăm 1990, tới tiến độ chậm hơn trong         hơn so với mức 40% của năm 1995,\nnhững năm còn lại của thập kỷ đó, trước      nhưng bằng tỷ trọng của năm 1990. Tỷ\nkhi trải qua một chu kỳ tăng tốc nữa vào     trọng của khu vực nhà nước trong tổng\nđầu năm 2000 và chậm lại từ năm 2008.        việc làm và đầu tư cũng không thay đổi\nHơn nữa, ở Việt Nam cổ phần hóa không        đáng kể. Khu vực nhà nước vẫn giữ thế\nphải là tư nhân hóa. Một doanh nghiệp        độc quyền hay độc quyền nhóm trong\nđược coi là cổ phần hóa nếu Nhà nước         một số lĩnh vực, như than, ngân hàng,\nnắm giữ dưới 100% vốn của doanh nghiệp       xây dựng, phân bón, tiện ích, cao su và\nđó. Trên thực tế, Nhà nước vẫn nắm giữ       nhựa (Hình 2.11)82.\n\n\n\n\n82 Ngân hàng Thế giới, 2011.",
+  "context_ids": [
+    "v2035-p0118",
+    "v2035-p0281",
+    "v2035-p0117"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0118",
+    "C2": "v2035-p0281",
+    "C3": "v2035-p0117"
+  },
+  "usage": {
+    "prompt_tokens": 5897,
+    "completion_tokens": 252,
+    "model_calls": 3
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 51.77290000299945,
+  "id": "test-13"
+}

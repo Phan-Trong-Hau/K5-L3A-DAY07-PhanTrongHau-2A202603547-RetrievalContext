@@ -1,0 +1,128 @@
+[
+  {
+    "id": "dev-01",
+    "pass": true,
+    "reason": "Đúng trị số, thời kỳ và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, Bảng 1.1, Hoa Kỳ cột 2016–2035: 2,7%."
+  },
+  {
+    "id": "dev-02",
+    "pass": true,
+    "reason": "Đúng giá trị và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128 Bảng 2.1 hàng 2035, việc làm nông nghiệp: 25%."
+  },
+  {
+    "id": "dev-03",
+    "pass": true,
+    "reason": "Đúng giá trị và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 Bảng 2.2 hàng 2035, đầu tư: 27,1%."
+  },
+  {
+    "id": "dev-04",
+    "pass": true,
+    "reason": "Đúng thứ hạng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6 Việt Nam 2014, LPI tổng thể: 48."
+  },
+  {
+    "id": "dev-05",
+    "pass": true,
+    "reason": "Đúng màu, ý nghĩa, thời gian và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 281 Hình 4.6 chú giải màu đỏ: đô thị mở rộng 2000–2010."
+  },
+  {
+    "id": "dev-06",
+    "pass": true,
+    "reason": "Đúng ảnh và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9 ảnh b bên phải là Dầu Giây."
+  },
+  {
+    "id": "dev-07",
+    "pass": true,
+    "reason": "Đúng ngành và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118 Hình 2.11 nhóm thanh đỏ: viễn thông ngắn nhất."
+  },
+  {
+    "id": "dev-08",
+    "pass": true,
+    "reason": "Đúng trị số, chỉ tiêu và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10 biểu đồ A nông thôn: 4,0%."
+  },
+  {
+    "id": "dev-09",
+    "pass": true,
+    "reason": "Đúng trị số, chỉ tiêu và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10 biểu đồ B lõi đô thị: 3,4%."
+  },
+  {
+    "id": "dev-10",
+    "pass": true,
+    "reason": "Đúng hai trị số và đủ hai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128 Bảng 2.1: 38%; PDF 129 Bảng 2.2: 74,6%, năm 2035."
+  },
+  {
+    "id": "dev-11",
+    "pass": true,
+    "reason": "Đúng hai giá trị, năm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 279 Bảng 4.1 năm 2015: 775 đô thị; PDF 298 Bảng 4.3: hộ đô thị dùng điện 99,8% năm 2012."
+  },
+  {
+    "id": "dev-12",
+    "pass": true,
+    "reason": "Đúng cả hai giá trị và dẫn đủ hai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6: LPI 53; PDF 279 Bảng 4.1: 675 đô thị."
+  },
+  {
+    "id": "dev-13",
+    "pass": false,
+    "reason": "Trị số 3,2% đúng và có nguồn trang 77, nhưng câu bổ sung về Bảng 1.1 dẫn trang 83 không chứa bảng; trích dẫn không chứng minh nhận định.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77 cột phải nêu 3,2%/năm 2015–2035 và Bảng 1.1; PDF 83 là trang khác, không có Bảng 1.1."
+  },
+  {
+    "id": "dev-14",
+    "pass": true,
+    "reason": "Đúng 92%, giai đoạn và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 đoạn sau Bảng 2.2: giai đoạn 2013–2035 92%."
+  },
+  {
+    "id": "dev-15",
+    "pass": true,
+    "reason": "Đúng số lượng, thời điểm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, cột trái dưới Hình 2.11: cuối 2014 hơn 650.000 doanh nghiệp."
+  },
+  {
+    "id": "dev-16",
+    "pass": true,
+    "reason": "Từ chối ngắn gọn, không bổ sung khẳng định thiếu căn cứ.",
+    "original_checked": true,
+    "evidence_checked": "Ấn bản 2016 và toàn văn trích xuất không có dữ liệu GDP thực tế năm 2044."
+  },
+  {
+    "id": "dev-17",
+    "pass": true,
+    "reason": "Từ chối ngắn gọn, không bịa danh tính hay email.",
+    "original_checked": true,
+    "evidence_checked": "Tìm 2039 trong toàn văn trích xuất không có; các trang truy xuất không có địa chỉ cá nhân được hỏi."
+  },
+  {
+    "id": "dev-18",
+    "pass": true,
+    "reason": "Từ chối ngắn gọn, không thêm số liệu sai năm như bản trước.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9: Dầu Giây thành lập 2008, lấp đầy 2014 2,5%; không có giá thuê ngày 1/1/2042."
+  }
+]

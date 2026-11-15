@@ -1,7 +1,7 @@
 """Protocol and ranking regressions; mocks here are never benchmark results."""
 import unittest
 
-from src.agent import run_agent
+from src.agent import run_agent, validate_answer
 from src.agent_v2 import normalize_final
 from src.retrieval import Retriever, mmr
 from test_solution import Provider, Store, chunk
@@ -55,6 +55,12 @@ class AgentV2Tests(unittest.TestCase):
         with self.assertRaises(ValueError):
             normalize_final({'content': 'submit_answer({__import__("os"): 1})'})
 
+    def test_echoed_header_and_bare_citation(self):
+        action = normalize_final({'content': '[ C1 | tài liệu | page 77 ] 4,8% [C1]'})
+        self.assertTrue(validate_answer(action, ['C1']))
+        self.assertIn('4,8%', action['answer'])
+        self.assertFalse(validate_answer(normalize_final({'content': '[C1]'}), ['C1']))
+
     def test_citation_alias_expands_to_original_id(self):
         provider = Provider([('search_documents', {'query': 'rewritten'}),
                              ('submit_answer', {'status': 'answered', 'answer': 'Seven days [C1].', 'citations': ['C1']})])
@@ -78,11 +84,12 @@ class AgentV2Tests(unittest.TestCase):
         self.assertEqual(trace['usage']['model_calls'], 3)
         self.assertTrue(any(e.get('reason') == 'retrieval_required' for e in trace['events']))
 
-    def test_repeated_skip_is_error_not_fake_abstention(self):
+    def test_repeated_skip_runs_retrieval_fallback_before_abstaining(self):
         provider = Provider([('submit_answer', {'status': 'abstain', 'answer': 'No evidence.', 'citations': []})]*2)
         trace = run_agent('q', provider, Store(), self.config)
-        self.assertEqual(trace['status'], 'error')
-        self.assertFalse(any(e['event'] == 'search' for e in trace['events']))
+        self.assertEqual(trace['status'], 'abstain')
+        self.assertEqual(sum(e['event'] == 'search' for e in trace['events']), 1)
+        self.assertEqual(trace['events'][-1]['reason'], 'model_repeated_protocol_violation')
 
     def test_citation_format_repair_is_bounded(self):
         provider = Provider([('search_documents', {'query': 'q'}),

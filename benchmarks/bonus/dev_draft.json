@@ -1,0 +1,197 @@
+[
+  {
+    "id": "dev-01",
+    "category": "table",
+    "question": "Theo Bảng 1.1, tốc độ tăng trưởng GDP thực trung bình hàng năm của Hoa Kỳ giai đoạn 2016–2035 là bao nhiêu?",
+    "expected": "2,7%",
+    "pdf_pages": [
+      77
+    ],
+    "evidence": "Bảng 1.1, hàng Hoa Kỳ cột 2016–2035",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-02",
+    "category": "table",
+    "question": "Theo Bảng 2.1, tỷ trọng việc làm nông nghiệp dự báo năm 2035 là bao nhiêu?",
+    "expected": "25%",
+    "pdf_pages": [
+      128
+    ],
+    "evidence": "Bảng 2.1, hàng 2035 cột việc làm nông nghiệp",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-03",
+    "category": "table",
+    "question": "Theo Bảng 2.2, tỷ trọng đầu tư năm 2035 là bao nhiêu?",
+    "expected": "27,1%",
+    "pdf_pages": [
+      129
+    ],
+    "evidence": "Bảng 2.2, hàng 2035 cột đầu tư",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-04",
+    "category": "table",
+    "question": "Theo Bảng 2.6, thứ hạng LPI tổng thể của Việt Nam năm 2014 là bao nhiêu?",
+    "expected": "48",
+    "pdf_pages": [
+      188
+    ],
+    "evidence": "Bảng 2.6, hàng Việt Nam 2014 cột LPI tổng thể",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-05",
+    "category": "image",
+    "question": "Trong Hình 4.6, màu đỏ trên ảnh vệ tinh biểu thị điều gì?",
+    "expected": "Vùng đô thị mở rộng giai đoạn 2000–2010",
+    "pdf_pages": [
+      281
+    ],
+    "evidence": "Hình 4.6, chú giải và ghi chú dưới ảnh",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-06",
+    "category": "image",
+    "question": "Trong Hình 4.9, ảnh khu công nghiệp Dầu Giây nằm bên nào?",
+    "expected": "Bên phải",
+    "pdf_pages": [
+      285
+    ],
+    "evidence": "Hình 4.9, ảnh b bên phải",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-07",
+    "category": "chart",
+    "question": "Trong Hình 2.11, nhóm doanh thu có ngành nào thấp nhất?",
+    "expected": "Viễn thông",
+    "pdf_pages": [
+      118
+    ],
+    "evidence": "Hình 2.11, thanh đỏ ngắn nhất",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-08",
+    "category": "chart",
+    "question": "Theo Hình 4.10, khu vực nông thôn chiếm bao nhiêu phần trăm quy mô mở rộng đô thị?",
+    "expected": "4,0%",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10 biểu đồ A, phần nông thôn",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-09",
+    "category": "chart",
+    "question": "Hình 4.10 thể hiện tỷ trọng lõi đô thị trong quy mô tăng dân số bằng bao nhiêu?",
+    "expected": "3,4%",
+    "pdf_pages": [
+      287
+    ],
+    "evidence": "Hình 4.10 biểu đồ B, phần lõi đô thị",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-10",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là bao nhiêu?",
+    "expected": "38% và 74,6%",
+    "pdf_pages": [
+      128,
+      129
+    ],
+    "evidence": "Bảng 2.1 hàng 2035 việc làm dịch vụ và Bảng 2.2 hàng 2035 tiêu dùng",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-11",
+    "category": "multi_hop",
+    "question": "Theo Bảng 4.1 và 4.3, số đô thị năm 2015 và tỷ lệ hộ đô thị sử dụng điện năm 2012 lần lượt là bao nhiêu?",
+    "expected": "775 đô thị và 99,8%",
+    "pdf_pages": [
+      279,
+      298
+    ],
+    "evidence": "Bảng 4.1 hàng 2015 số đô thị; Bảng 4.3 dòng 5, cột đô thị, chú thích 2012",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-12",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.6 và 4.1, thứ hạng LPI tổng thể Việt Nam 2007 và số đô thị năm 2005 lần lượt là bao nhiêu?",
+    "expected": "53 và 675 đô thị",
+    "pdf_pages": [
+      188,
+      279
+    ],
+    "evidence": "Bảng 2.6 hàng Việt Nam 2007; Bảng 4.1 hàng 2005",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-13",
+    "category": "text",
+    "question": "Theo đoạn Xu thế kinh tế toàn cầu, tăng trưởng kinh tế toàn cầu dự kiến trung bình hàng năm từ 2015 đến 2035 là bao nhiêu?",
+    "expected": "3,2% mỗi năm",
+    "pdf_pages": [
+      77
+    ],
+    "evidence": "Trang 77 cột phải, đoạn Xu thế kinh tế toàn cầu",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-14",
+    "category": "text",
+    "question": "Theo đoạn dưới Bảng 2.2, trong giai đoạn 2013–2035 bao nhiêu phần trăm tăng trưởng GDP phải do tăng năng suất lao động?",
+    "expected": "92%",
+    "pdf_pages": [
+      129
+    ],
+    "evidence": "Trang 129, đoạn dưới Bảng 2.2",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-15",
+    "category": "text",
+    "question": "Theo đoạn văn sau Hình 2.11, cuối năm 2014 có hơn bao nhiêu doanh nghiệp tư nhân trong nước đăng ký kinh doanh chính thức?",
+    "expected": "Hơn 650.000 doanh nghiệp",
+    "pdf_pages": [
+      118
+    ],
+    "evidence": "Trang 118, cuối cột trái",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-16",
+    "category": "unanswerable",
+    "question": "Báo cáo cho biết tỷ lệ tăng trưởng GDP Việt Nam thực tế năm 2044 chính xác là bao nhiêu?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Cần kiểm tra toàn văn; số liệu thực tế năm 2044 là sau thời điểm xuất bản 2016",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-17",
+    "category": "unanswerable",
+    "question": "Báo cáo cho biết địa chỉ email cá nhân của người vận hành nhà máy điện Việt Nam năm 2039 là gì?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Cần rà soát toàn văn; không xác định được người hoặc địa chỉ",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  },
+  {
+    "id": "dev-18",
+    "category": "unanswerable",
+    "question": "Theo báo cáo, giá thuê chính xác từng mét vuông tại khu công nghiệp Dầu Giây vào ngày 1 tháng 1 năm 2042 là bao nhiêu?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Kiểm tra Hình 4.9 và toàn văn; không có giá thuê ngày tương lai",
+    "review": "draft: original-page audit and absence checks are incomplete"
+  }
+]

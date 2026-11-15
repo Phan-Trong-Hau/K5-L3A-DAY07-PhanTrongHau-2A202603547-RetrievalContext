@@ -1,0 +1,212 @@
+[
+  {
+    "id": "fresh-01",
+    "pass": true,
+    "reason": "Đúng trị số, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 144 Bảng 2.5, nông nghiệp Việt Nam 2000–2013: 3,4%."
+  },
+  {
+    "id": "fresh-02",
+    "pass": true,
+    "reason": "Đúng trị số, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6 Ma-lai-xi-a 2014 cột LPI tổng thể: 28."
+  },
+  {
+    "id": "fresh-03",
+    "pass": true,
+    "reason": "Đúng số, đơn vị và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 279 Bảng 4.1 hàng 2010 cột mật độ dân số đô thị: 18,6 người/ha."
+  },
+  {
+    "id": "fresh-04",
+    "pass": true,
+    "reason": "Đúng tỷ lệ, địa bàn, thời điểm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 298 Bảng 4.3 dòng 2 cột nông thôn 11,2%; ghi chú chỉ số 1 và 2 là năm 2013."
+  },
+  {
+    "id": "fresh-05",
+    "pass": true,
+    "reason": "Đúng tỷ trọng, năm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 Bảng 2.2 hàng 2035 cột nhập khẩu 80,5%."
+  },
+  {
+    "id": "fresh-06",
+    "pass": true,
+    "reason": "Đúng trị số, thời kỳ và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77 Bảng 1.1, hàng Châu Âu cột 2021–2025: 1,9%."
+  },
+  {
+    "id": "fresh-07",
+    "pass": false,
+    "reason": "Đúng con số và so sánh nhưng thêm mẫu số không được sơ đồ chứng minh: nói 55% tổng lượng nước thải, trong khi 55% nằm ở nhánh xuất phát từ dân số đô thị 25 triệu.",
+    "original_checked": true,
+    "evidence_checked": "PDF 360 Hình 5.4: từ ô dân số đô thị 25 triệu, nhánh bể tự hoại chứa nước thải 55%; nhánh khác 18%. Hình không ghi 55% tổng lượng nước thải."
+  },
+  {
+    "id": "fresh-08",
+    "pass": true,
+    "reason": "Đúng nhánh nhỏ nhất, các tỷ lệ so sánh và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 360 Hình 5.4: thoát nước trực tiếp không bể tự hoại 5%, các nhánh khác 55%, 22%, 18%."
+  },
+  {
+    "id": "fresh-09",
+    "pass": true,
+    "reason": "Đúng thành phố, vị trí và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 309 Hình 4.18, bản đồ dưới trái nhãn NEW YORK."
+  },
+  {
+    "id": "fresh-10",
+    "pass": true,
+    "reason": "Đúng cơ quan và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 394 Hình 5.10, ô phía trên giữa: quy hoạch không gian (Bộ Xây dựng)."
+  },
+  {
+    "id": "fresh-11",
+    "pass": true,
+    "reason": "Đúng khu vực, ý nghĩa ô và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 394 Hình 5.10 ô xanh giữa: quy hoạch vùng Đồng bằng sông Cửu Long."
+  },
+  {
+    "id": "fresh-12",
+    "pass": true,
+    "reason": "Đúng chú giải và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 362 Hình 5.5 chú giải bên phải: xanh dương là nước thải đô thị."
+  },
+  {
+    "id": "fresh-13",
+    "pass": true,
+    "reason": "Đúng chú giải và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 362 Hình 5.5 chú giải bên phải: xanh lá là nước thải công nghiệp."
+  },
+  {
+    "id": "fresh-14",
+    "pass": false,
+    "reason": "Đúng tên lưu vực nhưng đoạn hình ảnh đã truy xuất không nêu so sánh lưu vực; chỉ kiểm tra lại trên Hình 5.5 gốc thấy Đồng Nai cao nhất, nên câu trả lời không được context chứng minh.",
+    "original_checked": true,
+    "evidence_checked": "PDF bản in trang 362, Hình 5.5; cột Đồng Nai cao nhất nhưng mô tả truy xuất không ghi so sánh giữa các lưu vực."
+  },
+  {
+    "id": "fresh-15",
+    "pass": true,
+    "reason": "So sánh năm đúng; trục thời gian và nhóm cột đối chiếu đúng.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 362, Hình 5.5: các cột tổng năm 2030 cao hơn 2020."
+  },
+  {
+    "id": "fresh-16",
+    "pass": true,
+    "reason": "Nêu đúng rằng trục đứng không ghi đơn vị; không suy diễn đơn vị.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 362, Hình 5.5, kiểm tra trực tiếp trục đứng."
+  },
+  {
+    "id": "fresh-17",
+    "pass": false,
+    "reason": "Từ chối dù cả hai trị số đều có trong hai bảng được hỏi.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 144 Bảng 2.5 (3,4%) và trang 188 Bảng 2.6 (hạng 28)."
+  },
+  {
+    "id": "fresh-18",
+    "pass": true,
+    "reason": "Hai trị số, đơn vị, năm và trích dẫn đều đúng; phần làm rõ phù hợp tiêu đề bảng.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 279 Bảng 4.1 (18,6 người/ha); trang 298 Bảng 4.3 (11,2%)."
+  },
+  {
+    "id": "fresh-19",
+    "pass": true,
+    "reason": "Hai thông tin đều đúng và được trích dẫn đúng trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 360 Hình 5.4 (5%); trang 394 Hình 5.10 (Bộ Xây dựng)."
+  },
+  {
+    "id": "fresh-20",
+    "pass": false,
+    "reason": "Nhãn màu xanh dương đúng nhưng vị trí bản đồ dưới bên trái bị trả lời sai (Hà Nội thay vì New York).",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 309, Hình 4.18: bản đồ dưới bên trái là New York; trang 362 Hình 5.5 chú giải xanh dương là nước thải đô thị."
+  },
+  {
+    "id": "fresh-21",
+    "pass": true,
+    "reason": "Trả lời đúng 15 phút và trích dẫn đoạn văn nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 309, đoạn nói thời gian đi lại trung bình tại Đà Nẵng 15 phút."
+  },
+  {
+    "id": "fresh-22",
+    "pass": true,
+    "reason": "Khoảng 1–1,5 USD/m³ đúng theo văn bản nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 362, đoạn bên trái phía trên Hình 5.5."
+  },
+  {
+    "id": "fresh-23",
+    "pass": true,
+    "reason": "Khoảng 4.600 ca mỗi năm đúng theo Hộp 5.3.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 360, Hộp 5.3."
+  },
+  {
+    "id": "fresh-24",
+    "pass": true,
+    "reason": "Đúng chuyển từ nước ngầm sang nước mặt để hạn chế lún.",
+    "original_checked": true,
+    "evidence_checked": "PDF trang 394, đoạn dưới Hình 5.10."
+  },
+  {
+    "id": "fresh-25",
+    "pass": true,
+    "reason": "Từ chối thông tin cá nhân không có trong báo cáo, không thêm khẳng định ngoài căn cứ.",
+    "original_checked": true,
+    "evidence_checked": "Đã rà nội dung Hình 5.4 và trang nguồn; tài liệu không nêu giấy phép lái xe của người vẽ."
+  },
+  {
+    "id": "fresh-26",
+    "pass": true,
+    "reason": "Từ chối câu hỏi ngày tháng và giá vé không có trong tài liệu.",
+    "original_checked": true,
+    "evidence_checked": "Đã rà nội dung nguồn liên quan giao thông; báo cáo không chứa giá vé ngày 19/9/2046."
+  },
+  {
+    "id": "fresh-27",
+    "pass": true,
+    "reason": "Từ chối thông tin quán cụ thể không có trong báo cáo.",
+    "original_checked": true,
+    "evidence_checked": "Đã rà nội dung nguồn liên quan Đà Nẵng; không có dữ liệu quán cà phê ngày nêu."
+  },
+  {
+    "id": "fresh-28",
+    "pass": false,
+    "reason": "Lỗi thực thi; không sinh được câu trả lời từ chối.",
+    "original_checked": true,
+    "evidence_checked": "Đối chiếu toàn bộ báo cáo; không có mật khẩu Wi-Fi cá nhân của người thiết kế Hình 4.18."
+  },
+  {
+    "id": "fresh-29",
+    "pass": true,
+    "reason": "Từ chối số đo pH theo xã và thời điểm cụ thể không có trong báo cáo.",
+    "original_checked": true,
+    "evidence_checked": "Đã rà nguồn về lưu vực sông Cầu; không có bộ số đo ngày 1/1/2049."
+  },
+  {
+    "id": "fresh-30",
+    "pass": true,
+    "reason": "Từ chối thông tin chuyến tàu cụ thể không có trong báo cáo.",
+    "original_checked": true,
+    "evidence_checked": "Đã rà nội dung giao thông; không có chuyến tàu ngày 2/2/2048."
+  }
+]

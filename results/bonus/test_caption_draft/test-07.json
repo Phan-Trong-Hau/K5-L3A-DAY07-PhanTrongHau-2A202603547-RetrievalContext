@@ -1,0 +1,161 @@
+{
+  "question": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành một mảng liền hay thành nhiều mảng rời?",
+  "filter": {},
+  "status": "answered",
+  "answer": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành nhiều mảng rời rạc quanh khu trung tâm [v2035-p0281].",
+  "citations": [
+    "v2035-p0281"
+  ],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "bu3TKwWvG3mHSbKUENEVoa5Lbmm65WhS",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành một mảng liền hay thành nhiều mảng rời?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 375,
+      "completion_tokens": 54,
+      "total_duration_ns": 3486135367
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành một mảng liền hay thành nhiều mảng rời?",
+      "model_query": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành một mảng liền hay thành nhiều mảng rời?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0281",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.",
+          "metadata": {
+            "pdf_page": 281,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 281,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 44.59759008329321,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0289",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                      245\n\n\n    Tuy nhiên, trên thực tế, phát triển không   sản xuất công nghiệp của Việt Nam năm\ngian đô thị ở Việt Nam chỉ tập trung ở hai      2013 (Hình 4.11). Tỷ lệ giá trị sản xuất công\ntrung tâm tăng trưởng là thủ đô Hà Nội và       nghiệp của 2 đô thị trung tâm trong giá trị\nthành phố Hồ Chí Minh hay nói rộng ra là        sản xuất cả nước trong giai đoạn 2005 –\nvùng Đồng bằng sông Hồng và miền Đông           2013 giảm, trong khi tỷ lệ của các tỉnh lân\nNam Bộ (bao gồm cả một phần vùng phụ            cận tăng đáng kể. Đây là mẫu hình thường\ncận ở Đồng bằng sông Cửu Long). Mật độ          thấy trong chuyển dịch không gian phát\nkinh tế cao nhất là ở vùng Đồng bằng sông       triển công nghiệp từ các đô thị lớn đến các\nHồng, tập trung ở Hà Nội và miền Đông           vùng có chi phí thấp hơn.\nNam Bộ, tập trung ở thành phố Hồ Chí\nMinh, theo sau là vùng Duyên hải miền\nTrung218. Trong hơn một thập kỷ qua, tăng            HÌNH 4.11. Mật độ sản xuất cao tại\ntrưởng dân số nhiều nhất ở vùng thủ đô               Hà Nội và thành phố Hồ Chí Minh\nHà Nội và thành phố Hồ Chí Minh, trong\n                                                                                               Tỷ đồng/km2,\nkhi dân số giảm nhiều ở phía Nam vùng                                                          2013\n\nĐồng bằng sông Hồng và ở phần lớn vùng\nĐồng bằng sông Cửu Long. Việc dân số\ntập trung tại các khu vực đô thị lớn không\nphải chỉ có ở Việt Nam. Các hiệu ứng của\nlợi thế kinh tế theo kết tụ đã làm tăng tỷ lệ\ndân số của các vùng đô thị lớn ở Philipin,\nHàn Quốc, và ở mức độ thấp hơn là vùng\nĐồng bằng Tứ Xuyên, Trung Quốc219.                                                                  Tỷ đồng/km2,\n                                                                                                    2013\n    Hai vùng kinh tế trọng điểm xung                                                                0,065 - 25\n                                                                                                    25 - 50\nquanh thủ đô Hà Nội và thành phố Hồ Chí                                                             50 - 75\n                                                                                                    75 - 100\nMinh bao gồm các tỉnh trong vòng 2 giờ                                                              100 - 125\nlái xe từ đô thị trung tâm (ví dụ Hải Phòng                                                         125 - 150\n                                                                                                    >500\nlà một phần trong vùng thủ đô Hà Nội mở\nrộng) có mật độ giá trị sản xuất trên mỗi\n                                                Nguồn: Tính toán của các tác giả từ số liệu của Tổng cục Thống kê.\nđơn vị diện tích cao nhất, tạo ra 84% giá trị\n\n\n218 Chreod 2015.\n219 Chreod 2015.",
+          "metadata": {
+            "pdf_page": 289,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 289,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 34.911642939960146,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0280",
+          "text": "236   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n      thế giới khác cao hơn nhiều: trung tâm                                                                     trung tâm thành phố mới Bình Dương kể\n      thành phố Xinh-ga-po là 1 triệu người/                                                                     cả ngoài giờ cao điểm, trong khi khoảng\n      km2; trung tâm thành phố Hồng Kông                                                                         cách chỉ có 40 km. Nếu tình trạng này kéo\n      (Trung Quốc) hơn 6 triệu người/km và                                                    2\n                                                                                                                 dài, các đô thị của Việt Nam sẽ bị quá tải\n      Man-hat-tan 3,7 triệu người/km .                                           2 204\n                                                                                                                 bởi ùn tắc giao thông và khí thải. Trong\n           Phát triển đô thị ở thủ đô Hà Nội và                                                                  khi đó, quỹ đất dành cho giao thông tại các\n      thành phố Hồ Chí Minh chủ yếu diễn ra                                                                      đô thị của Việt Nam còn thấp, chỉ đạt từ\n      ở các khu vực ven đô, ngoài vùng lõi đô                                                                    5% đến 9% trong khi trung bình cần 16%\n      thị (Hình 4.5). Với mật độ thấp, kết nối                                                                   đến 25% quỹ đất đô thị. Ngoài ra, tại thủ\n      khu vực yếu, đô thị của Việt Nam giống                                                                     đô Hà Nội và thành phố Hồ Chí Minh, hệ\n      như các ốc đảo phân tán, không vận hành                                                                    thống đường sắt đô thị và tàu điện ngầm\n      giống như các khu vực đô thị gắn kết tốt                                                                   chưa được phát triển đầy đủ, gây cản trở\n      về kinh tế và hạ tầng. Vào một ngày bình                                                                   cho kết nối không chỉ trong khu vực nội\n      thường, phải mất gần hai giờ để đi từ quận                                                                 đô mà còn giữa khu vực nội đô và vùng\n      trung tâm thành phố Hồ Chí Minh đến                                                                        xung quanh.\n\n\n\n           HÌNH 4.5. Mở rộng đô thị với mật độ thấp có thể làm giảm lợi thế kinh tế\n           do kết tụ\n\n\n\n                                        50.000       2 triệu người                                                                           Thành phố Hồ Chí Minh\n                                        40.000\n                   Mật độ (người/km2)\n\n\n\n\n                                                                3 tr\n                                        30.000\n                                                                             1,15 tr\n                                        20.000                                                          1,5 tr\n                                        10.000\n\n                                            0\n                                                 0       100           200             300        400            500      600    700   800           900        1.000\n                                                                                             Vùng có công trình xây dựng (km2)\n\n\n\n           Nguồn: Salat (2014).\n\n\n\n\n      204 http://densityatlas.org/casestudies/.",
+          "metadata": {
+            "pdf_page": 280,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 280,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 29.2972128282331,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 281]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 289]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                      245\n\n\n    Tuy nhiên, trên thực tế, phát triển không   sản xuất công nghiệp của Việt Nam năm\ngian đô thị ở Việt Nam chỉ tập trung ở hai      2013 (Hình 4.11). Tỷ lệ giá trị sản xuất công\ntrung tâm tăng trưởng là thủ đô Hà Nội và       nghiệp của 2 đô thị trung tâm trong giá trị\nthành phố Hồ Chí Minh hay nói rộng ra là        sản xuất cả nước trong giai đoạn 2005 –\nvùng Đồng bằng sông Hồng và miền Đông           2013 giảm, trong khi tỷ lệ của các tỉnh lân\nNam Bộ (bao gồm cả một phần vùng phụ            cận tăng đáng kể. Đây là mẫu hình thường\ncận ở Đồng bằng sông Cửu Long). Mật độ          thấy trong chuyển dịch không gian phát\nkinh tế cao nhất là ở vùng Đồng bằng sông       triển công nghiệp từ các đô thị lớn đến các\nHồng, tập trung ở Hà Nội và miền Đông           vùng có chi phí thấp hơn.\nNam Bộ, tập trung ở thành phố Hồ Chí\nMinh, theo sau là vùng Duyên hải miền\nTrung218. Trong hơn một thập kỷ qua, tăng            HÌNH 4.11. Mật độ sản xuất cao tại\ntrưởng dân số nhiều nhất ở vùng thủ đô               Hà Nội và thành phố Hồ Chí Minh\nHà Nội và thành phố Hồ Chí Minh, trong\n                                                                                               Tỷ đồng/km2,\nkhi dân số giảm nhiều ở phía Nam vùng                                                          2013\n\nĐồng bằng sông Hồng và ở phần lớn vùng\nĐồng bằng sông Cửu Long. Việc dân số\ntập trung tại các khu vực đô thị lớn không\nphải chỉ có ở Việt Nam. Các hiệu ứng của\nlợi thế kinh tế theo kết tụ đã làm tăng tỷ lệ\ndân số của các vùng đô thị lớn ở Philipin,\nHàn Quốc, và ở mức độ thấp hơn là vùng\nĐồng bằng Tứ Xuyên, Trung Quốc219.                                                                  Tỷ đồng/km2,\n                                                                                                    2013\n    Hai vùng kinh tế trọng điểm xung                                                                0,065 - 25\n                                                                                                    25 - 50\nquanh thủ đô Hà Nội và thành phố Hồ Chí                                                             50 - 75\n                                                                                                    75 - 100\nMinh bao gồm các tỉnh trong vòng 2 giờ                                                              100 - 125\nlái xe từ đô thị trung tâm (ví dụ Hải Phòng                                                         125 - 150\n                                                                                                    >500\nlà một phần trong vùng thủ đô Hà Nội mở\nrộng) có mật độ giá trị sản xuất trên mỗi\n                                                Nguồn: Tính toán của các tác giả từ số liệu của Tổng cục Thống kê.\nđơn vị diện tích cao nhất, tạo ra 84% giá trị\n\n\n218 Chreod 2015.\n219 Chreod 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 280]\n236   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n      thế giới khác cao hơn nhiều: trung tâm                                                                     trung tâm thành phố mới Bình Dương kể\n      thành phố Xinh-ga-po là 1 triệu người/                                                                     cả ngoài giờ cao điểm, trong khi khoảng\n      km2; trung tâm thành phố Hồng Kông                                                                         cách chỉ có 40 km. Nếu tình trạng này kéo\n      (Trung Quốc) hơn 6 triệu người/km và                                                    2\n                                                                                                                 dài, các đô thị của Việt Nam sẽ bị quá tải\n      Man-hat-tan 3,7 triệu người/km .                                           2 204\n                                                                                                                 bởi ùn tắc giao thông và khí thải. Trong\n           Phát triển đô thị ở thủ đô Hà Nội và                                                                  khi đó, quỹ đất dành cho giao thông tại các\n      thành phố Hồ Chí Minh chủ yếu diễn ra                                                                      đô thị của Việt Nam còn thấp, chỉ đạt từ\n      ở các khu vực ven đô, ngoài vùng lõi đô                                                                    5% đến 9% trong khi trung bình cần 16%\n      thị (Hình 4.5). Với mật độ thấp, kết nối                                                                   đến 25% quỹ đất đô thị. Ngoài ra, tại thủ\n      khu vực yếu, đô thị của Việt Nam giống                                                                     đô Hà Nội và thành phố Hồ Chí Minh, hệ\n      như các ốc đảo phân tán, không vận hành                                                                    thống đường sắt đô thị và tàu điện ngầm\n      giống như các khu vực đô thị gắn kết tốt                                                                   chưa được phát triển đầy đủ, gây cản trở\n      về kinh tế và hạ tầng. Vào một ngày bình                                                                   cho kết nối không chỉ trong khu vực nội\n      thường, phải mất gần hai giờ để đi từ quận                                                                 đô mà còn giữa khu vực nội đô và vùng\n      trung tâm thành phố Hồ Chí Minh đến                                                                        xung quanh.\n\n\n\n           HÌNH 4.5. Mở rộng đô thị với mật độ thấp có thể làm giảm lợi thế kinh tế\n           do kết tụ\n\n\n\n                                        50.000       2 triệu người                                                                           Thành phố Hồ Chí Minh\n                                        40.000\n                   Mật độ (người/km2)\n\n\n\n\n                                                                3 tr\n                                        30.000\n                                                                             1,15 tr\n                                        20.000                                                          1,5 tr\n                                        10.000\n\n                                            0\n                                                 0       100           200             300        400            500      600    700   800           900        1.000\n                                                                                             Vùng có công trình xây dựng (km2)\n\n\n\n           Nguồn: Salat (2014).\n\n\n\n\n      204 http://densityatlas.org/casestudies/.",
+      "context_ids": [
+        "v2035-p0281",
+        "v2035-p0289",
+        "v2035-p0280"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0281",
+        "C2": "v2035-p0289",
+        "C3": "v2035-p0280"
+      },
+      "elapsed_ms": 64.66550000004645
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "[HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng thành phố Hồ Chí Minh, 2000–2010] mô tả sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành nhiều mảng rời rạc quanh khu trung tâm [C1]. \n\nDo đó, sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh được thể hiện là thành nhiều mảng rời.  \n**Câu trả lời:** Thành nhiều mảng rời [C1]."
+      },
+      "prompt_tokens": 2613,
+      "completion_tokens": 115,
+      "total_duration_ns": 34221271155
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "citation_format"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "bGZw2MBghhH9T2hl7rNgLBwhgW75Y2u3",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành nhiều mảng rời rạc quanh khu trung tâm [C1].",
+                "citations": [
+                  "C1"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 2653,
+      "completion_tokens": 74,
+      "total_duration_ns": 7304977359
+    },
+    {
+      "event": "answer",
+      "status": "answered",
+      "model_answer": "Hình 4.6 cho thấy sự mở rộng đô thị ở vùng thành phố Hồ Chí Minh tập trung thành nhiều mảng rời rạc quanh khu trung tâm [C1]."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 281]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                                          237\n\n\n\n\n                              50.000                                                                                            Thành phố Hà Nội\n                              40.000\n         Mật độ (người/km2)\n                                           1,3 tr\n                              30.000\n\n                              20.000\n\n                              10.000                      0,5 tr                      0,6 tr                          0,25 tr\n\n                                  0\n                                       0    100     200            300       400         500        600       700      800         900        1.000\n                                                                         Vùng có công trình xây dựng (km )2\n\n\n\n\n   Nguồn: Salat (2014).\n\n\n\n   Hình 4.6 mô tả tính chất phân tán và                                                   đối với kết cấu hạ tầng mà việc sử dụng\nmanh mún trong mở rộng đô thị ở vùng                                                      các hệ thống vận tải công cộng công suất\nthành phố Hồ Chí Minh. Việc phát triển                                                    lớn hàng chục tỷ đô-la Mỹ đang được triển\nđô thị như vậy sẽ tạo ra gánh nặng rất lớn                                                khai ở thủ đô Hà Nội và thành phố Hồ Chí\n\n\n\n   HÌNH 4.6. Mở rộng đô thị phân tán và manh mún ở vùng\n   thành phố Hồ Chí Minh, 2000-2010\n\n\n\n\nNguồn: Ngân hàng Thế giới 2015. \t\t\t                                        Lưu ý:          Hình màu đỏ là vùng đô thị được mở rộng trong giai đoạn 2000-2010.\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.6: Bản đồ ảnh vệ tinh khu vực thành phố Hồ Chí Minh, mô tả mở rộng đô thị phân tán và manh mún giai đoạn 2000–2010. Theo chú giải và lưu ý dưới hình, màu đỏ thể hiện khu vực đô thị mở rộng trong giai đoạn 2000–2010; các vùng đỏ xuất hiện thành nhiều mảng rời rạc quanh khu trung tâm. Nguồn: Ngân hàng Thế giới 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 289]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                                      245\n\n\n    Tuy nhiên, trên thực tế, phát triển không   sản xuất công nghiệp của Việt Nam năm\ngian đô thị ở Việt Nam chỉ tập trung ở hai      2013 (Hình 4.11). Tỷ lệ giá trị sản xuất công\ntrung tâm tăng trưởng là thủ đô Hà Nội và       nghiệp của 2 đô thị trung tâm trong giá trị\nthành phố Hồ Chí Minh hay nói rộng ra là        sản xuất cả nước trong giai đoạn 2005 –\nvùng Đồng bằng sông Hồng và miền Đông           2013 giảm, trong khi tỷ lệ của các tỉnh lân\nNam Bộ (bao gồm cả một phần vùng phụ            cận tăng đáng kể. Đây là mẫu hình thường\ncận ở Đồng bằng sông Cửu Long). Mật độ          thấy trong chuyển dịch không gian phát\nkinh tế cao nhất là ở vùng Đồng bằng sông       triển công nghiệp từ các đô thị lớn đến các\nHồng, tập trung ở Hà Nội và miền Đông           vùng có chi phí thấp hơn.\nNam Bộ, tập trung ở thành phố Hồ Chí\nMinh, theo sau là vùng Duyên hải miền\nTrung218. Trong hơn một thập kỷ qua, tăng            HÌNH 4.11. Mật độ sản xuất cao tại\ntrưởng dân số nhiều nhất ở vùng thủ đô               Hà Nội và thành phố Hồ Chí Minh\nHà Nội và thành phố Hồ Chí Minh, trong\n                                                                                               Tỷ đồng/km2,\nkhi dân số giảm nhiều ở phía Nam vùng                                                          2013\n\nĐồng bằng sông Hồng và ở phần lớn vùng\nĐồng bằng sông Cửu Long. Việc dân số\ntập trung tại các khu vực đô thị lớn không\nphải chỉ có ở Việt Nam. Các hiệu ứng của\nlợi thế kinh tế theo kết tụ đã làm tăng tỷ lệ\ndân số của các vùng đô thị lớn ở Philipin,\nHàn Quốc, và ở mức độ thấp hơn là vùng\nĐồng bằng Tứ Xuyên, Trung Quốc219.                                                                  Tỷ đồng/km2,\n                                                                                                    2013\n    Hai vùng kinh tế trọng điểm xung                                                                0,065 - 25\n                                                                                                    25 - 50\nquanh thủ đô Hà Nội và thành phố Hồ Chí                                                             50 - 75\n                                                                                                    75 - 100\nMinh bao gồm các tỉnh trong vòng 2 giờ                                                              100 - 125\nlái xe từ đô thị trung tâm (ví dụ Hải Phòng                                                         125 - 150\n                                                                                                    >500\nlà một phần trong vùng thủ đô Hà Nội mở\nrộng) có mật độ giá trị sản xuất trên mỗi\n                                                Nguồn: Tính toán của các tác giả từ số liệu của Tổng cục Thống kê.\nđơn vị diện tích cao nhất, tạo ra 84% giá trị\n\n\n218 Chreod 2015.\n219 Chreod 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 280]\n236   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n      thế giới khác cao hơn nhiều: trung tâm                                                                     trung tâm thành phố mới Bình Dương kể\n      thành phố Xinh-ga-po là 1 triệu người/                                                                     cả ngoài giờ cao điểm, trong khi khoảng\n      km2; trung tâm thành phố Hồng Kông                                                                         cách chỉ có 40 km. Nếu tình trạng này kéo\n      (Trung Quốc) hơn 6 triệu người/km và                                                    2\n                                                                                                                 dài, các đô thị của Việt Nam sẽ bị quá tải\n      Man-hat-tan 3,7 triệu người/km .                                           2 204\n                                                                                                                 bởi ùn tắc giao thông và khí thải. Trong\n           Phát triển đô thị ở thủ đô Hà Nội và                                                                  khi đó, quỹ đất dành cho giao thông tại các\n      thành phố Hồ Chí Minh chủ yếu diễn ra                                                                      đô thị của Việt Nam còn thấp, chỉ đạt từ\n      ở các khu vực ven đô, ngoài vùng lõi đô                                                                    5% đến 9% trong khi trung bình cần 16%\n      thị (Hình 4.5). Với mật độ thấp, kết nối                                                                   đến 25% quỹ đất đô thị. Ngoài ra, tại thủ\n      khu vực yếu, đô thị của Việt Nam giống                                                                     đô Hà Nội và thành phố Hồ Chí Minh, hệ\n      như các ốc đảo phân tán, không vận hành                                                                    thống đường sắt đô thị và tàu điện ngầm\n      giống như các khu vực đô thị gắn kết tốt                                                                   chưa được phát triển đầy đủ, gây cản trở\n      về kinh tế và hạ tầng. Vào một ngày bình                                                                   cho kết nối không chỉ trong khu vực nội\n      thường, phải mất gần hai giờ để đi từ quận                                                                 đô mà còn giữa khu vực nội đô và vùng\n      trung tâm thành phố Hồ Chí Minh đến                                                                        xung quanh.\n\n\n\n           HÌNH 4.5. Mở rộng đô thị với mật độ thấp có thể làm giảm lợi thế kinh tế\n           do kết tụ\n\n\n\n                                        50.000       2 triệu người                                                                           Thành phố Hồ Chí Minh\n                                        40.000\n                   Mật độ (người/km2)\n\n\n\n\n                                                                3 tr\n                                        30.000\n                                                                             1,15 tr\n                                        20.000                                                          1,5 tr\n                                        10.000\n\n                                            0\n                                                 0       100           200             300        400            500      600    700   800           900        1.000\n                                                                                             Vùng có công trình xây dựng (km2)\n\n\n\n           Nguồn: Salat (2014).\n\n\n\n\n      204 http://densityatlas.org/casestudies/.",
+  "context_ids": [
+    "v2035-p0281",
+    "v2035-p0289",
+    "v2035-p0280"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0281",
+    "C2": "v2035-p0289",
+    "C3": "v2035-p0280"
+  },
+  "usage": {
+    "prompt_tokens": 5641,
+    "completion_tokens": 243,
+    "model_calls": 3
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 45.091353710000476,
+  "id": "test-07"
+}

@@ -1,0 +1,129 @@
+{
+  "question": "Theo báo cáo, năm 2045 khu công nghiệp Dầu Giây có bao nhiêu trạm sạc xe điện đang hoạt động?",
+  "filter": {},
+  "status": "abstain",
+  "answer": "ABSTAIN: Không có thông tin nào trong tài liệu về số lượng trạm sạc xe điện đang hoạt động tại khu công nghiệp Dầu Giây vào năm 2045. Tài liệu chỉ cung cấp thông tin về tỷ lệ lấp đầy khu công nghiệp Dầu Giây vào năm 2008 và vị trí địa lý, không đề cập đến hệ thống sạc xe điện hay số lượng trạm sạc trong tương lai (năm 2045).",
+  "citations": [],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "woQu4yUmLKOvJoYkVMEcTY2oQjv6lVbC",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "theo báo cáo, năm 2045 khu công nghiệp Dầu Giây có bao nhiêu trạm sạc xe điện đang hoạt động"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 372,
+      "completion_tokens": 50,
+      "total_duration_ns": 3225869069
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Theo báo cáo, năm 2045 khu công nghiệp Dầu Giây có bao nhiêu trạm sạc xe điện đang hoạt động?",
+      "model_query": "theo báo cáo, năm 2045 khu công nghiệp Dầu Giây có bao nhiêu trạm sạc xe điện đang hoạt động",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0285",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.",
+          "metadata": {
+            "pdf_page": 285,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 285,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 19.09350922896297,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0284",
+          "text": "240   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n          Ở vùng thủ đô Hà Nội và thành phố         phố 13 km có tỷ lệ lấp đầy 100%. Ngược\n      Hồ Chí Minh, các khu công nghiệp ở xa         lại, khu công nghiệp Tân Phú Trung ở\n      trung tâm đô thị có tỷ lệ lấp đầy rất thấp.   huyện Củ Chi nằm cách trung tâm thành\n      Đặc biệt, trong phạm vi ngoài 10 km từ        phố 24 km lại hoàn toàn không được sử\n      trung tâm đô thị, nhiều khu công nghiệp       dụng vào năm 2014. Tương tự, khu công\n      có tỷ lệ lấp đầy dưới 10% (Hình 4.8).         nghiệp Dầu Giây tỉnh Đồng Nai cách\n          Khu công nghiệp Tân Bình, cách            trung tâm thành phố Hồ Chí Minh 50km\n      trung tâm thành phố 10 km và nằm ngay         chỉ có tỷ lệ lấp đầy 2,5% (Hình 4.9). Tình\n      phía Tây của sân bay cũng như khu công        hình tương tự cũng diễn ra ở vùng thủ\n      nghiệp Vĩnh Lộc, cách trung tâm Thành         đô Hà Nội.\n\n\n\n          HÌNH 4.8. Tỷ lệ lấp đầy các khu công nghiệp tại vùng\n          thành phố Hồ Chí Minh\n\n\n\n\n                                                                  Tỷ lệ chiếm trong bán kính 50km (%)\n                                                                  0-10\n                                                                  10-25\n                                                                  25-50\n                                                                  50-75\n                                                                  75-100\n                                                                  2h lái xe từ Tp Hồ Chí Minh\n\n\n\n\n      Nguồn: Chreod (2015).",
+          "metadata": {
+            "pdf_page": 284,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 284,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 18.730140096077967,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0197",
+          "text": "CHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                      153\n\n\n\n\nBẢNG 2.10. Các nhà cung cấp toàn cầu chính về phụ tùng xe cơ giới\ntại Việt Nam\n\n\nCông ty                                    Sản phẩm                             Quốc tịch    Năm đầu tư lớn\nSumitomo, nhiều     Dây dẫn điện và linh kiện dây dẫn điện                        Nhật Bản        Nhiều năm\ncông ty khác nhau\nbao gồm Sumiden\nVN Automotive Wire;\nSumi-Hanel Wiring\nSystems; SEWS\nComponents\nYazaki,              Dây dẫn điện và linh kiện dây dẫn điện                       Nhật Bản              2001\nHitachi Cable        Dây dẫn điện                                                 Nhật Bản              2008\nDenso San Pham        Các bộ phận động cơ khác nhau, cụm chân ga,...              Nhật Bản              2001\nBridgestone          Lốp xe chở khách                                             Nhật Bản              2014\nYokohama             Lốp xe máy, xe tải nhẹ và xe công nghiệp                     Nhật Bản              1997\nIRC                  Lốp xe máy                                                   Nhật Bản              1997\nKumho Tires          Lốp xe chở khách                                            Hàn Quốc               2008\nHyundai Kefico       Bộ cảm biến và các thiết bị truyền động cho xe               Nhật Bản              2010\nToyota Boshoku       Ghế và các bộ phận nội thất; túi khí bên rèm                 Nhật Bản      1996 và 2004\nRobert Bosch         Dây truyền lực sử dụng để truyền tải biến thiên liên tục         Đức               2008:\n                     (CVT) trong xe ô tô. Phần mềm nhúng và thiết kế cơ khí,                   Hệ thống xăng\n                     cũng như các dịch vụ CNTT và các dịch vụ dựa vào CNTT                        2011: 2011:\n                     cho khách hàng trong nước và khu vực.                                    Kỹ thuật và giải\n                                                                                             pháp kinh doanh\nAsahi Denso          Công tắc đánh lửa và các ổ khóa cho xe máy                   Nhật Bản              2006\nExedy                Bộ ly hợp cho xe máy                                         Nhật Bản              2006\nKyocera Việt Nam     Linh kiện và bộ kết nối bằng gốm                             Nhật Bản              2014\nToyoda Gosei         Túi cho các mô-đun túi khí                                   Nhật Bản              2005",
+          "metadata": {
+            "pdf_page": 197,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 197,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 15.1206625081615,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 284]\n240   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n          Ở vùng thủ đô Hà Nội và thành phố         phố 13 km có tỷ lệ lấp đầy 100%. Ngược\n      Hồ Chí Minh, các khu công nghiệp ở xa         lại, khu công nghiệp Tân Phú Trung ở\n      trung tâm đô thị có tỷ lệ lấp đầy rất thấp.   huyện Củ Chi nằm cách trung tâm thành\n      Đặc biệt, trong phạm vi ngoài 10 km từ        phố 24 km lại hoàn toàn không được sử\n      trung tâm đô thị, nhiều khu công nghiệp       dụng vào năm 2014. Tương tự, khu công\n      có tỷ lệ lấp đầy dưới 10% (Hình 4.8).         nghiệp Dầu Giây tỉnh Đồng Nai cách\n          Khu công nghiệp Tân Bình, cách            trung tâm thành phố Hồ Chí Minh 50km\n      trung tâm thành phố 10 km và nằm ngay         chỉ có tỷ lệ lấp đầy 2,5% (Hình 4.9). Tình\n      phía Tây của sân bay cũng như khu công        hình tương tự cũng diễn ra ở vùng thủ\n      nghiệp Vĩnh Lộc, cách trung tâm Thành         đô Hà Nội.\n\n\n\n          HÌNH 4.8. Tỷ lệ lấp đầy các khu công nghiệp tại vùng\n          thành phố Hồ Chí Minh\n\n\n\n\n                                                                  Tỷ lệ chiếm trong bán kính 50km (%)\n                                                                  0-10\n                                                                  10-25\n                                                                  25-50\n                                                                  50-75\n                                                                  75-100\n                                                                  2h lái xe từ Tp Hồ Chí Minh\n\n\n\n\n      Nguồn: Chreod (2015).\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 197]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                      153\n\n\n\n\nBẢNG 2.10. Các nhà cung cấp toàn cầu chính về phụ tùng xe cơ giới\ntại Việt Nam\n\n\nCông ty                                    Sản phẩm                             Quốc tịch    Năm đầu tư lớn\nSumitomo, nhiều     Dây dẫn điện và linh kiện dây dẫn điện                        Nhật Bản        Nhiều năm\ncông ty khác nhau\nbao gồm Sumiden\nVN Automotive Wire;\nSumi-Hanel Wiring\nSystems; SEWS\nComponents\nYazaki,              Dây dẫn điện và linh kiện dây dẫn điện                       Nhật Bản              2001\nHitachi Cable        Dây dẫn điện                                                 Nhật Bản              2008\nDenso San Pham        Các bộ phận động cơ khác nhau, cụm chân ga,...              Nhật Bản              2001\nBridgestone          Lốp xe chở khách                                             Nhật Bản              2014\nYokohama             Lốp xe máy, xe tải nhẹ và xe công nghiệp                     Nhật Bản              1997\nIRC                  Lốp xe máy                                                   Nhật Bản              1997\nKumho Tires          Lốp xe chở khách                                            Hàn Quốc               2008\nHyundai Kefico       Bộ cảm biến và các thiết bị truyền động cho xe               Nhật Bản              2010\nToyota Boshoku       Ghế và các bộ phận nội thất; túi khí bên rèm                 Nhật Bản      1996 và 2004\nRobert Bosch         Dây truyền lực sử dụng để truyền tải biến thiên liên tục         Đức               2008:\n                     (CVT) trong xe ô tô. Phần mềm nhúng và thiết kế cơ khí,                   Hệ thống xăng\n                     cũng như các dịch vụ CNTT và các dịch vụ dựa vào CNTT                        2011: 2011:\n                     cho khách hàng trong nước và khu vực.                                    Kỹ thuật và giải\n                                                                                             pháp kinh doanh\nAsahi Denso          Công tắc đánh lửa và các ổ khóa cho xe máy                   Nhật Bản              2006\nExedy                Bộ ly hợp cho xe máy                                         Nhật Bản              2006\nKyocera Việt Nam     Linh kiện và bộ kết nối bằng gốm                             Nhật Bản              2014\nToyoda Gosei         Túi cho các mô-đun túi khí                                   Nhật Bản              2005",
+      "context_ids": [
+        "v2035-p0285",
+        "v2035-p0284",
+        "v2035-p0197"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0285",
+        "C2": "v2035-p0284",
+        "C3": "v2035-p0197"
+      },
+      "elapsed_ms": 31.182783999611274
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "ABSTAIN: Không có thông tin nào trong tài liệu về số lượng trạm sạc xe điện đang hoạt động tại khu công nghiệp Dầu Giây vào năm 2045. Tài liệu chỉ cung cấp thông tin về tỷ lệ lấp đầy khu công nghiệp Dầu Giây vào năm 2008 và vị trí địa lý, không đề cập đến hệ thống sạc xe điện hay số lượng trạm sạc trong tương lai (năm 2045)."
+      },
+      "prompt_tokens": 2445,
+      "completion_tokens": 105,
+      "total_duration_ns": 27866444175
+    },
+    {
+      "event": "answer",
+      "status": "abstain",
+      "model_answer": "ABSTAIN: Không có thông tin nào trong tài liệu về số lượng trạm sạc xe điện đang hoạt động tại khu công nghiệp Dầu Giây vào năm 2045. Tài liệu chỉ cung cấp thông tin về tỷ lệ lấp đầy khu công nghiệp Dầu Giây vào năm 2008 và vị trí địa lý, không đề cập đến hệ thống sạc xe điện hay số lượng trạm sạc trong tương lai (năm 2045)."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 284]\n240   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n          Ở vùng thủ đô Hà Nội và thành phố         phố 13 km có tỷ lệ lấp đầy 100%. Ngược\n      Hồ Chí Minh, các khu công nghiệp ở xa         lại, khu công nghiệp Tân Phú Trung ở\n      trung tâm đô thị có tỷ lệ lấp đầy rất thấp.   huyện Củ Chi nằm cách trung tâm thành\n      Đặc biệt, trong phạm vi ngoài 10 km từ        phố 24 km lại hoàn toàn không được sử\n      trung tâm đô thị, nhiều khu công nghiệp       dụng vào năm 2014. Tương tự, khu công\n      có tỷ lệ lấp đầy dưới 10% (Hình 4.8).         nghiệp Dầu Giây tỉnh Đồng Nai cách\n          Khu công nghiệp Tân Bình, cách            trung tâm thành phố Hồ Chí Minh 50km\n      trung tâm thành phố 10 km và nằm ngay         chỉ có tỷ lệ lấp đầy 2,5% (Hình 4.9). Tình\n      phía Tây của sân bay cũng như khu công        hình tương tự cũng diễn ra ở vùng thủ\n      nghiệp Vĩnh Lộc, cách trung tâm Thành         đô Hà Nội.\n\n\n\n          HÌNH 4.8. Tỷ lệ lấp đầy các khu công nghiệp tại vùng\n          thành phố Hồ Chí Minh\n\n\n\n\n                                                                  Tỷ lệ chiếm trong bán kính 50km (%)\n                                                                  0-10\n                                                                  10-25\n                                                                  25-50\n                                                                  50-75\n                                                                  75-100\n                                                                  2h lái xe từ Tp Hồ Chí Minh\n\n\n\n\n      Nguồn: Chreod (2015).\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 197]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                      153\n\n\n\n\nBẢNG 2.10. Các nhà cung cấp toàn cầu chính về phụ tùng xe cơ giới\ntại Việt Nam\n\n\nCông ty                                    Sản phẩm                             Quốc tịch    Năm đầu tư lớn\nSumitomo, nhiều     Dây dẫn điện và linh kiện dây dẫn điện                        Nhật Bản        Nhiều năm\ncông ty khác nhau\nbao gồm Sumiden\nVN Automotive Wire;\nSumi-Hanel Wiring\nSystems; SEWS\nComponents\nYazaki,              Dây dẫn điện và linh kiện dây dẫn điện                       Nhật Bản              2001\nHitachi Cable        Dây dẫn điện                                                 Nhật Bản              2008\nDenso San Pham        Các bộ phận động cơ khác nhau, cụm chân ga,...              Nhật Bản              2001\nBridgestone          Lốp xe chở khách                                             Nhật Bản              2014\nYokohama             Lốp xe máy, xe tải nhẹ và xe công nghiệp                     Nhật Bản              1997\nIRC                  Lốp xe máy                                                   Nhật Bản              1997\nKumho Tires          Lốp xe chở khách                                            Hàn Quốc               2008\nHyundai Kefico       Bộ cảm biến và các thiết bị truyền động cho xe               Nhật Bản              2010\nToyota Boshoku       Ghế và các bộ phận nội thất; túi khí bên rèm                 Nhật Bản      1996 và 2004\nRobert Bosch         Dây truyền lực sử dụng để truyền tải biến thiên liên tục         Đức               2008:\n                     (CVT) trong xe ô tô. Phần mềm nhúng và thiết kế cơ khí,                   Hệ thống xăng\n                     cũng như các dịch vụ CNTT và các dịch vụ dựa vào CNTT                        2011: 2011:\n                     cho khách hàng trong nước và khu vực.                                    Kỹ thuật và giải\n                                                                                             pháp kinh doanh\nAsahi Denso          Công tắc đánh lửa và các ổ khóa cho xe máy                   Nhật Bản              2006\nExedy                Bộ ly hợp cho xe máy                                         Nhật Bản              2006\nKyocera Việt Nam     Linh kiện và bộ kết nối bằng gốm                             Nhật Bản              2014\nToyoda Gosei         Túi cho các mô-đun túi khí                                   Nhật Bản              2005",
+  "context_ids": [
+    "v2035-p0285",
+    "v2035-p0284",
+    "v2035-p0197"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0285",
+    "C2": "v2035-p0284",
+    "C3": "v2035-p0197"
+  },
+  "usage": {
+    "prompt_tokens": 2817,
+    "completion_tokens": 155,
+    "model_calls": 2
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 31.127868243000194,
+  "id": "test-30"
+}

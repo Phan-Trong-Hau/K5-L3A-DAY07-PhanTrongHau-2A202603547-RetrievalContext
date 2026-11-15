@@ -1,0 +1,55 @@
+{
+  "document": "Việt Nam 2035: Hướng tới Thịnh vượng, Sáng tạo, Công bằng và Dân chủ",
+  "edition_year": 2016,
+  "pdf_pages": 584,
+  "indexed_pages": 573,
+  "unprocessed_pages": [
+    {
+      "pdf_page": 2,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 3,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 4,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 8,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 24,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 28,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 335,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 401,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 493,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 548,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    },
+    {
+      "pdf_page": 583,
+      "reason": "no extractable text or under 30 non-whitespace characters"
+    }
+  ],
+  "extraction": "Poppler pdftotext -layout; page-preserving; no OCR",
+  "source_sha256": "c7836f055a523fd0f50ea33f300aa71c31bf9b61443d9f44fdcecbaad1f23d3b",
+  "index_sha256": "9ed2780697f45fd1af77487e5b072b8399dd20938133f24bfbf3c00144b03400"
+}

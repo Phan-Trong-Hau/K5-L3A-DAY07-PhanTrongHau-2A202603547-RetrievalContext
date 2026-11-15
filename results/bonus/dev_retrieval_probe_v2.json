@@ -1,0 +1,380 @@
+{
+  "bm25": {
+    "questions": [
+      {
+        "id": "dev-01",
+        "retrieved_pages": [
+          77,
+          64,
+          25
+        ],
+        "expected_pages": [
+          77
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-02",
+        "retrieved_pages": [
+          128,
+          367,
+          539
+        ],
+        "expected_pages": [
+          128
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-03",
+        "retrieved_pages": [
+          471,
+          245,
+          128
+        ],
+        "expected_pages": [
+          129
+        ],
+        "all_evidence_pages_retrieved": false
+      },
+      {
+        "id": "dev-04",
+        "retrieved_pages": [
+          188,
+          187,
+          209
+        ],
+        "expected_pages": [
+          188
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-05",
+        "retrieved_pages": [
+          281,
+          279,
+          413
+        ],
+        "expected_pages": [
+          281
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-06",
+        "retrieved_pages": [
+          285,
+          284,
+          364
+        ],
+        "expected_pages": [
+          285
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-07",
+        "retrieved_pages": [
+          118,
+          529,
+          530
+        ],
+        "expected_pages": [
+          118
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-08",
+        "retrieved_pages": [
+          287,
+          290,
+          278
+        ],
+        "expected_pages": [
+          287
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-09",
+        "retrieved_pages": [
+          287,
+          290,
+          273
+        ],
+        "expected_pages": [
+          287
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-10",
+        "retrieved_pages": [
+          128,
+          437,
+          525
+        ],
+        "expected_pages": [
+          128,
+          129
+        ],
+        "all_evidence_pages_retrieved": false
+      },
+      {
+        "id": "dev-11",
+        "retrieved_pages": [
+          297,
+          298,
+          376
+        ],
+        "expected_pages": [
+          279,
+          298
+        ],
+        "all_evidence_pages_retrieved": false
+      },
+      {
+        "id": "dev-12",
+        "retrieved_pages": [
+          188,
+          278,
+          298
+        ],
+        "expected_pages": [
+          188,
+          279
+        ],
+        "all_evidence_pages_retrieved": false
+      },
+      {
+        "id": "dev-13",
+        "retrieved_pages": [
+          77,
+          83,
+          57
+        ],
+        "expected_pages": [
+          77
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-14",
+        "retrieved_pages": [
+          130,
+          131,
+          129
+        ],
+        "expected_pages": [
+          129
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-15",
+        "retrieved_pages": [
+          118,
+          121,
+          135
+        ],
+        "expected_pages": [
+          118
+        ],
+        "all_evidence_pages_retrieved": true
+      }
+    ],
+    "all_page_recall": 11,
+    "total_answerable": 15
+  },
+  "bm25_caption": {
+    "questions": [
+      {
+        "id": "dev-01",
+        "retrieved_pages": [
+          77,
+          64,
+          25
+        ],
+        "expected_pages": [
+          77
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-02",
+        "retrieved_pages": [
+          128,
+          367,
+          539
+        ],
+        "expected_pages": [
+          128
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-03",
+        "retrieved_pages": [
+          129,
+          471,
+          245
+        ],
+        "expected_pages": [
+          129
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-04",
+        "retrieved_pages": [
+          188,
+          187,
+          209
+        ],
+        "expected_pages": [
+          188
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-05",
+        "retrieved_pages": [
+          281,
+          279,
+          413
+        ],
+        "expected_pages": [
+          281
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-06",
+        "retrieved_pages": [
+          285,
+          284,
+          364
+        ],
+        "expected_pages": [
+          285
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-07",
+        "retrieved_pages": [
+          118,
+          529,
+          530
+        ],
+        "expected_pages": [
+          118
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-08",
+        "retrieved_pages": [
+          287,
+          290,
+          278
+        ],
+        "expected_pages": [
+          287
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-09",
+        "retrieved_pages": [
+          287,
+          290,
+          273
+        ],
+        "expected_pages": [
+          287
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-10",
+        "retrieved_pages": [
+          128,
+          129,
+          437
+        ],
+        "expected_pages": [
+          128,
+          129
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-11",
+        "retrieved_pages": [
+          298,
+          279,
+          297
+        ],
+        "expected_pages": [
+          279,
+          298
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-12",
+        "retrieved_pages": [
+          188,
+          279,
+          278
+        ],
+        "expected_pages": [
+          188,
+          279
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-13",
+        "retrieved_pages": [
+          77,
+          83,
+          57
+        ],
+        "expected_pages": [
+          77
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-14",
+        "retrieved_pages": [
+          129,
+          130,
+          131
+        ],
+        "expected_pages": [
+          129
+        ],
+        "all_evidence_pages_retrieved": true
+      },
+      {
+        "id": "dev-15",
+        "retrieved_pages": [
+          118,
+          121,
+          135
+        ],
+        "expected_pages": [
+          118
+        ],
+        "all_evidence_pages_retrieved": true
+      }
+    ],
+    "all_page_recall": 15,
+    "total_answerable": 15
+  }
+}

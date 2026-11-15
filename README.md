@@ -18,6 +18,8 @@ bằng trình duyệt. Nó chạy offline và có thể in/lưu PDF. Trace thậ
 Để phát lại ví dụ thật đã lưu mà không gọi model mới, chạy
 `python3 scripts/demo.py --scenario all`.
 
+Phần bonus đang có corpus text theo trang cho [Việt Nam 2035](data/bonus/vietnam2035/README.md), trích xuất từ 573/584 trang PDF bằng Poppler. Chạy `python3 scripts/index_vietnam2035.py /path/to/vietnam2035_vi.pdf` để dựng lại index, sau đó `python3 scripts/search_vietnam2035.py "câu hỏi"` để tìm BM25. [Báo cáo HTML bonus](report/BONUS_TRIAL.html) ghi kết quả benchmark, đối chiếu từng câu và giới hạn hiện tại. Bonus chưa đạt ngưỡng 90%; [trace thăm dò](results/bonus/pilot/README.md) không phải điểm test bonus.
+
 Chạy kiểm tra offline bằng `python3 -m unittest discover -s tests -v`.
 Chạy agent thật sau khi cài dependency và bật Ollama:
 

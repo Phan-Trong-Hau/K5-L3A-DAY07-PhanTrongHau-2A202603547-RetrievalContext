@@ -1,0 +1,122 @@
+[
+  {
+    "pdf_page": 47,
+    "region": "bottom_right",
+    "box_pixels": [
+      464,
+      600,
+      929,
+      1200
+    ],
+    "score": 0.326877623796463,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 12,
+    "region": "bottom_left",
+    "box_pixels": [
+      0,
+      600,
+      464,
+      1200
+    ],
+    "score": 0.323639452457428,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 551,
+    "region": "top_left",
+    "box_pixels": [
+      0,
+      0,
+      464,
+      600
+    ],
+    "score": 0.3213963210582733,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 276,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.3211941719055176,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 72,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.3194444477558136,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 10,
+    "region": "top_left",
+    "box_pixels": [
+      0,
+      0,
+      464,
+      600
+    ],
+    "score": 0.3177240490913391,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 505,
+    "region": "top_right",
+    "box_pixels": [
+      464,
+      0,
+      929,
+      600
+    ],
+    "score": 0.31675174832344055,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 20,
+    "region": "top_left",
+    "box_pixels": [
+      0,
+      0,
+      464,
+      600
+    ],
+    "score": 0.31618237495422363,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 104,
+    "region": "top_left",
+    "box_pixels": [
+      0,
+      0,
+      464,
+      600
+    ],
+    "score": 0.31431150436401367,
+    "status": "unverified_visual_similarity"
+  },
+  {
+    "pdf_page": 461,
+    "region": "top_left",
+    "box_pixels": [
+      0,
+      0,
+      464,
+      600
+    ],
+    "score": 0.3139621913433075,
+    "status": "unverified_visual_similarity"
+  }
+]

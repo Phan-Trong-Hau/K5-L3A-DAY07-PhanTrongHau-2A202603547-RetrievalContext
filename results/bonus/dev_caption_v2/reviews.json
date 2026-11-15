@@ -1,0 +1,128 @@
+[
+  {
+    "id": "dev-01",
+    "pass": true,
+    "reason": "Đúng 2,7% và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77 Bảng 1.1, Hoa Kỳ cột 2016–2035: 2,7%."
+  },
+  {
+    "id": "dev-02",
+    "pass": true,
+    "reason": "Đúng 25% và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128, Bảng 2.1, hàng 2035, tỷ trọng việc làm nông nghiệp: 25%."
+  },
+  {
+    "id": "dev-03",
+    "pass": true,
+    "reason": "Đúng số chính xác và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129, Bảng 2.2, hàng 2035, cột đầu tư: 27,1%."
+  },
+  {
+    "id": "dev-04",
+    "pass": true,
+    "reason": "Đúng thứ hạng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188, Bảng 2.6, Việt Nam 2014, LPI tổng thể: 48."
+  },
+  {
+    "id": "dev-05",
+    "pass": true,
+    "reason": "Đúng ý nghĩa màu đỏ và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 281, Hình 4.6, chú giải và ghi chú dưới ảnh."
+  },
+  {
+    "id": "dev-06",
+    "pass": true,
+    "reason": "Đúng nội dung hình và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285, Hình 4.9: ảnh b bên phải ghi Dầu Giây."
+  },
+  {
+    "id": "dev-07",
+    "pass": true,
+    "reason": "Đúng nội dung hình và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, Hình 2.11: thanh đỏ viễn thông ngắn nhất."
+  },
+  {
+    "id": "dev-08",
+    "pass": true,
+    "reason": "Đúng tỷ trọng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287, Hình 4.10, biểu đồ A, phần nông thôn 4,0%."
+  },
+  {
+    "id": "dev-09",
+    "pass": true,
+    "reason": "Đúng tỷ trọng và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287, Hình 4.10 biểu đồ B: lõi đô thị 3,4%."
+  },
+  {
+    "id": "dev-10",
+    "pass": true,
+    "reason": "Đúng cả hai trị số và dẫn đủ hai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128 Bảng 2.1: 38% việc làm dịch vụ năm 2035; PDF 129 Bảng 2.2: 74,6% tiêu dùng."
+  },
+  {
+    "id": "dev-11",
+    "pass": true,
+    "reason": "Đúng hai trị số, điều kiện năm và hai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 279 Bảng 4.1: 775 đô thị; PDF 298 Bảng 4.3 dòng 5: hộ đô thị dùng điện 99,8% năm 2012."
+  },
+  {
+    "id": "dev-12",
+    "pass": true,
+    "reason": "Đúng cả hai trị số, điều kiện và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6: thứ hạng 53; PDF 279 Bảng 4.1: 675 đô thị năm 2005."
+  },
+  {
+    "id": "dev-13",
+    "pass": true,
+    "reason": "Đúng trị số, giai đoạn và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, cột phải, đoạn Xu thế kinh tế toàn cầu: 3,2%/năm từ 2015 đến 2035."
+  },
+  {
+    "id": "dev-14",
+    "pass": true,
+    "reason": "Đúng trị số, điều kiện và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 đoạn sau Bảng 2.2, 2013–2035: 92%."
+  },
+  {
+    "id": "dev-15",
+    "pass": true,
+    "reason": "Đúng trị số, điều kiện và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, cột trái dưới Hình 2.11: cuối năm 2014 hơn 650.000."
+  },
+  {
+    "id": "dev-16",
+    "pass": true,
+    "reason": "Từ chối trị số năm 2044; ví dụ 6% và 18.000 USD có trong ngữ cảnh.",
+    "original_checked": true,
+    "evidence_checked": "Ấn bản 2016; toàn văn pdftotext không có 2044; ngữ cảnh nêu kịch bản 2035."
+  },
+  {
+    "id": "dev-17",
+    "pass": true,
+    "reason": "Từ chối, không suy đoán email hay danh tính.",
+    "original_checked": true,
+    "evidence_checked": "Toàn văn trích xuất không có năm 2039; ngữ cảnh không có địa chỉ cá nhân hay người được xác định."
+  },
+  {
+    "id": "dev-18",
+    "pass": false,
+    "reason": "Từ chối đúng nhưng bổ sung sai rằng tỷ lệ lấp đầy 2,5% là vào năm 2008; hình cho biết thành lập năm 2008 và tỷ lệ lấp đầy năm 2014.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9b: Dầu Giây thành lập 2008; lấp đầy năm 2014 2,5%. Toàn văn trích xuất không có 2042."
+  }
+]

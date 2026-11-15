@@ -1,0 +1,129 @@
+{
+  "question": "Báo cáo ghi địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039 là gì?",
+  "filter": {},
+  "status": "abstain",
+  "answer": "ABSTAIN: Không có thông tin nào trong tài liệu cung cấp địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039. Tài liệu chỉ đề cập đến khu công nghiệp Dầu Giây trong bối cảnh phát triển đô thị và tỷ lệ lấp đầy, nhưng không nêu rõ thông tin về giám đốc hay email cá nhân của người này.",
+  "citations": [],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "GqYbNdUpO1RfLr3GpPMjk72r5Hvzrets",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Báo cáo ghi địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039 là gì?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 369,
+      "completion_tokens": 48,
+      "total_duration_ns": 3070293565
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Báo cáo ghi địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039 là gì?",
+      "model_query": "Báo cáo ghi địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039 là gì?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0582",
+          "text": "HỘI LUẬT GIA VIỆT NAM\nNhà xuất bản Hồng Đức\n- Địa chỉ: 65 Tràng Thi, Quận Hoàn Kiếm, Hà Nội\n- Email: nhaxuatbanhongduc@yahoo.com\n- Điện thoại: 04.3 9260024 – Fax: 04.3 9260031\n\nChịu trách nhiệm xuất bản: Giám đốc Bùi Việt Bắc\n\nChịu trách nhiệm nội dung: Khuất Duy Kim Hải\n\nBiên tập: Nguyễn Thị Phương Mai\n\nTrình bày: Nhà xuất bản Hồng Đức\n\nĐối tác liên kết\nNGÂN HÀNG THẾ GIỚI TẠI VIỆT NAM\nĐịa chỉ: 63 Lý Thái Tổ, Hà Nội, Việt Nam\n\nBỘ KẾ HOẠCH VÀ ĐẦU TƯ\nĐịa chỉ: 6B Hoàng Diệu, Ba Đình, Hà Nội, Việt Nam\n\nIn: 3.750 cuốn, khổ 20,5cm x 26,5cm\nTại: Công ty CP in Sách Việt Nam\n     Địa chỉ: Địa chỉ: 22B Hai Bà Trưng, Hà Nội\nSố XNĐKXB: 2045-2016/CXBIPH/76-35/HĐ\nSố QĐXB của NXB: 3470/QĐ-NXBHĐ\nMã số sách tiêu chuẩn quốc tế - ISBN: 978-604-948-569-5\nIn xong và nộp lưu chiểu năm 2016.",
+          "metadata": {
+            "pdf_page": 582,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 582,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 21.578807833153242,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0285",
+          "text": "CHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.",
+          "metadata": {
+            "pdf_page": 285,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 285,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 19.080688420645608,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0031",
+          "text": "Lời cảm ơn\n\n\n\nB\n        áo cáo “Việt Nam 2035: Hướng tới Thịnh vượng, Sáng tạo, Công bằng và Dân\n        chủ” là sáng kiến chung của Chính phủ Việt Nam và Ngân hàng Thế giới được Thủ\n        tướng Chính phủ Nguyễn Tấn Dũng và Chủ tịch Jim Yong Kim chấp thuận vào\ntháng 7 năm 2014.\n   Báo cáo do nhóm chuyên gia của Việt Nam và Ngân hàng Thế giới soạn thảo dưới sự\nchỉ đạo của Phó Thủ tướng Chính phủ Vũ Đức Đam, Bộ trưởng Bộ Kế hoạch và Đầu tư\nBùi Quang Vinh, ông Axel van Trotsenburg, Phó Chủ tịch Ngân hàng Thế giới, bà Victoria\nKwakwa, Giám đốc Quốc gia và ông Sudhir Shetty, Chuyên gia Kinh tế trưởng khu vực\nChâu Á - Thái Bình Dương. Chân thành cảm ơn sự tư vấn sâu sắc của Ban Chỉ đạo xây\ndựng Báo cáo Việt Nam 2035 gồm GS. Nguyễn Xuân Thắng, Chủ tịch Viện Hàn lâm Khoa\nhọc Xã hội Việt Nam; ông Nguyễn Văn Tùng, Phó Chủ nhiệm Văn phòng Chính phủ; ông\nNguyễn Ngọc Bảo, Phó Trưởng ban Ban Kinh tế Trung ương; ông Bùi Thanh Sơn, Thứ\ntrưởng Bộ Ngoại giao; ông Trương Chí Trung, Thứ trưởng Bộ Tài chính; ông Nguyễn Toàn\nThắng, Phó Thống đốc Ngân hàng Nhà nước Việt Nam và PGS.TS. Bùi Tất Thắng, Viện\ntrưởng Viện Chiến lược phát triển, Bộ Kế hoạch và Đầu tư.\n   Chính phủ Việt Nam đã giao Bộ Kế hoạch và Đầu tư phối kết hợp với các bộ, ngành chức\nnăng, các viện nghiên cứu và kết hợp với Ngân hàng Thế giới chuẩn bị báo cáo. Tổ công tác\ngiữa Việt Nam và Ngân hàng Thế giới được thành lập với sự chỉ đạo trực tiếp của TS. Cao\nViết Sinh (Nguyên Thứ trưởng thường trực Bộ Kế hoạch và Đầu tư), bà Victoria Kwakwa\n(Giám đốc Quốc gia Ngân hàng Thế giới tại Việt Nam) và ông Sandeep Mahajan (Chuyên\ngia Kinh tế trưởng, Ngân hàng Thế giới tại Việt Nam).\n   Chính phủ Úc, Cơ quan Hợp tác Quốc tế Hàn Quốc (KOICA) và Bộ Phát triển quốc tế\nVương quốc Anh (DFID) hỗ trợ tài chính cho công tác chuẩn bị báo cáo.\n   Bản báo cáo nhận được những nhận xét rất có giá trị của các chuyên gia kinh tế của\nNgân hàng Thế giới gồm ông Ted Chu, Chuyên gia Kinh tế trưởng; ông Mario Marcel,\nnguyên Giám đốc cao cấp; ông Martin Rama, Chuyên gia Kinh tế trưởng; bà Ana Revenga,",
+          "metadata": {
+            "pdf_page": 31,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 31,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 18.63587654669232,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 582]\nHỘI LUẬT GIA VIỆT NAM\nNhà xuất bản Hồng Đức\n- Địa chỉ: 65 Tràng Thi, Quận Hoàn Kiếm, Hà Nội\n- Email: nhaxuatbanhongduc@yahoo.com\n- Điện thoại: 04.3 9260024 – Fax: 04.3 9260031\n\nChịu trách nhiệm xuất bản: Giám đốc Bùi Việt Bắc\n\nChịu trách nhiệm nội dung: Khuất Duy Kim Hải\n\nBiên tập: Nguyễn Thị Phương Mai\n\nTrình bày: Nhà xuất bản Hồng Đức\n\nĐối tác liên kết\nNGÂN HÀNG THẾ GIỚI TẠI VIỆT NAM\nĐịa chỉ: 63 Lý Thái Tổ, Hà Nội, Việt Nam\n\nBỘ KẾ HOẠCH VÀ ĐẦU TƯ\nĐịa chỉ: 6B Hoàng Diệu, Ba Đình, Hà Nội, Việt Nam\n\nIn: 3.750 cuốn, khổ 20,5cm x 26,5cm\nTại: Công ty CP in Sách Việt Nam\n     Địa chỉ: Địa chỉ: 22B Hai Bà Trưng, Hà Nội\nSố XNĐKXB: 2045-2016/CXBIPH/76-35/HĐ\nSố QĐXB của NXB: 3470/QĐ-NXBHĐ\nMã số sách tiêu chuẩn quốc tế - ISBN: 978-604-948-569-5\nIn xong và nộp lưu chiểu năm 2016.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 31]\nLời cảm ơn\n\n\n\nB\n        áo cáo “Việt Nam 2035: Hướng tới Thịnh vượng, Sáng tạo, Công bằng và Dân\n        chủ” là sáng kiến chung của Chính phủ Việt Nam và Ngân hàng Thế giới được Thủ\n        tướng Chính phủ Nguyễn Tấn Dũng và Chủ tịch Jim Yong Kim chấp thuận vào\ntháng 7 năm 2014.\n   Báo cáo do nhóm chuyên gia của Việt Nam và Ngân hàng Thế giới soạn thảo dưới sự\nchỉ đạo của Phó Thủ tướng Chính phủ Vũ Đức Đam, Bộ trưởng Bộ Kế hoạch và Đầu tư\nBùi Quang Vinh, ông Axel van Trotsenburg, Phó Chủ tịch Ngân hàng Thế giới, bà Victoria\nKwakwa, Giám đốc Quốc gia và ông Sudhir Shetty, Chuyên gia Kinh tế trưởng khu vực\nChâu Á - Thái Bình Dương. Chân thành cảm ơn sự tư vấn sâu sắc của Ban Chỉ đạo xây\ndựng Báo cáo Việt Nam 2035 gồm GS. Nguyễn Xuân Thắng, Chủ tịch Viện Hàn lâm Khoa\nhọc Xã hội Việt Nam; ông Nguyễn Văn Tùng, Phó Chủ nhiệm Văn phòng Chính phủ; ông\nNguyễn Ngọc Bảo, Phó Trưởng ban Ban Kinh tế Trung ương; ông Bùi Thanh Sơn, Thứ\ntrưởng Bộ Ngoại giao; ông Trương Chí Trung, Thứ trưởng Bộ Tài chính; ông Nguyễn Toàn\nThắng, Phó Thống đốc Ngân hàng Nhà nước Việt Nam và PGS.TS. Bùi Tất Thắng, Viện\ntrưởng Viện Chiến lược phát triển, Bộ Kế hoạch và Đầu tư.\n   Chính phủ Việt Nam đã giao Bộ Kế hoạch và Đầu tư phối kết hợp với các bộ, ngành chức\nnăng, các viện nghiên cứu và kết hợp với Ngân hàng Thế giới chuẩn bị báo cáo. Tổ công tác\ngiữa Việt Nam và Ngân hàng Thế giới được thành lập với sự chỉ đạo trực tiếp của TS. Cao\nViết Sinh (Nguyên Thứ trưởng thường trực Bộ Kế hoạch và Đầu tư), bà Victoria Kwakwa\n(Giám đốc Quốc gia Ngân hàng Thế giới tại Việt Nam) và ông Sandeep Mahajan (Chuyên\ngia Kinh tế trưởng, Ngân hàng Thế giới tại Việt Nam).\n   Chính phủ Úc, Cơ quan Hợp tác Quốc tế Hàn Quốc (KOICA) và Bộ Phát triển quốc tế\nVương quốc Anh (DFID) hỗ trợ tài chính cho công tác chuẩn bị báo cáo.\n   Bản báo cáo nhận được những nhận xét rất có giá trị của các chuyên gia kinh tế của\nNgân hàng Thế giới gồm ông Ted Chu, Chuyên gia Kinh tế trưởng; ông Mario Marcel,\nnguyên Giám đốc cao cấp; ông Martin Rama, Chuyên gia Kinh tế trưởng; bà Ana Revenga,",
+      "context_ids": [
+        "v2035-p0582",
+        "v2035-p0285",
+        "v2035-p0031"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0582",
+        "C2": "v2035-p0285",
+        "C3": "v2035-p0031"
+      },
+      "elapsed_ms": 8.617726000011317
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "ABSTAIN: Không có thông tin nào trong tài liệu cung cấp địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039. Tài liệu chỉ đề cập đến khu công nghiệp Dầu Giây trong bối cảnh phát triển đô thị và tỷ lệ lấp đầy, nhưng không nêu rõ thông tin về giám đốc hay email cá nhân của người này."
+      },
+      "prompt_tokens": 2410,
+      "completion_tokens": 84,
+      "total_duration_ns": 25378008760
+    },
+    {
+      "event": "answer",
+      "status": "abstain",
+      "model_answer": "ABSTAIN: Không có thông tin nào trong tài liệu cung cấp địa chỉ email cá nhân của giám đốc khu công nghiệp Dầu Giây năm 2039. Tài liệu chỉ đề cập đến khu công nghiệp Dầu Giây trong bối cảnh phát triển đô thị và tỷ lệ lấp đầy, nhưng không nêu rõ thông tin về giám đốc hay email cá nhân của người này."
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 582]\nHỘI LUẬT GIA VIỆT NAM\nNhà xuất bản Hồng Đức\n- Địa chỉ: 65 Tràng Thi, Quận Hoàn Kiếm, Hà Nội\n- Email: nhaxuatbanhongduc@yahoo.com\n- Điện thoại: 04.3 9260024 – Fax: 04.3 9260031\n\nChịu trách nhiệm xuất bản: Giám đốc Bùi Việt Bắc\n\nChịu trách nhiệm nội dung: Khuất Duy Kim Hải\n\nBiên tập: Nguyễn Thị Phương Mai\n\nTrình bày: Nhà xuất bản Hồng Đức\n\nĐối tác liên kết\nNGÂN HÀNG THẾ GIỚI TẠI VIỆT NAM\nĐịa chỉ: 63 Lý Thái Tổ, Hà Nội, Việt Nam\n\nBỘ KẾ HOẠCH VÀ ĐẦU TƯ\nĐịa chỉ: 6B Hoàng Diệu, Ba Đình, Hà Nội, Việt Nam\n\nIn: 3.750 cuốn, khổ 20,5cm x 26,5cm\nTại: Công ty CP in Sách Việt Nam\n     Địa chỉ: Địa chỉ: 22B Hai Bà Trưng, Hà Nội\nSố XNĐKXB: 2045-2016/CXBIPH/76-35/HĐ\nSố QĐXB của NXB: 3470/QĐ-NXBHĐ\nMã số sách tiêu chuẩn quốc tế - ISBN: 978-604-948-569-5\nIn xong và nộp lưu chiểu năm 2016.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 285]\nCHƯƠNG 4. ĐÔ THỊ HÓA VÀ NÂNG CAO HIỆU QUẢ KINH TẾ                        241\n\n\n\n\n    HÌNH 4.9. Khu công nghiệp trống ở ngoại ô thành phố Hồ Chí Minh, 2014\n\n        a. Khu công nghiệp Tân Phú Trung, huyện Củ Chi, thành    b. Khu công nghiệp Dầu Giây, tỉnh Đồng Nai: Thành lập\n        phố Hồ Chí Minh: Thành lập năm 2013, tỷ lệ lấp đầy 0%    năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm thành phố\n        năm 2014, cách trung tâm thành phố 24 km.                50km.\n\n\n\n\n        KCN Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh   KCN Dầu Giây, huyện Thống Nhất, tỉnh Đồng Nai\n        Ước tính 2013                                            Ước tính 2008\n        Tỷ lệ lấp đầy 0,0%                                       Tỷ lệ lấp đầy 2,5%\n        Số km tính từ Trung tâm tp: 24                           Số km tính từ Trung tâm tp: 50\n\n\n\n\nNguồn: Chreod (2015).\n\n\n\n    Mở rộng đô thị và phát triển các khu                          mà không cho thuê được có tác động lớn\ncông nghiệp theo các quyết định hành                              về tài chính và phải đánh đổi trong phân\nchính hơn là theo nhu cầu phát triển tự                           bổ nguồn lực. Nếu đầu tư đầy đủ đường\nthân của các đô thị khó có thể thúc đẩy                           giao thông và kết cấu hạ tầng tại tất cả\ntăng trưởng kinh tế. Nếu dùng chỉ số                              các khu công nghiệp, 70.810 ha đất công\nđại diện cho tăng trưởng kinh tế là ánh                           nghiệp còn trống tại vùng thủ đô Hà Nội,\nsáng ban đêm thì có thể thấy các quyết                            Đà Nẵng và thành phố Hồ Chí Minh sẽ\nđịnh mở rộng đô thị giai đoạn 2000-2010                           tốn khoản vốn đầu tư trên 20 tỷ đô la Mỹ\nkhông phải là yếu tố chính tạo nên tăng                           mà đáng lẽ có thể đã được đầu tư vào các\ntrưởng kinh tế đô thị trong giai đoạn                             dịch vụ ở nơi khác. Việc phân bổ nguồn\n2011-2012 sau đó.                                                 lực thiếu hiệu quả này sẽ vẫn tiếp tục xảy\n    Việc xây dựng ồ ạt các khu công nghiệp                        ra nếu không có các chính sách hợp lý210.\n\n\n\n\n210 Ngân hàng Thế giới (2012).\n\n[Mô tả hình; trạng thái kiểm chứng: manual_original_pdf_page_checked]\nHÌNH 4.9 gồm hai ảnh vệ tinh các khu công nghiệp trống năm 2014, đường viền vàng đánh dấu khu công nghiệp. Ảnh bên trái là Tân Phú Trung, huyện Củ Chi, thành phố Hồ Chí Minh, thành lập năm 2013, tỷ lệ lấp đầy 0%, cách trung tâm 24 km. Ảnh bên phải là Dầu Giây, tỉnh Đồng Nai, thành lập năm 2008, tỷ lệ lấp đầy 2,5%, cách trung tâm 50 km. Nguồn Chreod 2015.\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 31]\nLời cảm ơn\n\n\n\nB\n        áo cáo “Việt Nam 2035: Hướng tới Thịnh vượng, Sáng tạo, Công bằng và Dân\n        chủ” là sáng kiến chung của Chính phủ Việt Nam và Ngân hàng Thế giới được Thủ\n        tướng Chính phủ Nguyễn Tấn Dũng và Chủ tịch Jim Yong Kim chấp thuận vào\ntháng 7 năm 2014.\n   Báo cáo do nhóm chuyên gia của Việt Nam và Ngân hàng Thế giới soạn thảo dưới sự\nchỉ đạo của Phó Thủ tướng Chính phủ Vũ Đức Đam, Bộ trưởng Bộ Kế hoạch và Đầu tư\nBùi Quang Vinh, ông Axel van Trotsenburg, Phó Chủ tịch Ngân hàng Thế giới, bà Victoria\nKwakwa, Giám đốc Quốc gia và ông Sudhir Shetty, Chuyên gia Kinh tế trưởng khu vực\nChâu Á - Thái Bình Dương. Chân thành cảm ơn sự tư vấn sâu sắc của Ban Chỉ đạo xây\ndựng Báo cáo Việt Nam 2035 gồm GS. Nguyễn Xuân Thắng, Chủ tịch Viện Hàn lâm Khoa\nhọc Xã hội Việt Nam; ông Nguyễn Văn Tùng, Phó Chủ nhiệm Văn phòng Chính phủ; ông\nNguyễn Ngọc Bảo, Phó Trưởng ban Ban Kinh tế Trung ương; ông Bùi Thanh Sơn, Thứ\ntrưởng Bộ Ngoại giao; ông Trương Chí Trung, Thứ trưởng Bộ Tài chính; ông Nguyễn Toàn\nThắng, Phó Thống đốc Ngân hàng Nhà nước Việt Nam và PGS.TS. Bùi Tất Thắng, Viện\ntrưởng Viện Chiến lược phát triển, Bộ Kế hoạch và Đầu tư.\n   Chính phủ Việt Nam đã giao Bộ Kế hoạch và Đầu tư phối kết hợp với các bộ, ngành chức\nnăng, các viện nghiên cứu và kết hợp với Ngân hàng Thế giới chuẩn bị báo cáo. Tổ công tác\ngiữa Việt Nam và Ngân hàng Thế giới được thành lập với sự chỉ đạo trực tiếp của TS. Cao\nViết Sinh (Nguyên Thứ trưởng thường trực Bộ Kế hoạch và Đầu tư), bà Victoria Kwakwa\n(Giám đốc Quốc gia Ngân hàng Thế giới tại Việt Nam) và ông Sandeep Mahajan (Chuyên\ngia Kinh tế trưởng, Ngân hàng Thế giới tại Việt Nam).\n   Chính phủ Úc, Cơ quan Hợp tác Quốc tế Hàn Quốc (KOICA) và Bộ Phát triển quốc tế\nVương quốc Anh (DFID) hỗ trợ tài chính cho công tác chuẩn bị báo cáo.\n   Bản báo cáo nhận được những nhận xét rất có giá trị của các chuyên gia kinh tế của\nNgân hàng Thế giới gồm ông Ted Chu, Chuyên gia Kinh tế trưởng; ông Mario Marcel,\nnguyên Giám đốc cao cấp; ông Martin Rama, Chuyên gia Kinh tế trưởng; bà Ana Revenga,",
+  "context_ids": [
+    "v2035-p0582",
+    "v2035-p0285",
+    "v2035-p0031"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0582",
+    "C2": "v2035-p0285",
+    "C3": "v2035-p0031"
+  },
+  "usage": {
+    "prompt_tokens": 2779,
+    "completion_tokens": 132,
+    "model_calls": 2
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 28.460058590999324,
+  "id": "test-27"
+}

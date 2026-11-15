@@ -1,0 +1,15 @@
+{
+  "pdf_pages": 584,
+  "valid_pages": 584,
+  "missing_pages": [],
+  "invalid_pages": [],
+  "regions": 2920,
+  "files_digest_sha256": "96897101317887177bda2b8133678200ac9cac36d8186994afec8dac1dfec052",
+  "source_sha256": "c7836f055a523fd0f50ea33f300aa71c31bf9b61443d9f44fdcecbaad1f23d3b",
+  "model": "Qdrant/clip-ViT-B-32-vision",
+  "note": "Checks coverage/shape only, not whether visual information is retrievable or accurate.",
+  "vision_model_onnx_sha256": "c68d3d9a200ddd2a8c8a5510b576d4c94d1ae383bf8b36dd8c084f94e1fb4d63",
+  "vision_model_hf_revision": "e0c24ed0fa57fa3e4f97f30de74c51d944036ace",
+  "text_model_onnx_sha256": "4dbe762b11e36488304471e439cde89da053ad7acaddbf9e096745d142ec8d8b",
+  "text_model_hf_revision": "48ca1db27cb4063eb311ec2aa7f087a808112876"
+}

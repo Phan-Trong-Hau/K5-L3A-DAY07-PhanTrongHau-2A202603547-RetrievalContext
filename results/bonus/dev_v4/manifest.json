@@ -1,0 +1,23 @@
+{
+  "config": {
+    "language": "vi",
+    "document_title": "Việt Nam 2035, bản PDF tiếng Việt",
+    "method": "bm25_caption",
+    "top_k": 3,
+    "budget": 18000,
+    "max_searches": 1
+  },
+  "policy": "v4_visual_locator_and_multihop_evidence",
+  "model": "qwen3:4b-instruct",
+  "question_file_sha256": "53e77039e7d0c655a9130f505c7a37799138a022e2a55c3b41215b62ed90aad6",
+  "visual_index_sha256": "13bad8a579a4c1ad0dc20ce16845876b01a14bff2ae8575aae2dc5272339e3ae",
+  "corpus_sha256": "9ed2780697f45fd1af77487e5b072b8399dd20938133f24bfbf3c00144b03400",
+  "code_sha256": {
+    "scripts/run_bonus_v4.py": "d417ee2f1a0f92c87d6bdc87beb709b5e0d96493c630ef009bf6b53796169e2d",
+    "scripts/bonus_pilot.py": "da295b214d7e84bf08dabe47b3fb0c9d398cf600f944d168410f9ae77de10546",
+    "src/agent.py": "16fd589ace776ff7e6e36b136c5d0329d559f6909df724595eb9c1ba72786f71",
+    "src/agent_v2.py": "5b4823ac36436cad1fab157a61ba73985f4b70995e3ab299edbed52ed0734bb4",
+    "src/retrieval.py": "c4a7fe2f23de6f895d677a2271673f6a5f94a99093ec030cd53a26cd6b18aef2"
+  },
+  "note": "Developed after draft test; new visual and protocol policy; select using dev, then use a separate frozen test."
+}

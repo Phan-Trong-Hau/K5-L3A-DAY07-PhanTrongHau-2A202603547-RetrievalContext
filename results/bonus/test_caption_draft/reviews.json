@@ -1,0 +1,212 @@
+[
+  {
+    "id": "test-01",
+    "pass": true,
+    "reason": "Đúng giá trị, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, Bảng 1.1 hàng Ấn Độ cột 2016–2035: 6,0%."
+  },
+  {
+    "id": "test-02",
+    "pass": true,
+    "reason": "Đúng giá trị, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128, Bảng 2.1 hàng 2035 cột GDP dịch vụ: 50,0%."
+  },
+  {
+    "id": "test-03",
+    "pass": true,
+    "reason": "Đúng giá trị và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129, Bảng 2.2 hàng 2025, xuất khẩu: 82,7%."
+  },
+  {
+    "id": "test-04",
+    "pass": true,
+    "reason": "Đúng thứ hạng, năm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188, Bảng 2.6 hàng Việt Nam 2014 cột Hải quan: 61."
+  },
+  {
+    "id": "test-05",
+    "pass": false,
+    "reason": "Nhầm tỷ lệ dân đô thị 34,30% thành dân số đô thị; đáp án đúng là 31,0 triệu người.",
+    "original_checked": true,
+    "evidence_checked": "PDF 279, Bảng 4.1 hàng 2015: tổng dân số đô thị 31,0 triệu người; tỷ lệ dân đô thị 34,30%."
+  },
+  {
+    "id": "test-06",
+    "pass": true,
+    "reason": "Đúng tỷ lệ, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 298 Bảng 4.3 dòng 3, cột nông thôn: 87,9%; chú thích xác định số liệu 2012."
+  },
+  {
+    "id": "test-07",
+    "pass": true,
+    "reason": "Đúng hình thái không gian và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 281 Hình 4.6: nhiều mảng đỏ phân tán, rời rạc quanh khu trung tâm."
+  },
+  {
+    "id": "test-08",
+    "pass": true,
+    "reason": "Đúng ảnh, đường bao và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9 ảnh a bên trái: Tân Phú Trung; đường viền vàng đánh dấu khu công nghiệp."
+  },
+  {
+    "id": "test-09",
+    "pass": true,
+    "reason": "Đúng phép so sánh, khoảng cách và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9 ảnh a 24 km, ảnh b Dầu Giây 50 km."
+  },
+  {
+    "id": "test-10",
+    "pass": true,
+    "reason": "Đúng màu đường bao và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9: đường viền của hai khu công nghiệp đều màu vàng."
+  },
+  {
+    "id": "test-11",
+    "pass": false,
+    "reason": "Từ chối dù chú giải hình gốc có đáp án; dữ liệu truy xuất không chứa quan hệ màu và loại xã.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10, chú giải bản đồ: màu xanh lá nhạt là các xã nông thôn."
+  },
+  {
+    "id": "test-12",
+    "pass": true,
+    "reason": "Đúng ngành cao nhất; các nhận xét kèm theo phù hợp các thanh.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118 Hình 2.11: nhóm thanh xanh, than dài nhất, tiếp điện khí, phân bón, cấp nước; hàng dệt ngắn nhất."
+  },
+  {
+    "id": "test-13",
+    "pass": true,
+    "reason": "Đúng ngành và dẫn đúng hình.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118 Hình 2.11 nhóm thanh đỏ: cao su và chất dẻo dài nhất."
+  },
+  {
+    "id": "test-14",
+    "pass": true,
+    "reason": "Đúng trị số, chỉ tiêu và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10 biểu đồ A: ven đô 62,3% quy mô mở rộng đô thị."
+  },
+  {
+    "id": "test-15",
+    "pass": true,
+    "reason": "Đúng tỷ trọng đô thị trong quy mô tăng dân số và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10 biểu đồ B, phần đô thị: 46,5%."
+  },
+  {
+    "id": "test-16",
+    "pass": false,
+    "reason": "Tính đúng 2,0 điểm phần trăm nhưng gọi 48,5% và 46,5% là tỷ lệ tăng dân số của từng nhóm; hình thể hiện tỷ trọng của mỗi nhóm trong quy mô tăng dân số, không phải tốc độ tăng.",
+    "original_checked": true,
+    "evidence_checked": "PDF 287 Hình 4.10 biểu đồ B, quy mô tăng dân số: ven đô 48,5%, đô thị 46,5%; chênh 2,0 điểm phần trăm."
+  },
+  {
+    "id": "test-17",
+    "pass": true,
+    "reason": "Đúng cả hai trị số, điều kiện và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 128 Bảng 2.1 năm 2013 việc làm nông nghiệp 49%; PDF 279 Bảng 4.1 năm 2015 có 775 đô thị."
+  },
+  {
+    "id": "test-18",
+    "pass": false,
+    "reason": "Từ chối dù bảng có đủ dữ liệu: đầu tư năm 2025 là 30,1% và hộ đô thị dùng nước hợp vệ sinh là 98,1%.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129 Bảng 2.2 hàng 2025 cột đầu tư 30,1%; PDF 298 Bảng 4.3 dòng 3 cột đô thị 98,1%, chú thích số liệu năm 2012."
+  },
+  {
+    "id": "test-19",
+    "pass": false,
+    "reason": "Từ chối dù hai bảng có đủ dữ liệu; câu trả lời còn nhầm đối tượng số dân đô thị sang Trung Quốc.",
+    "original_checked": true,
+    "evidence_checked": "PDF 188 Bảng 2.6 Trung Quốc năm 2014 LPI tổng thể 25; PDF 279 Bảng 4.1 Việt Nam năm 2010 dân số đô thị 25,5 triệu người."
+  },
+  {
+    "id": "test-20",
+    "pass": true,
+    "reason": "Đúng hai giá trị và đủ hai trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77 Bảng 1.1 ASEAN 2021–2025: 5,0%; PDF 129 Bảng 2.2 năm 2025 tiêu dùng 72,3%."
+  },
+  {
+    "id": "test-21",
+    "pass": true,
+    "reason": "Đúng hai tỷ trọng, thời điểm và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, cột phải, đoạn Xu thế kinh tế toàn cầu: từ 22% năm 2014 lên 29% năm 2035."
+  },
+  {
+    "id": "test-22",
+    "pass": true,
+    "reason": "Đúng trị số và điều kiện trung bình hàng năm.",
+    "original_checked": true,
+    "evidence_checked": "PDF 129, đoạn ngay dưới Bảng 2.2: tăng trưởng năng suất lao động trung bình hàng năm 5,6%."
+  },
+  {
+    "id": "test-23",
+    "pass": true,
+    "reason": "Đúng số lượng, thời điểm và nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 118, cột phải dưới Hình 2.11: khoảng 40.000 doanh nghiệp đăng ký năm 1999."
+  },
+  {
+    "id": "test-24",
+    "pass": true,
+    "reason": "Đúng diện tích, phạm vi và đơn vị.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 cột phải dưới Hình 4.9: 70.810 ha ở ba vùng Hà Nội, Đà Nẵng, TP Hồ Chí Minh."
+  },
+  {
+    "id": "test-25",
+    "pass": false,
+    "reason": "Từ chối đúng nhưng nói thêm dữ liệu chỉ dự báo cho năm 2035 và 2040, một nhận định không được các đoạn truy xuất chứng minh và không bao quát tài liệu.",
+    "original_checked": true,
+    "evidence_checked": "PDF xuất bản 2016; tìm toàn văn trích xuất không có 2048. Ngữ cảnh có dự báo 2035, không có căn cứ cho khẳng định giới hạn 2035 và 2040."
+  },
+  {
+    "id": "test-26",
+    "pass": true,
+    "reason": "Từ chối không bịa số robot; ví dụ 0% được nêu đúng trong nguồn.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9a Tân Phú Trung lấp đầy 0% năm 2014; không có số robot hoạt động ngày 1/1/2040 trong hình hoặc ngữ cảnh."
+  },
+  {
+    "id": "test-27",
+    "pass": true,
+    "reason": "Từ chối, không bịa người hoặc email.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9b nói về vị trí và tỷ lệ lấp đầy Dầu Giây; toàn văn trích xuất không có năm 2039."
+  },
+  {
+    "id": "test-28",
+    "pass": false,
+    "reason": "Từ chối đúng nhưng thêm khẳng định ngày 1/1/2050 nằm ngoài phạm vi dự báo của báo cáo; báo cáo thực tế có các dự báo đến năm 2050, nên khẳng định về phạm vi là không được chứng minh.",
+    "original_checked": true,
+    "evidence_checked": "Ấn bản 2016 không có giá điện thực tế ngày 1/1/2050; trong PDF có nội dung dự báo tới 2050, ví dụ phần biến đổi khí hậu."
+  },
+  {
+    "id": "test-29",
+    "pass": true,
+    "reason": "Từ chối, không bịa hộ chiếu; thông tin về nguồn bản đồ đúng với hình.",
+    "original_checked": true,
+    "evidence_checked": "PDF 281 Hình 4.6 ghi nguồn Ngân hàng Thế giới 2015, không có mã hộ chiếu; tìm toàn văn trích xuất không có cụm hộ chiếu."
+  },
+  {
+    "id": "test-30",
+    "pass": false,
+    "reason": "Từ chối đúng nhưng nói sai tỷ lệ lấp đầy Dầu Giây là vào năm 2008; 2008 là năm thành lập, số lấp đầy là năm 2014.",
+    "original_checked": true,
+    "evidence_checked": "PDF 285 Hình 4.9b: Dầu Giây thành lập năm 2008, lấp đầy 2,5% năm 2014; không có số trạm sạc năm 2045."
+  }
+]

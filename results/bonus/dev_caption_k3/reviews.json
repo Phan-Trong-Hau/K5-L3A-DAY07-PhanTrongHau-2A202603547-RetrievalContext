@@ -1,0 +1,128 @@
+[
+  {
+    "id": "dev-01",
+    "pass": true,
+    "reason": "Đúng trị số và trang.",
+    "original_checked": true,
+    "evidence_checked": "PDF 77, Bảng 1.1, Hoa Kỳ cột 2016–2035: 2,7%."
+  },
+  {
+    "id": "dev-02",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-03",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-04",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-05",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-06",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-07",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-08",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-09",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-10",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-11",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-12",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-13",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-14",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-15",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-16",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-17",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  },
+  {
+    "id": "dev-18",
+    "pass": null,
+    "reason": "",
+    "original_checked": false,
+    "evidence_checked": ""
+  }
+]

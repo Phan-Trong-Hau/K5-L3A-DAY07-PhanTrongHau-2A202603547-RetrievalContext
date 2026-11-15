@@ -1,0 +1,324 @@
+[
+  {
+    "id": "fresh-01",
+    "category": "table",
+    "question": "Theo Bảng 2.5, tăng trưởng năng suất lao động nông nghiệp ở Việt Nam giai đoạn 2000–2013 là bao nhiêu?",
+    "expected": "3,4%",
+    "pdf_pages": [
+      144
+    ],
+    "evidence": "Bảng 2.5, nông nghiệp, Việt Nam 2000–2013",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-02",
+    "category": "table",
+    "question": "Theo Bảng 2.6, thứ hạng LPI tổng thể của Ma-lai-xi-a năm 2014 là bao nhiêu?",
+    "expected": "28",
+    "pdf_pages": [
+      188
+    ],
+    "evidence": "Bảng 2.6 hàng Ma-lai-xi-a 2014, cột LPI tổng thể",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-03",
+    "category": "table",
+    "question": "Bảng 4.1 ghi mật độ dân số đô thị Việt Nam năm 2010 là bao nhiêu người trên mỗi ha?",
+    "expected": "18,6 người/ha",
+    "pdf_pages": [
+      279
+    ],
+    "evidence": "Bảng 4.1 hàng 2010, cột mật độ dân số đô thị",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-04",
+    "category": "table",
+    "question": "Theo Bảng 4.3, tỷ lệ lao động qua đào tạo trong tổng lao động có việc làm ở nông thôn năm 2013 là bao nhiêu?",
+    "expected": "11,2%",
+    "pdf_pages": [
+      298
+    ],
+    "evidence": "Bảng 4.3 dòng 2, cột nông thôn; chú thích năm 2013",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-05",
+    "category": "table",
+    "question": "Theo Bảng 2.2, năm 2035 tỷ trọng nhập khẩu là bao nhiêu phần trăm?",
+    "expected": "80,5%",
+    "pdf_pages": [
+      129
+    ],
+    "evidence": "Bảng 2.2 hàng 2035, cột nhập khẩu",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-06",
+    "category": "table",
+    "question": "Theo Bảng 1.1, tăng trưởng GDP thực trung bình hàng năm của Châu Âu trong giai đoạn 2021–2025 là bao nhiêu?",
+    "expected": "1,9%",
+    "pdf_pages": [
+      77
+    ],
+    "evidence": "Bảng 1.1 hàng Châu Âu, cột 2021–2025",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-07",
+    "category": "image",
+    "question": "Trong sơ đồ Hình 5.4, nhánh bể tự hoại chứa nước thải chiếm bao nhiêu phần trăm và lớn hay nhỏ hơn nhánh khác?",
+    "expected": "55%, lớn hơn nhóm khác 18%",
+    "pdf_pages": [
+      360
+    ],
+    "evidence": "Hình 5.4, hai nhánh bên trái sơ đồ",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-08",
+    "category": "image",
+    "question": "Theo sơ đồ Hình 5.4, trong bốn nhánh đầu vào, nhánh nào có tỷ trọng nhỏ nhất?",
+    "expected": "Thoát nước trực tiếp không có bể tự hoại, 5%",
+    "pdf_pages": [
+      360
+    ],
+    "evidence": "Hình 5.4, bốn hộp màu xanh đầu vào 5%, 55%, 22%, 18%",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-09",
+    "category": "image",
+    "question": "Hình 4.18 đặt bản đồ mạng đường của thành phố nào ở ô dưới bên trái?",
+    "expected": "Niu-oóc (New York)",
+    "pdf_pages": [
+      309
+    ],
+    "evidence": "Hình 4.18, bản đồ dưới trái nhãn NEW YORK",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-10",
+    "category": "image",
+    "question": "Theo sơ đồ Hình 5.10, quy hoạch không gian ở cấp trung ương được gắn với bộ nào?",
+    "expected": "Bộ Xây dựng",
+    "pdf_pages": [
+      394
+    ],
+    "evidence": "Hình 5.10, hộp phía trên giữa: quy hoạch không gian (Bộ Xây dựng)",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-11",
+    "category": "image",
+    "question": "Trong sơ đồ Hình 5.10, ô xanh trung tâm mô tả quy hoạch của vùng nào?",
+    "expected": "Vùng Đồng bằng sông Cửu Long",
+    "pdf_pages": [
+      394
+    ],
+    "evidence": "Hình 5.10, ô xanh ở giữa sơ đồ",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-12",
+    "category": "chart",
+    "question": "Theo chú giải Hình 5.5, màu xanh dương trong các cột biểu thị loại nước thải nào?",
+    "expected": "Nước thải đô thị",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "Hình 5.5 chú giải bên phải, ô xanh dương",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-13",
+    "category": "chart",
+    "question": "Theo chú giải Hình 5.5, màu xanh lá biểu thị loại nước thải nào?",
+    "expected": "Nước thải công nghiệp",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "Hình 5.5 chú giải bên phải, ô xanh lá",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-14",
+    "category": "chart",
+    "question": "Trong Hình 5.5, lưu vực nào có cột tổng lượng nước thải cao nhất trong ba lưu vực ở cả 2020 và 2030?",
+    "expected": "Lưu vực sông Đồng Nai",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "Hình 5.5, so chiều cao các cột của ba lưu vực cho cả hai năm",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-15",
+    "category": "chart",
+    "question": "Trong Hình 5.5, tổng lượng nước thải năm 2030 so với năm 2020 tăng hay giảm?",
+    "expected": "Tăng",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "Hình 5.5, cặp cột tổng lượng thải, cột 2030 cao hơn 2020",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-16",
+    "category": "chart",
+    "question": "Hình 5.5 có ghi rõ đơn vị trên trục đứng của biểu đồ nước thải không?",
+    "expected": "Không ghi rõ đơn vị trên trục đứng",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "Hình 5.5, trục đứng chỉ có các mốc số, không có nhãn đơn vị",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-17",
+    "category": "multi_hop",
+    "question": "Theo Bảng 2.5 và 2.6, tăng năng suất nông nghiệp Việt Nam 2000–2013 và thứ hạng LPI tổng thể Ma-lai-xi-a 2014 lần lượt là bao nhiêu?",
+    "expected": "3,4% và 28",
+    "pdf_pages": [
+      144,
+      188
+    ],
+    "evidence": "Bảng 2.5 hàng nông nghiệp Việt Nam 2000–2013; Bảng 2.6 Ma-lai-xi-a 2014 LPI tổng thể",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-18",
+    "category": "multi_hop",
+    "question": "Theo Bảng 4.1 và 4.3, mật độ dân đô thị năm 2010 và tỷ lệ lao động qua đào tạo tại nông thôn năm 2013 lần lượt là bao nhiêu?",
+    "expected": "18,6 người/ha và 11,2%",
+    "pdf_pages": [
+      279,
+      298
+    ],
+    "evidence": "Bảng 4.1 hàng 2010 cột mật độ; Bảng 4.3 dòng 2 nông thôn, năm 2013",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-19",
+    "category": "multi_hop",
+    "question": "Theo Hình 5.4 và 5.10, tỷ trọng thoát nước trực tiếp không có bể tự hoại và bộ phụ trách quy hoạch không gian lần lượt là gì?",
+    "expected": "5% và Bộ Xây dựng",
+    "pdf_pages": [
+      360,
+      394
+    ],
+    "evidence": "Hình 5.4 nhánh đầu vào 5%; Hình 5.10 hộp quy hoạch không gian",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-20",
+    "category": "multi_hop",
+    "question": "Theo Hình 4.18 và Hình 5.5, thành phố ở bản đồ dưới bên trái và loại nước thải màu xanh dương lần lượt là gì?",
+    "expected": "Niu-oóc (New York) và nước thải đô thị",
+    "pdf_pages": [
+      309,
+      362
+    ],
+    "evidence": "Hình 4.18 bản đồ dưới trái; Hình 5.5 chú giải xanh dương",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-21",
+    "category": "text",
+    "question": "Theo đoạn văn trang 265 của báo cáo, thời gian đi lại trung bình tại Đà Nẵng là bao nhiêu phút?",
+    "expected": "15 phút",
+    "pdf_pages": [
+      309
+    ],
+    "evidence": "PDF 309 cột trái phía trên Hình 4.18",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-22",
+    "category": "text",
+    "question": "Theo đoạn văn bên trái phía trên Hình 5.5, chi phí xử lý nước thải toàn cầu ước tính dao động trong khoảng bao nhiêu USD trên mỗi mét khối?",
+    "expected": "1–1,5 USD/m³",
+    "pdf_pages": [
+      362
+    ],
+    "evidence": "PDF 362 cột trái, đoạn FAO về chi phí xử lý nước",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-23",
+    "category": "text",
+    "question": "Theo Hộp 5.3, tiêu chảy liên quan vệ sinh môi trường và vệ sinh cá nhân kém chiếm khoảng bao nhiêu ca tử vong mỗi năm?",
+    "expected": "Khoảng 4.600 ca mỗi năm",
+    "pdf_pages": [
+      360
+    ],
+    "evidence": "PDF 360 Hộp 5.3, đoạn đầu",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-24",
+    "category": "text",
+    "question": "Theo đoạn văn dưới Hình 5.10, cần chuyển từ nguồn cấp nước nào sang nguồn nào để tránh lún đất?",
+    "expected": "Từ nước ngầm sang nước mặt",
+    "pdf_pages": [
+      394
+    ],
+    "evidence": "PDF 394 cột phải bên dưới Hình 5.10",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-25",
+    "category": "unanswerable",
+    "question": "Báo cáo có cho biết số giấy phép lái xe riêng của người vẽ sơ đồ Hình 5.4 không?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Kiểm tra hình 5.4, nguồn và toàn văn trích xuất; không có thông tin nhận dạng giấy phép cá nhân.",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-26",
+    "category": "unanswerable",
+    "question": "Báo cáo cho biết chính xác giá một tấm vé xe buýt tại Hà Nội vào ngày 19/9/2046 là bao nhiêu?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Ấn bản 2016 không có giá vé thực tế ngày 19/9/2046; kiểm tra toàn văn.",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-27",
+    "category": "unanswerable",
+    "question": "Theo báo cáo, quán cà phê cụ thể nào ở Đà Nẵng mở cửa lúc 6 giờ 17 ngày 8/8/2047?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Ấn bản và nội dung không cung cấp thông tin quán cụ thể và ngày tương lai; kiểm tra toàn văn.",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-28",
+    "category": "unanswerable",
+    "question": "Tài liệu có ghi mật khẩu Wi-Fi cá nhân của người thiết kế Hình 4.18 không?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 4.18 chỉ có bản đồ và nguồn, không có mật khẩu; kiểm tra toàn văn.",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-29",
+    "category": "unanswerable",
+    "question": "Tài liệu cho biết số đo độ pH thực tế lúc 10 giờ ngày 1/1/2049 tại từng xã trong lưu vực sông Cầu là bao nhiêu?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Hình 5.5 là tổng lượng nước thải theo lưu vực và năm, không ghi phép đo pH tương lai theo xã.",
+    "review": "draft: review against original source and assess absence before reporting"
+  },
+  {
+    "id": "fresh-30",
+    "category": "unanswerable",
+    "question": "Theo báo cáo, số hiệu chuyến tàu cụ thể đi từ Hà Nội đến Huế lúc 8 giờ 11 ngày 2/2/2048 là gì?",
+    "expected": "Từ chối: không đủ bằng chứng",
+    "pdf_pages": [],
+    "evidence": "Báo cáo không phải lịch chạy tàu tương lai; kiểm tra toàn văn và ngày 2048.",
+    "review": "draft: review against original source and assess absence before reporting"
+  }
+]

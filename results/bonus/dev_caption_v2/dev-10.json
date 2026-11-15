@@ -1,0 +1,180 @@
+{
+  "question": "Theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là bao nhiêu?",
+  "filter": {},
+  "status": "answered",
+  "answer": "Theo Bảng 2.1, năm 2035 tỷ trọng việc làm trong dịch vụ là 38%. Theo Bảng 2.2, năm 2035 tỷ trọng tiêu dùng là 74,6%. [v2035-p0128] [v2035-p0129]",
+  "citations": [
+    "v2035-p0128",
+    "v2035-p0129"
+  ],
+  "events": [
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "vqfvAaVWp3UcfkbWrPlThPsb7gOme74B",
+            "function": {
+              "index": 0,
+              "name": "search_documents",
+              "arguments": {
+                "query": "Theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là bao nhiêu?"
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 378,
+      "completion_tokens": 57,
+      "total_duration_ns": 4126845026
+    },
+    {
+      "event": "search",
+      "tool": "search_documents",
+      "query": "Theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là bao nhiêu?",
+      "model_query": "Theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là bao nhiêu?",
+      "query_policy": "original_first",
+      "filter": {},
+      "top_k": 3,
+      "method": "bm25_caption",
+      "results": [
+        {
+          "id": "v2035-p0128",
+          "text": "84   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n            Về phía cung, tỷ trọng việc làm trong nông nghiệp sẽ giảm xuống 25% (tương\n       đương Trung Quốc vào năm 2015, Thổ Nhĩ Kỳ vào năm 2012 và Mê-hi-cô vào cuối\n       những năm 1990), trong khi tăng lên đến 37-38% trong cả hai ngành công nghiệp\n       (bao gồm cả khai khoáng) và dịch vụ. Tỷ trọng nông nghiệp trong GDP giảm xuống\n       dưới 10% (tương đương Trung Quốc trong năm 2010), trong khi tỷ trọng của ngành\n       công nghiệp và dịch vụ tăng lên. Những thay đổi về cơ cấu này phù hợp với sự gia tăng\n       tỷ lệ đô thị hóa, từ 33% hiện nay lên trên 50% vào năm 2035.\n\n\n       BẢNG 2.1. Cơ cấu của nền kinh tế: Phía cung (%)\n\n\n        Năm                       Tỷ trọng trong tổng việc làm (%)                              Tỷ trọng trong GDP (%)\n                                   Nông           Công nghiệp             Dịch vụ            Nông     Công nghiệp        Dịch vụ\n                                nghiệp        và khai khoáng                                nghiệp và khai khoáng\n        1990                          73                      11                16            34,6            23,2          42,2\n        2000                          68                      12                20            24,8            34,8          40,4\n        2013                          49                      23                28            27,6            38,6          43,9\n        2025                          32                      31                37            12,0            40,0          48,0\n        2035                          25                      37                38             9,0            41,0          50,0\n       Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n            Về phía cầu, tỷ lệ đầu tư sẽ vẫn được duy trì mạnh mẽ ở mức trên 30% cho đến năm\n       2025, trước khi giảm dần xuống 27% trong thập kỷ tiếp theo. Điều này sẽ phản ánh sự\n       giảm dần của tiết kiệm trong nước và vai trò tăng lên của tiêu dùng trong nước, chiếm\n       3/4 GDP về phía cầu vào năm 2035, tương đương với mức chi tiêu tiêu dùng trong nước\n       khoảng 500 tỷ USD (giá năm 2015) vào năm 2035. Tỷ trọng xuất khẩu và nhập khẩu trong\n       GDP sẽ lần lượt giảm dần xuống mức 80%, thấp hơn so với ngày nay nhưng vẫn đảm bảo\n       định hướng ra bên ngoài lớn hơn so với các nước cùng trình độ phát triển. Tài khoản vãng\n       lai sẽ dịch chuyển từ thặng dư vào năm 2015 sang một tài khoản cân bằng trong năm\n       2016-2017, và sau đó trượt vào thâm hụt nhẹ khoảng 1% GDP, được tài trợ chủ yếu bởi\n       dòng vốn FDI bền vững và sự gia tăng của dòng vốn đầu tư gián tiếp từ khoảng sau năm\n       2025, khi ngành tài chính trong nước đã phát triển đầy đủ và tài khoản vốn được tự do hóa.",
+          "metadata": {
+            "pdf_page": 128,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 128,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 27.81009216369125,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0129",
+          "text": "CHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                                        85\n\n\n\n\n  BẢNG 2.2. Cơ cấu của nền kinh tế: Phía cầu (%)\n\n\n       Năm            Tiêu dùng           Đầu tư          Xuất khẩu        Nhập khẩu            Tổng tiết         Cán cân tài khoản\n                                                                                              kiệm quốc gia           vãng lai\n   1990                        93,5             15,9               23,7                33,4                 0,0\n   2000                        73,3             30,5               50,0                53,7                 0,0                  3,4\n   2013                        71,1             30,5               90,0                91,5            31,0                      5,6\n   2025                        72,3             30,1               82,7                83,7            29,2                      -1,0\n   2035                        74,6             27,1               79,7                80,5            26,4                      -0,8\n  Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n       Những tác động chính của kịch bản cơ sở này tới tăng năng suất lao động và các\n  yếu tố quyết định tăng năng suất lao động là gì?\n       Thứ nhất, kịch bản này đòi hỏi tăng trưởng năng suất lao động trung bình hàng\n  năm là 5,6%. Trong giai đoạn 2013 - 2035, 92% tăng trưởng GDP phải do tăng trưởng\n  năng suất lao động. Đây sẽ là sự thay đổi lớn so với giai đoạn 2000-2013, khi tăng\n  trưởng năng suất lao động chỉ đóng góp 55% vào tăng trưởng GDP.\n       Thứ hai, kịch bản này đòi hỏi mức tăng đáng kể về năng suất lao động trong tất cả\n  các ngành kinh tế lớn. Tăng trưởng năng suất trong nội bộ ngành phải chiếm gần 80%\n  tăng trưởng năng suất lao động trong tương lai, do đóng góp của chuyển dịch cơ cấu\n  dự kiến sẽ ổn định ở mức khoảng 20%.\n       Thứ ba, tăng trưởng TFP phải chiếm gần một nửa tăng trưởng năng suất lao động.\n  Tăng cường thêm vốn sẽ vẫn giữ một vai trò quan trọng (dù không lớn như trước),\n  đóng góp khoảng một phần tư trong sự gia tăng tổng thể về năng suất lao động, và\n  phần còn lại là đóng góp của tăng trưởng về vốn con người. Điều này, một lần nữa, sẽ\n  là một nhiệm vụ khó khăn khi nhìn vào cách thức đóng góp khác nhau của các yếu tố\n  này trong một thập kỷ rưỡi vừa qua.\n\n\n\n\n  Do vậy, vấn đề rất đáng quan tâm là mô                                  suất lao động đã có xu hướng giảm trong\nhình tăng trưởng năng suất trong dài hạn                                  thời gian dài kể từ cuối những năm 1990\ncủa Việt Nam đang sụt giảm. Ví dụ, năng                                   (Hình 2.15). Các thước đo khác nhau về",
+          "metadata": {
+            "pdf_page": 129,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 129,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 15.054524726497679,
+          "method": "bm25"
+        },
+        {
+          "id": "v2035-p0437",
+          "text": "CHƯƠNG 6. ĐẢM BẢO CÔNG BẰNG VÀ THÚC ĐẨY HÒA NHẬP XÃ HỘI                                                      393\n\n\n     Nhưng “tầng lớp trung lưu” là gì? Đã                                      được sử dụng để tiến hành so sánh giữa\ncó nhiều cách định nghĩa khác nhau về                                          các quốc gia với nhau.\n“tầng lớp trung lưu”, và mỗi định nghĩa                                             Ngày càng có nhiều nghiên cứu chỉ ra\nđều có những điểm mạnh khác nhau.                                              tầm quan trọng của tầng lớp trung lưu với\nMột nhóm các thước đo sử dụng các                                              vai trò là động lực của tăng trưởng kinh\nđịnh nghĩa tương đối, ví dụ ba nhóm                                            tế, ổn định xã hội và phát triển rộng lớn\n20% ở giữa trong bảng phân phối thu                                            hơn355. Thứ nhất, các hộ gia đình thuộc\nnhập trong nội bộ một quốc gia352, hoặc                                        tầng lớp trung lưu thường có xu hướng\nnhững người có thu nhập từ 75 đến                                              tích lũy nguồn vốn con người nhiều hơn\n125% của mức thu nhập ở giữa . Một                        353\n                                                                               và có tiết kiệm tài chính cao hơn – đây\ntập hợp các thước đo thứ hai sử dụng các                                       là hai yếu tố đầu vào quan trọng đối với\nthuật ngữ về mặt tuyệt đối, như thu nhập                                       tăng trưởng bền vững. Thứ hai, lực lượng\ntrong khoảng từ 2 đến 13 USD mỗi ngày                                          trung lưu cũng là thị trường lớn đối với\nđối với tầng lớp trung lưu của “thế giới                                       hàng tiêu dùng lâu bền và là nguồn để\nđang phát triển”, đến 10 đến 100 USD                                           tăng trưởng tiêu dùng trong nước. Thứ\nmỗi ngày đối với tầng lớp trung lưu “thế                                       ba, trên toàn thế giới, tầng lớp trung lưu\ngiới”.354 Loại hình thước đo thứ ba kết                                        đã nhấn mạnh trách nhiệm giải trình và\nhợp cả đo lường tương đối và tuyệt đối,                                        đạt chất lượng cao hơn trong việc cung\nbao gồm những người tiêu dùng 10 USD                                           cấp dịch vụ công, mà điều này đến lượt\nhoặc cao hơn trong một ngày nhưng thấp                                         nó sẽ đóng góp vào việc nâng cao hiệu\nhơn nhóm 90% trong bảng phân phối thu                                          quả phát triển kinh tế - xã hội từ góc độ\nnhập. Những đặc trưng và tiêu chí khác                                         cung cấp dịch vụ trong xã hội.\ncủa “tầng lớp trung lưu” mang tính xã                                               Theo một dự báo, đến năm 2035, hơn\nhội nhiều hơn như văn hóa, trình độ học                                        một nửa dân số Việt Nam sẽ là thành viên\nvấn, nghề nghiệp, hoặc sở thích, lối sống.                                     và gia nhập “tầng lớp trung lưu thế giới”\nMỗi cách tiếp cận đều có ý nghĩa riêng                                         (với mức tiêu dùng hàng ngày ở mức 15\ncủa nó, một số được sử dụng để phân tích                                       USD hoặc cao hơn tính theo PPP năm\ntrong nước theo thời gian và một số khác                                       2011) (Hình 6.18).\n\n\n\n352 Easterly (2001).\n353 Birdsall, Graham và Pettinato (2000).\n354\tXem ví dụ, Banerjee và Duflo (2008), Ravallion (2009) và Kharas (2010).\n355 ADB (2012) có một tóm tắt hữu ích các tài liệu về các đặc điểm này và tác động của các tầng lớp trung lưu trên thế giới và ở châu Á.",
+          "metadata": {
+            "pdf_page": 437,
+            "source": "Vietnam 2035 (Vietnamese, 2016)",
+            "content_type": "page_text"
+          },
+          "page": 437,
+          "source": "Việt Nam 2035, PDF tiếng Việt",
+          "score": 20.500039807271634,
+          "method": "bm25"
+        }
+      ],
+      "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 128]\n84   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n            Về phía cung, tỷ trọng việc làm trong nông nghiệp sẽ giảm xuống 25% (tương\n       đương Trung Quốc vào năm 2015, Thổ Nhĩ Kỳ vào năm 2012 và Mê-hi-cô vào cuối\n       những năm 1990), trong khi tăng lên đến 37-38% trong cả hai ngành công nghiệp\n       (bao gồm cả khai khoáng) và dịch vụ. Tỷ trọng nông nghiệp trong GDP giảm xuống\n       dưới 10% (tương đương Trung Quốc trong năm 2010), trong khi tỷ trọng của ngành\n       công nghiệp và dịch vụ tăng lên. Những thay đổi về cơ cấu này phù hợp với sự gia tăng\n       tỷ lệ đô thị hóa, từ 33% hiện nay lên trên 50% vào năm 2035.\n\n\n       BẢNG 2.1. Cơ cấu của nền kinh tế: Phía cung (%)\n\n\n        Năm                       Tỷ trọng trong tổng việc làm (%)                              Tỷ trọng trong GDP (%)\n                                   Nông           Công nghiệp             Dịch vụ            Nông     Công nghiệp        Dịch vụ\n                                nghiệp        và khai khoáng                                nghiệp và khai khoáng\n        1990                          73                      11                16            34,6            23,2          42,2\n        2000                          68                      12                20            24,8            34,8          40,4\n        2013                          49                      23                28            27,6            38,6          43,9\n        2025                          32                      31                37            12,0            40,0          48,0\n        2035                          25                      37                38             9,0            41,0          50,0\n       Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n            Về phía cầu, tỷ lệ đầu tư sẽ vẫn được duy trì mạnh mẽ ở mức trên 30% cho đến năm\n       2025, trước khi giảm dần xuống 27% trong thập kỷ tiếp theo. Điều này sẽ phản ánh sự\n       giảm dần của tiết kiệm trong nước và vai trò tăng lên của tiêu dùng trong nước, chiếm\n       3/4 GDP về phía cầu vào năm 2035, tương đương với mức chi tiêu tiêu dùng trong nước\n       khoảng 500 tỷ USD (giá năm 2015) vào năm 2035. Tỷ trọng xuất khẩu và nhập khẩu trong\n       GDP sẽ lần lượt giảm dần xuống mức 80%, thấp hơn so với ngày nay nhưng vẫn đảm bảo\n       định hướng ra bên ngoài lớn hơn so với các nước cùng trình độ phát triển. Tài khoản vãng\n       lai sẽ dịch chuyển từ thặng dư vào năm 2015 sang một tài khoản cân bằng trong năm\n       2016-2017, và sau đó trượt vào thâm hụt nhẹ khoảng 1% GDP, được tài trợ chủ yếu bởi\n       dòng vốn FDI bền vững và sự gia tăng của dòng vốn đầu tư gián tiếp từ khoảng sau năm\n       2025, khi ngành tài chính trong nước đã phát triển đầy đủ và tài khoản vốn được tự do hóa.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 129]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                                        85\n\n\n\n\n  BẢNG 2.2. Cơ cấu của nền kinh tế: Phía cầu (%)\n\n\n       Năm            Tiêu dùng           Đầu tư          Xuất khẩu        Nhập khẩu            Tổng tiết         Cán cân tài khoản\n                                                                                              kiệm quốc gia           vãng lai\n   1990                        93,5             15,9               23,7                33,4                 0,0\n   2000                        73,3             30,5               50,0                53,7                 0,0                  3,4\n   2013                        71,1             30,5               90,0                91,5            31,0                      5,6\n   2025                        72,3             30,1               82,7                83,7            29,2                      -1,0\n   2035                        74,6             27,1               79,7                80,5            26,4                      -0,8\n  Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n       Những tác động chính của kịch bản cơ sở này tới tăng năng suất lao động và các\n  yếu tố quyết định tăng năng suất lao động là gì?\n       Thứ nhất, kịch bản này đòi hỏi tăng trưởng năng suất lao động trung bình hàng\n  năm là 5,6%. Trong giai đoạn 2013 - 2035, 92% tăng trưởng GDP phải do tăng trưởng\n  năng suất lao động. Đây sẽ là sự thay đổi lớn so với giai đoạn 2000-2013, khi tăng\n  trưởng năng suất lao động chỉ đóng góp 55% vào tăng trưởng GDP.\n       Thứ hai, kịch bản này đòi hỏi mức tăng đáng kể về năng suất lao động trong tất cả\n  các ngành kinh tế lớn. Tăng trưởng năng suất trong nội bộ ngành phải chiếm gần 80%\n  tăng trưởng năng suất lao động trong tương lai, do đóng góp của chuyển dịch cơ cấu\n  dự kiến sẽ ổn định ở mức khoảng 20%.\n       Thứ ba, tăng trưởng TFP phải chiếm gần một nửa tăng trưởng năng suất lao động.\n  Tăng cường thêm vốn sẽ vẫn giữ một vai trò quan trọng (dù không lớn như trước),\n  đóng góp khoảng một phần tư trong sự gia tăng tổng thể về năng suất lao động, và\n  phần còn lại là đóng góp của tăng trưởng về vốn con người. Điều này, một lần nữa, sẽ\n  là một nhiệm vụ khó khăn khi nhìn vào cách thức đóng góp khác nhau của các yếu tố\n  này trong một thập kỷ rưỡi vừa qua.\n\n\n\n\n  Do vậy, vấn đề rất đáng quan tâm là mô                                  suất lao động đã có xu hướng giảm trong\nhình tăng trưởng năng suất trong dài hạn                                  thời gian dài kể từ cuối những năm 1990\ncủa Việt Nam đang sụt giảm. Ví dụ, năng                                   (Hình 2.15). Các thước đo khác nhau về\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 437]\nCHƯƠNG 6. ĐẢM BẢO CÔNG BẰNG VÀ THÚC ĐẨY HÒA NHẬP XÃ HỘI                                                      393\n\n\n     Nhưng “tầng lớp trung lưu” là gì? Đã                                      được sử dụng để tiến hành so sánh giữa\ncó nhiều cách định nghĩa khác nhau về                                          các quốc gia với nhau.\n“tầng lớp trung lưu”, và mỗi định nghĩa                                             Ngày càng có nhiều nghiên cứu chỉ ra\nđều có những điểm mạnh khác nhau.                                              tầm quan trọng của tầng lớp trung lưu với\nMột nhóm các thước đo sử dụng các                                              vai trò là động lực của tăng trưởng kinh\nđịnh nghĩa tương đối, ví dụ ba nhóm                                            tế, ổn định xã hội và phát triển rộng lớn\n20% ở giữa trong bảng phân phối thu                                            hơn355. Thứ nhất, các hộ gia đình thuộc\nnhập trong nội bộ một quốc gia352, hoặc                                        tầng lớp trung lưu thường có xu hướng\nnhững người có thu nhập từ 75 đến                                              tích lũy nguồn vốn con người nhiều hơn\n125% của mức thu nhập ở giữa . Một                        353\n                                                                               và có tiết kiệm tài chính cao hơn – đây\ntập hợp các thước đo thứ hai sử dụng các                                       là hai yếu tố đầu vào quan trọng đối với\nthuật ngữ về mặt tuyệt đối, như thu nhập                                       tăng trưởng bền vững. Thứ hai, lực lượng\ntrong khoảng từ 2 đến 13 USD mỗi ngày                                          trung lưu cũng là thị trường lớn đối với\nđối với tầng lớp trung lưu của “thế giới                                       hàng tiêu dùng lâu bền và là nguồn để\nđang phát triển”, đến 10 đến 100 USD                                           tăng trưởng tiêu dùng trong nước. Thứ\nmỗi ngày đối với tầng lớp trung lưu “thế                                       ba, trên toàn thế giới, tầng lớp trung lưu\ngiới”.354 Loại hình thước đo thứ ba kết                                        đã nhấn mạnh trách nhiệm giải trình và\nhợp cả đo lường tương đối và tuyệt đối,                                        đạt chất lượng cao hơn trong việc cung\nbao gồm những người tiêu dùng 10 USD                                           cấp dịch vụ công, mà điều này đến lượt\nhoặc cao hơn trong một ngày nhưng thấp                                         nó sẽ đóng góp vào việc nâng cao hiệu\nhơn nhóm 90% trong bảng phân phối thu                                          quả phát triển kinh tế - xã hội từ góc độ\nnhập. Những đặc trưng và tiêu chí khác                                         cung cấp dịch vụ trong xã hội.\ncủa “tầng lớp trung lưu” mang tính xã                                               Theo một dự báo, đến năm 2035, hơn\nhội nhiều hơn như văn hóa, trình độ học                                        một nửa dân số Việt Nam sẽ là thành viên\nvấn, nghề nghiệp, hoặc sở thích, lối sống.                                     và gia nhập “tầng lớp trung lưu thế giới”\nMỗi cách tiếp cận đều có ý nghĩa riêng                                         (với mức tiêu dùng hàng ngày ở mức 15\ncủa nó, một số được sử dụng để phân tích                                       USD hoặc cao hơn tính theo PPP năm\ntrong nước theo thời gian và một số khác                                       2011) (Hình 6.18).\n\n\n\n352 Easterly (2001).\n353 Birdsall, Graham và Pettinato (2000).\n354\tXem ví dụ, Banerjee và Duflo (2008), Ravallion (2009) và Kharas (2010).\n355 ADB (2012) có một tóm tắt hữu ích các tài liệu về các đặc điểm này và tác động của các tầng lớp trung lưu trên thế giới và ở châu Á.",
+      "context_ids": [
+        "v2035-p0128",
+        "v2035-p0129",
+        "v2035-p0437"
+      ],
+      "citation_map": {
+        "C1": "v2035-p0128",
+        "C2": "v2035-p0129",
+        "C3": "v2035-p0437"
+      },
+      "elapsed_ms": 58.99403000057646
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "[ C1 | Việt Nam 2035, PDF tiếng Việt | page 128 ]: Năm 2035, tỷ trọng việc làm trong dịch vụ là 38%.\n\n[ C2 | Việt Nam 2035, PDF tiếng Việt | page 129 ]: Năm 2035, tỷ trọng tiêu dùng là 74,6%.\n\nVậy, theo Bảng 2.1 và 2.2, năm 2035 tỷ trọng việc làm dịch vụ và tỷ trọng tiêu dùng lần lượt là 38% và 74,6%.\n",
+        "tool_calls": [
+          {
+            "id": "8pLFlWffQsOuFfMAsLSBL9R6th89qoxa",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Năm 2035, tỷ trọng việc làm dịch vụ là 38% và tỷ trọng tiêu dùng là 74,6%.",
+                "citations": [
+                  "C1",
+                  "C2"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 3144,
+      "completion_tokens": 201,
+      "total_duration_ns": 53334379122
+    },
+    {
+      "event": "protocol_repair",
+      "reason": "citation_format"
+    },
+    {
+      "event": "model",
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "3IkwpNwiLywckYXCRcIRSmjEcisvdoPp",
+            "function": {
+              "index": 0,
+              "name": "submit_answer",
+              "arguments": {
+                "status": "answered",
+                "answer": "Theo Bảng 2.1, năm 2035 tỷ trọng việc làm trong dịch vụ là 38%. Theo Bảng 2.2, năm 2035 tỷ trọng tiêu dùng là 74,6%. [C1] [C2]",
+                "citations": [
+                  "C1",
+                  "C2"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "prompt_tokens": 3184,
+      "completion_tokens": 97,
+      "total_duration_ns": 14163578225
+    },
+    {
+      "event": "answer",
+      "status": "answered",
+      "model_answer": "Theo Bảng 2.1, năm 2035 tỷ trọng việc làm trong dịch vụ là 38%. Theo Bảng 2.2, năm 2035 tỷ trọng tiêu dùng là 74,6%. [C1] [C2]"
+    }
+  ],
+  "context": "[C1 | Việt Nam 2035, PDF tiếng Việt | page 128]\n84   VIỆT NAM 2035 - HƯỚNG TỚI THỊNH VƯỢNG, SÁNG TẠO, CÔNG BẰNG VÀ DÂN CHỦ\n\n\n\n\n            Về phía cung, tỷ trọng việc làm trong nông nghiệp sẽ giảm xuống 25% (tương\n       đương Trung Quốc vào năm 2015, Thổ Nhĩ Kỳ vào năm 2012 và Mê-hi-cô vào cuối\n       những năm 1990), trong khi tăng lên đến 37-38% trong cả hai ngành công nghiệp\n       (bao gồm cả khai khoáng) và dịch vụ. Tỷ trọng nông nghiệp trong GDP giảm xuống\n       dưới 10% (tương đương Trung Quốc trong năm 2010), trong khi tỷ trọng của ngành\n       công nghiệp và dịch vụ tăng lên. Những thay đổi về cơ cấu này phù hợp với sự gia tăng\n       tỷ lệ đô thị hóa, từ 33% hiện nay lên trên 50% vào năm 2035.\n\n\n       BẢNG 2.1. Cơ cấu của nền kinh tế: Phía cung (%)\n\n\n        Năm                       Tỷ trọng trong tổng việc làm (%)                              Tỷ trọng trong GDP (%)\n                                   Nông           Công nghiệp             Dịch vụ            Nông     Công nghiệp        Dịch vụ\n                                nghiệp        và khai khoáng                                nghiệp và khai khoáng\n        1990                          73                      11                16            34,6            23,2          42,2\n        2000                          68                      12                20            24,8            34,8          40,4\n        2013                          49                      23                28            27,6            38,6          43,9\n        2025                          32                      31                37            12,0            40,0          48,0\n        2035                          25                      37                38             9,0            41,0          50,0\n       Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n            Về phía cầu, tỷ lệ đầu tư sẽ vẫn được duy trì mạnh mẽ ở mức trên 30% cho đến năm\n       2025, trước khi giảm dần xuống 27% trong thập kỷ tiếp theo. Điều này sẽ phản ánh sự\n       giảm dần của tiết kiệm trong nước và vai trò tăng lên của tiêu dùng trong nước, chiếm\n       3/4 GDP về phía cầu vào năm 2035, tương đương với mức chi tiêu tiêu dùng trong nước\n       khoảng 500 tỷ USD (giá năm 2015) vào năm 2035. Tỷ trọng xuất khẩu và nhập khẩu trong\n       GDP sẽ lần lượt giảm dần xuống mức 80%, thấp hơn so với ngày nay nhưng vẫn đảm bảo\n       định hướng ra bên ngoài lớn hơn so với các nước cùng trình độ phát triển. Tài khoản vãng\n       lai sẽ dịch chuyển từ thặng dư vào năm 2015 sang một tài khoản cân bằng trong năm\n       2016-2017, và sau đó trượt vào thâm hụt nhẹ khoảng 1% GDP, được tài trợ chủ yếu bởi\n       dòng vốn FDI bền vững và sự gia tăng của dòng vốn đầu tư gián tiếp từ khoảng sau năm\n       2025, khi ngành tài chính trong nước đã phát triển đầy đủ và tài khoản vốn được tự do hóa.\n\n[C2 | Việt Nam 2035, PDF tiếng Việt | page 129]\nCHƯƠNG 2. HIỆN ĐẠI HÓA NỀN KINH TẾ VÀ PHÁT TRIỂN KHU VỰC TƯ NHÂN                                                        85\n\n\n\n\n  BẢNG 2.2. Cơ cấu của nền kinh tế: Phía cầu (%)\n\n\n       Năm            Tiêu dùng           Đầu tư          Xuất khẩu        Nhập khẩu            Tổng tiết         Cán cân tài khoản\n                                                                                              kiệm quốc gia           vãng lai\n   1990                        93,5             15,9               23,7                33,4                 0,0\n   2000                        73,3             30,5               50,0                53,7                 0,0                  3,4\n   2013                        71,1             30,5               90,0                91,5            31,0                      5,6\n   2025                        72,3             30,1               82,7                83,7            29,2                      -1,0\n   2035                        74,6             27,1               79,7                80,5            26,4                      -0,8\n  Nguồn: Tính toán và dự báo của nhóm tác giả dựa trên số liệu của Tổng cục Thống kê\n\n\n       Những tác động chính của kịch bản cơ sở này tới tăng năng suất lao động và các\n  yếu tố quyết định tăng năng suất lao động là gì?\n       Thứ nhất, kịch bản này đòi hỏi tăng trưởng năng suất lao động trung bình hàng\n  năm là 5,6%. Trong giai đoạn 2013 - 2035, 92% tăng trưởng GDP phải do tăng trưởng\n  năng suất lao động. Đây sẽ là sự thay đổi lớn so với giai đoạn 2000-2013, khi tăng\n  trưởng năng suất lao động chỉ đóng góp 55% vào tăng trưởng GDP.\n       Thứ hai, kịch bản này đòi hỏi mức tăng đáng kể về năng suất lao động trong tất cả\n  các ngành kinh tế lớn. Tăng trưởng năng suất trong nội bộ ngành phải chiếm gần 80%\n  tăng trưởng năng suất lao động trong tương lai, do đóng góp của chuyển dịch cơ cấu\n  dự kiến sẽ ổn định ở mức khoảng 20%.\n       Thứ ba, tăng trưởng TFP phải chiếm gần một nửa tăng trưởng năng suất lao động.\n  Tăng cường thêm vốn sẽ vẫn giữ một vai trò quan trọng (dù không lớn như trước),\n  đóng góp khoảng một phần tư trong sự gia tăng tổng thể về năng suất lao động, và\n  phần còn lại là đóng góp của tăng trưởng về vốn con người. Điều này, một lần nữa, sẽ\n  là một nhiệm vụ khó khăn khi nhìn vào cách thức đóng góp khác nhau của các yếu tố\n  này trong một thập kỷ rưỡi vừa qua.\n\n\n\n\n  Do vậy, vấn đề rất đáng quan tâm là mô                                  suất lao động đã có xu hướng giảm trong\nhình tăng trưởng năng suất trong dài hạn                                  thời gian dài kể từ cuối những năm 1990\ncủa Việt Nam đang sụt giảm. Ví dụ, năng                                   (Hình 2.15). Các thước đo khác nhau về\n\n[C3 | Việt Nam 2035, PDF tiếng Việt | page 437]\nCHƯƠNG 6. ĐẢM BẢO CÔNG BẰNG VÀ THÚC ĐẨY HÒA NHẬP XÃ HỘI                                                      393\n\n\n     Nhưng “tầng lớp trung lưu” là gì? Đã                                      được sử dụng để tiến hành so sánh giữa\ncó nhiều cách định nghĩa khác nhau về                                          các quốc gia với nhau.\n“tầng lớp trung lưu”, và mỗi định nghĩa                                             Ngày càng có nhiều nghiên cứu chỉ ra\nđều có những điểm mạnh khác nhau.                                              tầm quan trọng của tầng lớp trung lưu với\nMột nhóm các thước đo sử dụng các                                              vai trò là động lực của tăng trưởng kinh\nđịnh nghĩa tương đối, ví dụ ba nhóm                                            tế, ổn định xã hội và phát triển rộng lớn\n20% ở giữa trong bảng phân phối thu                                            hơn355. Thứ nhất, các hộ gia đình thuộc\nnhập trong nội bộ một quốc gia352, hoặc                                        tầng lớp trung lưu thường có xu hướng\nnhững người có thu nhập từ 75 đến                                              tích lũy nguồn vốn con người nhiều hơn\n125% của mức thu nhập ở giữa . Một                        353\n                                                                               và có tiết kiệm tài chính cao hơn – đây\ntập hợp các thước đo thứ hai sử dụng các                                       là hai yếu tố đầu vào quan trọng đối với\nthuật ngữ về mặt tuyệt đối, như thu nhập                                       tăng trưởng bền vững. Thứ hai, lực lượng\ntrong khoảng từ 2 đến 13 USD mỗi ngày                                          trung lưu cũng là thị trường lớn đối với\nđối với tầng lớp trung lưu của “thế giới                                       hàng tiêu dùng lâu bền và là nguồn để\nđang phát triển”, đến 10 đến 100 USD                                           tăng trưởng tiêu dùng trong nước. Thứ\nmỗi ngày đối với tầng lớp trung lưu “thế                                       ba, trên toàn thế giới, tầng lớp trung lưu\ngiới”.354 Loại hình thước đo thứ ba kết                                        đã nhấn mạnh trách nhiệm giải trình và\nhợp cả đo lường tương đối và tuyệt đối,                                        đạt chất lượng cao hơn trong việc cung\nbao gồm những người tiêu dùng 10 USD                                           cấp dịch vụ công, mà điều này đến lượt\nhoặc cao hơn trong một ngày nhưng thấp                                         nó sẽ đóng góp vào việc nâng cao hiệu\nhơn nhóm 90% trong bảng phân phối thu                                          quả phát triển kinh tế - xã hội từ góc độ\nnhập. Những đặc trưng và tiêu chí khác                                         cung cấp dịch vụ trong xã hội.\ncủa “tầng lớp trung lưu” mang tính xã                                               Theo một dự báo, đến năm 2035, hơn\nhội nhiều hơn như văn hóa, trình độ học                                        một nửa dân số Việt Nam sẽ là thành viên\nvấn, nghề nghiệp, hoặc sở thích, lối sống.                                     và gia nhập “tầng lớp trung lưu thế giới”\nMỗi cách tiếp cận đều có ý nghĩa riêng                                         (với mức tiêu dùng hàng ngày ở mức 15\ncủa nó, một số được sử dụng để phân tích                                       USD hoặc cao hơn tính theo PPP năm\ntrong nước theo thời gian và một số khác                                       2011) (Hình 6.18).\n\n\n\n352 Easterly (2001).\n353 Birdsall, Graham và Pettinato (2000).\n354\tXem ví dụ, Banerjee và Duflo (2008), Ravallion (2009) và Kharas (2010).\n355 ADB (2012) có một tóm tắt hữu ích các tài liệu về các đặc điểm này và tác động của các tầng lớp trung lưu trên thế giới và ở châu Á.",
+  "context_ids": [
+    "v2035-p0128",
+    "v2035-p0129",
+    "v2035-p0437"
+  ],
+  "citation_map": {
+    "C1": "v2035-p0128",
+    "C2": "v2035-p0129",
+    "C3": "v2035-p0437"
+  },
+  "usage": {
+    "prompt_tokens": 6706,
+    "completion_tokens": 355,
+    "model_calls": 3
+  },
+  "service_cost_usd": 0,
+  "policy_version": 2,
+  "elapsed_seconds": 71.72661271499965,
+  "id": "dev-10"
+}
